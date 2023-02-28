@@ -1,0 +1,154 @@
+/* .start-view{
+    width:40%;
+    margin: 10rem auto;
+    border:2px solid black;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn{
+    width:8rem;
+    height: 2.5rem;
+    border: 2px solid green;
+    cursor: pointer;
+
+} */
+
+/* ---------------quiz-box------------------- */
+.quiz_section{
+    display: flex;
+}
+.quiz-box{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 4rem 3rem;
+}
+.quiz_container{
+    margin-top: 1.5rem;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+}
+.question_name{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+.option{
+    padding: 0.5rem;
+    width: 90%;
+    margin-top:1rem;
+    border: 2px solid cyan;
+}
+.click_option{
+    color: white;
+    background-color: rgb(77, 107, 189);
+}
+.option:hover{
+background-color: rgb(77, 107, 189);
+color:#fff;
+cursor: pointer;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+}
+
+.reset_btn,.next_btn{
+    width: 6rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background:rgb(27, 223, 27);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+.reset_btn:hover,.next_btn:hover{
+    background:rgb(82, 233, 82);
+}
+
+.exit_btn{
+    width: 6rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background:rgb(223, 88, 78);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+
+.play_again{
+    width: 6rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background:rgb(27, 223, 27);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.timer{
+    width: 20rem;
+    height: 10rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+
+    
+}
+
+.timer div{
+  
+    height: 50%; 
+
+}
+ .t1{
+    text-align: center;
+
+}
+.t1 h2{
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: rgb(133, 131, 131);
+}
+.t2{
+    text-align: center;
+}
+.t2 span{
+  color: #fff;
+  height: 8rem;
+  width: 8rem;
+  padding: 1.4rem;
+  border-radius:50% ;
+  background-color: rgb(102, 102, 102);
+  border: 3px solid rgb(76, 255, 76);
+}
+
+
+/* -----------------------header---------------------------------- */
+
+.navb{
+    width:100%;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+}
+.header1 ul{
+    display: flex;
+
+}
+.header1 ul li{
+    margin: 0 2rem;
+    list-style: none;
+}

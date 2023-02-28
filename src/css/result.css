@@ -1,0 +1,78 @@
+
+.result{
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result_box{
+
+    padding: 2rem;
+    width: 30rem;
+    height: 20rem;
+    margin: 4rem 0;
+    box-shadow: -10px 10px 40px rgba(0,0,0,0.3);
+
+
+}
+.review_sec button{
+         width: 10rem;
+         height: 3rem;
+         background-color:  #0eb582;
+         border: none;
+         font-size:1rem ;
+         letter-spacing: 0.1rem;
+         color: #fff;
+         cursor: pointer;
+         border-radius: 0.5rem;
+}
+.review_sec button:hover{
+    background-color: #12976f;
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.fa-crown{
+    width:10rem ;
+    height: 6rem;
+    font-size: 8rem;
+    color: rgb(136, 136, 255);
+
+}
+
+.score{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1rem 0;
+
+}
+.resultbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.resultbtn button{
+    background-color:#0eb582;
+    color: #fff;
+    border: none;
+    letter-spacing: 0.1rem;
+    border-radius: 0.4rem;
+    width: 8rem;
+    height: 3rem;
+    cursor: pointer;
+    margin: 0 1rem;
+    
+}
+.resultbtn button:hover{
+    background-color: rgb(47, 173, 47);
+}
+.time_taken{
+    font-size: 1rem;
+}
