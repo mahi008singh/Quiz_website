@@ -7,14 +7,26 @@ const Models=require('./db/collections')
 app.use('/public',express.static('public'))
 app.use('/images',express.static('images'))
 
-
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
-app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','index.html'))
 
+
+//code for serving the frontend
+
+app.use(express.static(path.join(__dirname,"./frontend/build")));
+app.get("/",(_,res)=>{
+    res.sendFile(
+        path.join(__dirname,"./frontend/build/index.html"),
+        (err)=>{
+            res.status(500).send(err);
+        }
+    );
 })
+// app.get('/',(req,res)=>{
+//     res.sendFile(path.join(__dirname,'views','index.html'))
+
+// })
 
 app.get('/register',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','sign_up.html'))
