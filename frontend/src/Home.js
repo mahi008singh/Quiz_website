@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './css/style.css';
+import './css/home.css';
 import Homedata from './Api/Homecateg'
 
 const Home = () => {
@@ -13,18 +14,18 @@ const Home = () => {
 
                 <div class="swiper-wrapper">
 
-                   <section class="swiper-slide slide" style={{ background: `url('./images/home-slide-1.jpg') no-repeat ` }}>
+                   <section class="swiper-slide slide" >
                       <div class="content">
-                         <h3>Quiz on C++ on Sunday 15TH Jan</h3>
+                         <h3>Quiz on C++, Aptitude,Reasoning</h3>
                          <p>Give live quiz and compete with others and boost your coding, aptitude and reasoning skills </p>
                          <a href="/compete" class="btn">Compete</a>
                       </div>
                    </section>
 
-                   <section class="swiper-slide slide" style={{ background: "url('./images/home-slide-2.jpg') no-repeat" }}>
+                   <section class="swiper-slide2 slide" >
                       <div class="content">
-                         <h3>The Best Quizes for your Practice</h3>
-                         <p>Practice coding, reasoning, apti, and cs subjects related quizes on prepquizz  </p>
+                         <h3>Try Quizes for your Practice</h3>
+                         <p>Practice coding, reasoning, apti, and cse related quizes on prepquizz</p>
                          <a href="/Practice" class="btn">Practice</a>
                       </div>
                    </section>
@@ -61,7 +62,7 @@ const Home = () => {
                    <>
                       <div class="box">
                          <a href="/login" target="_blank">
-                            <img src={elem.img} alt="" />
+                            <img src="./images/subject-icon-1.png" alt="" />
                             <h3>{elem.title}</h3>
                          </a>
 

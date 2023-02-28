@@ -21,7 +21,7 @@ export default function Start() {
         </div>
        <div class="start_div">  
          <div style={{display:"flex"}}>
-           <h3 style={{margin:"auto 1rem"}}>Set timer</h3>
+           <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>Set timer</h3>
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     
         <button onClick={() => setStart(true)} className='start-btn'>Start Quiz</button>

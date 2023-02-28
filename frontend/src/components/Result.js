@@ -18,7 +18,7 @@ export default function Result() {
                     <div className="icon">
                         <i className="fas fa-crown"></i>
                     </div>
-                    <div style={{ fontSize: "1.2rem", textAlign: "center" }}>You have completed the Quiz!</div>
+                    <div style={{ fontSize: "1.5rem", textAlign: "center" }}>You have completed the Quiz!</div>
                     <div className="score">
                         <h4 className=''>{correct} correct out of {quizzes.q1.length}</h4>
                         <p className="time_taken">time taken: <span class="hund">00</span>:

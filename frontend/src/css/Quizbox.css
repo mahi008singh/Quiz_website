@@ -1,0 +1,142 @@
+.quiz_section{
+    display: flex;
+}
+.quiz-img{
+    height: 15rem;
+}
+.quiz-box{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 4rem 3rem;
+}
+.quiz_container{
+    margin-top: 1.5rem;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+    
+    
+}
+.question_name{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+}
+.option{
+    padding: 0.5rem;
+    width: 90%;
+    margin-top:1rem;
+    border: 2px solid cyan;
+    font-size: 1.6rem;
+}
+.click_option{
+    color: white;
+    background-color: rgb(77, 107, 189);
+}
+.option:hover{
+background-color: rgb(77, 107, 189);
+color:#fff;
+cursor: pointer;
+}
+
+.btn_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    height: 5rem;
+}
+
+.reset_btn,.next_btn{
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    background:rgb(27, 223, 27);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+.reset_btn:hover,.next_btn:hover,.exit_btn:hover{
+    background:rgb(42, 82, 42);
+}
+
+.exit_btn{
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    background:rgb(223, 88, 78);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+    
+}
+
+.play_again{
+    width: 6rem;
+    height: 2.4rem;
+    cursor: pointer;
+    background:rgb(27, 223, 27);
+    color:#fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.timer{
+    width: 23rem;
+    height: 13rem;
+    border-radius: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.25);
+
+    
+}
+
+.timer div{
+  
+    height: 50%; 
+
+}
+ .t1{
+    text-align: center;
+
+}
+.t1 h2{
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+    font-size: 1.7rem;
+    color: rgb(133, 131, 131);
+}
+.t2{
+    text-align: center;
+}
+.t2 span{
+  color: #fff;
+  height: 10rem;
+  width: 10rem;
+  padding: 1.4rem;
+  border-radius:50% ;
+  background-color: rgb(102, 102, 102);
+  border: 3px solid rgb(76, 255, 76);
+}
+
+
+/* ---------------media-query--------------- */
+
+@media (max-width:680px) {
+    .quiz_section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .quiz-box{
+        width: 75%;
+        border: 2px solid black;
+        border-radius: 1rem;
+        margin: 3rem 3rem;
+    }
+    
+}

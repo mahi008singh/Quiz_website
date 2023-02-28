@@ -1,6 +1,7 @@
 import React, {useEffect, useContext, useState } from 'react'
 import { QuizContext } from '../Context/QuizHolder';
 import Timer from './Timer'
+import '../css/Quizbox.css';
 
 
 export default function Quiz() {
@@ -64,6 +65,9 @@ const Box = ({ current, next }) => {
        
         <section className="quiz_section">
         <div className='quiz-box'>
+            <div className="quiz-img">
+                    <img src="../images/quiz_glow.jpg"/>
+            </div>
             <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/10</h2>
             <div className='question_name'>  {quizzler[current].question}</div>
             <div className='quiz_container'>
