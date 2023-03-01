@@ -44,9 +44,6 @@ app.get('/compete',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','compete.html'))
 })
 
-app.get('/cat',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','cat.html'))
-})
 
 app.get('/demo',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','demo.html'))

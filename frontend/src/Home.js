@@ -62,7 +62,7 @@ const Home = () => {
                    <>
                       <div class="box">
                          <a href="/login" target="_blank">
-                            <img src="./images/subject-icon-1.png" alt="" />
+                           <img src={require('./images/subject-icon-3.png')} alt="" />
                             <h3>{elem.title}</h3>
                          </a>
 
@@ -86,14 +86,14 @@ const Home = () => {
 
 <div class="swiper home-courses-slider">
 
-   <div class="swiper-wrapper">
+   <div class="swiper-wrapper3">
      {
         popular.map((elem)=>{
            return(
               <>
-                 <div class="swiper-slide slide">
+                 <div class="swiper-slide3 slide">
                     <div class="image">
-                       <img src={elem.img} alt="" />
+                       <img src={require('./images/course-1-3.png')} alt="" />
                        <h3>{elem.title}</h3>
                     </div>
                     <div class="content">

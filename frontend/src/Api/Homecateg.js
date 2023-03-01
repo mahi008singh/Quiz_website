@@ -3,7 +3,7 @@ const Homedata={
         {
             title:"Reasoning",
             subtitle:"Reasoning",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-3.png",
             apiNum:1
@@ -11,7 +11,7 @@ const Homedata={
         {
             title:"Aptitude",
             subtitle:"Aptitude",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-1.png",
             apiNum:1
@@ -20,7 +20,7 @@ const Homedata={
         {
             title:"Coding",
             subtitle:"Object Oriented Programming",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-2.png",
             apiNum:1
@@ -28,7 +28,7 @@ const Homedata={
         {
             title:"Verbal Ability",
             subtitle:"Verbal Ability",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-6.png",
             apiNum:1
@@ -36,7 +36,7 @@ const Homedata={
         {
             title:"Database Management System",
             subtitle:"D.B.M.S",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-5.png",
             apiNum:1
@@ -44,7 +44,7 @@ const Homedata={
         {
             title:"Networking",
             subtitle:"Networking",
-            para:"lorem ipsum",
+            para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-4.png",
             apiNum:1

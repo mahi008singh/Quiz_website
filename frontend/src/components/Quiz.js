@@ -66,7 +66,9 @@ const Box = ({ current, next }) => {
         <section className="quiz_section">
         <div className='quiz-box'>
             <div className="quiz-img">
-                    <img src="../images/quiz_glow.jpg"/>
+                <center>
+                <img src={require('../images/quiz_glow.jpg')}/>
+                </center>
             </div>
             <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/10</h2>
             <div className='question_name'>  {quizzler[current].question}</div>

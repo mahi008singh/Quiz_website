@@ -30,7 +30,7 @@ const Practice = () => {
                                <>
                                    <div class="box">
                                        <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)} target="_blank">
-                                           <img src={elem.img} alt="" />
+                                           <img src={require('./images/subject-icon-1.png')} alt="" />
                                            <h3>{elem.title}</h3>
                                        </NavLink>
 
@@ -54,7 +54,7 @@ const Practice = () => {
                                 <>
                                     <div class="box">
                                         <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
-                                            <img src="images/subject-icon-1.png" alt="" />
+                                            <img src={require('./images/subject-icon-1.png')} alt="" />
                                             <h3 class="Quant_h1" >{elem.title}</h3>
                                         </NavLink>
 
@@ -78,7 +78,7 @@ const Practice = () => {
                                <>
                                    <div class="box">
                                        <a href={elem.link} target="_blank">
-                                           <img src="images/subject-icon-1.png" alt="" />
+                                           <img src={require("./images/subject-icon-1.png")} alt="" />
                                            <h3>{elem.title}</h3>
                                        </a>
 
