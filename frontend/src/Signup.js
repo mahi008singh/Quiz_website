@@ -1,14 +1,14 @@
 import React from 'react'
-// import './css/sign_up.css'
+import './css/sign_up.css'
 import './css/style.css'
 const Signup = () => {
     return (
         <>
-            <div class="signup_box">
-                <div class="center1">
+            <section className="signup_box">
+                <div className="center1">
                     <h1>Sign up </h1>
                     <form action="/register" method="POST">
-                        <div class="txt_field">
+                        <div className="txt_field">
                             <input name='name' type="text" required />
 
                             <label>Name</label>
@@ -26,7 +26,7 @@ const Signup = () => {
                         </div>
 
                         <div>
-                            <input type="submit" value="Submit" />
+                            <input type="submit"  />
                             <div class="signup_link">
                                 Already have an account?(Instructor)
                                 <a href="instructor_login.html">Login</a>
@@ -38,7 +38,7 @@ const Signup = () => {
                         </div>
                     </form>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

@@ -28,6 +28,7 @@
 }
 .navb .logo{
     font-size: 1.8rem;
+    margin-left: 1rem;
 }
 .header1 ul{
     display: flex;

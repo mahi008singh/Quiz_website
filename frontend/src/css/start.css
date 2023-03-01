@@ -11,7 +11,7 @@
 }
 .rules{
     width:70%;
-    height: 30rem;
+    height: 33rem;
     background-color:#33d6a5 ;
     font-size: 2rem;
     display: flex;
@@ -23,6 +23,7 @@
 .rules h1{
     text-align: center;
     font-size: 2.2rem;
+    margin: 0rem 0;
 }
 .rules ul{
     color: white;
@@ -94,4 +95,23 @@
     border: 2px solid green;
     padding-left: 1rem ;
     border-radius: 0.7rem;
+}
+
+@media (max-width:480px){
+    .rules{
+        width:75%;
+        height: 33rem;
+        padding: 1rem 0;
+        font-size: 1.6rem;
+    }
+    .start_div{
+        width: 75%;
+        height: 16rem;
+    
+    }
+    .rules ul li{
+        list-style: none;
+        padding: 0.5rem 0;
+        font-size: 1.6rem;
+    }
 }
