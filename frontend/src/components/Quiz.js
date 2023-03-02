@@ -15,17 +15,29 @@ export default function Quiz() {
 
 
 const Box = ({ current, next }) => {
-    const { quizzes, correct, setCorrect, setExit,timer,setTimer,choose,setChoose,changetimer } = useContext(QuizContext);
+    const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
+         setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
+         finalquiz,setFinalquiz } = useContext(QuizContext);
+
     const [ans, setAns] = useState("");
     
-     const [quizzler,setQuizzler]=useState(quizzes.q1);
+    const [quizzler,setQuizzler]=useState(finalquiz.q1);
+     
      useEffect(() => {
          if(choose==1)
-            setQuizzler(quizzes.q1)
+            setQuizzler(finalquiz.q1)
+            else if(choose==2)
+            setQuizzler(finalquiz.q2);
             else if(choose==3)
-            setQuizzler(quizzes.q2);
+            setQuizzler(finalquiz.q3);
+            else if(choose==4)
+            setQuizzler(finalquiz.q4);
+            else if(choose==5)
+            setQuizzler(finalquiz.q5);
+            else if(choose==6)
+            setQuizzler(finalquiz.q6);
             else if(choose==7)
-            setQuizzler(quizzes.q7);
+            setQuizzler(finalquiz.q7);
            
      }, [])
 
@@ -48,6 +60,7 @@ const Box = ({ current, next }) => {
         if (quizzler[current].correct === ans) {
             setCorrect(correct + 1);
         }
+        
         setAns("");
         setTimer(changetimer)
         if ((current + 1) === quizzler.length) {
@@ -58,7 +71,9 @@ const Box = ({ current, next }) => {
     }
 
     const chooseOption=(opt)=>{
-        setAns(opt)
+        setAns(opt);
+        review.push({name:quizzler[current].question,choosed:opt,correct:quizzler[current].correct})
+
     }
     return (
        <>

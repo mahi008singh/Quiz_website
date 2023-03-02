@@ -7,7 +7,9 @@ import Home from './Home';
 import Practice from './Practice'
 import Compete from './Compete'
 import Signup from './Signup'
-import Categ from './Cat-component/Categ'
+import Categ from './Cat-component/Categ';
+import Review from './components/Review';
+
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route path={'/Quizplay'} element={ <Quizplay/>} />
             <Route path={'/Categ'} element={<Categ/>}/>
             <Route path={'/Signup'} element={<Signup/>} />
+            <Route path={'/Review'} element={<Review/>} />
+
 
        </Routes>
        </BrowserRouter>  

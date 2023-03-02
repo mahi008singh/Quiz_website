@@ -3,26 +3,39 @@ const Reasdata={
     
     data1:[
       {
-              title:"Number System",
-              link:"/Quizplay"
+              title:"Time & Work",
+              link:"/Quizplay",
+              apiNum:1
       },
       {
-            title:"Percentage"
+            title:"Percentage",
+            link:"/Quizplay",
+            apiNum:2
       },
       {
-            title:"Profit & Loss"
+            title:"Profit & Loss",
+            link:"/Quizplay",
+            apiNum:3
       },
       {
-           title:"Averages"
+           title:"Averages",
+           link:"/Quizplay",
+           apiNum:4
       },
       {
-            title:"Time, Speed & Distance"
+            title:"Time, Speed & Distance",
+            link:"/Quizplay",
+            apiNum:5
       },
       {
-            title:"Time & Work"
+            title:"Number System",
+            link:"/Quizplay",
+            apiNum:6
       },
       {
-            title:"Ratio & Proportion"
+            title:"Ratio & Proportion",
+            link:"/Quizplay",
+            apiNum:7
       },
   
   ],
@@ -65,13 +78,28 @@ const Reasdata={
   data3:[
       {
               title:"Subject Verb Agreement",
-              link:"/Quizplay"
+              link:"/Quizplay",
+              apiNum:1
+      },
+      {
+            title:"Articles",
+            link:"/Quizplay",
+            apiNum:2
       },
       {
             title:"Tenses",
-            link:"/Quizplay"
+            link:"/Quizplay",
+            apiNum:3
       },
      ],
+     data4:[
+      {
+            title:"Basic Networking ",
+            link:"/Quizplay",
+            apiNum:1
+      },
+
+     ]
 }
 
 export default Reasdata;

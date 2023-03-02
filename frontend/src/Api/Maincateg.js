@@ -4,25 +4,25 @@ const Quants={
                 title:"C",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
-                apiNum:1
+                apiNum:8
         },
         {
                 title:"C++",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
-                apiNum:2
+                apiNum:9
         },
         {
                 title:"Python",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
-                apiNum:3
+                apiNum:10
         },
         {
                 title:"Java",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
-                apiNum:4
+                apiNum:11
         },
 
 ],
@@ -49,17 +49,24 @@ const Quants={
     data3:[
         {
                 title:"Computer Networks",
-                link:"/Categ"
+                link:"/Categ",
+                apiNum:4
         },
         {
                 title:"OOPS",
+                link:"/Categ",
+                apiNum:5
                 
         },
         {
                 title:"DBMS",
+                link:"/Categ",
+                apiNum:6
         },
         {
-            title:"Operating System",
+                title:"Operating System",
+                link:"/Categ",
+                apiNum:7
         },
 
 

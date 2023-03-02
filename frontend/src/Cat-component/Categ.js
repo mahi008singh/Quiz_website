@@ -3,15 +3,31 @@ import '../css/cat.css';
 import {NavLink} from 'react-router-dom'
 import Reasdata from '../Api/Reasoncat.js'
 import { QuizContext } from '../Context/QuizHolder';
+import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose } = useContext(QuizContext)
+    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
     useEffect(()=>{
+        if(data==1){
+            setRender(Reasdata.data1);
+            setFinalquiz(Aptiquiz)
+        }
         if(data==2)
-          setRender(Reasdata.data2)
+        {  setRender(Reasdata.data2);
+           setFinalquiz(Reasquiz)
+        }
        else if(data==3)
-           setRender(Reasdata.data3)
+          { 
+              setRender(Reasdata.data3)
+
+          }
+          else if(data==4)
+          { 
+              setRender(Reasdata.data4)
+              setFinalquiz(Networkquiz)
+
+          }
     },[])
 
     return (
