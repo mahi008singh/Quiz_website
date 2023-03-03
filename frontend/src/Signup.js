@@ -4,8 +4,8 @@ import './css/style.css'
 const Signup = () => {
     return (
         <>
-            <section className="signup_box">
-                <div className="center1">
+            <section className="signup_sec">
+                <div className="signup_box">
                     <h1>Sign up </h1>
                     <form action="/register" method="POST">
                         <div className="txt_field">
@@ -26,7 +26,7 @@ const Signup = () => {
                         </div>
 
                         <div>
-                            <input type="submit"  />
+                            <input type="submit" />
                             <div class="signup_link">
                                 Already have an account?(Instructor)
                                 <a href="instructor_login.html">Login</a>

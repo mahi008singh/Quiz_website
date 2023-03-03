@@ -104,9 +104,10 @@ const Box = ({ current, next }) => {
                     <h2>Time remaining</h2>
                  </div>
                  <div className="t2">
-                      <span>
-                        <Timer/>  
-                      </span> 
+                      <div>
+                        <Timer/>
+                        <br/>  
+                      </div> 
                  </div>
         </div>
         </section>

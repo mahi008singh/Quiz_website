@@ -30,13 +30,6 @@ const Home = () => {
                       </div>
                    </section>
 
-                   {/* <!-- <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
-         <div class="content">
-             <h3>The Best Quizes for your Practice</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit labore dolore unde, quidem corrupti?</p>
-            <a href="#" class="btn">get started</a>
-         </div>
-      </section> --> */}
 
                 </div>
 
@@ -82,24 +75,24 @@ const Home = () => {
 
 <section class="home-courses">
 
-<h1 class="heading"> Our Popular Topics </h1>
+<h1 class="heading"> Coding Platform Problems </h1>
 
-<div class="swiper home-courses-slider">
+<div class="swiper platform_page">
 
-   <div class="swiper-wrapper3">
+   <div class="platform_container">
      {
         popular.map((elem)=>{
            return(
               <>
-                 <div class="swiper-slide3 slide">
+                 <div class="platform_name slide">
                     <div class="image">
                        <img src={require('./images/course-1-3.png')} alt="" />
                        <h3>{elem.title}</h3>
                     </div>
-                    <div class="content">
+                    <div class="solve">
                        <h3>{elem.subtitle}</h3>
                        <p>{elem.para}</p>
-                       <a href="/cat" class="btn">read more</a>
+                       <a href="/cat" class="btn">Solve</a>
                     </div>
                  </div>
 

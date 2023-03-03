@@ -1,16 +1,16 @@
 const Homedata={
     data1:[
         {
-            title:"Reasoning",
-            subtitle:"Reasoning",
+            title:"Leetcode",
+            subtitle:"Leetcode",
             para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-3.png",
             apiNum:1
         },
         {
-            title:"Aptitude",
-            subtitle:"Aptitude",
+            title:"GeeksforGeeks",
+            subtitle:"GeeksforGeeks",
             para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-1.png",
@@ -18,37 +18,30 @@ const Homedata={
         },
       
         {
-            title:"Coding",
-            subtitle:"Object Oriented Programming",
+            title:"Codechef",
+            subtitle:"Codechef",
             para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-2.png",
             apiNum:1
         },
         {
-            title:"Verbal Ability",
-            subtitle:"Verbal Ability",
+            title:"Hackerrank",
+            subtitle:"Hackerrank",
             para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-6.png",
             apiNum:1
         },
         {
-            title:"Database Management System",
-            subtitle:"D.B.M.S",
+            title:"Codeforces",
+            subtitle:"Codeforces",
             para:"Practice here",
             link:"/Categ",
             img:"../images/course-1-5.png",
             apiNum:1
         },
-        {
-            title:"Networking",
-            subtitle:"Networking",
-            para:"Practice here",
-            link:"/Categ",
-            img:"../images/course-1-4.png",
-            apiNum:1
-        },
+        
         
 
 ],

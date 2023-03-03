@@ -4,7 +4,7 @@
     /* border: 2px solid black; */
 }
 .review_b h1{
-   text-align: center;
+   text-align:center;
    font-size: 2.4rem;
    padding: 1rem 0;
 }
@@ -36,20 +36,39 @@
 .review_div_green div p,.review_div_red div p{
   text-align: center;
   margin-top: 1rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+}
+.r1{
+    width:92%;
+    overflow-y: auto;
+}
+.r2{
+    width: 8%;
 }
 
 @media (max-width:680px){
     .review_div_green div p,.review_div_red div p{
         text-align: center;
         margin-top: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
       }
+      .r1{
+        width:90%;
+    }
+    .r2{
+        width: 10%;
+    }
 }
-@media (max-width:500px){
+@media (max-width:520px){
     .review_div_green div p,.review_div_red div p{
         text-align: center;
         margin-top: 1rem;
         font-size: 1rem;
       }
+      .r1{
+        width:88%;
+    }
+    .r2{
+        width: 12%;
+    }
 }

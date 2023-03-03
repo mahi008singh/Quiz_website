@@ -13,10 +13,10 @@ const Review = () => {
                        return(
                            <>
                              <div  className={elem.choosed===elem.correct?"review_div_green":"review_div_red"}>
-                                  <div>
+                                  <div className="r1">
                                       <p>{elem.name}</p>
                                   </div>
-                                  <div>
+                                  <div className="r2">
                                       <p>| correct:{elem.correct}</p>
                                   </div>
                              </div> 

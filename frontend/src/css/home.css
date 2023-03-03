@@ -7,7 +7,7 @@
 }
  
 
-/* ------------------our popular------------------ */
+/* ------------------Coding problems ------------------ */
 
 .home-courses .slide {
     text-align: center;
@@ -15,23 +15,22 @@
     background: #f0fdfa;
     overflow: hidden;
   }
-.home-courses-slider{
+.platform_page{
    display: flex;
 }
-.swiper-wrapper3{
+.platform_container{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     flex-wrap: wrap;
 }
 
-.swiper-slide3{
-    width: 40%;
+.platform_name{
+    width: 40rem;
     /* height: 40rem; */
     margin: 1rem 1rem;
 }
   
-.home-courses .slide:hover .content {
+.home-courses .slide:hover .solve {
     bottom: 0;
   }
   
@@ -50,7 +49,7 @@
     color: #444;
   }
   
-  .home-courses .slide .content {
+  .home-courses .slide .solve {
     position: absolute;
     bottom: -100%;
     right: 0;
@@ -60,14 +59,14 @@
   }
   
 
-.home-courses .slide .content h3 {
+.home-courses .slide .solve h3 {
     font-size: 2rem;
     text-transform: capitalize;
     color: #444;
     color: #fff;
   }
   
-  .home-courses .slide .content p {
+  .home-courses .slide .solve p {
     padding: 1rem 0;
     font-size: 1.5rem;
     line-height: 2;
@@ -75,9 +74,11 @@
     color: #eee;
   }
   
-  .home-courses .slide .content .btn:hover {
+  .home-courses .slide .solve .btn:hover {
     background: #444;
   }
+
+
 
 
 
@@ -168,3 +169,10 @@
   }
   
   
+
+  @media (max-width:800px){
+    .platform_name{
+      width: 32rem;
+  }
+
+  }
