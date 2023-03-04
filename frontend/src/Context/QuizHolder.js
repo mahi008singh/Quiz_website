@@ -15,13 +15,14 @@ export default function QuizHolder(props) {
     const [changetimer,setChangetimer]=useState(30);
     const [review,setReview]=useState([]);
     const [finalquiz,setFinalquiz]=useState();
+    const [totalques,setTotalques]=useState(10)
 
     return (
         <QuizContext.Provider value={{
             start, exit, setStart, setExit, Reasquiz,Aptiquiz,correct,setCorrect,
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
-            review,setReview,finalquiz,setFinalquiz
-        }}>
+            review,setReview,finalquiz,setFinalquiz,totalques,setTotalques
+            }}>
             {props.children}
         </QuizContext.Provider>
     )

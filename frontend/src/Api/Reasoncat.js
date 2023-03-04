@@ -37,6 +37,21 @@ const Reasdata={
             link:"/Quizplay",
             apiNum:7
       },
+      {
+            title:"SI & CI",
+            link:"/Quizplay",
+            apiNum:8
+      },
+      {
+            title:"Alligation & Mixture",
+            link:"/Quizplay",
+            apiNum:9
+      },
+      {
+            title:"Data Sufficiency",
+            link:"/Quizplay",
+            apiNum:10
+      },
   
   ],
   data2:[
@@ -72,6 +87,22 @@ const Reasdata={
             title:"Series",
             link:"/Quizplay",
             apiNum:7
+      },
+      {
+            title:"Analogy",
+            link:"/Quizplay",
+            apiNum:8
+      },
+
+      {
+            title:"Clock",
+            link:"/Quizplay",
+            apiNum:9
+      },
+      {
+            title:"Directions",
+            link:"/Quizplay",
+            apiNum:10
       },
   
   ],

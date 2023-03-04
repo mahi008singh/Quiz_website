@@ -5,7 +5,7 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,setChangetimer } = useContext(QuizContext)
+    const { setStart,changetimer,setChangetimer,totalques,setTotalques } = useContext(QuizContext)
     return (
       <>
         <div class="start">
@@ -21,6 +21,8 @@ export default function Start() {
         </div>
        <div class="start_div">  
          <div style={{display:"flex"}}>
+           <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>No. of question</h3>
+           <input className="settimer" value={totalques} onChange={(e)=>setTotalques(e.target.value)} placeholder="10" type="number"/>
            <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>Set timer</h3>
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     

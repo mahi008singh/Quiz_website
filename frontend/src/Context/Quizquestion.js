@@ -80,14 +80,14 @@ const Reasquiz ={
             'd':'d) 60',
             'correct':"a"
          },
-         // {
-         //    'question':'Z,U,Q, _ , L',
-         //    'a':'a) M',
-         //    'b':'b) N',
-         //    'c':'c) O',
-         //    'd':'d) I',
-         //    'correct':"b"
-         // }
+         {
+            'question':'Z,U,Q, _ , L',
+            'a':'a) M',
+            'b':'b) N',
+            'c':'c) O',
+            'd':'d) I',
+            'correct':"b"
+         }
     ],
     q3:[
         {
@@ -254,14 +254,14 @@ const Reasquiz ={
          'd':'d) 253',
          'correct':"a"
       },
-      // {
-      //    'question':'46,110,121,242,484,?',
-      //    'a':'a) 968',
-      //    'b':'b) 869',
-      //    'c':'c) 689',
-      //    'd':'d) 589',
-      //    'correct':"a"
-      // },
+      {
+         'question':'46,110,121,242,484,?',
+         'a':'a) 968',
+         'b':'b) 869',
+         'c':'c) 689',
+         'd':'d) 589',
+         'correct':"a"
+      },
   ],
     
 }
@@ -444,110 +444,110 @@ const Aptiquiz={
          'd': 'd) 16.36%',
          'correct': "b"
          },
-         // {
-         // 'question': 'The price of an article was first increased by 10% and then again by 20%. If the last increased price was Rs. 33, the original price was: ',
-         // 'a': 'a) Rs. 30',
-         // 'b': 'b) Rs. 27.50',
-         // 'c': 'c) Rs. 26.50',
-         // 'd': 'd) Rs. 25',
-         // 'correct': "d"
-         // },
-         // {
-         //    'question': 'A number is first decreased by 20%. The decreased number is then increased by 20%.The resulting number is less than the original number by 20. Then the original number is ',
-         //    'a': 'a) 200',
-         //    'b': 'b) 400',
-         //    'c': 'c) 500',
-         //    'd': 'd) 600',
-         //    'correct': "c"
-         //    },
-         //    {
-         //    'question': ' A man spends 40% of his monthly salary on food and one-third of the remaining ontransport. If he saves Rs. 4,500 per month which is equal to half the balance after spending on food and transport, his monthly salary is: ',
-         //    'a': 'a) Rs. 11,250',
-         //    'b': 'b) Rs. 22,500',
-         //    'c': 'c) Rs. 25,000',
-         //    'd': 'd) Rs. 45,000',
-         //    'correct': "b"
-         //    },
-         //    {
-         //    'question': 'The population of a town increases each year by 4% of its total at the beginning of the year. If the population on 1st January 2001 was 500000, what was it on 1st January, 2004? ',
-         //    'a': 'a) 562432',
-         //    'b': 'b) 652432',
-         //    'c': 'c) 465223',
-         //    'd': 'd) 564232',
-         //    'correct': "a"
-         //    },
-         //    {
-         //    'question': 'A man received Rs. 8, 80,000 as his annual salary of the year 2007 which was 10% more than his annual salary in the year 2006 was his annual salary in the year 2006 was? ',
-         //    'a': 'a) Rs. 4,80,000',
-         //    'b': 'b) Rs. 8,00,000',
-         //    'c': 'c) Rs. 4,00,000',
-         //    'd': 'd) Rs. 8,40,000',
-         //    'correct': "b"
-         //    },
-         //    {
-         //    'question': 'Raman spends 80% of his income. If his income is increased by 25% and the expenditure increase by 10%, then what will be the percentage increase in his savings?',
-         //    'a': 'a) 17',
-         //    'b': 'b) 70',
-         //    'c': 'c) 77',
-         //    'd': 'd) 85',
-         //    'correct': "b"
-         //    },
-         //    {
-         //    'question': 'If the length of cylinder is increased by 35% and radius is increased by 10% then what will  be the percentage increase in curved surface area of cylinder? ',
-         //    'a': 'a) 46.5%',
-         //    'b': 'b) 45%',
-         //    'c': 'c) 48.5%',
-         //    'd': 'd) 49.7%',
-         //    'correct': "c"
-         //    },
-         //    {
-         //    'question': 'Two students appeared for an examination. One of them secured 23 marks more thanthe other and his marks were 60% of the sum of their marks. The marks obtained by them are:-',
-         //    'a': 'a) 69 and 46',
-         //    'b': 'b) 68 and 45',
-         //    'c': 'c) 107 and 84',
-         //    'd': 'd) 54 and 31',
-         //    'correct': "a"
-         //    },
-         //    {
-         //    'question': ' A student multiplied a number by 3/10 instead of 10/3. What is the percentage error inthe calculation? ',
-         //    'a': 'a) 1011.11%',
-         //    'b': 'b) 45.5%',
-         //    'c': 'c) 91%',
-         //    'd': 'd) 505.56%',
-         //    'correct': "a"
-         //    },
-         //    {
-         //    'question': 'The population of a village is 25,000. One-fifth is females and the rest are males, 5% ofmales and 40% of females are uneducated. What percentage on the whole is educated? ',
-         //    'a': 'a) 75%',
-         //    'b': 'b) 88%',
-         //    'c': 'c) 55%',
-         //    'd': 'd) 85%',
-         //    'correct': "b"
-         //    },
-         //    {
-         //    'question': 'The average marks obtained in a class of 50 students is 70%. The average of first 25 is60% and that of 24 is 80%. What are the marks obtained by the last student?',
-         //    'a': 'a) 90%',
-         //    'b': 'b) 60%',
-         //    'c': 'c) 80%',
-         //    'd': 'd) 70',
-         //    'correct': "c"
-         //    },
-         //    {
-         //    'question': 'Price of petrol increased from Rs.60/litre to Rs.75/litre. How much should theconsumption of petrol be reduced (in %) so as to increase expenditure by only 10%? ',
-         //    'a': 'a) 12%',
-         //    'b': 'b) 20%',
-         //    'c': 'c) 15%',
-         //    'd': 'd) 18%',
-         //    'correct': "a"
-         //    },
-         //    {
-         //    'question': '10% of the votes did not cost their votes in an election between two candidates. Thesuccessful candidate got 60% of the used votes and won by 360 votes. Find the number of votes polled',
-         //    'a': 'a) 3000',
-         //    'b': 'b) 2000',
-         //    'c': 'c) 4500',
-         //    'd': 'd) 2500',
-         //    'correct': "b"
-         //    },
+         {
+         'question': 'The price of an article was first increased by 10% and then again by 20%. If the last increased price was Rs. 33, the original price was: ',
+         'a': 'a) Rs. 30',
+         'b': 'b) Rs. 27.50',
+         'c': 'c) Rs. 26.50',
+         'd': 'd) Rs. 25',
+         'correct': "d"
+         },
+         {
+            'question': 'A number is first decreased by 20%. The decreased number is then increased by 20%.The resulting number is less than the original number by 20. Then the original number is ',
+            'a': 'a) 200',
+            'b': 'b) 400',
+            'c': 'c) 500',
+            'd': 'd) 600',
+            'correct': "c"
+            },
+            {
+            'question': ' A man spends 40% of his monthly salary on food and one-third of the remaining ontransport. If he saves Rs. 4,500 per month which is equal to half the balance after spending on food and transport, his monthly salary is: ',
+            'a': 'a) Rs. 11,250',
+            'b': 'b) Rs. 22,500',
+            'c': 'c) Rs. 25,000',
+            'd': 'd) Rs. 45,000',
+            'correct': "b"
+            },
+            {
+            'question': 'The population of a town increases each year by 4% of its total at the beginning of the year. If the population on 1st January 2001 was 500000, what was it on 1st January, 2004? ',
+            'a': 'a) 562432',
+            'b': 'b) 652432',
+            'c': 'c) 465223',
+            'd': 'd) 564232',
+            'correct': "a"
+            },
+            {
+            'question': 'A man received Rs. 8, 80,000 as his annual salary of the year 2007 which was 10% more than his annual salary in the year 2006 was his annual salary in the year 2006 was? ',
+            'a': 'a) Rs. 4,80,000',
+            'b': 'b) Rs. 8,00,000',
+            'c': 'c) Rs. 4,00,000',
+            'd': 'd) Rs. 8,40,000',
+            'correct': "b"
+            },
+            {
+            'question': 'Raman spends 80% of his income. If his income is increased by 25% and the expenditure increase by 10%, then what will be the percentage increase in his savings?',
+            'a': 'a) 17',
+            'b': 'b) 70',
+            'c': 'c) 77',
+            'd': 'd) 85',
+            'correct': "b"
+            },
+            {
+            'question': 'If the length of cylinder is increased by 35% and radius is increased by 10% then what will  be the percentage increase in curved surface area of cylinder? ',
+            'a': 'a) 46.5%',
+            'b': 'b) 45%',
+            'c': 'c) 48.5%',
+            'd': 'd) 49.7%',
+            'correct': "c"
+            },
+            {
+            'question': 'Two students appeared for an examination. One of them secured 23 marks more thanthe other and his marks were 60% of the sum of their marks. The marks obtained by them are:-',
+            'a': 'a) 69 and 46',
+            'b': 'b) 68 and 45',
+            'c': 'c) 107 and 84',
+            'd': 'd) 54 and 31',
+            'correct': "a"
+            },
+            {
+            'question': ' A student multiplied a number by 3/10 instead of 10/3. What is the percentage error inthe calculation? ',
+            'a': 'a) 1011.11%',
+            'b': 'b) 45.5%',
+            'c': 'c) 91%',
+            'd': 'd) 505.56%',
+            'correct': "a"
+            },
+            {
+            'question': 'The population of a village is 25,000. One-fifth is females and the rest are males, 5% ofmales and 40% of females are uneducated. What percentage on the whole is educated? ',
+            'a': 'a) 75%',
+            'b': 'b) 88%',
+            'c': 'c) 55%',
+            'd': 'd) 85%',
+            'correct': "b"
+            },
+            {
+            'question': 'The average marks obtained in a class of 50 students is 70%. The average of first 25 is60% and that of 24 is 80%. What are the marks obtained by the last student?',
+            'a': 'a) 90%',
+            'b': 'b) 60%',
+            'c': 'c) 80%',
+            'd': 'd) 70',
+            'correct': "c"
+            },
+            {
+            'question': 'Price of petrol increased from Rs.60/litre to Rs.75/litre. How much should theconsumption of petrol be reduced (in %) so as to increase expenditure by only 10%? ',
+            'a': 'a) 12%',
+            'b': 'b) 20%',
+            'c': 'c) 15%',
+            'd': 'd) 18%',
+            'correct': "a"
+            },
+            {
+            'question': '10% of the votes did not cost their votes in an election between two candidates. Thesuccessful candidate got 60% of the used votes and won by 360 votes. Find the number of votes polled',
+            'a': 'a) 3000',
+            'b': 'b) 2000',
+            'c': 'c) 4500',
+            'd': 'd) 2500',
+            'correct': "b"
+            },
 
     ]
 }

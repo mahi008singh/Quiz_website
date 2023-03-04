@@ -17,11 +17,11 @@ export default function Quiz() {
 const Box = ({ current, next }) => {
     const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
          setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
-         finalquiz,setFinalquiz } = useContext(QuizContext);
+         finalquiz,totalques} = useContext(QuizContext);
 
     const [ans, setAns] = useState("");
     
-    const [quizzler,setQuizzler]=useState(finalquiz.q1);
+    let [quizzler,setQuizzler]=useState(finalquiz.q1);
      
      useEffect(() => {
          if(choose==1)
@@ -38,21 +38,24 @@ const Box = ({ current, next }) => {
             setQuizzler(finalquiz.q6);
             else if(choose==7)
             setQuizzler(finalquiz.q7);
-           
-     }, [])
+
+            console.log(quizzler)
+
+        }, [])
 
 
+      
 
 
     if(timer<0)
     {  
         if (quizzler[current].correct === ans) 
             setCorrect(correct + 1);
-            setAns("");
             setTimer(changetimer);
-        if ((current + 1) === quizzler.length) 
+        if ((current + 1) ==totalques) 
             setExit(true)
          next(current + 1);
+         setAns("");
 
     }
 
@@ -63,7 +66,7 @@ const Box = ({ current, next }) => {
         
         setAns("");
         setTimer(changetimer)
-        if ((current + 1) === quizzler.length) {
+        if ((current + 1) ==totalques) {
             setExit(true)
         } else {
             next(current + 1);
@@ -85,7 +88,7 @@ const Box = ({ current, next }) => {
                 <img src={require('../images/quiz_glow.jpg')}/>
                 </center>
             </div>
-            <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/10</h2>
+            <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/{totalques}</h2>
             <div className='question_name'>  {quizzler[current].question}</div>
             <div className='quiz_container'>
                 <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{quizzler[current].a}</div>

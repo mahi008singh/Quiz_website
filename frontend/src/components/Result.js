@@ -5,7 +5,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import {NavLink} from 'react-router-dom';
 
 export default function Result() {
-    const { correct,setCorrect, setExit, setStart, finalquiz,setReview } = useContext(QuizContext)
+    const { correct,setCorrect, setExit, setStart,totalques, finalquiz,setReview } = useContext(QuizContext)
     const playAgain = () => {
         setExit(false);
         setStart(false);
@@ -23,7 +23,7 @@ export default function Result() {
                     </div>
                     <div style={{ fontSize: "1.5rem", textAlign: "center" }}>You have completed the Quiz!</div>
                     <div className="score">
-                        <h4 className=''>{correct} correct out of {finalquiz.q1.length}</h4>
+                        <h4 className=''>{correct} correct out of {totalques}</h4>
                         <p className="time_taken">time taken: <span class="hund">00</span>:
                              <span className="tens">00</span>:
                              <span className="ones">00</span>
