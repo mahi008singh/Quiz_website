@@ -86,6 +86,7 @@ const Box = ({ current, next }) => {
             <div className="quiz-img">
                 <center>
                 <img src={require('../images/quiz_glow.jpg')}/>
+                <h1 style={{color:"red"}}>{quizzler[current].tag}</h1>
                 </center>
             </div>
             <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/{totalques}</h2>

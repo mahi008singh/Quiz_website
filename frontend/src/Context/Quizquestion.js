@@ -6,7 +6,8 @@ const Reasquiz ={
           'b':'b) 132234',
           'c':'c) 2577224',
           'd':'d) 112321',
-          'correct':"a"
+          'correct':"a",
+          'tag':""
         },
         {
            'question':'If in a certain code "RANGE" is coded as 12345 and "RANDOM" is coded as 123678 then "MANGO" would be',
@@ -14,15 +15,26 @@ const Reasquiz ={
            'b':'b) 84629',
            'c':'c) 82347',
            'd':'d) 83274',
-           'correct':"c"
+           'correct':"c",
+           'tag':""
         },
+        {
+         'question':'If RADAR=*?*?# and DOOR=?%%# then DAM=?',
+         'a':'a) ?#%',
+         'b':'b) *#?',
+         'c':'c) *#/',
+         'd':'d) ??#',
+         'correct':"c",
+         'tag':"Cognizant"
+       },
         {
             'question':'COMPUTER is written as RFUVQNPC. How will MEDICINE be written in that code langauge',
             'a':'a) MFEDJJOE',
             'b':'b) EOJDEJFM',
             'c':'c) MFEJDJOE',
             'd':'d) EOJDJEFM',
-            'correct':"d"
+            'correct':"d",
+            'tag':""
          },
          {
             'question':'If 9X7=3545 and 4X3=1520 then 6X8=?',
@@ -30,7 +42,8 @@ const Reasquiz ={
             'b':'b) 6050',
             'c':'c) 4030',
             'd':'d) 3040',
-            'correct':"c"
+            'correct':"c",
+            'tag':""
          },
          {
             'question':'BEAN =ABNE  and SALE=LSEA then NEWS=?',
@@ -38,7 +51,28 @@ const Reasquiz ={
             'b':'b) WNSE',
             'c':'c) ESWN',
             'd':'d) SWNE',
-            'correct':"b"
+            'correct':"b",
+            'tag':""
+         },
+         
+         {
+            'question':'In a certain language "hu man sam" means "water is life", "sam na zo" means "Glass of water" "chi zo ma" means "life of PI" then PI means',
+            'a':'a) hu',
+            'b':'b) ma',
+            'c':'c) chi',
+            'd':'d) sam',
+            'correct':"c",
+            'tag':"Amcat",
+            
+         },
+         {
+            'question':'If WRONG is coded as GNORW then how will RIGHT be coded as?',
+            'a':'a) THIGR',
+            'b':'b) HIRGT',
+            'c':'c) SJHIU',
+            'd':'d) GHIRT',
+            'correct':"d",
+            'tag':"IBM"
          },
          {
             'question':'FIG : EGHJFH :: BIN : ?',
@@ -46,7 +80,26 @@ const Reasquiz ={
             'b':'b) CAHJMOC',
             'c':'c) ACJHMO',
             'd':'d) ACHJMO',
-            'correct':"d"
+            'correct':"d",
+            'tag':""
+         },
+         {
+            'question':'if SUNSHINE=SVPVLNTL then NATURE=?',
+            'a':'a) NBUXVJ',
+            'b':'b) NBVXVJ',
+            'c':'c) NABVXVJ',
+            'd':'d) NABVXVI',
+            'correct':"b",
+            'tag':"Tcs nqt"
+         },
+         {
+            'question':'if CASUAL is written as "111914161956" REFER="1884723418" then REFUSAL=?',
+            'a':'a) 18347216145613',
+            'b':'b) 187234161411956 ',
+            'c':'c) none',
+            'd':'d) 18347216141956',
+            'correct':"d",
+            'tag':"Infosys-20"
          },
          {
             'question':'CAT=3120 and DOG=4157 then 25144=?',
@@ -54,7 +107,8 @@ const Reasquiz ={
             'b':'b) BEADD',
             'c':'c) YADD OR YND',
             'd':'d) can`t  be determined',
-            'correct':"d"
+            'correct':"d",
+            'tag':""
          },
          {
             'question':'If A=26, DOT=42 then CONE=?',
@@ -62,7 +116,36 @@ const Reasquiz ={
             'b':'b) 71',
             'c':'c) 67',
             'd':'d) none',
-            'correct':"b"
+            'correct':"b",
+            'tag':""
+         },
+         {
+            'question':'FIRE=#*?%  so how FREEZE will be',
+            'a':'a) #&%%?*',
+            'b':'b) %%%?^^',
+            'c':'c) %%%?^&',
+            'd':'d) ???%#@',
+            'correct':"d",
+            'tag':"LTI"
+         },
+         {
+            'question':'if SNOW=7100 then WALL=?',
+            'a':'a) 5000',
+            'b':'b) 4700',
+            'c':'c) 4800',
+            'd':'d) 4000',
+            'correct':"c",
+            'tag':"Accenture"
+         },
+        
+         {
+            'question':'if THUMB is coded as BMAHT then CRUMB is ?',
+            'a':'a) BCARM',
+            'b':'b) BMARC',
+            'c':'c) RCEMB',
+            'd':'d) none',
+            'correct':"b",
+            'tag':"Wipro"
          },
          {
             'question':'If 264*2=6, 870*3=11 then 735*5=?',
@@ -70,7 +153,18 @@ const Reasquiz ={
             'b':'b) 21',
             'c':'c) 12',
             'd':'d) 18',
-            'correct':"c"
+            'correct':"c",
+            'tag':""
+         },
+         {
+            'question':'Tears is coded as 18 ,so how will water be coded as?',
+            'a':'a) 25',
+            'b':'b) 22',
+            'c':'c) 18',
+            'd':'d) 20',
+            'correct':"b",
+            'tag':"Cognizant",
+            'tag':""
          },
          {
             'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
@@ -78,7 +172,8 @@ const Reasquiz ={
             'b':'b) 25',
             'c':'c) 55',
             'd':'d) 60',
-            'correct':"a"
+            'correct':"a",
+            'tag':""
          },
          {
             'question':'Z,U,Q, _ , L',
@@ -86,8 +181,11 @@ const Reasquiz ={
             'b':'b) N',
             'c':'c) O',
             'd':'d) I',
-            'correct':"b"
-         }
+            'correct':"b",
+            'tag':""
+         },
+         
+         
     ],
     q3:[
         {
