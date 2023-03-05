@@ -1,7 +1,8 @@
 import React,{useState} from 'react'
 import './css/style.css';
 import './css/home.css';
-import Homedata from './Api/Homecateg'
+import Homedata from './Api/Homecateg';
+import { AiFillBulb} from "react-icons/ai";
 
 const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
@@ -110,12 +111,12 @@ const Home = () => {
 
    <div class="box-container">
 
-      <div class="box">
-         <h3> <i class="fas fa-lightbulb"></i> Prepquizz </h3>
+      <div class="box1">
+         <h3><AiFillBulb class="fas fa-lightbulb"/>Prepquizz </h3>
          <p>Prepquizz is a MCQ based quiz preperation platform
           for placements where student can learn and boost their skills 
          </p>
-         <div class="share">
+         <div className="share">
             <a href="#" class="fab fa-facebook-f"></a>
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-instagram"></a>
@@ -123,27 +124,15 @@ const Home = () => {
          </div>
       </div>
 
-      <div class="box">
-         <h3>quick links</h3>
-         <a href="/" class="link">Home</a>
-         <a href="/Practice" class="link">Practice</a>
-         <a href="/compete" class="link">Compete</a>
-         <a href="#" class="link">About</a>
-         
-      </div>
-
-      <div class="box">
+      <div className="box">
          <h3>useful links</h3>
          <a href="#" class="link">ask questions</a>
          <a href="#" class="link">send feedback</a>
          <a href="#" class="link">privacy policy</a>
          <a href="#" class="link">terms of use</a>
       </div>
-
       
    </div>
-
-  
 
 </section>
 

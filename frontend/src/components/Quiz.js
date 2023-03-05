@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState } from 'react'
+import React, {useEffect, useContext, useState, useSyncExternalStore } from 'react'
 import { QuizContext } from '../Context/QuizHolder';
 import Timer from './Timer'
 import '../css/Quizbox.css';
@@ -6,21 +6,24 @@ import '../css/Quizbox.css';
 
 export default function Quiz() {
     const [current, setCurrent] = useState(0);
+    const [total,setTotal]=useState(0);
+    const [ans, setAns] = useState("");
     return (
         <div className='w-full h-screen flex justify-center items-center'>
-            <Box current={current} next={setCurrent} />
+            <Box current={current} ans={ans} setAns={setAns} next={setCurrent} total={total} setTotal={setTotal} />
         </div>
     )
 }
 
 
-const Box = ({ current, next }) => {
+const Box = ({ current, next,total,setTotal,ans,setAns }) => {
     const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
          setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
          finalquiz,totalques} = useContext(QuizContext);
 
-    const [ans, setAns] = useState("");
+   
     
+
     let [quizzler,setQuizzler]=useState(finalquiz.q1);
      
      useEffect(() => {
@@ -46,18 +49,18 @@ const Box = ({ current, next }) => {
 
       
 
-
-    if(timer<0)
-    {  
-        if (quizzler[current].correct === ans) 
-            setCorrect(correct + 1);
-            setTimer(changetimer);
-        if ((current + 1) ==totalques) 
-            setExit(true)
-         next(current + 1);
-         setAns("");
-
-    }
+        if(timer<0)
+        {   setAns("");
+            if (quizzler[current].correct === ans) 
+                setCorrect(correct + 1);
+                setTimer(changetimer);  
+            if ((total+1)==totalques) 
+                setExit(true)
+               setTotal(total+1);
+             next(current+1);
+             
+    
+        }
 
     const saveHandler = () => {
         if (quizzler[current].correct === ans) {
@@ -66,11 +69,16 @@ const Box = ({ current, next }) => {
         
         setAns("");
         setTimer(changetimer)
-        if ((current + 1) ==totalques) {
+        if ((total+1)==totalques) {
             setExit(true)
         } else {
-            next(current + 1);
+            let randomNum=Math.floor(Math.random()*quizzler.length);
+            setTotal(total+1);
+            next(randomNum);
         }
+        
+        console.log(quizzler);
+
     }
 
     const chooseOption=(opt)=>{
@@ -89,7 +97,7 @@ const Box = ({ current, next }) => {
                 <h1 style={{color:"red"}}>{quizzler[current].tag}</h1>
                 </center>
             </div>
-            <h2 style={{marginLeft:"2rem"}}>Question {current + 1}/{totalques}</h2>
+            <h2 style={{marginLeft:"2rem"}}>Question {total + 1}/{totalques}</h2>
             <div className='question_name'>  {quizzler[current].question}</div>
             <div className='quiz_container'>
                 <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{quizzler[current].a}</div>

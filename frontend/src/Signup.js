@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import {NavLink} from 'react-router-dom';
 import './css/sign_up.css'
 import './css/style.css'
 const Signup = () => {
@@ -27,13 +28,13 @@ const Signup = () => {
 
                         <div>
                             <input type="submit" />
-                            <div class="signup_link">
+                            {/* <div class="signup_link">
                                 Already have an account?(Instructor)
                                 <a href="instructor_login.html">Login</a>
-                            </div>
+                            </div> */}
                             <div class="signup_link">
-                                Already have an account?(Student)
-                                    <a href="/login">Login</a>
+                                Already have an account?
+                                    <NavLink to={'/Login'}>Login</NavLink>
                             </div>
                         </div>
                     </form>

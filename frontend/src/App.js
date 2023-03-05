@@ -6,7 +6,8 @@ import Header from './components/Header'
 import Home from './Home';
 import Practice from './Practice'
 import Compete from './Compete'
-import Signup from './Signup'
+import Signup from './Signup';
+import Login from './Login'
 import Categ from './Cat-component/Categ';
 import Review from './components/Review';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path={'/Quizplay'} element={ <Quizplay/>} />
             <Route path={'/Categ'} element={<Categ/>}/>
             <Route path={'/Signup'} element={<Signup/>} />
+            <Route path={'/Login'} element={<Login/>} />
             <Route path={'/Review'} element={<Review/>} />
 
 

@@ -122,8 +122,25 @@ input[type=submit]:hover{
 @media (max-width:680px){
 
   .signup_box{
-    width: 40rem;
-    height: 56rem;
+    width: 42rem;
+    height: 50rem;
+    padding: 1.5rem;
+    
+  }
+  .signup_box h1{
+    text-align : center;
+    padding:0 0 20px 0;
+    font-size: 2.2rem;
+  
+  }
+
+}
+@media (max-width:460px){
+
+  .signup_box{
+    width: 42rem;
+    height: 53rem;
+    padding: 2rem;
     
   }
   .signup_box h1{
