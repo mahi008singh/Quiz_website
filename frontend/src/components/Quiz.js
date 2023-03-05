@@ -5,7 +5,8 @@ import '../css/Quizbox.css';
 
 
 export default function Quiz() {
-    const [current, setCurrent] = useState(0);
+    const {random,setRandom}=useContext(QuizContext)
+    const [current, setCurrent] = useState(random[0]);
     const [total,setTotal]=useState(0);
     const [ans, setAns] = useState("");
     return (
@@ -19,7 +20,7 @@ export default function Quiz() {
 const Box = ({ current, next,total,setTotal,ans,setAns }) => {
     const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
          setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
-         finalquiz,totalques} = useContext(QuizContext);
+         finalquiz,totalques,random,setRandom} = useContext(QuizContext);
 
    
     
@@ -41,6 +42,12 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
             setQuizzler(finalquiz.q6);
             else if(choose==7)
             setQuizzler(finalquiz.q7);
+            else if(choose==8)
+            setQuizzler(finalquiz.q8);
+            else if(choose==9)
+            setQuizzler(finalquiz.q9);
+            else if(choose==10)
+            setQuizzler(finalquiz.q10);
 
             console.log(quizzler)
 
@@ -69,12 +76,13 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
         
         setAns("");
         setTimer(changetimer)
-        if ((total+1)==totalques) {
+        if ((total+1)==totalques){
             setExit(true)
         } else {
-            let randomNum=Math.floor(Math.random()*quizzler.length);
+            //here we are randoomly giving the index  using random 
             setTotal(total+1);
-            next(randomNum);
+            next(random[total+1]);
+            
         }
         
         console.log(quizzler);

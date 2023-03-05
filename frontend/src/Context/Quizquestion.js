@@ -187,6 +187,96 @@ const Reasquiz ={
          
          
     ],
+    q2:[
+      {
+         'question':'It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?',
+         'a':'Sunday',
+         'b':'Saturday',
+         'c':'Friday',
+         'd':'Wednesday',
+         'correct':'c'
+      },
+     {
+         'question':'What was the day of the week on 28th May, 2006?',
+         'a':'Thursday',
+         'b':'Friday',
+         'c':'Saturday',
+         'd':'Sunday',
+         'correct':'d'
+      },
+     {
+         'question':'What was the day of the week on 17th June, 1998?',
+         'a':'Monday',
+         'b':'Tuesday',
+         'c':'Wednesday',
+         'd':'Thursday',
+         'correct':'c'
+      },
+     {
+         'question':'What will be the day of the week 15th August, 2010?',
+         'a':'Sunday',
+         'b':'Monday',
+         'c':'Tuesday',
+         'd':'Friday',
+         'correct':'a'
+      },
+     {
+         'question':'Today is Monday. After 61 days, it will be:',
+         'a':'Wednesday',
+         'b':'Saturday',
+         'c':'Tuesday',
+         'd':'Thursday',
+         'correct':'b'
+      },
+     {
+         'question':'If 6th March, 2005 is Monday, what was the day of the week on 6th March, 2004?',
+         'a':'Sunday',
+         'b':'Saturday',
+         'c':'Tuesday',
+         'd':'Wednesday',
+         'correct':'a'
+      },
+     {
+         'question':'On what dates of April, 2001 did Wednesday fall?',
+         'a':'1st, 8th, 15th, 22nd, 29th',
+         'b':'2nd, 9th, 16th, 23rd, 30th',
+         'c':'3rd, 10th, 17th, 24th',
+         'd':'4th, 11th, 18th, 25th',
+         'correct':'d'
+      },
+     {
+         'question':'How many days are there in x weeks x days?',
+         'a':'7x2',
+         'b':'8x',
+         'c':'14x',
+         'd':'7',
+         'correct':'b'
+      },
+     {
+         'question':'The last day of a century cannot be',
+         'a':'Monday',
+         'b':'Wednesday',
+         'c':'Tuesday',
+         'd':'Friday',
+         'correct':'c'
+      },
+     {
+         'question':'On 8th Feb, 2005 it was Tuesday. What was the day of the week on 8th Feb, 2004?',
+         'a':'Tuesday',
+         'b':'Monday',
+         'c':'Sunday',
+         'd':'Wednesday',
+         'correct':'c'
+      },
+     {
+         'question':'',
+         'a':'',
+         'b':'',
+         'c':'',
+         'd':'',
+         'correct':''
+      },
+    ],
     q3:[
         {
             'question':'Introducing a boy ,Amarjeet says, "HE is the son of the daughter of my father".How is boy related to the Amarjeet .',
@@ -271,6 +361,89 @@ const Reasquiz ={
          }
     
     ],
+    q6:[
+      {
+         'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Dollar',
+         'b':'b) Peso',
+         'c':'c) Ounce',
+         'd':'d) Euro',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Square',
+         'b':'b) Triangle',
+         'c':'c) Rectangle',
+         'd':'d) Cuboid',
+         'correct':"d"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Copper',
+         'b':'b) Iron',
+         'c':'c) Iodine',
+         'd':'d) Tin',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Cat',
+         'b':'b) Dog',
+         'c':'c) Fox',
+         'd':'d) Rabbit',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Car',
+         'b':'b) Bicycle',
+         'c':'c) Motorcycle',
+         'd':'d) Jeep',
+         'correct':"b"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Gold',
+         'b':'b) Silver',
+         'c':'c) Carbon',
+         'd':'d) Diamond',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Apple',
+         'b':'b) Orange',
+         'c':'c) Tomato',
+         'd':'d) Potato',
+         'correct':"d"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) Banana',
+         'b':'b) Mango',
+         'c':'c) Cashew',
+         'd':'d) Guava',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) 129',
+         'b':'b) 130',
+         'c':'c) 131',
+         'd':'d) 132',
+         'correct':"c"
+      },
+      {
+          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
+         'a':'a) 80,9',
+         'b':'b) 64,8',
+         'c':'c) 36,6',
+         'd':'d) 49,7',
+         'correct':"a"
+      },
+      
+    ],
     q7:[
       {
         'question':'3,7,23,95,?',
@@ -297,7 +470,7 @@ const Reasquiz ={
          'correct':"d"
       },
       {
-         'question':'1,2,5,12,27,58,121,?',
+         'question':'1,2,5,12,27,58,121,_',
          'a':'a) 246',
          'b':'b) 247',
          'c':'c) 248',
@@ -360,6 +533,203 @@ const Reasquiz ={
          'd':'d) 589',
          'correct':"a"
       },
+  ],
+  q8:[
+   {
+      'question':'Odometer is to mileage as compass is to ?',
+      'a':'speed',
+      'b':'hiking',
+      'c':'needle',
+      'd':'direction',
+      'correct':'d'
+   },
+  {
+      'question':'Marathon is to race as hibernation is to ?',
+      'a':'winter',
+      'b':'bear',
+      'c':'dream',
+      'd':'sleep',
+      'correct':'d'
+   },
+  {
+      'question':'daisy-flower-plant then bungalow-house-?',
+      'a':'building',
+      'b':'cottage',
+      'c':'apartment',
+      'd':'city',
+      'correct':'a'
+   },
+  {
+      'question':'apples-fruit-supermarket then novel-book-?',
+      'a':'bookstore',
+      'b':'magazine',
+      'c':'vegetable',
+      'd':'shopping',
+      'correct':'a'
+   },
+  {
+      'question':'BINDING : BOOK',
+      'a':'criminal : gang',
+      'b':'display : museum',
+      'c':'artist : carpenter',
+      'd':'frame : picture',
+      'correct':'d'
+   },
+  {
+      'question':'SIAMESE : CAT',
+      'a':'type : breed',
+      'b':'dog : puppy',
+      'c':'mark : spot',
+      'd':'romaine : lettuce',
+      'correct':'d'
+   },
+  {
+      'question':'PETAL : FLOWER',
+      'a':'salt : pepper',
+      'b':'tire : bicycle',
+      'c':'base : ball',
+      'd':'sandals : shoes',
+      'correct':'b'
+   },
+  {
+      'question':'Yard is to inch as quart is to ?',
+      'a':'gallon',
+      'b':'ounce',
+      'c':'milk',
+      'd':'liquid',
+      'correct':'b'
+   },
+  {
+      'question':'MONK : DEVOTION',
+      'a':'maniac : pacifism',
+      'b':'explorer : contentment',
+      'c':'visionary : complacency',
+      'd':'rover : wanderlust',
+      'correct':'d'
+   },
+  {
+      'question':'SLAPSTICK : LAUGHTER',
+      'a':'horror : fear',
+      'b':'satire : anger',
+      'c':'mimicry : tears',
+      'd':'fallacy : dismay',
+      'correct':'a'
+   },
+  {
+      'question':'SPY : CLANDESTINE',
+      'a':'accountant : meticulous',
+      'b':'furrier : rambunctious',
+      'c':'lawyer : ironic',
+      'd':'astronaut : opulent',
+      'correct':'a'
+   },
+//   {
+//       'question':'',
+//       'a':'',
+//       'b':'',
+//       'c':'',
+//       'd':'',
+//       'correct':''
+//    },
+//   {
+//       'question':'',
+//       'a':'',
+//       'b':'',
+//       'c':'',
+//       'd':'',
+//       'correct':''
+//    },
+  ],
+  q9:[
+   {
+      'question':"An accurate clock shows 8 o'clock in the morning. Through how may degrees will the hour hand rotate when the clock shows 2 o'clock in the afternoon?",
+      'a':'144°',
+      'b':'150°',
+      'c':'168°',
+      'd':'180°',
+      'correct':'d'
+   },
+  {
+      'question':'The reflex angle between the hands of a clock at 10.25 is:',
+      'a':'180°',
+      'b':'192	1/2°',
+      'c':'195°',
+      'd':'197	1/2	°',
+      'correct':'d'
+   },
+  {
+      'question':'A clock is started at noon. By 10 minutes past 5, the hour hand has turned through:',
+      'a':'145°',
+      'b':'150°',
+      'c':'155°',
+      'd':'160°',
+      'correct':'c'
+   },
+  {
+      'question':"A watch which gains 5 seconds in 3 minutes was set right at 7 a.m. In the afternoon of the same day, when the watch indicated quarter past 4 o'clock, the true time is:",
+      'a':'59	7/12	min. past 3',
+      'b':'4 p.m.',
+      'c':'58	7/11	min. past 3',
+      'd':'2	3/11	min. past 4',
+      'correct':'b'
+   },
+  {
+      'question':'How much does a watch lose per day, if its hands coincide every 64 minutes?',
+      'a':'32 8/11 min',
+      'b':'36 5/11 min',
+      'c':'90 min.',
+      'd':'96 min.',
+      'correct':'a'
+   },
+  {
+      'question':"At what time between 7 and 8 o'clock will the hands of a clock be in the same straight line but, not together?",
+      'a':'5 min. past 7',
+      'b':'5 2/11	min. past 7',
+      'c':'5 3/11	min. past 7',
+      'd':'5 5/11	min. past 7',
+      'correct':'d'
+   },
+  {
+      'question':'At what time between 5.30 and 6 will the hands of a clock be at right angles?',
+      'a':'43 5/11 min. past 5',
+      'b':'43 7/11 min. past 5',
+      'c':'40 min. past 5',
+      'd':'45 min. past 5',
+      'correct':'b'
+   },
+  {
+      'question':'The angle between the minute hand and the hour hand of a clock when the time is 4.20, is:',
+      'a':'0°',
+      'b':'10°',
+      'c':'5°',
+      'd':'20°',
+      'correct':'b'
+   },
+  {
+      'question':'At what angle the hands of a clock are inclined at 15 minutes past 5?',
+      'a':'58	1/2°',
+      'b':'64°',
+      'c':'67	1/2°',
+      'd':'72	1/2°',
+      'correct':'c'
+   },
+  {
+      'question':'At 3:40, the hour hand and the minute hand of a clock form an angle of:',
+      'a':'120°',
+      'b':'125°',
+      'c':'130°',
+      'd':'135°',
+      'correct':'c'
+   },
+//   {
+//       'question':'',
+//       'a':'',
+//       'b':'',
+//       'c':'',
+//       'd':'',
+//       'correct':''
+//    },
+  
   ],
     
 }
@@ -646,6 +1016,493 @@ const Aptiquiz={
             'd': 'd) 2500',
             'correct': "b"
             },
+
+    ],
+    q3:[
+      {
+
+         'question': 'A house and a Shop were sold for Rs 12,000 each. If the House was sold at a loss of 20% of the cost and the Shop a t a gain of 20% of the cost, the entire trans-action resulted in',
+         
+         'a': 'a) No loss or gain',
+         
+         'b':'b) Loss ofRs 1,000',
+         
+         'c':'c) Gain of Rs. 1,000',
+         
+         'd':'d) Loss of Rs 1,200',
+         
+         'correct':"b"
+         
+         },
+         {
+         
+         'question': 'A man bought 25 crates of oranges for 10,000. He lost 5 crates. In order to earn a total profit of 25% of the total cost, he would have to sell each of the remaining crate at',
+         
+         'a': 'a) 500',
+         
+         'b':'b) 600',
+         
+         'c':'c) 625',
+         
+         'd':'d) 375',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'A customer saves Rs. 320 at the rabate of 20% on market price of an article. If the cost price of the article for shopkeeper is Rs. 1000, then the profit percent of shopkeeper is :',
+         
+         'a': 'a) 30%',
+         
+         'b':'b) 28%',
+         
+         'c':'c) 20%',
+         
+         'd':'d) 25%',
+         
+         'correct':"b"
+         
+         },
+         
+         {
+         
+         'question': 'Two mobiles phones are sold at Rs. 6000 each. The first mobile is sold at 20% profit and the other one at 25% loss. What is the percentage of loss or profit incurred during the deal ?',
+         
+         'a': 'a) 7.7% loss',
+         
+         'b':'b) 8.3% loss',
+         
+         'c':'c) 9% loss',
+         
+         'd':'d) 2% profit',
+         
+         'correct':"a"
+         
+         },
+         
+         {
+         
+         'question': 'By what fraction selling price (S.P.) must multiplied to get the cost price (C.P.) if the loss is 20%',
+         
+         'a': 'a) 4/5',
+         
+         'b':'b) 8/5',
+         
+         'c':'c) 5/4',
+         
+         'd':'d) 6/5',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'A merchant purchases a wrist watch for Rs. 1,200 and fixes its list price in such a way that after allowing a discount of 10%, he earns a profit od 20%. The list price of the watch is.',
+         
+         'a': 'a) Rs 1,800',
+         
+         'b':'b) Rs 1,200',
+         
+         'c':'c) Rs 1,600',
+         
+         'd':'d) Rs 1,400',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': '',
+         
+         'a': 'a) 8',
+         
+         'b':'b) 21',
+         
+         'c':'c) 12',
+         
+         'd':'d) 18',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'A Shopkeeper promise to sell is goods at a Profit of x% but he uses 20% less weight and earn 50% profit on total transaction Find the value of x.',
+         
+         'a': 'a) 10',
+         
+         'b':'b) 15',
+         
+         'c':'c) 20',
+         
+         'd':'d) 40',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'A shopkeeper sells an article at 20% profit had he bought 10% less and sold it for Rs. 15 less he earns 30% profit. Find the C.P. of article ?',
+         
+         'a': 'a) 600',
+         
+         'b':'b) 585',
+         
+         'c':'c) 500',
+         
+         'd':'d) 550',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'The price of an article reduces to 576 after two successive discounts. The markup is 80% above the cost price Rs. 500. What is the new profit percentage if instead of two successive discounts the markup price was further increased successively two times by the same percentage ?',
+         
+         'a': 'a) 135',
+         
+         'b':'b) 170',
+         
+         'c':'c) 180',
+         
+         'd':'d) 159.5',
+         
+         'correct':"d"
+         
+         },         
+    ],
+    q4:[
+
+    ],
+    q5:[ 
+
+    ],
+    q6:[
+
+    ],
+    q7:[
+      {
+
+         'question': '94 is divided into two parts in such a way that theFifth part of the first and the eighth part of the Second are in the ratio 3 : 4. The first part is;',
+         
+         'a': 'a) 27',
+         
+         'b':'b) 30',
+         
+         'c':'c) 36',
+         
+         'd':'d) 48',
+         
+         'correct':"b"
+         
+         },
+         {
+         
+         'question': 'The fourth proportional to 3,5 and 21 is:',
+         
+         'a': 'a) 35',
+         
+         'b':'b) 7/5',
+         
+         'c':'c) 5/7',
+         
+         'd':'d) 12.6',
+         
+         'correct':"a"
+         
+         },
+         {
+         
+         'question': 'A sum of Rs. 7000 is divided among A, B, C in such a way that shares of A and B are in the ratio 2 : 3 and those of B and C are in the ratio 4: 5. The amount received by C is:',
+         
+         'a': 'a) 2600',
+         
+         'b':'b) 2800',
+         
+         'c':'c) 3000',
+         
+         'd':'d) 3900',
+         
+         'correct':"c"
+         
+         },
+         {
+         
+         'question': 'Boxes A and B have certain number of balls in them. If three balls are transferred from box A to box B, the ratio of the balls in the two boxes is 7:3.However, if twice the number of balls is transferred from box A to box B, the new ratio will be 3:2.Find the original difference between the number of balls in A and B.',
+         
+         'a': 'a) 18',
+         
+         'b':'b) 6',
+         
+         'c':'c) 24',
+         
+         'd':'d) 12',
+         
+         'correct':"a"
+         
+         },
+         {
+         
+         'question': 'The ratio of boys to girls in a section 4 having 45 students was 3:2.If the number of boys had been same as the number of girls and vice versa, the total number of girls would have been 9 more than the number of boys in section 3.If the girls constitute 25% of the class strength in section 3, find the total strength of the students in section 3',
+         
+         'a': 'a) 12',
+         
+         'b':'b) 18',
+         
+         'c':'c) 24',
+         
+         'd':'d) 36',
+         
+         'correct':"c"
+         
+         },
+         {
+         
+         'question': "It's given that the ratio of two numbers is 3 : 2. if 10 more than the sum of these two numbers is added to their product , square of half of 32 is obtained . What could be the smaller number?",
+         
+         'a': 'a) 6',
+         
+         'b':'b) 12',
+         
+         'c':'c) 16',
+         
+         'd':'d) 18',
+         
+         'correct':"b"
+         
+         },
+         {
+         
+         'question': 'In a factory men, women and children were employed in the ratio 8 : 5 : 1 to finish a job and their individual wages were in the ratio 5 : 2 ; 3. When 20 women were employed, the total daily wages of all amounted to Rs. 318. Find the total daily wages paid to each category In Rs.',
+         
+         'a': 'a)280,70,110 ',
+         
+         'b':'b) 240,60,18',
+         
+         'c':'c) 380, 318, 110',
+         
+         'd':'d) cannot be determined',
+         
+         'correct':"b"
+         
+         },
+         {
+         
+         'question': 'The income of 2 people X and Y is in the ratio 5:4.X says to Y, “After spending 45% of my income I save an amount of Rs.11000 every month.” In reply Y says, “My saving is 25% of the value of your savings.” Find the expenditure of Y as a percentage of the income.',
+         
+         'a': 'a) 85%',
+         
+         'b':'b) 78%',
+         
+         'c':'c) 72.5%',
+         
+         'd':'d) 82.82%',
+         
+         'correct':"d"
+         
+         },
+         {
+         
+         'question': 'In a pocket of James, the ratio of Rs. 1 coins, 50 Paise coins and 25 paise coins can be expressed by Three consecutive odd prime number that are in Ascending order. The total value of coins in the bag Is Rs. 58. If the number of Rs. 1, 50 paise, 25 paise Coins are reversed. Find the new total value of Coins ?',
+         
+         'a': 'a) 43',
+         
+         'b':'b) 75',
+         
+         'c':'c) 82',
+         
+         'd':'d) 76',
+         
+         'correct':"c"
+         
+         },
+         {
+         
+         'question': 'In a wallet there are only Rs. 16, consisting of 10 paise, 20 paise and Rs. 1 coins. The ratio of no. of coins of 10 paise and 20 paise is 6 : 1, the minimum number of Rs. 1 coins is ?',
+         'a': 'a) 4',
+         
+         'b':'b) 5',
+         
+         'c':'c) 12',
+         
+         'd':'d) 8',
+         
+         'correct':"a"
+         
+         }, 
+    ],
+    
+    q8:[
+      {
+
+         'question': 'If the simple interest for 6 years be equal to 30% of theprincipal. Then it will be equal to the principal after',
+         
+         'a': 'a) 20 years',
+         
+         'b':'b) 30 years',
+         
+         'c':'c) 10 years',
+         
+         'd':'d) 22 years',
+         
+         'correct':"a"
+         
+         },
+         {
+         
+         'question': 'If the ratio of principal and the simple interest of 5 yearsis 10 : 3, then the rate of interest is',
+         
+         'a': 'a) 6%',
+         
+         'b':'b) 8%',
+         
+         'c':'c) 5%',
+         
+         'd':'d) 3%',
+         
+         'correct':"a"
+         
+         },
+         
+         {
+         
+         'question': 'In how many years will a sum of money be double ofitself at 12% per annum ?',
+         
+         'a': 'a) 8 years 6 months',
+         
+         'b':'b) 6 years 9 months',
+         
+         'c':'c) 8 years 4 months',
+         
+         'd':'d) 7 years 6 months',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'Nitin borrow some money at the rate of 6% per annumfor the first three years, 9% per annum for the next fiveyears and 13% p.a. for the period beyond eight years. Ifthe total interest paid by him at the end of eleven yearsis Rs 8160, the money borrowed by him (in Rs) was',
+         
+         'a': 'a) Rs 12000',
+         
+         'b':'b) Rs 6000',
+         
+         'c':'c) Rs 8000',
+         
+         'd':'d) Rs 10000',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'The simple interest on a sum of money will be Rs 225 after3 years. In the next 5 years principal becomes 3 times.What will be the total interest at the end of the 8 years ?',
+         
+         'a': 'a) Rs 1250',
+         
+         'b':'b) Rs 1330',
+         
+         'c':'c) Rs 1360',
+         
+         'd':'d) Rs 1350',
+         
+         'correct':"d"
+         
+         },
+         
+         {
+         
+         'question': 'A person who pays income tax at the rate of 4 paise perrupee, he finds that a fall of interest rate from 4% to3.75% diminishes his net yearly income by Rs 48. Whatis his capital ?',
+         
+         'a': 'a) Rs 24000',
+         
+         'b':'b) Rs 25000',
+         
+         'c':'c) Rs 20000',
+         
+         'd':'d) Rs 18000',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'The simple interest on Rs 36000 for the period from 5thJanuary to 31st may 2013 at 9.5% per annum is',
+         
+         'a': 'a) Rs 1368',
+         
+         'b':'b) Rs 1338',
+         
+         'c':'c) Rs 1425',
+         
+         'd':'d) Rs 1400',
+         
+         'correct':"a"
+         
+         },
+         
+         {
+         
+         'question': 'At what rate of simple interest per annum the sum ofmoney Rs. 15000 in 3 years get simple interest Rs.5400?',
+         
+         'a': 'a) 11.5%',
+         
+         'b':'b) 12.5%',
+         
+         'c':'c) 15%',
+         
+         'd':'d) 12%',
+         
+         'correct':"d"
+         
+         },
+         
+         {
+         
+         'question': 'At what rate of percent per annum will the simple intereston Rs. 20000 be 1/10 of the principle amount in 8 years?',
+         
+         'a': 'a) 1.15',
+         
+         'b':'b) 2.25',
+         
+         'c':'c) 1.25',
+         
+         'd':'d) 2.75',
+         
+         'correct':"c"
+         
+         },
+         
+         {
+         
+         'question': 'Rs. 1536 received as a simple interest on a certain sumfor 5 years at the rate of 12% per annum simple interest.If a person invests Rs. 1000 aded to the same sum for 2years at the same rate of interest then find the newsimple interest?',
+         
+         'a': 'a) Rs 854.40',
+         
+         'b':'b) Rs 614.40',
+         
+         'c':'c) Rs 2136',
+         
+         'd':'d) Rs 1536',
+         
+         'correct':"a"
+         
+         },         
+    ],
+    q9:[
+
+    ],
+    q10:[
 
     ]
 }

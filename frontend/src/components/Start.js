@@ -5,7 +5,16 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,setChangetimer,totalques,setTotalques } = useContext(QuizContext)
+    const { setStart,changetimer,setChangetimer,totalques,setTotalques,random,setRandom } = useContext(QuizContext)
+      function setRandomly(){
+              while(random.length<totalques){
+                const r=Math.floor(Math.random()*totalques);
+                if(random.indexOf(r)===-1)
+                {
+                  random.push(r);
+                }
+              }
+      }
     return (
       <>
         <div class="start">
@@ -26,7 +35,9 @@ export default function Start() {
            <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>Set timer</h3>
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     
-        <button onClick={() => setStart(true)} className='start-btn'>Start Quiz</button>
+        <button onClick={() =>{
+          setStart(true)
+          setRandomly()}} className='start-btn'>Start Quiz</button>
        </div>
     </div>
       </>

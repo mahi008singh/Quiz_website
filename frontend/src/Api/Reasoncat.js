@@ -73,14 +73,17 @@ const Reasdata={
       },
       {
            title:"Seating Arrangement",
+           link:"/Quizplay",
            apiNum:4
       },
       {
             title:"Syllogism",
+            link:"/Quizplay",
             apiNum:5
       },
       {
             title:"Odd one out",
+            link:"/Quizplay",
             apiNum:6
       },
       {
