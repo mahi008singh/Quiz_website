@@ -28,8 +28,12 @@
     box-shadow: -10px 10px 40px rgba(175, 174, 174, 0.3);
 
 }
-.reas_category div h1{
-    margin-left: 2rem;
+
+.div_title{
+    padding: 0 2rem;
+}
+.div_title p{
+    margin-right: 1rem;
 }
 .btn_{
        width: 12rem;
@@ -45,4 +49,18 @@
 
 .btn_:hover{
     background-color:#4acea6 ;
+}
+
+@media (max-width:540px){
+    .btn_{
+        width:8rem ;
+        font-size: 1.1rem;
+    }
+    .div_title p{
+        font-size: 1rem;
+    }
+    .div_title h2{
+        font-size:1.6rem ;
+    }
+    
 }

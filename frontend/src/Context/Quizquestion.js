@@ -361,6 +361,12 @@ const Reasquiz ={
          }
     
     ],
+    q4:[
+
+    ],
+    q5:[
+
+    ],
     q6:[
       {
          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
@@ -731,6 +737,9 @@ const Reasquiz ={
 //    },
   
   ],
+  q10:[
+
+    ],
     
 }
 
@@ -1507,6 +1516,19 @@ const Aptiquiz={
     ]
 }
 
+const Verbalquiz={
+   q1:[
+
+   ],
+   q2:[
+
+   ],
+   q3:[
+
+   ],
+
+}
+
 const Networkquiz={
    q1:[
       {
@@ -1608,4 +1630,4 @@ const Networkquiz={
    ]
 }
 
-export  {Reasquiz,Aptiquiz,Networkquiz};
+export  {Reasquiz,Aptiquiz,Verbalquiz,Networkquiz,};

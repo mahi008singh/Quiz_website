@@ -43,7 +43,10 @@ const Categ = () => {
                         return(
                             <>
                                 <div>
-                                    <h1>{elem.title}</h1>
+                                  <div className="div_title">
+                                   <h2>{elem.title}</h2>
+                                     <p>Available ques.{elem.size}</p>
+                                  </div>
                                     <NavLink to={elem.link}> <button onClick={()=>setChoose(elem.apiNum)} class="btn_">Go to quiz</button></NavLink>
                                 </div>
                             </>
