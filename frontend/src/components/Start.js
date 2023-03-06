@@ -5,15 +5,17 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,setChangetimer,totalques,setTotalques,random,setRandom } = useContext(QuizContext)
+    const { setStart,changetimer,setChangetimer,totalques,setTotalques,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
-                const r=Math.floor(Math.random()*totalques);
+                const r=Math.floor(Math.random()*topsize);
                 if(random.indexOf(r)===-1)
                 {
                   random.push(r);
                 }
               }
+
+              console.log(random);
       }
     return (
       <>

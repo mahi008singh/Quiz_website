@@ -6,7 +6,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz } = useContext(QuizContext)
+    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,topsize,setTopsize } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
     useEffect(()=>{
         if(data==1){
@@ -17,7 +17,7 @@ const Categ = () => {
         {  setRender(Reasdata.data2);
            setFinalquiz(Reasquiz)
         }
-       else if(data==3)
+        else if(data==3)
           { 
               setRender(Reasdata.data3)
 
@@ -30,11 +30,11 @@ const Categ = () => {
           }
     },[])
 
+    const category=["Aptitude","Aptitude","Reasoning","Verbal","Networking"];
     return (
         <>
-        
             <div class="reasoning">
-                <h1 class="logical_h1">{data==1?"Aptitude":data==2?"Reasoning":"Verbal"}</h1>
+                <h1 class="logical_h1">{category[data]}</h1>
             </div>
 
             <section class="reas_category">
@@ -47,7 +47,9 @@ const Categ = () => {
                                    <h2>{elem.title}</h2>
                                      <p>Available ques.{elem.size}</p>
                                   </div>
-                                    <NavLink to={elem.link}> <button onClick={()=>setChoose(elem.apiNum)} class="btn_">Go to quiz</button></NavLink>
+                                    <NavLink to={elem.link}> <button 
+                                    onClick={()=>{setChoose(elem.apiNum)
+                                       setTopsize(elem.size)}} class="btn_">Go to quiz</button></NavLink>
                                 </div>
                             </>
                         )

@@ -187,6 +187,9 @@ const Reasquiz ={
          
          
     ],
+
+    //  CALENDAR()
+
     q2:[
       {
          'question':'It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?',
@@ -277,6 +280,9 @@ const Reasquiz ={
          'correct':''
       },
     ],
+
+    // Blood Relation()
+
     q3:[
         {
             'question':'Introducing a boy ,Amarjeet says, "HE is the son of the daughter of my father".How is boy related to the Amarjeet .',
@@ -367,6 +373,9 @@ const Reasquiz ={
     q5:[
 
     ],
+
+    // Odd one Out  
+
     q6:[
       {
          'question': 'In each of following questions, four words have been given of which three are alike in some way and one is different. Choose the odd one out.',
@@ -450,6 +459,9 @@ const Reasquiz ={
       },
       
     ],
+
+     //  SERIES()
+
     q7:[
       {
         'question':'3,7,23,95,?',
@@ -483,14 +495,7 @@ const Reasquiz ={
          'd':'d) 249',
          'correct':"c"
       },
-       {
-         'question':'1,6,15,_,45,66,91',
-         'a':'a) 25',
-         'b':'b) 26',
-         'c':'c) 27',
-         'd':'d) 28',
-         'correct':"d"
-      },
+      
       {
          'question':'3,5,9,15,25,41,67,?',
          'a':'a) 108',
@@ -499,6 +504,16 @@ const Reasquiz ={
          'd':'d) 111',
          'correct':"b"
       },
+      
+       {
+         'question':'1,6,15,_,45,66,91',
+         'a':'a) 25',
+         'b':'b) 26',
+         'c':'c) 27',
+         'd':'d) 28',
+         'correct':"d"
+      },
+     
       {
          'question':'11,45,182,731,?',
          'a':'a) 2920',
@@ -540,6 +555,10 @@ const Reasquiz ={
          'correct':"a"
       },
   ],
+
+
+//ANALOGY()
+  
   q8:[
    {
       'question':'Odometer is to mileage as compass is to ?',
@@ -557,6 +576,183 @@ const Reasquiz ={
       'd':'sleep',
       'correct':'d'
    },
+   {
+      'question':'6:222::7:?',
+      'a':'210',
+      'b':'336',
+      'c':'343',
+      'd':'350',
+      'correct':'d'
+   },
+   {
+      'question':'18:27::22:?',
+      'a':'42',
+      'b':'39',
+      'c':'33',
+      'd':'54',
+      'correct':'c'
+   },
+   {
+      'question':'357:73::?:?',
+      'a':'429:94',
+      'b':'201:21',
+      'c':'138:38',
+      'd':'93:39',
+      'correct':'a'
+   },
+   {
+      'question':"Wimbledon trophy:Tennis::Walker's cup ",
+      'a':'Hockey',
+      'b':'Wrestling',
+      'c':'Golf',
+      'd':'Polo',
+      'correct':'c'
+   },
+   {
+      'question':'Air:Atmosphere',
+      'a':'Hydrosphere',
+      'b':'Ecosphere',
+      'c':'Biosphere',
+      'd':'Stratosphere',
+      'correct':'a'
+   },
+   {
+      'question':'26:5::65:?',
+      'a':'6',
+      'b':'7',
+      'c':'8',
+      'd':'9',
+      'correct':'c'
+   },
+   {
+      'question':'BYDW:FVHT::GQIO:?',
+      'a':'JLNP',
+      'b':'QSTR',
+      'c':'KMOL',
+      'd':'KNML',
+      'correct':'d'
+   },
+   {
+      'question':'FILM:ADGH::MILK:?',
+      'a':'ADGF',
+      'b':'HDGE',
+      'c':'HDGF',
+      'd':'HEGF',
+      'correct':'c'
+   },
+   {
+      'question':'NATION:ANITNO::HUNGRY:?',
+      'a':'HNUGRY',
+      'b':'UNHGYR',
+      'c':'YRNGUH',
+      'd':'UHGNYR',
+      'correct':'d'
+   },
+   {
+      'question':'?:ALKLO::WOULD:TLRIA',
+      'a':'BLOCK',
+      'b':'BARGE',
+      'c':'CONES',
+      'd':'DONOR',
+      'correct':'d'
+   },
+   {
+      'question':'Steel:Alloy::Zinc:',
+      'a':'Metal',
+      'b':'Non-Metal',
+      'c':'Halogen',
+      'd':'Salt',
+      'correct':'a'
+   },
+   {
+      'question':'Psychology is to emotions as Philosophy is to',
+      'a':'Research',
+      'b':'Knowledge',
+      'c':'Scholar',
+      'd':'Wisdom',
+      'correct':'d'
+   },
+   {
+      'question':'BUCKET:ACTVBDJLDFSU::BONUS:?',
+      'a':'ACMNMOTVRT',
+      'b':'SUNOBDRTTV',
+      'c':'ACNPMOTVRT',
+      'd':'ACMNMOTURT',
+      'correct':'c'
+   },
+   {
+      'question':'16:49::?:?',
+      'a':'18:54',
+      'b':'17:50',
+      'c':'19:58',
+      'd':'21:53',
+      'correct':'c'
+   },
+   {
+      'question':'19:10::46:?',
+      'a':'11',
+      'b':'10',
+      'c':'2',
+      'd':'24',
+      'correct':'b'
+   },
+   {
+      'question':'511:733::?:?',
+      'a':'637:859',    
+      'b':'134:245',
+      'c':'169:381',
+      'd':'441:660',
+      'correct':'a'
+   },
+   {
+      'question':'TSR:FED::WVU:?',
+      'a':'CAB',
+      'b':'MLK',
+      'c':'PQS',
+      'd':'GFH',
+      'correct':'b'
+   },
+   {
+      'question':'RUX:TRP::BEH:?',
+      'a':'SQN',
+      'b':'QON',
+      'c':'QOM',
+      'd':'QNL',
+      'correct':'c'
+   },
+   {
+      'question':'LJH:KKI::CIA:?',
+      'a':'BJB',
+      'b':'DHB',
+      'c':'BJC',
+      'd':'BBJ',
+      'correct':'a'
+   },
+   {
+      'question':'FIK:JGO::DFR:?',
+      'a':'BIO',
+      'b':'HDV',
+      'c':'GCU',
+      'd':'FLP',
+      'correct':'b'
+   },
+   {
+      'question':'ACE:FGH::LNP:?',
+      'a':'QRS',
+      'b':'PQR',
+      'c':'QST',
+      'd':'MOQ',
+      'correct':'a'
+   },
+   {
+      'question':'ODRS:OSDR::PAGJ:?',
+      'a':'PJGA',
+      'b':'PJAG',
+      'c':'PGJA',
+      'd':'PGAJ',
+      'correct':'a'
+   },
+   
   {
       'question':'daisy-flower-plant then bungalow-house-?',
       'a':'building',
@@ -588,6 +784,23 @@ const Reasquiz ={
       'c':'mark : spot',
       'd':'romaine : lettuce',
       'correct':'d'
+   },
+   {
+      'question':'Cerebrum:Brain:?:?',
+      'a':'Aorta:Hand',
+      'b':'Ligament:Blood',
+      'c':'Ventricle:Heart',
+      'd':'Country:Universe',
+      'correct':'c'
+   },
+  
+   {
+      'question':'Mammals is to Man as Aves is to',
+      'a':'Aeroplane',
+      'b':'Birds',
+      'c':'Pigeons',
+      'd':'Fruit',
+      'correct':'b'
    },
   {
       'question':'PETAL : FLOWER',
@@ -629,23 +842,42 @@ const Reasquiz ={
       'd':'astronaut : opulent',
       'correct':'a'
    },
-//   {
-//       'question':'',
-//       'a':'',
-//       'b':'',
-//       'c':'',
-//       'd':'',
-//       'correct':''
-//    },
-//   {
-//       'question':'',
-//       'a':'',
-//       'b':'',
-//       'c':'',
-//       'd':'',
-//       'correct':''
-//    },
+  {
+      'question':'Haemoglobin:Iron::Chlorophyll',
+      'a':'Copper',
+      'b':'Magnesium',
+      'c':'Cobalt',
+      'd':'Calcium',
+      'correct':'b'
+   },
+   {
+      'question':'Duck:Quack::?:?',
+      'a':'Dog:Growl',
+      'b':'Sparrow:Peck',
+      'c':'Snake:Creep',
+      'd':'Camel:Desert',
+      'correct':'a'
+   },
+  {
+      'question':'Atom:Electron::?:?',
+      'a':'Sun:Earth',
+      'b':'Milkyway:Pluto',
+      'c':'Sputnik:Satellite',
+      'd':'Neutron:Proton',
+      'correct':'d'
+   },
+   {
+      'question':'Explosion:Debris::?:?',
+      'a':'Plague:Rats',
+      'b':'Fire:Ashes',
+      'c':'Crash:Sorrows',
+      'd':'Death:Rebirth',
+      'correct':'b'
+   },
   ],
+
+
+  //  CLOCK()
   q9:[
    {
       'question':"An accurate clock shows 8 o'clock in the morning. Through how may degrees will the hour hand rotate when the clock shows 2 o'clock in the afternoon?",
@@ -660,7 +892,7 @@ const Reasquiz ={
       'a':'180°',
       'b':'192	1/2°',
       'c':'195°',
-      'd':'197	1/2	°',
+      'd':'197	1/2°',
       'correct':'d'
    },
   {
