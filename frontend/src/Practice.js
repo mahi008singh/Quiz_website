@@ -29,7 +29,7 @@ const Practice = () => {
                            return(
                                <>
                                    <div class="box">
-                                       <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)} target="_blank">
+                                       <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)}>
                                            <img src={require('./images/subject-icon-1.png')} alt="" />
                                            <h3>{elem.title}</h3>
                                        </NavLink>

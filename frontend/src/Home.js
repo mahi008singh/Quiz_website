@@ -1,4 +1,5 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import {NavLink} from 'react-router-dom'
 import './css/style.css';
 import './css/home.css';
 import Homedata from './Api/Homecateg';
@@ -55,10 +56,10 @@ const Home = () => {
                 return(
                    <>
                       <div class="box">
-                         <a href="/login" target="_blank">
+                         <NavLink to={"/Signup"} >
                            <img src={require('./images/subject-icon-3.png')} alt="" />
                             <h3>{elem.title}</h3>
-                         </a>
+                         </NavLink>
 
                       </div>
                    </>

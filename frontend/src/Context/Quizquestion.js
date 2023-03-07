@@ -37,6 +37,33 @@ const Reasquiz ={
             'tag':""
          },
          {
+            'question':'If SMALL is coded as 75, CLAY is coded as 14 then CRIME is coded as:',
+            'a':'a) 84',
+            'b':'b) 48',
+            'c':'c) 39',
+            'd':'d) 05',
+            'correct':"a",
+            'tag':"tcs"
+         },
+         {
+            'question':'8(89)9, 11(155)12, 4(?)6:',
+            'a':'a) 64',
+            'b':'b) 34',
+            'c':'c) 46',
+            'd':'d) 24',
+            'correct':"b",
+            'tag':"tcs"
+         },
+         {
+            'question':'A*B=40,A*C=60,D*C=108. Find D',
+            'a':'a) 9',
+            'b':'b) 36',
+            'c':'c) 54',
+            'd':'d) 27',
+            'correct':"a",
+            'tag':"tcs"
+         },
+         {
             'question':'If 9X7=3545 and 4X3=1520 then 6X8=?',
             'a':'a) 5040',
             'b':'b) 6050',
@@ -271,14 +298,14 @@ const Reasquiz ={
          'd':'Wednesday',
          'correct':'c'
       },
-     {
-         'question':'',
-         'a':'',
-         'b':'',
-         'c':'',
-         'd':'',
-         'correct':''
-      },
+   //   {
+   //       'question':'',
+   //       'a':'',
+   //       'b':'',
+   //       'c':'',
+   //       'd':'',
+   //       'correct':''
+   //    },
     ],
 
     // Blood Relation()
@@ -561,188 +588,229 @@ const Reasquiz ={
   
   q8:[
    {
+      'tag':"",
       'question':'Odometer is to mileage as compass is to ?',
       'a':'speed',
       'b':'hiking',
       'c':'needle',
       'd':'direction',
-      'correct':'d'
+      'correct':'d',
+      
    },
   {
+      'tag':"",
       'question':'Marathon is to race as hibernation is to ?',
       'a':'winter',
       'b':'bear',
       'c':'dream',
       'd':'sleep',
-      'correct':'d'
+      'correct':'d',
+      
    },
    {
+      'tag':"",
       'question':'6:222::7:?',
       'a':'210',
       'b':'336',
       'c':'343',
       'd':'350',
-      'correct':'d'
+      'correct':'d',
    },
    {
+      'tag':"",
       'question':'18:27::22:?',
       'a':'42',
       'b':'39',
       'c':'33',
       'd':'54',
-      'correct':'c'
+      'correct':'c',
+
    },
    {
+      'tag':"",
       'question':'357:73::?:?',
       'a':'429:94',
       'b':'201:21',
       'c':'138:38',
       'd':'93:39',
-      'correct':'a'
+      'correct':'a',
+
    },
    {
+      'tag':"",
       'question':"Wimbledon trophy:Tennis::Walker's cup ",
       'a':'Hockey',
       'b':'Wrestling',
       'c':'Golf',
       'd':'Polo',
-      'correct':'c'
+      'correct':'c',
+
    },
    {
+      'tag':"",
       'question':'Air:Atmosphere',
       'a':'Hydrosphere',
       'b':'Ecosphere',
       'c':'Biosphere',
       'd':'Stratosphere',
-      'correct':'a'
+      'correct':'a',
+
    },
    {
+      'tag':"",
       'question':'26:5::65:?',
       'a':'6',
       'b':'7',
       'c':'8',
       'd':'9',
-      'correct':'c'
+      'correct':'c',
+      
    },
    {
+      'tag':"",
       'question':'BYDW:FVHT::GQIO:?',
       'a':'JLNP',
       'b':'QSTR',
       'c':'KMOL',
       'd':'KNML',
-      'correct':'d'
+      'correct':'d',
+      
    },
    {
+      'tag':"",
       'question':'FILM:ADGH::MILK:?',
       'a':'ADGF',
       'b':'HDGE',
       'c':'HDGF',
       'd':'HEGF',
-      'correct':'c'
+      'correct':'c',
+      
    },
    {
+      'tag':"",
       'question':'NATION:ANITNO::HUNGRY:?',
       'a':'HNUGRY',
       'b':'UNHGYR',
       'c':'YRNGUH',
       'd':'UHGNYR',
-      'correct':'d'
+      'correct':'d',
+      
    },
    {
+      'tag':"",
       'question':'?:ALKLO::WOULD:TLRIA',
       'a':'BLOCK',
       'b':'BARGE',
       'c':'CONES',
       'd':'DONOR',
-      'correct':'d'
+      'correct':'d',
+   
    },
    {
+      'tag':"",
       'question':'Steel:Alloy::Zinc:',
       'a':'Metal',
       'b':'Non-Metal',
       'c':'Halogen',
       'd':'Salt',
-      'correct':'a'
+      'correct':'a',
+   
    },
    {
+      'tag':"",
       'question':'Psychology is to emotions as Philosophy is to',
       'a':'Research',
       'b':'Knowledge',
       'c':'Scholar',
       'd':'Wisdom',
-      'correct':'d'
+      'correct':'d',
+      
    },
    {
+      'tag':"",
       'question':'BUCKET:ACTVBDJLDFSU::BONUS:?',
       'a':'ACMNMOTVRT',
       'b':'SUNOBDRTTV',
       'c':'ACNPMOTVRT',
       'd':'ACMNMOTURT',
-      'correct':'c'
+      'correct':'c',
+     
    },
    {
+      'tag':"",
       'question':'16:49::?:?',
       'a':'18:54',
       'b':'17:50',
       'c':'19:58',
       'd':'21:53',
-      'correct':'c'
+      'correct':'c',
+      
    },
    {
+      'tag':"",
       'question':'19:10::46:?',
       'a':'11',
       'b':'10',
       'c':'2',
       'd':'24',
-      'correct':'b'
+      'correct':'b',
+      
    },
    {
+      'tag':"",
       'question':'511:733::?:?',
       'a':'637:859',    
       'b':'134:245',
       'c':'169:381',
       'd':'441:660',
-      'correct':'a'
+      'correct':'a',
+      
    },
-   {
+   {  'tag':"",
       'question':'TSR:FED::WVU:?',
       'a':'CAB',
       'b':'MLK',
       'c':'PQS',
       'd':'GFH',
-      'correct':'b'
+      'correct':'b',
+      
    },
    {
+      'tag':"",
       'question':'RUX:TRP::BEH:?',
       'a':'SQN',
       'b':'QON',
       'c':'QOM',
       'd':'QNL',
-      'correct':'c'
+      'correct':'c',
+   
    },
-   {
+   {  'tag':"",
       'question':'LJH:KKI::CIA:?',
       'a':'BJB',
       'b':'DHB',
       'c':'BJC',
       'd':'BBJ',
-      'correct':'a'
+      'correct':'a',
+     
    },
-   {
+   {  'tag':"",
       'question':'FIK:JGO::DFR:?',
       'a':'BIO',
       'b':'HDV',
       'c':'GCU',
       'd':'FLP',
-      'correct':'b'
+      'correct':'b',
+      
    },
-   {
+   {  'tag':"",
       'question':'ACE:FGH::LNP:?',
       'a':'QRS',
       'b':'PQR',
       'c':'QST',
       'd':'MOQ',
-      'correct':'a'
+      'correct':'a',
+      
    },
    {
       'question':'ODRS:OSDR::PAGJ:?',
@@ -750,129 +818,145 @@ const Reasquiz ={
       'b':'PJAG',
       'c':'PGJA',
       'd':'PGAJ',
-      'correct':'a'
+      'correct':'a',
+      
    },
    
-  {
+  {   'tag':"",
       'question':'daisy-flower-plant then bungalow-house-?',
       'a':'building',
       'b':'cottage',
       'c':'apartment',
       'd':'city',
-      'correct':'a'
+      'correct':'a',
+   
    },
-  {
+  {   'tag':"",
       'question':'apples-fruit-supermarket then novel-book-?',
       'a':'bookstore',
       'b':'magazine',
       'c':'vegetable',
       'd':'shopping',
-      'correct':'a'
+      'correct':'a',
+
    },
-  {
+  {   'tag':"",
       'question':'BINDING : BOOK',
       'a':'criminal : gang',
       'b':'display : museum',
       'c':'artist : carpenter',
       'd':'frame : picture',
-      'correct':'d'
+      'correct':'d',
+    
    },
-  {
+  {   'tag':"",
       'question':'SIAMESE : CAT',
       'a':'type : breed',
       'b':'dog : puppy',
       'c':'mark : spot',
       'd':'romaine : lettuce',
-      'correct':'d'
+      'correct':'d',
+      
    },
-   {
+   {  'tag':"",
       'question':'Cerebrum:Brain:?:?',
       'a':'Aorta:Hand',
       'b':'Ligament:Blood',
       'c':'Ventricle:Heart',
       'd':'Country:Universe',
-      'correct':'c'
+      'correct':'c',
+   
    },
   
-   {
+   {  'tag':"",
       'question':'Mammals is to Man as Aves is to',
       'a':'Aeroplane',
       'b':'Birds',
       'c':'Pigeons',
       'd':'Fruit',
-      'correct':'b'
+      'correct':'b',
+      
    },
-  {
+  {    'tag':"",
       'question':'PETAL : FLOWER',
       'a':'salt : pepper',
       'b':'tire : bicycle',
       'c':'base : ball',
       'd':'sandals : shoes',
-      'correct':'b'
+      'correct':'b',
+   
    },
-  {
+  { 'tag':"",
       'question':'Yard is to inch as quart is to ?',
       'a':'gallon',
       'b':'ounce',
       'c':'milk',
       'd':'liquid',
-      'correct':'b'
+      'correct':'b',
+
    },
-  {
+  {   'tag':"",
       'question':'MONK : DEVOTION',
       'a':'maniac : pacifism',
       'b':'explorer : contentment',
       'c':'visionary : complacency',
       'd':'rover : wanderlust',
-      'correct':'d'
+      'correct':'d',
+   
    },
-  {
+  {    'tag':"",
       'question':'SLAPSTICK : LAUGHTER',
       'a':'horror : fear',
       'b':'satire : anger',
       'c':'mimicry : tears',
       'd':'fallacy : dismay',
-      'correct':'a'
+      'correct':'a',
+   
    },
-  {
+  {    'tag':"",
       'question':'SPY : CLANDESTINE',
       'a':'accountant : meticulous',
       'b':'furrier : rambunctious',
       'c':'lawyer : ironic',
       'd':'astronaut : opulent',
-      'correct':'a'
+      'correct':'a',
+      
    },
-  {
+  {    'tag':"",
       'question':'Haemoglobin:Iron::Chlorophyll',
       'a':'Copper',
       'b':'Magnesium',
       'c':'Cobalt',
       'd':'Calcium',
-      'correct':'b'
+      'correct':'b',
+
    },
-   {
+   {   'tag':"",
       'question':'Duck:Quack::?:?',
       'a':'Dog:Growl',
       'b':'Sparrow:Peck',
       'c':'Snake:Creep',
       'd':'Camel:Desert',
-      'correct':'a'
+      'correct':'a',
+   
    },
-  {
+  {     'tag':"",
       'question':'Atom:Electron::?:?',
       'a':'Sun:Earth',
       'b':'Milkyway:Pluto',
       'c':'Sputnik:Satellite',
       'd':'Neutron:Proton',
-      'correct':'d'
+      'correct':'d',
+   
    },
-   {
+   {   'tag':"",
       'question':'Explosion:Debris::?:?',
       'a':'Plague:Rats',
       'b':'Fire:Ashes',
       'c':'Crash:Sorrows',
       'd':'Death:Rebirth',
-      'correct':'b'
+      'correct':'b',
+      
    },
   ],
 
@@ -1355,21 +1439,16 @@ const Aptiquiz={
          
          },
          
-         {
-         
-         'question': '',
-         
-         'a': 'a) 8',
-         
-         'b':'b) 21',
-         
-         'c':'c) 12',
-         
-         'd':'d) 18',
-         
-         'correct':"c"
-         
+         {  
+         'question': 'Traders A and B buy two goods for Rs. 1000 and 2000 respectively. Trader A marks his goods up by x%, while trader B marks his goods up by 2x% and offers a discount of x%. If both make the same non-zero profit, find x? ',
+         'a': 'a) 25%',
+         'b':'b) 12.5%',
+         'c':'c) 37.5%',
+         'd':'d) 40%',
+         'correct':"a"
+
          },
+
          
          {
          
@@ -1761,6 +1840,130 @@ const Verbalquiz={
 
 }
 
+const Cquiz={
+   q1:[
+         {
+            'question':"there are two integer number X and Y that are between 0 to 25. The user stores the value under a 5-bit number. How many minimum bits are required to store the result of the below epxression?  Res=3*(X-Y)",
+            'a':'8',
+            'b':'5',
+            'c':'7',
+            'd':'8',
+            'correct':'d'
+         },
+         {
+            'question':"Neelam wants to share her code with a colleague, who may modify it. Thus she wants to include the date of the program creation, the author and other with the program. What component should she use?",
+            'a':'header files',
+            'b':'Iteration',
+            'c':'Comments',
+            'd':'Pre processor',
+            'correct':'c'
+         },
+         {
+            'question':"A 10-bit unsigned integer has the following range:",
+            'a':'0 to 1000',
+            'b':'0 to 1024',
+            'c':'0 to 1023',
+            'd':'0 to 1025',
+            'correct':'c'
+         },
+         {
+            'question':"Which of the following options is an exception to being a part of composite data types? ",
+            'a':'union',
+            'b':'Structure',
+            'c':'Array',
+            'd':'Stack',
+            'correct':'d'
+         },
+         {
+            'question':"A data type is stored as a 6 bit signed integer. Which of the following cannot be represented by this data type?",
+            'a':'-12',
+            'b':'6',
+            'c':'18',
+            'd':'32',
+            'correct':'d'
+         },
+         {
+            'question':"Which of the following syntax is correct for command-line arguments ?",
+            'a':'int main(int var,char *argv[])',
+            'b':'int main(char *arv[],int arg)',
+            'c':'int main(char c,int v)',
+            'd':'int main(int v, char c',
+            'correct':'a'
+         },
+         {
+            'question':"int main(int argc, char *argv[]) ?",
+            'a':'argument constant,argument variable',
+            'b':'argument count,argument vecctor',
+            'c':'argument constant,argument vector',
+            'd':'argument count,argument variable',
+            'correct':'b'
+         },
+         {
+            'question':"What argv means in command line argument ?",
+            'a':'Array of Pointers',
+            'b':'pointer to a character array',
+            'c':'Array of character pointers',
+            'd':'Array of strings',
+            'correct':'c'
+         },
+         {
+            'question':"What type of array is generally generated in Command-line argument ?",
+            'a':'MultiDimensional Array',
+            'b':'jagged Array',
+            'c':'2-dimensional Array',
+            'd':'Single Dimensional Array',
+            'correct':'b'
+         },
+         {
+            'question':"The maximum length of the command-line arguments including the spaces is ?",
+            'a':'May vary from one OS to another',
+            'b':'256 characters',
+            'c':'Depends on the number of arguments',
+            'd':'128 Characters',
+            'correct':''
+         },
+
+        
+   ],
+   q2:[
+   
+
+
+
+
+   ],
+
+   q3:[
+
+   ],
+
+   q4:[
+
+   ],
+
+   q5:[
+
+   ],
+
+   q6:[
+
+   ],
+
+   q7:[
+
+   ],
+
+   q8:[
+
+   ],
+
+   q9:[
+
+   ],
+
+}
+
+
 const Networkquiz={
    q1:[
       {
@@ -1862,4 +2065,4 @@ const Networkquiz={
    ]
 }
 
-export  {Reasquiz,Aptiquiz,Verbalquiz,Networkquiz,};
+export  {Reasquiz,Aptiquiz,Verbalquiz,Cquiz,Networkquiz,};

@@ -6,7 +6,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,topsize,setTopsize } = useContext(QuizContext)
+    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Cquiz,topsize,setTopsize } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
     useEffect(()=>{
         if(data==1){
@@ -20,17 +20,52 @@ const Categ = () => {
         else if(data==3)
           { 
               setRender(Reasdata.data3)
+              setFinalquiz(Reasquiz)
+          }
+          if(data==4)
+          {  setRender(Reasdata.data4);
+             setFinalquiz(Cquiz)
+          }
+          if(data==5)
+          {  setRender(Reasdata.data5);
+             setFinalquiz(Reasquiz)
+          }
+          if(data==6)
+          {  setRender(Reasdata.data6);
+             setFinalquiz(Reasquiz)
+          }
+          if(data==7)
+          {  setRender(Reasdata.data7);
+             setFinalquiz(Reasquiz)
+          }
+          else if(data==8)
+          { 
+              setRender(Reasdata.data8)
+              setFinalquiz(Networkquiz)
 
           }
-          else if(data==4)
+          else if(data==9)
           { 
-              setRender(Reasdata.data4)
+              setRender(Reasdata.data9)
+              setFinalquiz(Networkquiz)
+
+          }
+          else if(data==10)
+          { 
+              setRender(Reasdata.data10)
+              setFinalquiz(Networkquiz)
+
+          }
+          else if(data==11)
+          { 
+              setRender(Reasdata.data11)
               setFinalquiz(Networkquiz)
 
           }
     },[])
 
-    const category=["Aptitude","Aptitude","Reasoning","Verbal","Networking"];
+    const category=["Aptitude","Aptitude","Reasoning","Verbal","C programming",
+       "C++ Programming","Python","Java","Networking","OOPS","DBMS","Operating System"];
     return (
         <>
             <div class="reasoning">

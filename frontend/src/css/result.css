@@ -11,8 +11,8 @@
 .result_box{
 
     padding: 2rem;
-    width: 35rem;
-    height: 24rem;
+    width: 38rem;
+    height: 26rem;
     margin: 4rem 0;
     box-shadow: -10px 10px 40px rgba(0,0,0,0.3);
 
@@ -20,27 +20,28 @@
 }
 .review_sec button{
          width: 12rem;
-         height: 3rem;
+         height: 3.3rem;
          background-color:  #0eb582;
          border: none;
-         font-size:1.3rem ;
+         font-size:1.5rem ;
          letter-spacing: 0.1rem;
          color: #fff;
          cursor: pointer;
          border-radius: 0.5rem;
 }
 .review_sec button:hover{
-    background-color: #12976f;
+    background-color: rgb(48, 98, 48);
 }
 
 
 .icon{
     display: flex;
     justify-content: center;
+    margin: 1rem 0;
 }
 .fa-crown{
-    width:10rem ;
-    height: 6rem;
+    width:12rem ;
+    height: 7rem;
     font-size: 8rem;
     color: rgb(136, 136, 255);
 
@@ -71,8 +72,17 @@
     
 }
 .resultbtn button:hover{
-    background-color: rgb(47, 173, 47);
+    background-color: rgb(48, 98, 48);
 }
 .time_taken{
     font-size: 1.4rem;
+}
+
+@media (max-width:400px){
+    .result_box{
+        width: 32rem;
+        height: 26rem;
+    
+    
+    }
 }

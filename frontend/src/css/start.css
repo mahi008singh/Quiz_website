@@ -62,15 +62,14 @@
 
 .start button{
     width: 12rem;
-    height: 3.2rem;
-    margin: 1rem 0;
+    height: 3.3rem;
     letter-spacing: 0.1rem;
-    color: rgb(10, 10, 143);
     font-weight: bold;
     background-color: #fff;
     border: none;
     cursor: pointer;
-    box-shadow: 2px 2px 10px black;
+    margin: 1.2rem 0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
 }
 
 .start input{
@@ -99,16 +98,17 @@
 
 @media (max-width:480px){
     .rules{
-        width:75%;
+        width:82%;
         height: 33rem;
         padding: 1rem 0;
         font-size: 1.6rem;
     }
     .start_div{
-        width: 75%;
+        width: 82%;
         height: 16rem;
     
     }
+
     .rules ul li{
         list-style: none;
         padding: 0.5rem 0;

@@ -14,7 +14,6 @@ export default function Start() {
                   random.push(r);
                 }
               }
-
               console.log(random);
       }
     return (
@@ -23,7 +22,7 @@ export default function Start() {
         <div class="rules">
             <h1>Rules of Quiz</h1>
             <ul>
-                <li>1) The quiz contains 10 questions</li>
+                <li>1) The quiz contains no. of questions set by you</li>
                 <li>2) Each question comes with time limit, you can set timer</li>
                 <li>3) There is no negative marking in the quiz</li>
                 <li>4) Press save&next button to lock the choice and reset button to reset option</li>
@@ -32,7 +31,7 @@ export default function Start() {
         </div>
        <div class="start_div">  
          <div style={{display:"flex"}}>
-           <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>No. of question</h3>
+           <h3 style={{margin:"auto 1rem",fontSize:"1.7rem"}}>No. of question</h3>
            <input className="settimer" value={totalques} onChange={(e)=>setTotalques(e.target.value)} placeholder="10" type="number"/>
            <h3 style={{margin:"auto 1rem",fontSize:"1.8rem"}}>Set timer</h3>
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>

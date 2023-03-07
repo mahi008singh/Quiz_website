@@ -3,7 +3,7 @@ import '../App.css';
 import '../css/result.css'
 import { QuizContext } from '../Context/QuizHolder';
 import {NavLink} from 'react-router-dom';
-
+import { FaCrown} from "react-icons/fa";
 export default function Result() {
     const { correct,setCorrect, setExit, setStart,totalques, finalquiz,setReview } = useContext(QuizContext)
     const playAgain = () => {
@@ -19,7 +19,7 @@ export default function Result() {
             <section className="result">
                 <div className="result_box">
                     <div className="icon">
-                        <i className="fas fa-crown"></i>
+                        <FaCrown className=" fa-crown"/>
                     </div>
                     <div style={{ fontSize: "1.5rem", textAlign: "center" }}>You have completed the Quiz!</div>
                     <div className="score">

@@ -28,11 +28,11 @@ const Header = () => {
                         <li>
                             <NavLink to='/Signup'>Signup</NavLink>
                         </li>
-                        <FiX onClick={togle} className="fa-xmark"/>
+                        <FiX style={{fontSize:"2.5rem"}} onClick={togle} className="fa-xmark"/>
                     </ul>
                 </div>
                 <div>
-                    <FiList onClick={togle} className="fa-solid fa-bars-staggered"/>
+                    <FiList onClick={togle} className=" fa-bars-staggered"/>
                 </div>
             </nav>
             

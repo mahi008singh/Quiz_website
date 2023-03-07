@@ -10,14 +10,14 @@
 }
 .quiz-box{
     width: 50%;
-    border: 2px solid black;
+    box-shadow: -5px 8px 10px rgba(0,0,0,0.5) ;
     border-radius: 1rem;
     margin: 4rem 3rem;
 }
 .quiz_container{
     margin-top: 1.5rem;
     display: flex;
-   align-items: center;
+    align-items: center;
     flex-direction: column;
     
     
@@ -30,15 +30,15 @@
     padding: 0.5rem;
     width: 90%;
     margin-top:1rem;
-    border: 2px solid cyan;
+    border: 1px solid rgb(36, 53, 53);
     font-size: 1.6rem;
 }
 .click_option{
     color: white;
-    background-color: rgb(77, 107, 189);
+    background-color: rgb(48, 62, 100);
 }
 .option:hover{
-background-color: rgb(77, 107, 189);
+background-color: rgb(48, 62, 100);
 color:#fff;
 cursor: pointer;
 }
@@ -54,7 +54,7 @@ cursor: pointer;
     width: 10rem;
     height: 3.2rem;
     cursor: pointer;
-    background:rgb(27, 223, 27);
+    background-color:#0eb582;
     color:#fff;
     border: none;
     border-radius: 0.5rem;
@@ -144,7 +144,6 @@ cursor: pointer;
     }
     .quiz-box{
         width: 75%;
-        border: 2px solid black;
         border-radius: 1rem;
         margin: 3rem 3rem;
     }
@@ -194,7 +193,7 @@ cursor: pointer;
     }
     .reset_btn,.next_btn,.exit_btn{
         width: 8rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .timer{
         width: 75%;
