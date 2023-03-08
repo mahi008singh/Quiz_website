@@ -1064,6 +1064,9 @@ const Reasquiz ={
 // *******************************************************************************
 
 const Aptiquiz={
+
+   // Time and Work
+
     q1:[
         {
             'question':'A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is :',
@@ -1145,14 +1148,168 @@ const Aptiquiz={
             'd':'1:00 P.M.',
             'correct':'d'
          },
-         // {
-         //    'question':'',
-         //    'a':'',
-         //    'b':'',
-         //    'c':'',
-         //    'd':'',
-         //    'correct':''
-         // },
+         
+         {
+
+            'question': ' Two pipes A & B can fill a tank in 20 Minutes and 30 minutes respectively. If pipes are opened together, the time Taken to fill the tank is-?',
+            
+            'a': 'a) 50 min',
+            
+            'b':'b) 12 min',
+            
+            'c':'c) 25 min',
+            
+            'd':'d) 15 min',
+            
+            'correct':"b"
+            
+            },
+            {
+            
+            'question': ' A tap can empty a tank in one hours. A second tap can empty it in 30 minutes. If both the taps operate simultaneously, how much tme is needed to empty the tank?',
+            
+            'a': 'a) 20 min',
+            
+            'b':'b) 30 min',
+            
+            'c':'c) 40 min',
+            
+            'd':'d) 45 min',
+            
+            'correct':"a"
+            
+            },
+            
+            {
+            
+            'question': 'A tank has a leak which would empty the completely filled tank in 10 hours. If the tank is fill of water and a tap is opened which admits 4 liters of water per minute in the tank, the leak takes 15 hours to empty the tank. How many litres of water does the tank hold? ',
+            
+            'a': 'a) 2400',
+            
+            'b':'b) 4500',
+            
+            'c':'c) 1200',
+            
+            'd':'d) 7200',
+            
+            'correct':"d"
+            
+            },
+            
+            {
+            
+            'question': ' Water flows our through a circular pipe whose internal diameter is 7 cm at the rate 12 cm/sec. By how much will the level of water rise in an hour?',
+            
+            'a': 'a) 1663.2',
+            
+            'b':'b) 1500',
+            
+            'c':'c) 1747.6',
+            
+            'd':'d) 2000',
+            
+            'correct':"a"
+            
+            },
+            
+            {
+            
+            'question': ' Water is flowing at the rate of 20 km/hr through a pipe of dimension 0.3 x 0.2 m into a rectangular tank which is 200m long & 150m wide determine the time in which the level of water in the tank will rise by 8m?',
+            
+            'a': 'a) 50',
+            
+            'b':'b) 120',
+            
+            'c':'c) 150',
+            
+            'd':'d) 200',
+            
+            'correct':"d"
+            
+            },
+            
+            {
+            
+            'question': ' Two pipes A and B can fill a cistern in 3 hours and 5 hours respectively. Pipe C can empty in 2 hours. If all the three pipes are open, in how many hours the cistern will be full?',
+            
+            'a': 'a) Can’t be filled',
+            
+            'b':'b) 10 hrs',
+            
+            'c':'c) 15 hrs',
+            
+            'd':'d) 30 hrs',
+            
+            'correct':"d"
+            
+            },
+            
+            {
+            
+            'question': 'There are two pumps to fill a tank with water. First pump can fill the empty tank in 8 hours while the second in 10 hours if both the pumps are opened at the same time and kept open for 4 hours the part of tank that will be filled up is ',
+            
+            'a': 'a) 9/10',
+            
+            'b':'b) 1/10',
+            
+            'c':'c) 2/5',
+            
+            'd':'d) 1/5',
+            
+            'correct':"a"
+            
+            },
+            
+            {
+            
+            'question': ' A boy and girl together fill cistern with water. The boy pours 4 liters of water every 3 minutes and the girl pours 3 liters every 4 minutes. How much time will it take to fill 100 liters of water in the cistern',
+            
+            'a': 'a) 36 min',
+            
+            'b':'b) 42 min',
+            
+            'c':'c) 48 min',
+            
+            'd':'d) 44 min',
+            
+            'correct':"c"
+            
+            },
+            
+            {
+            
+            'question': ' A tap takes 36 hours extra to fill a tank due to leakage equivalent to half of its inflow. The inflow can fill the tank in how many hours?',
+            
+            'a': 'a) 36 hrs',
+            
+            'b':'b) 24 hrs',
+            
+            'c':'c) 30 hrs',
+            
+            'd':'d) 18 hrs',
+            
+            'correct':"a"
+            
+            },
+            
+            {
+            
+            'question': ' A water tank can be filled by a tap in 30 minutes and another tap can fill it in 60 minutes If both the taps are kept open for 5 minutes and then the first tap is closed how long will it take for the tank to be filled?',
+            
+            'a': 'a) 20 min',
+            
+            'b':'b) 25 min',
+            
+            'c':'c) 30 min',
+            
+            'd':'d) 45 min',
+            
+            'correct':"d"
+            
+            },
+            
+            
+            
             
     ],
     q2:[
@@ -1502,6 +1659,121 @@ const Aptiquiz={
 
     ],
     q5:[ 
+      {
+
+         'question': 'A train takes 18 seconds to pass through a platform 162 m long and 15 seconds to pass another platform 120 m long. The length of the train (in m) is?',
+         
+         'a': 'a) 70 m',
+         
+         'b':'b) 80 m',
+         
+         'c':'c) 90 m',
+         
+         'd':'d) 105 m',
+         
+         'correct':"c"
+         
+         },
+         {
+         
+         'question': ' A train is moving at a speed of 132 km/hr. if the length of the train is 110 meters, how long will it take to cross arailway platform 165 meters long?',
+         
+         'a': 'a) 5 sec',
+         
+         'b':'b) 7.5 sec',
+         
+         'c':'c) 10 sec',
+         
+         'd':'d) 15 sec',
+         
+         'correct':"b"
+         
+         },
+         
+         {
+         
+         'question': ' A train passes by a lamp post at platform in 7 sec. and passes by the platform completely in 28 sec. if the length of the platform is 390 m, then length of the train (in meters) is?',
+         
+         'a': 'a) 120 m',
+         
+         'b':'b) 130 m',
+         
+         'c':'c) 140 m',
+         
+         'd':'d) 150 m',
+         
+         'correct':"b"
+         
+         },
+         
+         {
+         'question': ' A train travelling at a speed of 55 km/hr. travels form place X to place Y in 4 hours. If its speed is increased by 5 km/hr., then the time of journey is reduced by?',
+         'a': 'a) 25 min',
+         'b':'b) 35 min',
+         'c':'c) 20 min',
+         'd':'d) 30 min',
+         'correct':"c"
+         },
+         
+         {
+         'question': ' How much time does a train 50 m long, moving at 68 km/hr. takes to pass another train 75 m long moving at 50 km/hr. in the same direction?',
+         'a': 'a) 5 sec',
+         'b':'b) 10 sec',
+         'c':'c) 20 sec',
+         'd':'d) 25 sec',
+         'correct':"d"
+         },
+         
+         {
+         
+         'question': ' A train 150 m long passes a stone in 30 seconds and another train of the same length travelling in opposite direction in 10 seconds. The speed of the second train is?',
+         'a': 'a) 90 km/hr',
+         'b':'b) 125 km/hr',
+         'c':'c) 75 km/hr',
+         'd':'d) 25 km/hr',
+         'correct':"a"
+         },
+         
+         {
+         
+         'question': 'A train is moving with the speed of 180 km/ hour. Its speed (in meters per second) is? ',
+         'a': 'a) 5 min/sec',
+         'b':'b) 40 min/sec',
+         'c':'c) 30 min/sec',
+         'd':'d) 50 min/sec',   
+         'correct':"d"
+         
+         },
+         
+         {
+         
+         'question': ' A 150 meter long train crosses a 500 meter long bridge in 30 second. What time will it take to cross a platform 370 meter long?',
+         'a': 'a) 36 sec', 
+         'b':'b) 30 sec',   
+         'c':'c) 24 sec',
+         'd':'d) 18 sec',
+         'correct':"c"   
+         },
+
+         {
+         'question': ' A train is running at 36 km/hour, crosses pole in 25 seconds, its length is?',
+         'a': 'a) 248 m',
+         'b':'b) 250 m',
+         'c':'c) 255 m',
+         'd':'d) 260 m',
+         'correct':"d"
+         
+         },
+
+         {
+         'question': 'Two travel in the same direction at the speeds of 56 km/hour and 29 km/hour respectively. The faster train passes a man in the slower train in 10 seconds. The length of the faster train (in meters) is?', 
+         'a': 'a) 100 m',
+         'b':'b) 80 m',   
+         'c':'c) 75 m',
+         'd':'d) 120 m',
+         'correct':"c"
+         
+         },
 
     ],
     q6:[
@@ -1510,123 +1782,75 @@ const Aptiquiz={
     q7:[
       {
 
-         'question': '94 is divided into two parts in such a way that theFifth part of the first and the eighth part of the Second are in the ratio 3 : 4. The first part is;',
-         
+         'question': '94 is divided into two parts in such a way that the Fifth part of the first and the eighth part of the Second are in the ratio 3 : 4. The first part is;',
          'a': 'a) 27',
-         
          'b':'b) 30',
-         
          'c':'c) 36',
-         
          'd':'d) 48',
-         
          'correct':"b"
-         
          },
+
          {
-         
          'question': 'The fourth proportional to 3,5 and 21 is:',
-         
          'a': 'a) 35',
-         
          'b':'b) 7/5',
-         
          'c':'c) 5/7',
-         
          'd':'d) 12.6',
-         
          'correct':"a"
-         
          },
+
          {
-         
          'question': 'A sum of Rs. 7000 is divided among A, B, C in such a way that shares of A and B are in the ratio 2 : 3 and those of B and C are in the ratio 4: 5. The amount received by C is:',
-         
          'a': 'a) 2600',
-         
          'b':'b) 2800',
-         
          'c':'c) 3000',
-         
          'd':'d) 3900',
-         
          'correct':"c"
-         
          },
+
          {
-         
          'question': 'Boxes A and B have certain number of balls in them. If three balls are transferred from box A to box B, the ratio of the balls in the two boxes is 7:3.However, if twice the number of balls is transferred from box A to box B, the new ratio will be 3:2.Find the original difference between the number of balls in A and B.',
-         
          'a': 'a) 18',
-         
          'b':'b) 6',
-         
          'c':'c) 24',
-         
          'd':'d) 12',
-         
          'correct':"a"
-         
          },
+
          {
-         
          'question': 'The ratio of boys to girls in a section 4 having 45 students was 3:2.If the number of boys had been same as the number of girls and vice versa, the total number of girls would have been 9 more than the number of boys in section 3.If the girls constitute 25% of the class strength in section 3, find the total strength of the students in section 3',
-         
          'a': 'a) 12',
-         
          'b':'b) 18',
-         
          'c':'c) 24',
-         
          'd':'d) 36',
-         
          'correct':"c"
-         
          },
+
          {
-         
          'question': "It's given that the ratio of two numbers is 3 : 2. if 10 more than the sum of these two numbers is added to their product , square of half of 32 is obtained . What could be the smaller number?",
-         
-         'a': 'a) 6',
-         
+         'a': 'a) 6', 
          'b':'b) 12',
-         
          'c':'c) 16',
-         
          'd':'d) 18',
-         
          'correct':"b"
          
          },
          {
          
          'question': 'In a factory men, women and children were employed in the ratio 8 : 5 : 1 to finish a job and their individual wages were in the ratio 5 : 2 ; 3. When 20 women were employed, the total daily wages of all amounted to Rs. 318. Find the total daily wages paid to each category In Rs.',
-         
          'a': 'a)280,70,110 ',
-         
          'b':'b) 240,60,18',
-         
          'c':'c) 380, 318, 110',
-         
          'd':'d) cannot be determined',
-         
          'correct':"b"
-         
          },
          {
-         
          'question': 'The income of 2 people X and Y is in the ratio 5:4.X says to Y, “After spending 45% of my income I save an amount of Rs.11000 every month.” In reply Y says, “My saving is 25% of the value of your savings.” Find the expenditure of Y as a percentage of the income.',
-         
          'a': 'a) 85%',
-         
-         'b':'b) 78%',
-         
+         'b':'b) 78%',         
          'c':'c) 72.5%',
-         
          'd':'d) 82.82%',
-         
          'correct':"d"
-         
          },
          {
          
