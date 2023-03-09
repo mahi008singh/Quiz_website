@@ -81,7 +81,99 @@ const Reasquiz ={
             'correct':"b",
             'tag':""
          },
-         
+
+         {
+            'question':'In a certain coded language "PERSON" is written as "561957" then "SHOULD" be written as ',
+            'a':'a) 186334',
+            'b':'b) 168343',
+            'c':'c) 433681',
+            'd':'d) 186433',
+            'correct':"a",
+            'tag':"tcs nqt-20"
+
+         },
+         {
+            'question':'If "JUNE" is coded as "5531" then how will you code "JULY" ',
+            'a':'a) 7613',
+            'b':'b) 7321',
+            'c':'c) 7331',
+            'd':'d) 1335',
+            'correct':"c",
+            'tag':"Amcat"
+
+         },
+         {
+            'question':'If Z=2197 and R=729 then J will be ?',
+            'a':'a) 216',
+            'b':'b) 124',
+            'c':'c) 512',
+            'd':'d) 125',
+            'correct':"d",
+            'tag':"Infosys"
+
+         },
+         {
+            'question':'If "ENERGY" is written as "251814755" then how will "HOCKEY" be written as ',
+            'a':'a) 251135158',
+            'b':'b) 251815835',
+            'c':'c) 251815853',
+            'd':'d) 251511853',
+            'correct':"d",
+            'tag':""
+
+         },
+         {
+            'question':'If SUN=26 GPL=11 then SKT=?',
+            'a':'a) 10',
+            'b':'b) 11',
+            'c':'c) 12',
+            'd':'d) 13',
+            'correct':"a",
+            'tag':"Infosys"
+
+         },
+         {
+            'question':'If  OM=56 and GOT=126 then  CARD=? ',
+            'a':'a) 108',
+            'b':'b) 164',
+            'c':'c) 120',
+            'd':'d) 104',
+            'correct':"d",
+            'tag':"Amcat"
+
+         },
+         {
+            'question':'In a certain language "POND" is written as "18192012" how will "STARS" be written as? ',
+            'a':'a) 21247243',
+            'b':'b) 21247263',
+            'c':'c) 11247243',
+            'd':'d) 21246263',
+            'correct':"b",
+            'tag':""
+
+         },
+
+         {
+            'question':'If NOSTALGIA = 81  then FRICTION=? ',
+            'a':'a) 64',
+            'b':'b) 105',
+            'c':'c) 85',
+            'd':'d) 36',
+            'correct':"a",
+            'tag':"Amcat"
+
+         },
+         {
+            'question':'How many pairs of letters are there in the word CARROT which have as many letters between them in the word as in the English alphabet series in both forward and backward direction?',
+            'a':'a) None  ',
+            'b':'b) Two',
+            'c':'c) More than three',
+            'd':'d) One',
+            'correct':"d",
+            'tag':"tcs-nqt"
+
+         },
+
          {
             'question':'In a certain language "hu man sam" means "water is life", "sam na zo" means "Glass of water" "chi zo ma" means "life of PI" then PI means',
             'a':'a) hu',
@@ -100,6 +192,33 @@ const Reasquiz ={
             'd':'d) GHIRT',
             'correct':"d",
             'tag':"IBM"
+         },
+         {
+            'question':'In a certain coded language "STUDENT" is written as "TVXHJTA". How will "TEACHER" be written in that same code? ',
+            'a':'a)UDBGMKY ',
+            'b':'b)UYBGMKY',
+            'c':'c)UGDGMKY',
+            'd':'d)TGBGMKY',
+            'correct':"c",
+            'tag':"tcs-nqt 20"
+         },
+         {
+            'question':' In a certain code, POETRY is written as QONDSQX and OVER is written as PNUDQ. How is MORE written in that code language?',
+            'a':'a)LNNQD ',
+            'b':'b)NNNQD',
+            'c':'c)NLNQD',
+            'd':'d)NLPQD',
+            'correct':"c",
+            'tag':""
+         },
+         {
+            'question':'CHAT is written as YTAH anf FEAR =VWAJ then PING=?',
+            'a':'a)GINP',
+            'b':'b)QGNI',
+            'c':'c)LSNU',
+            'd':'d)KRMT',
+            'correct':"c",
+            'tag':""
          },
          {
             'question':'FIG : EGHJFH :: BIN : ?',
@@ -395,7 +514,16 @@ const Reasquiz ={
     
     ],
     q4:[
+      {
+         'question':'B,D,F,G and H are sitting in a row facing north. F is sitting to the immediate left of D. There are two persions sitting b/w D and G, B is sitting adjacent to G and to the immediate left of F if G is not at any of the extreme ends, who is sitting exactly in the middle?',
+         'a':'a) B',
+         'b':'b) F',
+         'c':'c) G',
+         'd':'d) H',
+         'correct':"B",
+         'tag':"tcs nqt-22"
 
+      },
     ],
     q5:[
 
