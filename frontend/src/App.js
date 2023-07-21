@@ -10,6 +10,7 @@ import Signup from './Signup';
 import Login from './Login'
 import Categ from './Cat-component/Categ';
 import Review from './components/Review';
+import Codeques from './components/Codeques';
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path={'/Practice'} element={<Practice/>} />
             <Route path={'/Quizplay'} element={ <Quizplay/>} />
             <Route path={'/Categ'} element={<Categ/>}/>
+            <Route path={'/Codeques'} element={<Codeques/>}/>
             <Route path={'/Signup'} element={<Signup/>} />
             <Route path={'/Login'} element={<Login/>} />
             <Route path={'/Review'} element={<Review/>} />

@@ -2,7 +2,8 @@ const express=require('express');
 const app=express();
 const path= require('path');
 const bcrypt=require('bcrypt')
-const Models=require('./db/collections')
+const Models=require('./db/collections');
+const { Collection } = require('mongoose');
 
 app.use('/public',express.static('public'))
 app.use('/images',express.static('images'))
@@ -32,40 +33,47 @@ app.get("*",(req,res)=>{
 //     res.sendFile(path.join(__dirname,'views','sign_up.html'))
 // })
 
-app.get('/login',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','student_login.html'))
-})
+// app.get('/login',(req,res)=>{
+//     res.sendFile(path.join(__dirname,'views','student_login.html'))
+// })
 
-app.get('/practice',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','practice.html'))
+app.get('/register',(req,res)=>{
+    res.send("register page")
 })
-
-app.get('/compete',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','compete.html'))
-})
-
 
 app.get('/demo',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','demo.html'))
+    res.send("demo page");
 })
 
-//for admin purpose
 
-app.get('/admin',(req,res)=>{
-    res.sendFile(path.join(__dirname,'views','admin','home.html'))
-})
+
 
 app.post('/register',async (req,res)=>{
-
+     const [name,email,password]=req.body;
+    //  const hashedPass= await bcrypt.hash(password,5);
+     const userData={
+         name:name,
+         email:email,
+         password:password
+     }
+     
     try{
-        const hashedPass= await bcrypt.hash(req.body.password,5);
-               const registration= new  Models({
-                   name:req.body.name,
-                   email:req.body.email,
-                   password:hashedPass
-               })
-            const registered= await registration.save()
-            res.status(201).redirect('/')
+       
+        const check=await Models.findOne({email:email})
+        if(check){
+            res.json("email already exist")
+        }
+        else{
+            await Models.insertMany([userData]);
+        }
+            //    const registration= new  Models({
+            //        name:req.body.name,
+            //        email:req.body.email,
+            //        password:hashedPass
+            //    })
+
+            // const registered= await registration.save()
+            // res.status(201).redirect('/')
     
       }
       catch(e){
@@ -74,7 +82,7 @@ app.post('/register',async (req,res)=>{
     
 })
 
-app.post('/login',async (req,res)=>{
+app.post('/',async (req,res)=>{
         try{
          email=req.body.email;
          password=req.body.password;

@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {NavLink} from 'react-router-dom'
-import './css/style.css';
+import './css/style.css'; 
 import './css/home.css';
 import Homedata from './Api/Homecateg';
 import { AiFillBulb} from "react-icons/ai";
@@ -28,7 +28,7 @@ const Home = () => {
                       <div class="content">
                          <h3>Try Quizes for your Practice</h3>
                          <p>Practice coding, reasoning, apti, and cse related quizes on prepquizz</p>
-                         <a href="/Practice" class="btn">Practice</a>
+                         <a href="/Practice" className="btn">Practice</a>
                       </div>
                    </section>
 
@@ -77,7 +77,7 @@ const Home = () => {
 
 <section class="home-courses">
 
-<h1 class="heading"> Coding Platform Problems </h1>
+<h1 class="heading"> Coding Platform Problem Sheets </h1>
 
 <div class="swiper platform_page">
 
@@ -88,13 +88,12 @@ const Home = () => {
               <>
                  <div class="platform_name slide">
                     <div class="image">
-                       <img src={require('./images/course-1-3.png')} alt="" />
+                       <img height="120rem" src={elem.img} alt="" />
                        <h3>{elem.title}</h3>
                     </div>
                     <div class="solve">
-                       <h3>{elem.subtitle}</h3>
-                       <p>{elem.para}</p>
-                       <a href="/cat" class="btn">Solve</a>
+                      
+                       <NavLink to={"/Codeques"} className="btn" >solve</NavLink>
                     </div>
                  </div>
 

@@ -5,7 +5,7 @@ const Homedata={
             subtitle:"Leetcode",
             para:"Practice here",
             link:"/Categ",
-            img:"../images/course-1-3.png",
+            img:"imagges/leetcode_logo.png",
             apiNum:1
         },
         {
@@ -13,7 +13,7 @@ const Homedata={
             subtitle:"GeeksforGeeks",
             para:"Practice here",
             link:"/Categ",
-            img:"../images/course-1-1.png",
+            img:"imagges/gfg_logo.png",
             apiNum:1
         },
       
@@ -22,7 +22,7 @@ const Homedata={
             subtitle:"Codechef",
             para:"Practice here",
             link:"/Categ",
-            img:"../images/course-1-2.png",
+            img:"imagges/codechef_logo.jpg",
             apiNum:1
         },
         {
@@ -30,34 +30,34 @@ const Homedata={
             subtitle:"Hackerrank",
             para:"Practice here",
             link:"/Categ",
-            img:"../images/course-1-6.png",
+            img:"imagges/hackrank_logo.png",
             apiNum:1
         },
-        {
-            title:"Codeforces",
-            subtitle:"Codeforces",
-            para:"Practice here",
-            link:"/Categ",
-            img:"../images/course-1-5.png",
-            apiNum:1
-        },
+        // {
+        //     title:"Codeforces",
+        //     subtitle:"Codeforces",
+        //     para:"Practice here",
+        //     link:"/Categ",
+        //     img:"../images/course-1-5.png",
+        //     apiNum:1
+        // },
         
         
 
 ],
 data2:[
     {
-        title:"Reasoning(tcs/infy)",
+        title:"Reasoning(Company specific)",
         link:"/Categ",
         img:"../images/subject-icon-1.png",
     },
     {
-        title:"Aptitude(tcs/infy)",
+        title:"Aptitude(Company specific)",
         link:"/Categ",
         img:"../images/subject-icon-2.png",
     },
     {
-        title:"Coding(tcs/infy)",
+        title:"Coding(Company specific)",
         link:"/Categ",
         img:"../images/subject-icon-3.png",
     },
