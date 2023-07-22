@@ -1,12 +1,13 @@
 .ques_bar{
     width: 98%;
-    border: 2px solid;
+    border: 1px solid;
     display: flex;
     justify-content: space-around;
     margin: 1rem;
-    height: 4rem;
+    height:5rem;
     align-items: center;
     font-size: 1.5rem;
+    /* box-shadow: 2px 2px 6px rgba(0,0,0,0.3); */
 
 }
 .ques_bar h1{
@@ -16,14 +17,22 @@
 .ques_bar span{
     
     margin: 1rem;
+    width: 3rem;
+    color: red;
     
 }
+
 .codecateg{
-    border: 2px solid;
     position: relative;
-    padding: 2rem;
+    padding: 2.2rem;
     margin: 1rem;
     height: 7rem;
+    box-shadow: 3px 4px 6px rgba(0,0,0,0.3);
+    /* position: sticky;
+    top: 0;
+    z-index: 10; */
+    background-color: #fff;
+    border-radius: 4rem;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -31,7 +40,7 @@
     
 }
 .codecateg_new{
-    border: 2px solid;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
     position: relative;
     padding: 2rem;
     margin: 1rem;
@@ -42,37 +51,49 @@
 }
 .codecateg_div{
     width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
 }
 .codecateg_div button{
-    border: 2px solid;
+    /* border: 1px solid; */
     margin: 0.6rem 1rem;
     height: 3rem;
     padding:0 1rem;
     cursor: pointer;
     border-radius: 1.4rem;
+    background-color:#d2f3e9;
 
+}
+.codecateg_div button:focus{
+    background-color:#0eb582;
 }
 
 .expand{
    position: absolute;
    right: 1rem;
+   top: 0.8rem;
    width: 10%;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-left: 2px solid;
    
    height: 100%;
 }
 .expand button{
   position: relative;
   width: 6rem;
+  color: #fff;
   right: 1rem;
   height: 2.5rem;
   border-radius: 0;
-  border: 2px solid;
+  letter-spacing: 1px;
   cursor: pointer;
-  font-size: 1rem;
+  background-color:#0eb582;
+  font-size: 1.2rem;
 }
 
 @media (max-width:600px){

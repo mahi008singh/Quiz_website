@@ -13,6 +13,48 @@ const  Leetques=[
         link:"https://leetcode.com/problems/remove-duplicates-from-sorted-list/"
       },
       {
+        ques:"Flatten Binary Tree to Linked List",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/flatten-binary-tree-to-linked-list/"
+      },
+      {
+        ques:"Remove Nth Node From End of List",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+      },
+      {
+        ques:"Merge In Between Linked Lists",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/merge-in-between-linked-lists/"
+      },
+      {
+        ques:"Swapping Nodes in a Linked List",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/swapping-nodes-in-a-linked-list/"
+      },
+      {
+        ques:"Reorder List",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/reorder-list/"
+      },
+      {
+        ques:"Partition List",
+        diff:"medium",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/partition-list/"
+      },
+      {
+        ques:"Merge Two Sorted Lists",
+        diff:"easy",
+        category:"Linkedlist",
+        link:"https://leetcode.com/problems/merge-two-sorted-lists/"
+      },
+      {
         ques:"linked list cycle",
         diff:"easy",
         category:"Linkedlist",

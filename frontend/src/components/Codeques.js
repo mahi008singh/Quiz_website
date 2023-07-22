@@ -36,22 +36,24 @@ const Codeques = () => {
                 
                </div>
                 <div className='expand'>
-                  <button onClick={()=>setExpand(prev=>!prev)}>{(expand)?"expand":"collapse"}</button>
+                  <button onClick={()=>setExpand(prev=>!prev)}>{(expand)?"see all":"see less"}</button>
                 </div>
           </div>
-             {
-                prob1.map((e)=>{
-                       return(
-                        <>
-                            <div className='ques_bar'>
-                                <h1>{e.ques}</h1>
-                                 <a  target="_blank" href={e.link}>visit</a>
-                                <span style={{color:"color: rgb(44, 225, 44);",fontWeight:"900"}}>{e.diff}</span>
-                            </div>
-                        </>
-                       )
-                })
-             }
+            <div >
+                  {
+                      prob1.map((e)=>{
+                            return(
+                              <>
+                                  <div className='ques_bar'>
+                                      <h1>{e.ques}</h1>
+                                      <a  target="_blank" href={e.link}>visit</a>
+                                      <span style={{color:"color: rgb(44, 225, 44);",fontWeight:"900"}}>{e.diff}</span>
+                                  </div>
+                              </>
+                            )
+                      })
+                  }
+            </div>
        </section>
     </>
   );
