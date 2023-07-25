@@ -1,17 +1,32 @@
 
 import React, { useState } from 'react';
+import { useContext } from 'react';
 import {NavLink} from 'react-router-dom'
-import Leetques from '../Api/Codeprob'
+import codeprac from '../Api/Codeprob'
 import '../css/codeques.css'
-
+import { QuizContext } from '../Context/QuizHolder';
 
 
 const Codeques = () => {
-
-  const [prob1,setProb1]=useState(Leetques);
+  const {platform, setPlatform } = useContext(QuizContext)
+  // const [select,setSelect]=useState(codeprac.Leetques);
+  let select;
+  if(platform==0){
+    select=codeprac.Leetques
+  }else if(platform==1){
+    select=codeprac.gfgques
+  }
+  else if(platform==2){
+    select=codeprac.chefques
+  }
+  else if(platform==3){
+    select=codeprac.hackques
+  }
+  const [prob1,setProb1]=useState(select);
+  
   const [expand,setExpand]=useState(true)
   const filterques=(categ)=>{
-     let filteredarr= Leetques.filter((currElem)=>{
+     let filteredarr= select.filter((currElem)=>{
           return currElem.category===categ
         })
        setProb1(filteredarr)
@@ -21,7 +36,7 @@ const Codeques = () => {
        <section>
           <div className={(expand)?'codecateg':"codecateg_new"}>
                <div className='codecateg_div'>
-               <button onClick={()=>setProb1(Leetques)}>All</button>
+               <button onClick={()=>setProb1(select)}>All</button>
                <button onClick={()=>filterques("array")}>Array</button>
                 <button onClick={()=>filterques("string")}>String</button>
                 <button onClick={()=>filterques("Linkedlist")}>Linked List</button>
@@ -29,10 +44,12 @@ const Codeques = () => {
                 <button onClick={()=>filterques("Hashing")}>Hashing</button>
                 <button onClick={()=>filterques("p_q")}>priority queue</button>
                 <button onClick={()=>filterques("bst")}>BST</button>
+                <button onClick={()=>filterques("DP")}>dynamic programming</button>
                 <button onClick={()=>filterques("slidingwindow")}>Sliding window</button>
                 <button onClick={()=>filterques("2pointers")}>Two pointers</button>
                 <button onClick={()=>filterques("sorting")}>sorting</button>
                 <button onClick={()=>filterques("binsearch")}>Binary search</button>
+                
                 
                </div>
                 <div className='expand'>

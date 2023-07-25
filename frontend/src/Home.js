@@ -1,13 +1,16 @@
 import React,{useState} from 'react';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
+import { useContext } from 'react';
 import './css/style.css'; 
 import './css/home.css';
 import Homedata from './Api/Homecateg';
+import { QuizContext } from './Context/QuizHolder';
 import { AiFillBulb} from "react-icons/ai";
-
+import Codeques from './components/Codeques';
 const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
       const [recommend,setRecommend]=useState(Homedata.data2);
+      const { platform,setPlatform } = useContext(QuizContext)
     return (
         <>
           <section class="home">
@@ -83,17 +86,18 @@ const Home = () => {
 
    <div class="platform_container">
      {
-        popular.map((elem)=>{
+        popular.map((elem,ind)=>{
+         
            return(
               <>
                  <div class="platform_name slide">
                     <div class="image">
-                       <img height="120rem" src={elem.img} alt="" />
+                       <img height="160rem" src={elem.img} alt="" />
                        <h3>{elem.title}</h3>
                     </div>
                     <div class="solve">
                       
-                       <NavLink to={"/Codeques"} className="btn" >solve</NavLink>
+                       <NavLink to={"/Codeques"} className="btn" onClick={()=>setPlatform(ind)}>solve</NavLink>
                     </div>
                  </div>
 

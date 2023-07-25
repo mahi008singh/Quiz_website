@@ -17,7 +17,7 @@ const Review = () => {
                                       <p>{elem.name}</p>
                                   </div>
                                   <div className="r2">
-                                      <p>| correct:{elem.correct}</p>
+                                      <p>correct:{elem.correct}</p>
                                   </div>
                              </div> 
                            </>
