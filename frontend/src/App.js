@@ -11,6 +11,7 @@ import Login from './Login'
 import Categ from './Cat-component/Categ';
 import Review from './components/Review';
 import Codeques from './components/Codeques';
+import Contact from './components/Contact'
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path={'/Signup'} element={<Signup/>} />
             <Route path={'/Login'} element={<Login/>} />
             <Route path={'/Review'} element={<Review/>} />
+            <Route path={'/Contact'} element={<Contact/>} />
 
 
        </Routes>

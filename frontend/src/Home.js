@@ -50,7 +50,7 @@ const Home = () => {
 
           <section class="subjects">
 
-             <h1 class="heading">Our Recommendation</h1>
+             <h1 class="heading">Recommended</h1>
 
              <div class="box-container">
 
@@ -130,8 +130,9 @@ const Home = () => {
 
       <div className="box">
          <h3>useful links</h3>
-         <a href="#" class="link">ask questions</a>
-         <a href="#" class="link">send feedback</a>
+         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} class="link">ask questions</NavLink>
+          <br/>
+         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} class="link">send feedback</NavLink>
          <a href="#" class="link">privacy policy</a>
          <a href="#" class="link">terms of use</a>
       </div>

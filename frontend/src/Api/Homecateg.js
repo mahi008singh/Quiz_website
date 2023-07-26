@@ -66,11 +66,11 @@ data2:[
         link:"/Categ",
         img:"../images/subject-icon-4.png",
     },
-    {
-        title:"Networking(cisco)",
-        link:"/Categ",
-        img:"../images/subject-icon-6.png",
-    },
+    // {
+    //     title:"Networking(cisco)",
+    //     link:"/Categ",
+    //     img:"../images/subject-icon-6.png",
+    // },
      
 
 ]

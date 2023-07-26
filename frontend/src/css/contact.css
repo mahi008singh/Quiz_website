@@ -1,0 +1,43 @@
+.contact_div{
+   
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.contact_div form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 45rem;
+    margin: 2rem;
+
+}
+.contact_div form input{
+    width: 98%;
+    padding-left: 2rem;
+    border: 2px solid #0aa778;
+    height: 4rem;
+    margin: 1rem 0;
+
+}
+.contact_div form textarea{
+    width: 98%;
+    height: 20rem;
+    padding-left: 2rem;
+    border: 2px solid #0aa778;
+
+}
+.contact_div form button{
+    width: 10rem;
+    height: 4rem;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #0aa778;
+    color: #fff;
+
+
+}

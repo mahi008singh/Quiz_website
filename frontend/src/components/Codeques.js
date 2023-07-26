@@ -49,6 +49,7 @@ const Codeques = () => {
                 <button onClick={()=>filterques("2pointers")}>Two pointers</button>
                 <button onClick={()=>filterques("sorting")}>sorting</button>
                 <button onClick={()=>filterques("binsearch")}>Binary search</button>
+                <button onClick={()=>filterques("matrix")}>Matrix</button>
                 
                 
                </div>
@@ -64,7 +65,7 @@ const Codeques = () => {
                                   <div className='ques_bar'>
                                       <h1>{e.ques}</h1>
                                       <a  target="_blank" href={e.link}>visit</a>
-                                      <span style={{color:"color: rgb(44, 225, 44);",fontWeight:"900"}}>{e.diff}</span>
+                                      <span style={{fontWeight:"900"}}>{e.diff}</span>
                                   </div>
                               </>
                             )

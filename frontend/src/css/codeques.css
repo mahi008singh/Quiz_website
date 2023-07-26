@@ -1,9 +1,10 @@
 .ques_bar{
     width: 98%;
-    border: 1px solid;
+    border: 1px solid #0aa778;
     display: flex;
     justify-content: space-around;
     margin: 1rem;
+    border-radius: 1rem;
     height:5rem;
     align-items: center;
     font-size: 1.5rem;
@@ -12,6 +13,7 @@
 }
 .ques_bar h1{
     width: 38rem;
+    padding: 1rem 0;
     
 }
 .ques_bar span{
@@ -24,15 +26,16 @@
 
 .codecateg{
     position: relative;
-    padding: 2.2rem;
+    padding:1.7rem 2.2rem;
     margin: 1rem;
     height: 7rem;
-    box-shadow: 3px 4px 6px rgba(0,0,0,0.3);
+    border: 2px solid #0aa778;
+    /* box-shadow: 3px 4px 6px rgba(0,0,0,0.3); */
     /* position: sticky;
     top: 0;
     z-index: 10; */
     background-color: #fff;
-    border-radius: 4rem;
+    border-radius: 2rem;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -40,7 +43,8 @@
     
 }
 .codecateg_new{
-    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    border: 2px solid #0aa778;
+    border-radius: 2rem;
     position: relative;
     padding: 2rem;
     margin: 1rem;
@@ -80,14 +84,14 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   
    height: 100%;
 }
 .expand button{
-  position: relative;
+  position: absolute;
   width: 6rem;
   color: #fff;
   right: 1rem;
+  bottom: 2rem;
   height: 2.5rem;
   border-radius: 0;
   letter-spacing: 1px;
@@ -101,4 +105,10 @@
         font-size: 1rem;
     
     }
+  
+    .expand button{
+        font-size: 0.7rem;
+        width: 5rem;
+     
+      }
 }

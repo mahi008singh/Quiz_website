@@ -61,6 +61,9 @@ const  codeprac={
       category:"Linkedlist",
       link:"https://leetcode.com/problems/linked-list-cycle/"
     },
+
+    //************String*************
+
     {
       ques:"Longest Common Prefix",
       diff:"easy",
@@ -104,12 +107,23 @@ const  codeprac={
       category:"string",
      link:"https://leetcode.com/problems/palindrome-partitioning"
     },
+
+    // *********************Array***************
     {
-      ques:"contiguous sum",
-      diff:"easy",
+      ques:"Maximum Ice Cream Bars",
+      diff:"medium",
       category:"array",
-      link:""
+      link:"https://leetcode.com/problems/maximum-ice-cream-bars/"
     },
+    {
+      ques:"Validate Stack Sequences",
+      diff:"medium",
+      category:"array",
+      link:"https://leetcode.com/problems/validate-stack-sequences"
+    },
+
+    // ******************2pointers*****************
+
     {
       ques:"Minimum Number of Swaps to Make the String Balanced",
       diff:"easy",
@@ -129,18 +143,57 @@ const  codeprac={
       link:"https://leetcode.com/problems/remove-duplicates-from-sorted-array-II"
     },
     
+    // ***************sliding_window**************
+
     {
       ques:"maximum sum subarray",
       diff:"easy",
       category:"slidingwindow",
       link:""
     },
+
+    //****************Binary_search***************
+
     {
-      ques:"maximum sum subarray",
-      diff:"easy",
+      ques:"Koko Eating Bananas",
+      diff:"medium",
       category:"binsearch",
-      link:""
+      link:"https://leetcode.com/problems/koko-eating-bananas/"
     },
+
+    // -----******------Matrix--------******--------
+    {
+      ques:"Delete Greatest Value in Each Row",
+      diff:"easy",
+      category:"matrix",
+      link:"https://leetcode.com/problems/delete-greatest-value-in-each-row"
+    },
+    {
+      ques:"Lucky Numbers in a Matrix",
+      diff:"easy",
+      category:"matrix",
+      link:"https://leetcode.com/problems/lucky-numbers-in-a-matrix"
+    },
+    {
+      ques:"Find the Width of Columns of a Grid",
+      diff:"easy",
+      category:"matrix",
+      link:"https://leetcode.com/problems/find-the-width-of-columns-of-a-grid"
+    },
+    {
+      ques:"Spiral Matrix II",
+      diff:"medium",
+      category:"matrix",
+      link:"https://leetcode.com/problems/spiral-matrix-II"
+    },
+    {
+      ques:"Rotate Image",
+      diff:"medium",
+      category:"matrix",
+      link:"https://leetcode.com/problems/rotate-image"
+    },
+
+    // -----******----dynamic programming-----******-----
     {
       ques:"Pascal's Triangle",
       diff:"easy",
