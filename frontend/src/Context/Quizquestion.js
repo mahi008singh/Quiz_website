@@ -1784,7 +1784,97 @@ const Aptiquiz={
          },         
     ],
     q4:[
-
+      {
+         'question':'In the first 10 overs of a cricket game, the run rate was only 3.2. What should be the run rate in the remaining 40 overs to reach the target of 282 runs?',
+          'a':' 6.25',
+          'b':'6.5',
+          'c':'6.75',
+          'd':'7',
+          'correct':'a',
+          'tag':''
+     },
+     {
+         'question':'The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?',
+          'a':'0',
+          'b':'1',
+          'c':'10',
+          'd':'19',
+          'correct':'d',
+          'tag':''
+     },
+     {
+         'question':'The captain of a cricket team of 11 members is 26 years old and the wicket keeper is 3 years older. If the ages of these two are excluded, the average age of the remaining players is one year less than the average age of the whole team. What is the average age of the team?',
+          'a':'23 years',
+          'b':'24 years',
+          'c':'25 years',
+          'd':'None of these',
+          'correct':'a',
+          'tag':''
+     },
+     {
+         'question':'The average age of husband, wife and their child 3 years ago was 27 years and that of wife and the child 5 years ago was 20 years. The present age of the husband is:',
+          'a':'35 years',
+          'b':'40 years',
+          'c':'50 years',
+          'd':'None of these',
+          'correct':'b',
+          'tag':''
+     },
+     {
+         'question':"In Arun's opinion, his weight is greater than 65 kg but less than 72 kg. His brother doest not agree with Arun and he thinks that Arun's weight is greater than 60 kg but less than 70 kg. His mother's view is that his weight cannot be greater than 68 kg. If all are them are correct in their estimation, what is the average of different probable weights of Arun?",
+          'a':'67 kg',
+          'b':'68 kg',
+          'c':'69 kg',
+          'd':'Data inadequate',
+          'correct':'a',
+          'tag':''
+     },
+     {
+         'question':'A library has an average of 510 visitors on Sundays and 240 on other days. The average number of visitors per day in a month of 30 days beginning with a Sunday is:',
+          'a':'250',
+          'b':'276',
+          'c':'280',
+          'd':'285',
+          'correct':'d',
+          'tag':''
+     },
+     {
+         'question':'If the average marks of three batches of 55, 60 and 45 students respectively is 50, 55, 60, then the average marks of all the students is:',
+          'a':'53.33',
+          'b':'54.68',
+          'c':'55',
+          'd':'None of these',
+          'correct':'b',
+          'tag':''
+     },
+     {
+         'question':"A pupil's marks were wrongly entered as 83 instead of 63. Due to that the average marks for the class got increased by half (1/2). The number of pupils in the class is:",
+          'a':'10',
+          'b':'20',
+          'c':'40',
+          'd':'73',
+          'correct':'c',
+          'tag':''
+     },
+     {
+         'question':"In Arun's opinion, his weight is greater than 65 kg but less than 72 kg. His brother doest not agree with Arun and he thinks that Arun's weight is greater than 60 kg but less than 70 kg. His mother's view is that his weight cannot be greater than 68 kg. If all are them are correct in their estimation, what is the average of different probable weights of Arun?",
+          'a':'67 kg',
+          'b':'68 kg',
+          'c':'69 kg.',
+          'd':'Data inadequate',
+          'correct':'a',
+          'tag':''
+     },
+     {
+         'question':'A family consists of two grandparents, two parents and three grandchildren. The average age of the grandparents is 67 years, that of the parents is 35 years and that of the grandchildren is 6 years. What is the average age of the family?',
+          'a':'28 4/7years',
+          'b':'31 5/7',
+          'c':'32 1/7',
+          'd':'None of these',
+          'correct':'b',
+          'tag':''
+     },
+     
     ],
     q5:[ 
       {
