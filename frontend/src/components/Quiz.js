@@ -66,7 +66,6 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
                setTotal(total+1);
              next(current+1);
              
-    
         }
 
     const saveHandler = () => {
