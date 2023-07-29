@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState, useSyncExternalStore } from 'react'
+import React, {useEffect, useContext, useState } from 'react'
 import { QuizContext } from '../Context/QuizHolder';
 import Timer from './Timer'
 import '../css/Quizbox.css';
