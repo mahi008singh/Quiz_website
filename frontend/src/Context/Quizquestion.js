@@ -2268,16 +2268,382 @@ const Aptiquiz={
 
     ]
 }
-
+// -----------------------------------((( verbal )))-----------------------------
 const Verbalquiz={
    q1:[
+      {
+         'question': 'Ms dhoni has gained ________ throughout the world', 
+         'a':'a)Momentous',
+         'b':'b)Playing ',   
+         'c':'c)recognition',
+         'd':'d)aggressively',
+         'correct':"c",
+         'tag':"tcs nqt"
+      },
+      {
+         'question': 'Ravindra jadeja scored half century_________this, India lost the semi finals', 
+         'a':'a)Because of',
+         'b':'b)Despite of',   
+         'c':'c)And',
+         'd':'d)Also',
+         'correct':"b"
+      },
+      {
+         'question': 'Modi ji and kejriwal ji were both______ so they decided to buy______', 
+         'a':'a)bored ,burger',
+         'b':'b)hungry, medicine',   
+         'c':'c)confused, cold drink',
+         'd':'d)bored, movie tickets',
+         'correct':"d"
+      },
+      {
+         'question': 'The birth anniversary of Gandhiji is being______ around the counry with plays/ dramas featuring his thoughts', 
+         'a':'a) Expatiated',
+         'b':'b) Liberated',   
+         'c':'c) Commemorated',
+         'd':'d) Protracted',
+         'correct':"c",
+         "tag":"infosys"
+      },
+      {
+         'question': "Jaun's friends found him in a _____ mood after he learned he would be homecoming king", 
+         'a':'a) Jovial',
+         'b':'b) stealthy',   
+         'c':'c) paltry',
+         'd':'d) gullible',
+         'correct':"a"
+      },
+      {
+         'question': "Brian's pale Irish skin was _____ to burn if he spent too much time in the sun", 
+         'a':'a) prone',
+         'b':'b) Urbane',   
+         'c':'c) eminent',
+         'd':'d) daunted',
+         'correct':"a",
+         'tag':"infosys-18"
+      },
+      {
+         'question': 'The teacher _____ the children constantly for making a ruckus', 
+         'a':'a) scold',
+         'b':'b) is scolding ',   
+         'c':'c) have been scolding',
+         'd':'d) scolds',
+         'correct':"d"
+      },
+      {
+         'question': 'It is a common criticism that most of the academicians live in their____, so they are not aware of the real life challenges', 
+         'a':'a) homes',
+         'b':'b) ivory towers',   
+         'c':'c) glass palaces',
+         'd':'d) big flats',
+         'correct':"b"
+      },
+      {
+         'question': 'A common misconception among writers is that sentence structure  mirrors thought, the more _____ the structure, the more complicated the ideas', 
+         'a':'a) detailed',
+         'b':'b) simple',   
+         'c':'c) clear',
+         'd':'d) convoluted',
+         'correct':"d"
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
 
    ],
    q2:[
-
+      {
+         'question': 'Especially at a college or institution, sleeping rooms with many beds are known as:', 
+         'a':'a) Dormitory ',
+         'b':'b) Fumitory',   
+         'c':'c) Citatory',
+         'd':'d) Monitory',
+         'correct':"a",
+         'tag':"infosys-21,19,11"
+      },
+      {
+         'question': "The Tauktae Cylclone's unexpected destruction and suffering destruction and suffering are still having an impact on the local people's minds, bodies and spirits.", 
+         'a':'a) Catastrophe',
+         'b':'b) Antistophe',   
+         'c':'c) Apostrophe',
+         'd':'d) Anatomy',
+         'correct':"a",
+         'tag':"infosys-20"
+      },
+      {
+         'question':'Study of sound and sound waves', 
+         'a':'a) Geology',
+         'b':'b) Acoustics',   
+         'c':'c) Theology',
+         'd':'d) Hydrology',
+         'correct':"b",
+         'tag':"infosys-21,17"
+      },
+      {
+         'question': 'A leader  who uses oratory to persuade his people', 
+         'a':'a) Dilettante',
+         'b':'b) Demagogue',   
+         'c':'c) Cynosure',
+         'd':'d) Epicure',
+         'correct':"b-22",
+         'tag':'infosys'
+      },
+      {
+         'question': 'Something that is lacking in significance or interest , or which is dull and insipid', 
+         'a':'a) Jackanapes',
+         'b':'b) jebel',   
+         'c':'c) jejune',
+         'd':'d) jurat',
+         'correct':"c",
+         'tag':'infosys-22'
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
+      {
+         'question': '', 
+         'a':'a)',
+         'b':'b)',   
+         'c':'c)',
+         'd':'d)',
+         'correct':"c"
+      },
    ],
    q3:[
-
+      {
+         'question': 'Angle:radian::', 
+         'a':'a) cattle: herd',
+         'b':'b) odometer: speed',   
+         'c':'c) dearth: scarcity',
+         'd':'d) area: hactares',
+         'correct':"d",
+         'tag':"tcs-20,17"
+      },
+      {
+         'question': 'Penology:punishment::Seismology:?', 
+         'a':'a)law',
+         'b':'b)earthquakes',   
+         'c':'c)liver',
+         'd':'d)medicine',
+         'correct':"b",
+         'tag':'tcs-21'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+      {
+         'question': 'Symphony:cmposer', 
+         'a':'a)Leonardo da vinci: Music',
+         'b':'b)fresco: painter',   
+         'c':'c)colors: palette',
+         'd':'d)art: appreciation',
+         'correct':"b",
+         'tag':'tcs-22'
+      },
+   ],
+   q4:[
+      {
+         'question': 'Which of the following words is most closely associated to the meaning of the word "IMPECCABLE"', 
+         'a':'a)Having some faults',
+         'b':'b)Perfect',   
+         'c':'c)Dull personality',
+         'd':'d)Peaceful personality',
+         'correct':"b",
+         'tag':'infosys-17'
+      },
+      {
+         'question': 'Aman applied the ____ as soon as he approached a hotel where he wanted to take a ____', 
+         'a':'a)Brake,break',
+         'b':'b)Break, break',   
+         'c':'c)Brake,brake',
+         'd':'d)Break,brake',
+         'correct':"a",
+         'tag':'tcs-18'
+      },
+      {
+         'question': 'Which word is most closely associated to the word MEANDER?', 
+         'a':'a)Speak',
+         'b':'b)Long for',   
+         'c':'c)Wander',
+         'd':'d)Set in motion',
+         'correct':"c",
+         'tag':'capgemini-20'
+      },
+      {
+         'question': 'Which word is closest to the meaning of "incapable of being expressed in words"?', 
+         'a':'a)Inanition',
+         'b':'b)Indelible',   
+         'c':'c)Incognito',
+         'd':'d)Ineffable',
+         'correct':"d",
+         'tag':'tcs-21'
+      },
+      {
+         'question': 'Which word resembles most closely to something which  is impossible to solve?', 
+         'a':'a)Incompetent',
+         'b':'b)Insurmountable',   
+         'c':'c)Indefensible',
+         'd':'d)Intangible',
+         'correct':"b",
+         'tag':'tcs-20'
+      },
+      {
+         'question': 'What is the meaning of the word "Diligent"?', 
+         'a':'a)Careful& hard-working',
+         'b':'b)Impoverished',   
+         'c':'c)Overly detailed',
+         'd':'d)Skilled',
+         'correct':"a",
+         'tag':'infosys-20'
+      },
+      {
+         'question': 'Meaning of the word Confabulate?', 
+         'a':'a)Betraying',
+         'b':'b)Faithful',   
+         'c':'c)Deceptive',
+         'd':'d)engage in conversation',
+         'correct':"d",
+         'tag':'hexaware'
+      },
+      {
+         'question': 'What is the meaning of excruciating?', 
+         'a':'a)to avoid something',
+         'b':'b)extremely painful',   
+         'c':'c)peaceful',
+         'd':'d)easy to manage',
+         'correct':"b",
+         'tag':''
+      },
+      {
+         'question': 'What is the meaning of Insistence', 
+         'a':'a)Addiction of something bad',
+         'b':'b)To force someone',   
+         'c':'c)level of pateince',
+         'd':'d)apathy',
+         'correct':"a",
+         'tag':'IBM'
+      },
+      {
+         'question': 'What is the meaning of the word Empathetic?', 
+         'a':'a)relating to the feeling of others',
+         'b':'b)Full of sadness',   
+         'c':'c)with emphasis',
+         'd':'d)having unpredictable moods',
+         'correct':"a",
+         'tag':'tcs-nqt'
+      },
+      {
+         'question': 'Epitome means to?', 
+         'a':'a)calm',
+         'b':'b)consistent',   
+         'c':'c)sympathy',
+         'd':'d)a perfect example of something',
+         'correct':"d",
+         'tag':'tech-mah'
+      },
+      {
+         'question': 'CURB means to?', 
+         'a':'a)to limit or control something',
+         'b':'b)to start something new',   
+         'c':'c)to stop',
+         'd':'d)deserving',
+         'correct':"a",
+         'tag':'infosys'
+      },
    ],
 
 }

@@ -152,7 +152,66 @@ const  codeprac={
       link:""
     },
 
-    //****************Binary_search***************
+    // ************************priority_queue**********************
+    {
+      ques:"Sort Characters By Frequency",
+      diff:"medium",
+      category:"p_q",
+      link:"https://leetcode.com/problems/sort-characters-by-frequency/"
+    },
+    {
+      ques:"Kth Largest Element in an Array",
+      diff:"medium",
+      category:"p_q",
+      link:"https://leetcode.com/problems/kth-largest-element-in-an-array/"
+    },
+    {
+      ques:"Reorganize String",
+      diff:"medium",
+      category:"p_q",
+      link:"https://leetcode.com/problems/reorganize-string/"
+    },
+    //*************************TREE**************************/
+    {
+      ques:"Maximum Binary Tree",
+      diff:"medium",
+      category:"Tree",
+      link:"https://leetcode.com/problems/maximum-binary-tree/"
+    },
+    {
+      ques:"Construct Binary Search Tree from Preorder Traversal",
+      diff:"medium",
+      category:"Tree",
+      link:"https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/"
+    },
+    {
+      ques:"Maximum Depth of Binary Tree",
+      diff:"easy",
+      category:"Tree",
+      link:"https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+    },
+    //***************************Hashing********************* */
+    {
+      ques:"Partition Labels",
+      diff:"medium",
+      category:"Hashing",
+      link:"https://leetcode.com/problems/partition-labels/"
+    },
+    //*********************sorting********************* */
+    {
+      ques:"Sort Characters By Frequency",
+      diff:"medium",
+      category:"sorting",
+      link:"https://leetcode.com/problems/sort-characters-by-frequency/"
+    },
+    //*************************BST*********************** */
+    {
+      ques:"Convert Sorted List to Binary Search Tree",
+      diff:"medium",
+      category:"bst",
+      link:"https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/"
+    },
+    //***********************Binary_search*****************
 
     {
       ques:"Koko Eating Bananas",
@@ -214,6 +273,9 @@ const  codeprac={
     },
 ],
 
+
+//**********************************(((gfg_questions)))*********************************** */
+
 gfgques:[
   {
     ques:"Smallest Positive missing number",
@@ -228,6 +290,8 @@ gfgques:[
     link:"https://leetcode.com/problems/palindromic-substrings"
   },
 ],
+
+
 chefques:[
   {
     ques:"codechef",

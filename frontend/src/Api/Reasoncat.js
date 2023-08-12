@@ -131,22 +131,29 @@ const Reasdata={
   ],
   data3:[
       {
-              title:"Subject Verb Agreement",
+              title:"Sentence Completion",
               link:"/Quizplay",
               size:Verbalquiz.q1.length,
               apiNum:1
       },
       {
-            title:"Articles",
+            title:"One word substitution",
             link:"/Quizplay",
             size:Verbalquiz.q2.length,
             apiNum:2
       },
+      
       {
-            title:"Tenses",
+            title:"Verbal analogy",
             link:"/Quizplay",
             size:Verbalquiz.q3.length,
             apiNum:3
+      },
+      {
+            title:"Vocabulary",
+            link:"/Quizplay",
+            size:Verbalquiz.q4.length,
+            apiNum:4
       },
       
      ],

@@ -6,7 +6,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Cquiz,topsize,setTopsize } = useContext(QuizContext)
+    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
     useEffect(()=>{
         if(data==1){
@@ -20,7 +20,7 @@ const Categ = () => {
         else if(data==3)
           { 
               setRender(Reasdata.data3)
-              setFinalquiz(Reasquiz)
+              setFinalquiz(Verbalquiz)
           }
           if(data==4)
           {  setRender(Reasdata.data4);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { createContext } from 'react'
-import {Reasquiz,Aptiquiz,Cquiz} from './Quizquestion';
+import {Reasquiz,Aptiquiz,Cquiz,Verbalquiz} from './Quizquestion';
 
 const QuizContext = createContext();
 
@@ -22,7 +22,7 @@ export default function QuizHolder(props) {
 
     return (
         <QuizContext.Provider value={{
-            start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,correct,setCorrect,
+            start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,Verbalquiz,correct,setCorrect,
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
             topsize,setTopsize,platform,setPlatform

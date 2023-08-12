@@ -126,7 +126,7 @@ cursor: pointer;
   font-size: 1.6rem;
   border-radius:50% ;
   background-color: rgb(102, 102, 102);
-  border: 4px solid #0aa778;
+  border: 3px solid #0aa778;
 }
 
 
@@ -182,7 +182,7 @@ cursor: pointer;
         padding-top: 0.9rem;
         align-items: center;
         place-items: center;
-        border: 4px solid #0aa778;
+        border: 3px solid #0aa778;
         border-radius: 5px;
       }
     
