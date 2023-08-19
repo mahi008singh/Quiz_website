@@ -425,7 +425,90 @@ const Reasquiz ={
    //       'd':'',
    //       'correct':''
    //    },
+
+   {
+      'question': 'It was Sunday on Jan 1, 2006. What was the day of the week Jan 1, 2010?', 
+            'a':'sunday',
+            'b':'saturday',   
+            'c':'friday',
+            'd':'wednesday',
+            'correct':"c",
+            'tag':''
+    },{
+      'question': 'What was the day of the week on 28th May, 2006?', 
+            'a':'thursday',
+            'b':'friday',   
+            'c':'saturday',
+            'd':'sunday',
+            'correct':"d",
+            'tag':''
+    },{
+      'question': 'If 6th March, 2005 is Monday, what was the day of the week on 6th March, 2004?', 
+            'a':'friday',
+            'b':'sunday',   
+            'c':'wednesday',
+            'd':'monday',
+            'correct':"b",
+            'tag':''
+    },{
+      'question': 'How many days are there in x weeks x days?', 
+            'a':'7x2',
+            'b':'9x',   
+            'c':'8x',
+            'd':'11x',
+            'correct':"c",
+            'tag':''
+    },{
+      'question': 'On 8th Feb, 2005 it was Tuesday. What was the day of the week on 8th Feb, 2004?', 
+            'a':'monday',
+            'b':'tuesday',   
+            'c':'friday',
+            'd':'sunday',
+            'correct':"d",
+            'tag':''
+    },{
+      'question': 'The last day of a century cannot be', 
+            'a':'wednesday',
+            'b':'monday',   
+            'c':'friday',
+            'd':'tuesday',
+            'correct':"c",
+            'tag':''
+    },{
+      'question': 'Which of the following is not a leap year?', 
+            'a':'700',
+            'b':'800',   
+            'c':'1200',
+            'd':'2000',
+            'correct':"a",
+            'tag':''
+    },{
+      'question': 'January 1, 2007 was Monday. What day of the week lies on Jan. 1, 2008?', 
+            'a':'monday',
+            'b':'sunday',   
+            'c':'thursday',
+            'd':'wednesday',
+            'correct':"c",
+            'tag':''
+    },{
+      'question': 'On 8th Dec, 2007 Saturday falls. What day of the week was it on 8th Dec, 2006?', 
+            'a':'sunday',
+            'b':'tuesday',   
+            'c':'friday',
+            'd':'thursday',
+            'correct':"c",
+            'tag':''
+    },{
+      'question': 'On what dates of April, 2001 did Wednesday fall?', 
+            'a':'2nd, 9th, 16th, 23rd, 30th',
+            'b':'3rd, 10th, 17th, 24th',   
+            'c':'4th, 11th, 18th, 25th',
+            'd':'1st, 8th, 15th, 22nd, 29th',
+            'correct':"d",
+            'tag':''
+    }, 
     ],
+    
 
     // Blood Relation()
 
@@ -1628,6 +1711,8 @@ const Aptiquiz={
             },
 
     ],
+
+    //------------------------------(profit&&loss)-----------------------------
     q3:[
       {
 
@@ -1781,8 +1866,81 @@ const Aptiquiz={
          
          'correct':"d"
          
-         },         
+         },   
+         {
+            'question': 'In a certain store, the profit is 320% of the cost. If the cost increases by 25% but the selling price remains constant, approximately what percentage of the selling price is the profit?', 
+                  'a':'30%',
+                  'b':'70%',   
+                  'c':'100%',
+                  'd':'250%',
+                  'correct':"b",
+                  'tag':''
+          },
+          {
+            'question': 'A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?', 
+                  'a':'3',
+                  'b':'4',   
+                  'c':'5',
+                  'd':'6',
+                  'correct':"c",
+                  'tag':''
+          },
+          {
+            'question': 'The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:', 
+                  'a':'15',
+                  'b':'16',   
+                  'c':'18',
+                  'd':'25',
+                  'correct':"b",
+                  'tag':''
+          },
+          {
+            'question': 'A shopkeeper expects a gain of 22.5% on his cost price. If in a week, his sale was of Rs. 392, what was his profit?', 
+                  'a':'18.20',
+                  'b':'70',   
+                  'c':'72',
+                  'd':'88.25',
+                  'correct':"c",
+                  'tag':''
+          },
+          {
+            'question': 'Sam purchased 20 dozens of toys at the rate of Rs. 375 per dozen. He sold each one of them at the rate of Rs. 33. What was his percentage profit?', 
+                  'a':'3.5',
+                  'b':'4.5',   
+                  'c':'5.6',
+                  'd':'6.5',
+                  'correct':"c",
+                  'tag':''
+          },
+          {
+            'question': 'Some articles were bought at 6 articles for Rs. 5 and sold at 5 articles for Rs. 6. Gain percent is:', 
+                  'a':'30%',
+                  'b':'33 1/3%',   
+                  'c':'35%',
+                  'd':'44%',
+                  'correct':"d",
+                  'tag':''
+          },
+          {
+            'question': 'On selling 17 balls at Rs. 720, there is a loss equal to the cost price of 5 balls. The cost price of a ball is:', 
+                  'a':'45',
+                  'b':'50',   
+                  'c':'55',
+                  'd':'60',
+                  'correct':"d",
+                  'tag':''
+          },
+          {
+            'question': 'A trader mixes 26 kg of rice at Rs. 20 per kg with 30 kg of rice of other variety at Rs. 36 per kg and sells the mixture at Rs. 30 per kg. His profit percent is:', 
+                  'a':'no profit no loss',
+                  'b':'5%',   
+                  'c':'8%',
+                  'd':'10%',
+                  'correct':"b",
+                  'tag':''
+          },      
     ],
+    
     q4:[
       {
          'question':'In the first 10 overs of a cricket game, the run rate was only 3.2. What should be the run rate in the remaining 40 overs to reach the target of 282 runs?',
@@ -1994,8 +2152,102 @@ const Aptiquiz={
          },
 
     ],
+
+   //  ----------------------------------------((Number System))------------------------------------------
     q6:[
 
+      {
+         'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+         'a':'8',
+         'b':'7',   
+         'c':'5',
+         'd':'6',
+         'correct':"b"
+         
+         },
+         {
+            'question':'41^n-14^n is divided by_____ when "n" belongs to N', 
+            'a':'27',
+            'b':'9',   
+            'c':'3',
+            'd':'All of the above',
+            'correct':"d"
+            
+            },
+          {
+             'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+             'a':'8',
+             'b':'7',   
+             'c':'5',
+             'd':'6',
+             'correct':"b"
+                  
+          },
+          {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+         {
+            'question':'The number of zeroes at the end of number 28! + 29! is_____', 
+            'a':'8',
+            'b':'7',   
+            'c':'5',
+            'd':'6',
+            'correct':"b"
+                 
+         },
+        
+                  
     ],
     q7:[
       {
@@ -2262,17 +2514,213 @@ const Aptiquiz={
          },         
     ],
     q9:[
-
+      {
+         'question': 'In how many ways can the letters of the word "LEADER" be arranged?', 
+               'a':'72',
+               'b':'144',   
+               'c':'360',
+               'd':'720',
+               'correct':"c",
+               'tag':''
+       },{
+         'question': 'Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?', 
+               'a':'210',
+               'b':'1050',   
+               'c':'25200',
+               'd':'21400',
+               'correct':"c",
+               'tag':''
+       },
+       {
+         'question': 'In a group of 6 boys and 4 girls, four children are to be selected. In how many different ways can they be selected such that at least one boy should be there?', 
+               'a':'159',
+               'b':'194',   
+               'c':'205',
+               'd':'209',
+               'correct':"d",
+               'tag':''
+       },
+       {
+         'question': 'A box contains 2 white balls, 3 black balls and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least one black ball is to be included in the draw?', 
+               'a':'32',
+               'b':'48',   
+               'c':'64',
+               'd':'96',
+               'correct':"c",
+               'tag':''
+       },{
+         'question': 'In how many ways a committee, consisting of 5 men and 6 women can be formed from 8 men and 10 women?', 
+               'a':'266',
+               'b':'5040',   
+               'c':'11760',
+               'd':'86400',
+               'correct':"c",
+               'tag':''
+       },{
+         'question': 'How many 4-letter words with or without meaning, can be formed out of the letters of the word, "LOGARITHMS", if repetition of letters is not allowed?', 
+               'a':'40',
+               'b':'400',   
+               'c':'5040',
+               'd':'2520',
+               'correct':"c",
+               'tag':''
+       },{
+         'question': 'In how many different ways can the letters of the word "OPTICAL" be arranged so that the vowels always come together?', 
+               'a':'120',
+               'b':'720',   
+               'c':'4320',
+               'd':'2160',
+               'correct':"b",
+               'tag':''
+       },{
+         'question': 'In how many ways can a group of 5 men and 2 women be made out of a total of 7 men and 3 women?', 
+               'a':'63',
+               'b':'90',   
+               'c':'126',
+               'd':'45',
+               'correct':"a",
+               'tag':''
+       },
+       {
+         'question': 'In how many different ways can the letters of the word "MATHEMATICS" be arranged so that the vowels always come together?', 
+               'a':'10080',
+               'b':'4356',   
+               'c':'120960',
+               'd':'455',
+               'correct':"c",
+               'tag':''
+       },
+       {
+         'question': 'There are seven pairs of black shoes and five pairs of white shoes. They are all put into a box and shoes are drawn one at a time. To ensure that at least one pair of black shoes are taken out, what is the number of shoes required to be drawn out?', 
+               'a':'12',
+               'b':'13',   
+               'c':'7',
+               'd':'18',
+               'correct':"d",
+               'tag':''
+       },
     ],
     q10:[
-
+      {
+         'question':'Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.',
+          'a':'4',
+          'b':'7',
+          'c':'9',
+          'd':'13',
+          'correct':'a',
+          'tag':''
+     },{
+         'question':'The H.C.F. of two numbers is 23 and the other two factors of their L.C.M. are 13 and 14. The larger of the two numbers is:',
+          'a':'276',
+          'b':'299',
+          'c':'322',
+          'd':'345',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'Let N be the greatest number that will divide 1305, 4665 and 6905, leaving the same remainder in each case. Then sum of the digits in N is:',
+          'a':'4',
+          'b':'5',
+          'c':'6',
+          'd':'8',
+          'correct':'a',
+          'tag':''
+     },{
+         'question':'The product of two numbers is 4107. If the H.C.F. of these numbers is 37, then the greater number is:',
+          'a':'101',
+          'b':'107',
+          'c':'111',
+          'd':'185',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'The G.C.D. of 1.08, 0.36 and 0.9 is:',
+          'a':'0.03',
+          'b':'0.9',
+          'c':'0.18',
+          'd':'0.108',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'Find the lowest common multiple of 24, 36 and 40.',
+          'a':'120',
+          'b':'240',
+          'c':'360',
+          'd':'480',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'The least number which when divided by 5, 6 , 7 and 8 leaves a remainder 3, but when divided by 9 leaves no remainder, is:',
+          'a':'1677',
+          'b':'1683',
+          'c':'2523',
+          'd':'3363',
+          'correct':'b',
+          'tag':''
+     },{
+         'question':'The H.C.F. of two numbers is 11 and their L.C.M. is 7700. If one of the numbers is 275, then the other is:',
+          'a':'279',
+          'b':'283',
+          'c':'308',
+          'd':'318',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'The smallest number which when diminished by 7, is divisible 12, 16, 18, 21 and 28 is:',
+          'a':'1008',
+          'b':'1015',
+          'c':'1022',
+          'd':'1032',
+          'correct':'b',
+          'tag':''
+     },{
+         'question':'Three numbers which are co-prime to each other are such that the product of the first two is 551 and that of the last two is 1073. The sum of the three numbers is:',
+          'a':'75',
+          'b':'81',
+          'c':'85',
+          'd':'89',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'Find the highest common factor of 36 and 84.',
+          'a':'4',
+          'b':'6',
+          'c':'12',
+          'd':'18',
+          'correct':'c',
+          'tag':''
+     },{
+         'question':'Which of the following fraction is the largest ?',
+          'a':'7/8',
+          'b':'13/16',
+          'c':'31/40',
+          'd':'63/80',
+          'correct':'a',
+          'tag':''
+     },{
+         'question':'The greatest number which on dividing 1657 and 2037 leaves remainders 6 and 5 respectively, is:',
+          'a':'123',
+          'b':'127',
+          'c':'235',
+          'd':'305',
+          'correct':'b',
+          'tag':''
+     },{
+         'question':'If the sum of two numbers is 55 and the H.C.F. and L.C.M. of these numbers are 5 and 120 respectively, then the sum of the reciprocals of the numbers is equal to:',
+          'a':'55/601',
+          'b':'601/55',
+          'c':'11/120',
+          'd':'120/11',
+          'correct':'c',
+          'tag':''
+     },
     ]
 }
 // -----------------------------------((( verbal )))-----------------------------
 const Verbalquiz={
    q1:[
       {
-         'question': 'Ms dhoni has gained ________ throughout the world', 
+         'question': `Ms dhoni has gained ________ throughout the world`, 
          'a':'a)Momentous',
          'b':'b)Playing ',   
          'c':'c)recognition',

@@ -51,13 +51,13 @@ const Reasdata={
             apiNum:8
       },
       {
-            title:"Alligation & Mixture",
+            title:"Permutation & combination",
             link:"/Quizplay",
             size:Aptiquiz.q9.length,
             apiNum:9
       },
       {
-            title:"Data Sufficiency",
+            title:"lcm & hcf",
             link:"/Quizplay",
             size:Aptiquiz.q10.length,
             apiNum:10
