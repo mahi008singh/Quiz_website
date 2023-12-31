@@ -487,6 +487,7 @@ chefques:[
     category:"Linkedlist",
     link:"https://leetcode.com/problems/palindromic-substrings"
   },
+  
 ],
 hackques:[
   {
