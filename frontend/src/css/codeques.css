@@ -5,14 +5,19 @@
     justify-content: space-around;
     margin: 1rem;
     border-radius: 1rem;
-    height:5rem;
+    min-height:5rem;
     align-items: center;
     font-size: 1.5rem;
+    cursor: pointer;
     /* box-shadow: 2px 2px 6px rgba(0,0,0,0.3); */
 
 }
+.ques_bar:hover{
+    transform: scale(1.03);
+    background-color: #0eb582;
+}
 .ques_bar h1{
-    width: 38rem;
+    width: 42rem;
     padding: 1rem 0;
     
 }

@@ -62,7 +62,9 @@ const Codeques = () => {
                       prob1.map((e)=>{
                             return(
                               <>
-                                  <div className='ques_bar'>
+                                  <div className='ques_bar' onClick={() =>{
+                                    window.location.href=e.link;
+                                  }}>
                                       <h1>{e.ques}</h1>
                                       <a  target="_blank" href={e.link}>visit</a>
                                       <span style={{fontWeight:"900"}}>{e.diff}</span>
