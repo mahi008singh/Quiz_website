@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--secColor);
     
 
 }
@@ -22,6 +23,8 @@
     border: 2px solid #0aa778;
     height: 4rem;
     margin: 1rem 0;
+    background-color: var(--primColor);
+    color: var(--secColor);
 
 }
 .contact_div form textarea{
@@ -29,12 +32,17 @@
     height: 20rem;
     padding-left: 2rem;
     border: 2px solid #0aa778;
+    background-color: var(--primColor);
+    color: var(--secColor);
+
+
 
 }
 .contact_div form button{
     width: 10rem;
     height: 4rem;
-    border: 1px solid;
+    font-size: 1.6rem;
+    border: 1px solid var(--primColor);
     cursor: pointer;
     background-color: #0aa778;
     color: #fff;

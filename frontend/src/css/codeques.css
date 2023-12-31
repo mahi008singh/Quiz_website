@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-around;
     margin: 1rem;
+    color: var(--secColor);
     border-radius: 1rem;
     height:5rem;
     align-items: center;
@@ -28,13 +29,14 @@
     position: relative;
     padding:1.7rem 2.2rem;
     margin: 1rem;
-    height: 7rem;
+    height: 6.8rem;
+    background-color: var(--primColor);
     border: 2px solid #0aa778;
     /* box-shadow: 3px 4px 6px rgba(0,0,0,0.3); */
     /* position: sticky;
     top: 0;
     z-index: 10; */
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 2rem;
     overflow: hidden;
     display: flex;
@@ -44,6 +46,7 @@
 }
 .codecateg_new{
     border: 2px solid #0aa778;
+    
     border-radius: 2rem;
     position: relative;
     padding: 2rem;
@@ -53,23 +56,28 @@
     align-items: center;
     flex-wrap: wrap;  
 }
+
 .codecateg_div{
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
-    
+   
+
 }
 .codecateg_div button{
     /* border: 1px solid; */
     margin: 0.6rem 1rem;
     height: 3rem;
+    font-size: 1.3rem;
+    max-width: 14rem;
+    color: black;
+    border: none;
     padding:0 1rem;
     cursor: pointer;
     border-radius: 1.4rem;
-    background-color:#d2f3e9;
+    background-color:#91c9b8;
 
 }
 .codecateg_div button:focus{
@@ -89,7 +97,7 @@
 .expand button{
   position: absolute;
   width: 6rem;
-  color: #fff;
+  color: var(--secColor);
   right: 1rem;
   bottom: 2rem;
   height: 2.5rem;

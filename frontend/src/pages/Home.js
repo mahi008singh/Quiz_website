@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
 import {NavLink} from 'react-router-dom';
 import { useContext } from 'react';
-import './css/style.css'; 
-import './css/home.css';
-import Homedata from './Api/Homecateg';
-import { QuizContext } from './Context/QuizHolder';
+import '../css/style.css'; 
+import '../css/home.css';
+import Homedata from '../Api/Homecateg';
+import { QuizContext } from '../Context/QuizHolder';
 import { AiFillBulb} from "react-icons/ai";
-import Codeques from './components/Codeques';
+import Codeques from '../components/Codeques';
 const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
       const [recommend,setRecommend]=useState(Homedata.data2);
@@ -60,7 +60,7 @@ const Home = () => {
                    <>
                       <div class="box">
                          <NavLink to={"/Signup"} >
-                           <img src={require('./images/subject-icon-3.png')} alt="" />
+                           <img src={require('../images/subject-icon-3.png')} alt="" />
                             <h3>{elem.title}</h3>
                          </NavLink>
 
@@ -130,9 +130,8 @@ const Home = () => {
 
       <div className="box">
          <h3>useful links</h3>
-         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} class="link">ask questions</NavLink>
-          <br/>
-         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} class="link">send feedback</NavLink>
+         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">ask questions</NavLink>
+         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">send feedback</NavLink>
          <a href="#" class="link">privacy policy</a>
          <a href="#" class="link">terms of use</a>
       </div>

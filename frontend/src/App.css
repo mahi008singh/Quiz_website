@@ -1,24 +1,19 @@
-/* .start-view{
-    width:40%;
-    margin: 10rem auto;
-    border:2px solid black;
-    height: 20rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.start-btn{
-    width:8rem;
-    height: 2.5rem;
-    border: 2px solid green;
-    cursor: pointer;
-
-} */
 
 /* ---------------quiz-box------------------- */
 
 /* -----------------------header-component---------------------------------- */
+:root{
+    --primColor:#fff;
+    --secColor:#212121
+}
+body{
+    background-color: var(--primColor);
+}
+.dark-theme{
+    --primColor:#212121;
+    --secColor:#fff;
+}
 .navdiv{
     display:flex;
 
@@ -26,14 +21,18 @@
 .navb{
     width:100%;
     display: flex;
-    height: 5.3rem;
+    height: 6.2rem;
     justify-content: space-between;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
 }
 .navb .logo{
     font-size: 1.8rem;
     margin-left: 1rem ;
     margin-top: 0.6rem;
+}
+.logo h1{
+    color: var(--secColor);
 }
 .header1 ul{
     display: flex;
@@ -43,6 +42,9 @@
     list-style: none;
     font-size: 2rem;
 }
+.linker{
+    color: var(--secColor);
+}
 .header1 .fa-xmark{
     display: none;
 }
@@ -50,7 +52,10 @@
     display: none;
   }
 
-
+.compete_div h1,h2{
+    color: var(--secColor);
+    
+}
 @media (max-width:600px) {
     .header1{
         height: 100vh;

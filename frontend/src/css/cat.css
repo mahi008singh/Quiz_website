@@ -15,6 +15,7 @@
 
 .logical_h1{
     font-size: 2.5rem;
+    color: var(--secColor);
 }
 .reas_category div{
     display: flex;
@@ -23,14 +24,19 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: var(--primColor);
     margin: 1rem 0;
+    color:var(--secColor);
     box-shadow: -10px 10px 40px rgba(175, 174, 174, 0.3);
 
+}
+.divBar{
+   
 }
 
 .div_title{
     padding: 0 2rem;
+
 }
 .div_title p{
     margin-right: 1rem;

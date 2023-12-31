@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import {NavLink} from 'react-router-dom'
 import codeprac from '../Api/Codeprob'
 import '../css/codeques.css'
-import { QuizContext } from '../Context/QuizHolder';
+import {QuizContext} from '../Context/QuizHolder';
 
 
 const Codeques = () => {

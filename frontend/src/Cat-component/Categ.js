@@ -77,7 +77,7 @@ const Categ = () => {
                     render.map((elem)=>{
                         return(
                             <>
-                                <div>
+                                <div className='divBar' >
                                   <div className="div_title">
                                    <h2>{elem.title}</h2>
                                      <p>Available ques.{elem.size}</p>

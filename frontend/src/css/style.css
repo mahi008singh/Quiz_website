@@ -335,7 +335,9 @@ section {
   cursor: pointer;
 ;
 }
-
+.subjects h1{
+  color: var(--secColor);
+}
 .subjects .box-container .box:hover {
   background: #0eb582;
 }

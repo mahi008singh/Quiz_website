@@ -1,5 +1,7 @@
 .quiz_section{
     display: flex;
+    color:var(--secColor);
+  
 }
 .quiz-img{
     height: 15rem;
@@ -20,6 +22,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+   
     
     
 }
@@ -32,7 +35,7 @@
     padding: 0.5rem;
     width: 90%;
     margin-top:1rem;
-    border: 1px solid rgb(36, 53, 53);
+    border: 1px solid var(--secColor);
     font-size: 1.6rem;
 }
 .click_option{
@@ -60,6 +63,7 @@ cursor: pointer;
     color:#fff;
     border: none;
     border-radius: 0.5rem;
+    font-size: 1.4rem;
     
 }
 .reset_btn:hover,.next_btn:hover,.exit_btn:hover{
@@ -68,6 +72,7 @@ cursor: pointer;
 
 .exit_btn{
     width: 10rem;
+    font-size: 1.4rem;
     height: 3.2rem;
     cursor: pointer;
     background:rgb(223, 88, 78);
@@ -111,7 +116,7 @@ cursor: pointer;
     letter-spacing: 0.1rem;
     margin-top: 1rem;
     font-size: 1.7rem;
-    color: rgb(133, 131, 131);
+    color: var(--secColor);
 }
 .t2{
     text-align: center;
@@ -144,6 +149,7 @@ cursor: pointer;
         justify-content: center;
         align-items: center;
         width: 100%;
+        color:var(--secColor);
     }
     .quiz-box{
         width: 75%;

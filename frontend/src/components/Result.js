@@ -3,7 +3,7 @@ import '../App.css';
 import '../css/result.css'
 import { QuizContext } from '../Context/QuizHolder';
 import {NavLink} from 'react-router-dom';
-import { FaCrown} from "react-icons/fa";
+import {FaCrown} from "react-icons/fa";
 export default function Result() {
     const { correct,setCorrect, setExit, setStart,totalques, finalquiz,setReview } = useContext(QuizContext)
     const playAgain = () => {

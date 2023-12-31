@@ -8,7 +8,6 @@ const Contact = () => {
                 <form action="https://formspree.io/f/xnqyqkgj" method="POST">
                     <input name="name" type="text" required placeholder="your name" />
                     <br />
-
                     <input name="email" type="email" required placeholder="your email" />
                     <br />
                     <textarea name="tarea" placeholder="your message" type="text" />

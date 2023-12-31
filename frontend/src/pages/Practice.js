@@ -1,8 +1,8 @@
 import React,{useState,useContext} from 'react';
 import {NavLink} from "react-router-dom"
-import './css/style.css'
-import Quants from './Api/Maincateg';
-import { QuizContext } from './Context/QuizHolder';
+import '../css/style.css'
+import Quants from '../Api/Maincateg';
+import { QuizContext } from '../Context/QuizHolder';
 
 
 const Practice = () => {
@@ -19,7 +19,7 @@ const Practice = () => {
                 <h1 class="heading">CATEGORIES</h1>
                 <br />
 
-                <h1 class="h1">Coding</h1>
+                <h1 className="h1">Coding</h1>
                 <br />
                 <br />
                 <div class="box-container">
@@ -30,7 +30,7 @@ const Practice = () => {
                                <>
                                    <div class="box">
                                        <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)}>
-                                           <img src={require('./images/subject-icon-1.png')} alt="" />
+                                           <img src={require('../images/subject-icon-1.png')} alt="" />
                                            <h3>{elem.title}</h3>
                                        </NavLink>
 
@@ -54,10 +54,9 @@ const Practice = () => {
                                 <>
                                     <div class="box">
                                         <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
-                                            <img src={require('./images/subject-icon-1.png')} alt="" />
+                                            <img src={require('../images/subject-icon-1.png')} alt="" />
                                             <h3 class="Quant_h1" >{elem.title}</h3>
                                         </NavLink>
-
                                     </div>
                                 </>
                             )
@@ -78,7 +77,7 @@ const Practice = () => {
                                <>
                                    <div class="box">
                                        <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)}>
-                                           <img src={require("./images/subject-icon-1.png")} alt="" />
+                                           <img src={require("../images/subject-icon-1.png")} alt="" />
                                            <h3>{elem.title}</h3>
                                        </NavLink>
 

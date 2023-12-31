@@ -12,7 +12,7 @@
 .home-courses .slide {
     text-align: center;
     position: relative;
-    background: #f0fdfa;
+    background: var(--primColor);
     overflow: hidden;
   }
 .platform_page{
@@ -46,7 +46,7 @@
   .home-courses .slide .image h3 {
     font-size: 2rem;
     text-transform: capitalize;
-    color: #444;
+    color: var(--secColor);
   }
   
   .home-courses .slide .solve {
@@ -65,7 +65,9 @@
     color: #444;
     color: #fff;
   }
-  
+  .heading{
+    color: var(--secColor);
+  }
   .home-courses .slide .solve p {
     padding: 1rem 0;
     font-size: 1.5rem;
@@ -85,7 +87,8 @@
   /* --------------------footer-------------------------- */
   
 .footer {
-    background: #f0fdfa;
+  border-top: 2px solid rgba(0,0,0,0.2);
+    background: var(--primColor);
   }
   
   .footer .box-container {
@@ -101,7 +104,7 @@
   .footer .box-container .box h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: #444;
+    color: var(--secColor);
     padding: 1rem 0;
   }
   
@@ -116,13 +119,13 @@
   .footer .box-container .box1 h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: #444;
+    color: var(--secColor);
     padding: 1rem 0;
   }
   .footer .box-container .box1 .link {
     font-size: 1.7rem;
     line-height: 2;
-    color: #777;
+    color: var(--secColor);
     padding: .5rem 0;
     display: block;
   }
@@ -135,7 +138,7 @@
   .footer .box-container .box1 p {
     font-size: 1.5rem;
     line-height: 2;
-    color: #777;
+    color: var(--secColor);
     padding: 1rem 0;
   }
   .footer .box-container .box h3 i {
@@ -144,6 +147,7 @@
   
   .footer .box-container .box .share {
     margin-top: 1rem;
+   
   }
   
   .footer .box-container .box .share a {
@@ -164,7 +168,7 @@
   .footer .box-container .box .link {
     font-size: 1.7rem;
     line-height: 2;
-    color: #777;
+    color: var(--secColor);
     padding: .5rem 0;
     display: block;
   }
