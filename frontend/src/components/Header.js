@@ -7,7 +7,7 @@ const Header = () => {
     const [sidebar,setSidebar]=useState(false);
     const togle=()=>{
         setSidebar((prevState)=>!prevState)
-      }
+      } 
     return (
         <div clasName="navdiv">
             <nav className="navb">
@@ -25,8 +25,8 @@ const Header = () => {
                         <li>
                             <NavLink to='/Practice'>Practice</NavLink>
                         </li>
-                        <li>
-                            <NavLink to='/Signup'>Signup</NavLink>
+                        <li id='Signup'>
+                            <NavLink  to='/Signup'>Signup</NavLink>
                         </li>
                         <FiX style={{fontSize:"2.5rem"}} onClick={togle} className="fa-xmark"/>
                     </ul>
