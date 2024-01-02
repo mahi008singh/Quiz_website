@@ -17,16 +17,16 @@ const Header = () => {
                 <div className="header1">
                     <ul className={sidebar?"sider-open":"sider"}>
                         <li>
-                            <NavLink to='/'>Home</NavLink>
+                            <NavLink to='/' onClick={togle}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/Compete'>Compete</NavLink>
+                            <NavLink to='/Compete' onClick={togle}>Compete</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/Practice'>Practice</NavLink>
+                            <NavLink to='/Practice' onClick={togle}>Practice</NavLink>
                         </li>
                         <li id='Signup'>
-                            <NavLink  to='/Signup'>Signup</NavLink>
+                            <NavLink  to='/Signup' onClick={togle}>Signup</NavLink>
                         </li>
                         <FiX style={{fontSize:"2.5rem"}} onClick={togle} className="fa-xmark"/>
                     </ul>

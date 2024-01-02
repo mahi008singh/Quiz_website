@@ -133,11 +133,10 @@
    
      .header1 .sider-open  li{
         margin: 4rem 1rem;
-        
-     }
-   
-     .header1 ul li a{
-       color:black;
+        color:#097f5c;
+    }
+    
+    .header1 ul li a{
        font-size: 2.2rem;
        margin: 2rem 0;
      }
