@@ -26,8 +26,8 @@
 .navb{
     width:100%;
     display: flex;
-    height: 5.3rem;
-    justify-content: space-between;
+    height: 5.6rem;
+    justify-content:space-between;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
 }
 .navb .logo{
@@ -37,14 +37,43 @@
 }
 .header1 ul{
     display: flex;
+    align-items: center;
+    position: absolute;
+    right: 1.6rem;
 }
 .header1 ul li{
-    margin: 1rem 2rem;
     list-style: none;
-    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1.7rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    font-size: 2.1rem;
+}
+.header1 ul li:hover{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.header1 ul li:hover a{
+    font-weight:bolder;
+}
+#Signup{
+    padding-top: 0.67rem;
+    padding-bottom: 0.67rem;
+    background-color: #0eb582;
+    border-radius: 25px;
+    color: white;
+}
+#Signup:hover{
+    background-color: #097f5c;
+}
+#Signup > a{
+    color: white;
 }
 .header1 .fa-xmark{
     display: none;
+}
+
+.header1 ul li a{
+    color: #097f5c;
 }
 .fa-bars-staggered{
     display: none;
@@ -104,11 +133,10 @@
    
      .header1 .sider-open  li{
         margin: 4rem 1rem;
-        
-     }
-   
-     .header1 ul li a{
-       color:black;
+        color:#097f5c;
+    }
+    
+    .header1 ul li a{
        font-size: 2.2rem;
        margin: 2rem 0;
      }
