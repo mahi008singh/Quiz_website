@@ -45,11 +45,11 @@ const Header = () => {
                             (userAuth)? <li><p style={{ cursor: "pointer" }} onClick={handelLogout}>logout</p></li>
                                 : <>
                                     <li>
-                                        <NavLink className={'linker'} to='/Signup'>Signup</NavLink>
+                                        <NavLink id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <NavLink className={'linker'} to='/login'>Login</NavLink>
-                                    </li>
+                                    </li> */}
                                 </>
                         }
                         <div style={{ display: "flex", alignItems: "center" }}>

@@ -26,14 +26,14 @@ function App() {
               <Route path={'/Practice'} element={<Practice/>} />
               <Route path={'/Quizplay'} element={ <Quizplay/>} />
               <Route path={'/Categ'} element={<Categ/>}/>
-              <Route element={<Privatecomp/>}>
+              
               <Route path={'/Codeques'} element={<Codeques/>}/>
-              </Route>
+             
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
-         
-            <Route path={'/Signup'} element={<Signup/>} />
-            <Route path={'/Login'} element={<Login/>} />
+          
+              <Route path={'/Signup'} element={<Signup/>} />
+              <Route path={'/Login'} element={<Login/>} />
 
        </Routes>
        </BrowserRouter>  
