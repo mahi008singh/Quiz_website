@@ -90,7 +90,9 @@ const Home = () => {
          
            return(
               <>
-                 <div class="platform_name slide">
+                 <div class="platform_name slide" onClick={() =>{
+                                    window.location.href="/Codeques";
+                                  }}>
                     <div class="image">
                        <img height="160rem" src={elem.img} alt="" />
                        <h3>{elem.title}</h3>
