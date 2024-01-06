@@ -52,7 +52,7 @@ const Header = () => {
                                     </li> */}
                                 </>
                         }
-                        <div style={{ display: "flex", alignItems: "center" }}>
+                        <div className='theme' style={{ display: "flex", alignItems: "center" }}>
                             <h2 onClick={changeTheme} style={{ display: "flex", alignItems: "center" }}>
                                 {
                                     (theme) ? <MdDarkMode style={{ fontSize: "2rem", cursor: "pointer" }} />

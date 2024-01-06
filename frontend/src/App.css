@@ -5,7 +5,8 @@
 /* -----------------------header-component---------------------------------- */
 :root{
     --primColor:#fff;
-    --secColor:#212121
+    --secColor:#212121;
+    --tertiary:#10c690;
 }
 body{
     background-color: var(--primColor);
@@ -13,6 +14,7 @@ body{
 .dark-theme{
     --primColor:#212121;
     --secColor:#fff;
+    --tertiary:#097f5c;
 }
 .navdiv{
     display:flex;
@@ -41,7 +43,7 @@ body{
 }
 .header1 ul li{
     list-style: none;
-    padding-bottom: 1rem;
+    padding-bottom: 1.6rem;
     padding-top: 1.7rem;
     padding-right: 2rem;
     padding-left: 2rem;
@@ -55,12 +57,12 @@ body{
 }
 #Signup{
     padding: 0.6rem 1rem;
-    background-color: #0eb582;
+    background-color: var(--tertiary);
     border-radius: 25px;
     color: white;
 }
 #Signup:hover{
-    background-color: #097f5c;
+    background-color: var(--tertiary);
 }
 #Signup > a{
     color: white;
@@ -73,7 +75,7 @@ body{
 }
 
 .header1 ul li a{
-    color: #097f5c;
+    color: var(--tertiary);
 }
 .fa-bars-staggered{
     display: none;
@@ -102,8 +104,9 @@ body{
      }
      .header1 .sider-open{
         display: block;
-        border-left: 2px solid #0eb582;
-        background-color: #fff;
+        position: relative;
+        border-left: 2px solid var(--tertiary);
+        background-color: var(--primColor);
         position: fixed;
         top: 0;
         right: 0%;
@@ -121,10 +124,15 @@ body{
         top:1rem;
         left: 1rem;
         font-size: 4rem;
-        color:black;
+        color:var(--secColor);
         margin-left: 0.5rem;
         font-size: 1.4rem;
     
+      }
+      .theme{
+        position: absolute;
+        top:1rem;
+        right:1rem;
       }
       .fa-bars-staggered{
         display: unset;
@@ -137,7 +145,7 @@ body{
    
      .header1 .sider-open  li{
         margin: 4rem 1rem;
-        color:#097f5c;
+        color:var(--tertiary);
     }
     
     .header1 ul li a{
