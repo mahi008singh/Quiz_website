@@ -1,0 +1,91 @@
+:root{
+    --boxShadow:-1px 1px 5px rgba(0,0,0,0.2);
+    --bgColor:#0eb582;
+}
+.sidebarContainer{
+    width: 100%;
+    height: 100vh;
+    
+}
+.dashContainer{
+    width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0rem;
+}
+.sidebarContainer aside{
+    width: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #000;
+    box-shadow: var(--boxShadow);
+    height: 90vh;
+    border-right: 1px solid rgba(0,0,0,0.3);
+}
+.Li{
+    margin-bottom: 2rem;
+list-style: none;
+}
+.dashContainer main{
+
+}
+
+/* -------(uploadContainer)-------- */
+.uploadContainer{
+    width: 100%;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    
+    padding: 1rem;
+
+}
+.uploadContainer section{
+    width: 100%;
+    padding: 1.3rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-content: space-between;
+}
+.chooseUpload{
+    box-shadow: var(--boxShadow);
+    height: 80vh;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+.chooseUpload select{
+    background-color:var(--bgColor) ;
+    color: #fff;
+    width: 12rem;
+    height: 3rem;
+}
+.chooseUpload select option{
+    width: 12rem;
+    height: 4rem;
+}
+.addUpload{
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: var(--boxShadow);
+}
+.addUpload label{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+#quesInput{
+    width:60%;
+}
+.addUpload input{
+    border: 1px solid;
+    width: 40%;
+    height: 3rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.uploadBtn{
+    width: 12rem;
+    height: 4rem;
+
+}
