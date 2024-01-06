@@ -15,6 +15,7 @@ const Header = () => {
     const changeTheme = () => {
         setTheme((prevState) => !prevState)
         document.body.classList.toggle("dark-theme")
+        togle();
     }
 
     const handelLogout = () => {
@@ -32,20 +33,20 @@ const Header = () => {
                 <div className="header1">
                     <ul className={sidebar ? "sider-open" : "sider"}>
                         <li>
-                            <NavLink className={'linker'} to='/'>Home</NavLink>
+                            <NavLink onClick={togle} className={'linker'} to='/'>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink className={'linker'} to='/Compete'>Compete</NavLink>
+                            <NavLink onClick={togle} className={'linker'} to='/Compete'>Compete</NavLink>
                         </li>
                         <li>
-                            <NavLink className={'linker'} to='/Practice'>Practice</NavLink>
+                            <NavLink onClick={togle} className={'linker'} to='/Practice'>Practice</NavLink>
                         </li>
 
                         {
                             (userAuth)? <li><p style={{ cursor: "pointer" }} onClick={handelLogout}>logout</p></li>
                                 : <>
                                     <li>
-                                        <NavLink id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>
+                                        <NavLink onClick={togle} id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>
                                     </li>
                                     {/* <li>
                                         <NavLink className={'linker'} to='/login'>Login</NavLink>
