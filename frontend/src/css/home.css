@@ -54,7 +54,7 @@
     bottom: -100%;
     right: 0;
     left: 0;
-    background: #0eb582;
+    background: var(--tertiary);
     padding: 2rem 3rem;
   }
   

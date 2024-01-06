@@ -14,6 +14,13 @@
 html{
   font-size: 62.5%;
 }
+:root{
+  --tertiary:#13b786;
+}
+
+.dark-theme{
+  --tertiary:#0c926a;
+}
 img {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -35,7 +42,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 section {
@@ -62,7 +69,7 @@ section {
 }
 
 .heading-link p a {
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .heading-link p a:hover {
@@ -82,15 +89,15 @@ section {
   margin-top: 1rem;
   padding: 1rem 3rem;
   font-size: 1.8rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   background: #f0fdfa;
-  color: #0eb582;
+  color: var(--tertiary);
   cursor: pointer;
   text-transform: capitalize;
 }
 
 .btn:hover {
-  background: #0eb582;
+  background: var(--tertiary);
   color: #fff;
 }
 
@@ -122,7 +129,7 @@ section {
 }
 
 .header .logo i {
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .header .navbar {
@@ -152,7 +159,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .header .icons div {
@@ -163,7 +170,7 @@ section {
 }
 
 .header .icons div:hover {
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .header #menu-btn {
@@ -214,7 +221,7 @@ section {
 }
 
 .account-form form {
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   padding: 2rem;
   display: none;
 }
@@ -234,7 +241,7 @@ section {
 .account-form form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   font-size: 1.5rem;
   margin: .7rem 0;
 }
@@ -264,7 +271,7 @@ section {
 
 .account-form form .flex a:hover {
   text-decoration: underline;
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .account-form form .btn {
@@ -276,7 +283,7 @@ section {
 }
 
 .account-form .buttons .btn.active {
-  background: #0eb582;
+  background: var(--tertiary);
   color: #fff;
 }
 
@@ -316,7 +323,7 @@ section {
 }
 
 .swiper-pagination-bullet-active {
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 .subjects .box-container {
@@ -330,7 +337,7 @@ section {
 .subjects .box-container .box {
   padding: 3rem 2rem;
   text-align: center;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   background: #f0fdfa;
   cursor: pointer;
 ;
@@ -339,7 +346,7 @@ section {
   color: var(--secColor);
 }
 .subjects .box-container .box:hover {
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 .subjects .box-container .box:hover h3 {
@@ -424,7 +431,7 @@ section {
 
 .about .content .icons-container .icons {
   text-align: center;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   background: #f0fdfa;
   padding: 3rem 2rem;
 }
@@ -452,7 +459,7 @@ section {
 }
 
 .teachers .slide:hover .image img {
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 .teachers .slide:hover .image .share {
@@ -485,7 +492,7 @@ section {
 }
 
 .teachers .slide .image .share a:hover {
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .teachers .slide .content {
@@ -523,7 +530,7 @@ section {
   color: #777;
   position: relative;
   background: #f0fdfa;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   margin-bottom: 3rem;
   padding: 2rem;
 }
@@ -536,8 +543,8 @@ section {
   -webkit-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
   background: #f0fdfa;
-  border-bottom: 0.1rem solid #0eb582;
-  border-right: 0.1rem solid #0eb582;
+  border-bottom: 0.1rem solid var(--tertiary);
+  border-right: 0.1rem solid var(--tertiary);
   height: 2rem;
   width: 2rem;
 }
@@ -557,7 +564,7 @@ section {
 
 .reviews .slide .stars {
   font-size: 1.2rem;
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .courses .box-container {
@@ -604,7 +611,7 @@ section {
 .courses .box-container .box .content {
   padding: 2rem;
   text-align: center;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
 }
 
 .courses .box-container .box .content h3 {
@@ -632,7 +639,7 @@ section {
           justify-content: space-between;
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 0.1rem solid #0eb582;
+  border-top: 0.1rem solid var(--tertiary);
 }
 
 .courses .box-container .box .content .icons span {
@@ -642,7 +649,7 @@ section {
 }
 
 .courses .box-container .box .content .icons span i {
-  color: #0eb582;
+  color: var(--tertiary);
   padding-right: .5rem;
 }
 
@@ -663,7 +670,7 @@ section {
 .contact .icons-container .icons {
   text-align: center;
   padding: 3rem 2rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   background: #f0fdfa;
 }
 
@@ -675,7 +682,7 @@ section {
   border-radius: 50%;
   margin-bottom: .5rem;
   color: #fff;
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 .contact .icons-container .icons h3 {
@@ -717,7 +724,7 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   padding: 2rem;
 }
 
@@ -731,13 +738,13 @@ section {
 .contact .row form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
   font-size: 1.6rem;
   margin: .7rem 0;
 }
 
 .contact .row form .box:focus {
-  background: #0eb582;
+  background: var(--tertiary);
   color: #fff;
 }
 
@@ -778,11 +785,11 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  border: 0.1rem solid #0eb582;
+  border: 0.1rem solid var(--tertiary);
 }
 
 .faq .accordion-container .accordion.active .accordion-heading {
-  background: #0eb582;
+  background: var(--tertiary);
 }
 
 .faq .accordion-container .accordion.active .accordion-heading h3 {
@@ -822,7 +829,7 @@ section {
 
 .faq .accordion-container .accordion .accordion-heading i {
   font-size: 2rem;
-  color: #0eb582;
+  color: var(--tertiary);
 }
 
 .faq .accordion-container .accordion .accordion-content {
@@ -830,7 +837,7 @@ section {
   font-size: 1.5rem;
   line-height: 2;
   color: #777;
-  border-top: 0.1rem solid #0eb582;
+  border-top: 0.1rem solid var(--tertiary);
   display: none;
 }
 
