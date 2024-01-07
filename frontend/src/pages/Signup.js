@@ -30,13 +30,12 @@ const Signup = () => {
 
         const data = await resp.json();
 
-        localStorage.setItem("user",JSON.stringify(data))
+        localStorage.setItem("usersignup",JSON.stringify(data))
         if ( !data) {
             window.alert("invalid registration")
         } else {
             window.alert("registration successfull")
         }
-
         navigate('/login')
 
     }
@@ -63,7 +62,7 @@ const Signup = () => {
                         </div>
 
                         <div>
-                            <button onClick={postData}>
+                            <button className='signup_btn' onClick={postData}>
                                 submit
                             </button>
                         </div>

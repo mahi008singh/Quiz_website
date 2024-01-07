@@ -43,7 +43,7 @@ const Header = () => {
                         </li>
 
                         {
-                            (userAuth)? <li><p style={{ cursor: "pointer" }} onClick={handelLogout}>logout</p></li>
+                            (userAuth)? <li><p style={{ cursor: "pointer" }}  className={'linker'} onClick={handelLogout}>logout</p></li>
                                 : <>
                                     <li>
                                         <NavLink onClick={togle} id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>

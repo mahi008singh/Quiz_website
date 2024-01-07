@@ -23,7 +23,7 @@ async function userLogin(req,res){
     const isMatch=await bcrypt.compare(password,userData.password);
     if(isMatch){
         console.log("success login")
-        // res.redirect('/')
+        res.json(userData)
     }else{
         console.log("invalid")
     }

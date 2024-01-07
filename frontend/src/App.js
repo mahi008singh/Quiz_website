@@ -17,6 +17,7 @@ import Dashboard from "./pages/adminpage/Dashboard";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Upload from "./pages/adminpage/Upload";
 import Manage from "./pages/adminpage/Manage";
+import Companies from "./pages/Companies";
 function App() {
   return (
     <>
@@ -32,6 +33,7 @@ function App() {
               <Route path={'/Codeques'} element={<Codeques/>}/>
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
+              <Route path={'/companies'} element={<Companies/>} />
           
               <Route path={'/Signup'} element={<Signup/>} />
               <Route path={'/Login'} element={<Login/>} />

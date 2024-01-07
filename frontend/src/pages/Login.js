@@ -7,8 +7,10 @@ import '../css/style.css'
 const Login = () => {
 
 const navigate=useNavigate()
+
 const [loginData,setLoginData]=useState({
-    email:"",password:""
+    email:"",
+    password:""
     
 })
 
@@ -21,27 +23,47 @@ const handleInputs=(e)=>{
 }
 // --------------(post_login)-----------
 const postLogin=async (e)=>{
-   try{
-    const {email,password}=loginData
+ 
     e.preventDefault();
-    let resp=await fetch('/userAuth/login/',{
-        method:"POST",
-        headers:{
-            "Content-Type":"application/json",   
-        },
-        body:JSON.stringify({
-            email,
-            password
-        })
-    })
+    try{
+        const {email,password}=loginData;
+        
+        let resp= await fetch('/userAuth/login',{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                email,
+                password
+            })
+
+        });
+        
+    
     let data=await resp.json()
     localStorage.setItem("user",JSON.stringify(data))
-    console.log(data);
-
-    navigate('/')
+    console.log(data.is_admin);
+    if(!data){
+        alert("Invalid Credentials")
+        setLoginData({
+            email:"",
+            password:""
+        })
+       
+    }else{
+        if(data.is_admin===0){
+            alert("Login success...")
+            navigate('/companies')
+        }else{
+            navigate('/admin/dashboard')
+        }
+    }
+    
    }catch(err){
     console.log("->"+err)
    }
+
 }
     return (
         <>
@@ -61,7 +83,7 @@ const postLogin=async (e)=>{
                         </div>
 
                         <div>
-                            <button onClick={postLogin}>submit</button>
+                            <button className='signup_btn' onClick={postLogin}>submit</button>
                         </div>
                     </form>
 

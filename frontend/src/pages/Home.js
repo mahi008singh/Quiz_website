@@ -59,7 +59,7 @@ const Home = () => {
                 return(
                    <>
                       <div class="box">
-                         <NavLink to={"/Signup"} >
+                         <NavLink to={"/Login"} >
                            <img src={require('../images/subject-icon-3.png')} alt="" />
                             <h3>{elem.title}</h3>
                          </NavLink>
