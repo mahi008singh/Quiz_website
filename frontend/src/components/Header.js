@@ -18,12 +18,8 @@ const Header = () => {
         togle();
     }
 
-    const handelLogout = () => {
-        localStorage.clear()
-        navigate('/login')
-        
-    }
-   let userAuth=localStorage.getItem("user")
+   let isLoggedIn=localStorage.getItem("loginToken")
+   
     return (
         <div clasName="navdiv">
             <nav className="navb">
@@ -32,6 +28,7 @@ const Header = () => {
                 </div>
                 <div className="header1">
                     <ul className={sidebar ? "sider-open" : "sider"}>
+                   
                         <li>
                             <NavLink onClick={togle} className={'linker'} to='/'>Home</NavLink>
                         </li>
@@ -43,7 +40,10 @@ const Header = () => {
                         </li>
 
                         {
-                            (userAuth)? <li><p style={{ cursor: "pointer" }}  className={'linker'} onClick={handelLogout}>logout</p></li>
+                            (isLoggedIn)? 
+                                <li>
+                                    <NavLink style={{ cursor: "pointer" }} id='Signup'  className={'linker'} to='/Logout'>logout</NavLink>
+                                </li>
                                 : <>
                                     <li>
                                         <NavLink onClick={togle} id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>

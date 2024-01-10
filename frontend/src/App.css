@@ -10,7 +10,9 @@
 }
 body{
     background-color: var(--primColor);
+    overflow: hidden;
 }
+
 .dark-theme{
     --primColor:#212121;
     --secColor:#fff;
@@ -48,17 +50,32 @@ body{
     padding-right: 2rem;
     padding-left: 2rem;
     font-size: 2.1rem;
+    font-weight: 600;
+    /* position: relative; */
 }
-.header1 ul li:hover{
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+.header1 ul li::before{
+    content: '';
+    position: absolute;
+    width: 0rem;
+    height: 0.3rem;
+    margin-left: 0.3rem;
+    bottom: 1.5rem;
+    background-color: var(--tertiary);
+    border-radius: 2rem;
+    transition: all ease 0.5s;
+    
+}
+.header1 ul li:hover::before{
+    /* box-shadow: 0px 4px 10px rgba(0,0,0,0.2); */
+    width: 4rem;
 }
 .header1 ul li:hover a{
     font-weight:bolder;
 }
 #Signup{
-    padding: 0.6rem 1rem;
+    padding: 0.4rem 1.4rem;
     background-color: var(--tertiary);
-    border-radius: 25px;
+    border-radius:1rem;
     color: white;
 }
 #Signup:hover{
@@ -95,6 +112,7 @@ body{
         border: 2px solid;
         /* background-color: rgb(67, 131, 131); */
         position: fixed;
+        overflow-y: hidden;
         top: 0;
         right: -45%;
         width: 35%;

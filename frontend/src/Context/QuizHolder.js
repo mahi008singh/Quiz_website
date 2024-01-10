@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState ,useEffect} from 'react'
 import { createContext } from 'react'
 import {Reasquiz,Aptiquiz,Cquiz,Verbalquiz} from './Quizquestion';
+import { useAsyncError } from 'react-router-dom';
 
 const QuizContext = createContext();
 
@@ -19,13 +20,45 @@ export default function QuizHolder(props) {
     const [random,setRandom]=useState([])
     const [topsize,setTopsize]=useState();
     const [platform,setPlatform]=useState(0);
+    
+    //Authentication context
 
+    const [loginData,setLoginData]=useState("")
+    const [isLoggedIn,setIsLoggedIn]=useState(false)
+
+    const userAuthentication= async()=>{
+        try {
+            let response=await fetch('http://localhost:5500/userAuth/userdetail',{
+                method:"POST",
+                headers:{
+                     Authorization:`Bearer ${localStorage.getItem("loginToken")}`,
+                    // "Content-Type":"application/json",
+                },
+                
+            });
+            console.log(response,"hekko")
+            if(response.ok){
+                const data= await response.json();
+                console.log(" contextData--> ",data)
+            }
+            
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    
+        useEffect(()=>{
+            
+                userAuthentication();
+        },[])
+    
+    
     return (
         <QuizContext.Provider value={{
             start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,Verbalquiz,correct,setCorrect,
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
-            topsize,setTopsize,platform,setPlatform
+            topsize,setTopsize,platform,setPlatform,userAuthentication,isLoggedIn,setIsLoggedIn
             }}>
             {props.children}
         </QuizContext.Provider>

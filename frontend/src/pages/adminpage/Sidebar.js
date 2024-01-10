@@ -4,11 +4,11 @@ import {RiDashboardFill, RiUploadLine} from 'react-icons/ri'
 import {FaMagento } from 'react-icons/fa'
 import '../../css/adminCss/admin.css'
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <>
-        <section className='sidebarContainer'>
-          <aside>
+        <section  className={(props.togle)?'sidebarContainer2':"sidebarContainer"}>
+          <aside className='sidebarAside'>
             <h3>Dashboard</h3>
             <br/>
               <Li Routeurl={'/admin/dashboard'}  heading={"Dashboard"} Icon={RiDashboardFill}/>
@@ -22,8 +22,8 @@ const Sidebar = () => {
 const Li=({heading,Routeurl,Icon})=>{
     return(
         <li className='Li'>
-          <Link to={Routeurl}>
-          <Icon/>
+          <Link  to={Routeurl}>
+            <Icon style={{marginRight:"1rem"}}/>
              {heading}
           </Link>
         </li>

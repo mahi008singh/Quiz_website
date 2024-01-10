@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .signup_box{
   width: 40rem;
@@ -15,6 +16,7 @@
 }
 .login_box{
   width: 40rem;
+ 
   height: 40rem;
   background:white;
   margin: 5rem 0;
@@ -130,7 +132,15 @@ input[type=submit]:hover{
   background:white;
   border-radius: 10px;
 }
+.loginImgDiv {
+  /* border: 2px solid; */
+}
+.loginImgDiv img{
+  width:40rem;
+  /* border: 2px solid; */
+  margin-right: 3rem;
 
+}
 /* ------------media-query---------------- */
 
 

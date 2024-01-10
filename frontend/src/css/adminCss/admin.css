@@ -2,36 +2,50 @@
     --boxShadow:-1px 1px 5px rgba(0,0,0,0.2);
     --bgColor:#0eb582;
 }
+/* html{
+    font-size: 16px;
+} */
+
+.hamIcon{
+    position: absolute;
+    font-size: 2rem;
+    left: 2rem;
+    display: none;
+    top: 8rem;
+}
 .sidebarContainer{
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     
 }
 .dashContainer{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display:grid;
     grid-template-columns: 1fr 4fr;
     padding: 0rem;
 }
-.sidebarContainer aside{
+.sidebarAside{
     width: 100%;
     font-size: 2rem;
     padding: 1rem;
     color: #000;
     box-shadow: var(--boxShadow);
     height: 90vh;
-    border-right: 1px solid rgba(0,0,0,0.3);
+    /* position: fixed; */
+    /* border-right: 1px solid rgba(0,0,0,0.3); */
 }
 .Li{
-    margin-bottom: 2rem;
-list-style: none;
+    margin-bottom: 3rem;
+    list-style: none;
 }
+
 .dashContainer main{
 
 }
 
 /* -------(uploadContainer)-------- */
+
 .uploadContainer{
     width: 100%;
     margin: 1rem;
@@ -43,13 +57,15 @@ list-style: none;
 .uploadContainer section{
     width: 100%;
     padding: 1.3rem;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: 1fr 3fr; */
     justify-content: space-between;
 }
 .chooseUpload{
     box-shadow: var(--boxShadow);
     height: 80vh;
+    width: 25%;
     padding: 2rem;
     margin: 0 2rem;
     border-radius: 1rem;
@@ -67,6 +83,7 @@ list-style: none;
 .addUpload{
     border-radius: 1rem;
     padding: 1rem;
+    width: 70%;
     box-shadow: var(--boxShadow);
 }
 .addUpload label{
@@ -78,7 +95,7 @@ list-style: none;
 }
 .addUpload input{
     border: 1px solid;
-    width: 40%;
+    width: 30%;
     height: 3rem;
     padding: 0 1rem;
     margin: 2rem 0;
@@ -91,19 +108,25 @@ list-style: none;
 }
 
 /* --------------(dashboard_css)----------- */
+
 .dashContainer{
-    
+
+  box-sizing: border-box;
 }
 .dashmainContainer{
-    /* background-color: red; */
-    width: 100%;
+    width: 96%;
     margin: 1rem;
     border-radius: 0.6rem;
     padding: 1rem;
 }
+.adminh2{
+        font-size: 3rem;
+        font-weight:bolder;
+        text-align: center;
+}
 .dashmainContainer section{
     /* background-color: red; */
-    height: 90%;
+    /* height: 90%; */
     margin: 1rem;
 
 }
@@ -169,4 +192,47 @@ list-style: none;
       color: #fff;
       cursor: pointer;
 
+}
+
+@media (max-width:660px){
+    html{
+        font-size: 8px;
+    }
+    .dashContainer{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0rem;
+    }
+
+    .sidebarContainer{
+        position: absolute;
+        left: -20rem;
+        
+        background-color: #fff;
+
+    }
+    .sidebarContainer2{
+        position: fixed;
+        left: -1rem;
+        height: 100vh;
+        background-color: #fff;
+
+    }
+   
+    .hamIcon{
+        position: fixed;
+        display: unset;
+    }
+
+    .uploadContainer section{
+        flex-direction: column;
+    }
+    .chooseUpload{
+        height: 15vh;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .addUpload{
+        width: 100%;
+    }
 }

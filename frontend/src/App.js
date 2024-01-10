@@ -18,6 +18,9 @@ import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Upload from "./pages/adminpage/Upload";
 import Manage from "./pages/adminpage/Manage";
 import Companies from "./pages/Companies";
+import Logout from "./pages/Logout";
+import Protected from "./pages/Protected";
+
 function App() {
   return (
     <>
@@ -33,16 +36,16 @@ function App() {
               <Route path={'/Codeques'} element={<Codeques/>}/>
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
-              <Route path={'/companies'} element={<Companies/>} />
+              <Route path={'/companies'} element={<Protected Component={Companies}/>} />
           
               <Route path={'/Signup'} element={<Signup/>} />
               <Route path={'/Login'} element={<Login/>} />
-
+              <Route path={'/Logout'} element={<Logout/>} />
               {/* admin routes */}
 
-              <Route path="/admin/dashboard" element={<Dashboard/>}/>
-              <Route path="/admin/upload" element={<Upload/>}/>
-              <Route path="/admin/manage" element={<Manage/>}/>
+              <Route path="/admin/dashboard" element={<Protected Component={Dashboard}/>}/>
+              <Route path="/admin/upload" element={<Protected Component={Upload}/>}/>
+              <Route path="/admin/manage" element={<Protected Component={Manage}/>}/>
 
 
 

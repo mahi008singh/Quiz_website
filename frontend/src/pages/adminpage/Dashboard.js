@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useRef } from 'react'
 import Sidebar from './Sidebar'
 import '../../css/adminCss/admin.css'
 import { RiTestTubeFill } from 'react-icons/ri'
+import { GiHamburgerMenu } from "react-icons/gi";
+
 const Dashboard = () => {
 
   const [userData,setUserData]=useState([])
@@ -13,11 +15,11 @@ const Dashboard = () => {
          method:"GET",  
         
         }) ;
-        console.log(resp)
+        // console.log(resp)
         if (resp.ok) {
           let data = await resp.json();
           setUserData(data)
-          console.log(data)
+          // console.log(data)
         }else{
           setUserData(["There is no user"])
         }
@@ -27,24 +29,25 @@ const Dashboard = () => {
       }
       
      }
-    console.log("useEffect called")
+    // console.log("useEffect called")
     getUserData()
    return ()=>{
 
    }
  },[])
- 
+  const [toggleBar,setToggleBar]=useState(false)
 
- console.log(" func called")
-
- console.log("this"+userData)
-
+ function toggleSidebar(){
+  setToggleBar((prevState)=>!prevState)
+ }
   return (
     <>
       <section className='dashContainer'>
-        <Sidebar/>
+        <Sidebar togle={toggleBar} />
+        <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
+
         <main className='dashmainContainer'>
-            <h2>Admin dashboard</h2>
+            <h2 className='adminh2'>Admin dashboard</h2>
             <section>
                 <div className='userWidget'>
                       <div>

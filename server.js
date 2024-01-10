@@ -38,7 +38,8 @@ app.get("*",(req,res)=>{
 
 
 
-//connecting the database...
+//connecting the database....
+
  const db_url=process.env.MONGO_URL
  connectDB(db_url)
  
