@@ -18,6 +18,10 @@ const Signup = () => {
     const postData = async (e) => {
         e.preventDefault();
         const { name, email, password } = userdata;
+        if(!name||!email||!password){
+            alert("Plz fill the complete details !!")
+            return;
+        }
         const resp = await fetch('/userAuth/register', {
             method: "POST",
             headers: {

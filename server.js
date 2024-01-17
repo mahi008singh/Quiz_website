@@ -2,6 +2,7 @@ require('dotenv').config()
 const express=require('express');
 const cors=require('cors')
 const app=express();
+const cookieParser=require("cookie-parser")
 const path= require('path');
 const bcrypt=require('bcrypt')
 const {connectDB}=require('./db/connectDB.js');
@@ -12,6 +13,7 @@ app.use('/public',express.static('public'))
 app.use('/images',express.static('images'))
 app.set("view engine","ejs")
 app.use(cors());
+app.use(cookieParser())
 app.use(express.json()); //parse the incoming JSON data to object
 app.use(express.urlencoded({extended:true}))
 

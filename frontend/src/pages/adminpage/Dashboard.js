@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect((e)=>{
     const getUserData=async()=>{
       try{
-       const resp=await fetch('http://localhost:5500/adminpage/getUsers',{
+         const resp=await fetch('http://localhost:5500/adminpage/getUsers',{
          method:"GET",  
         
         }) ;
@@ -31,10 +31,31 @@ const Dashboard = () => {
      }
     // console.log("useEffect called")
     getUserData()
-   return ()=>{
-
-   }
+  
  },[])
+
+ //delete user function
+
+async function deleteUser(id){
+        try {
+          const resp=await fetch(`http://localhost:5500/adminpage/delete/${id}`,{
+              method:"DELETE",
+              headers:{
+                "Content-Type":"application/json"
+              }
+          })
+
+          if(resp){
+              alert("user deleted")
+              
+          }
+        } catch (error) {
+          console.log(error)
+
+        }
+ }
+
+
   const [toggleBar,setToggleBar]=useState(false)
 
  function toggleSidebar(){
@@ -70,7 +91,7 @@ const Dashboard = () => {
                             <div key={ind} className='userDiv'>
                               <h3>{elem.name}</h3>
                               <p>{elem.email}</p>
-                              <button>Remove</button>
+                              <button onClick={()=>deleteUser(elem._id)}>Remove</button>
                             </div>
                           )
                         }) 

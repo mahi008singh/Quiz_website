@@ -1,7 +1,7 @@
 
 import Quizplay from "./components/Quizplay" 
 import { QuizContext } from "./Context/QuizHolder";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Header from './components/Header'
 import Home from './pages/Home';
 import Practice from './pages/Practice'
@@ -22,6 +22,7 @@ import Logout from "./pages/Logout";
 import Protected from "./pages/Protected";
 
 function App() {
+  
   return (
     <>
        <BrowserRouter>
@@ -36,7 +37,10 @@ function App() {
               <Route path={'/Codeques'} element={<Codeques/>}/>
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
-              <Route path={'/companies'} element={<Protected Component={Companies}/>} />
+              
+              
+                 <Route path={'/companies'} element={<Protected Component={Companies}/>} />
+              
           
               <Route path={'/Signup'} element={<Signup/>} />
               <Route path={'/Login'} element={<Login/>} />

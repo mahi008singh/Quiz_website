@@ -1,18 +1,62 @@
 import React from 'react'
 import '../css/contact.css'
+import { useState } from 'react'
 const Contact = () => {
+       const [contactData,setContactData]=useState({
+          name:"",
+          email:"",
+          msg:""
+       })
+
+       const submitMsg=async(e)=>{
+          e.preventDefault();
+          const {name,email,msg}=contactData;
+          if(!name||!email||!msg){
+            alert("input field is empty!!")
+            return;
+          }
+           try {
+            const resp=await fetch('/adminpage/postcontactmsg',{
+              method:"POST",
+              headers:{
+                 "Content-Type":"application/json",
+              },
+              body:JSON.stringify({
+                name,email,msg
+              })
+          })
+          const data=await resp.json();
+          
+          if(data){
+            alert("msg sent successfully !!")
+          }
+            
+           } catch (error) {
+              console.log("error-->> ",error)
+           }
+       }
+
+      
+
+       let name,value;
+       const handleInput=(e)=>{
+        name=e.target.name;
+        value=e.target.value
+        setContactData({...contactData,[name]:value});
+
+       }
   return (
     <>
             <div data-aos="fade-up" className="contact_div">
                 <h1>Ask here</h1>
-                <form action="https://formspree.io/f/xnqyqkgj" method="POST">
-                    <input name="name" type="text" required placeholder="your name" />
+                <form method="POST">
+                    <input name="name" onChange={handleInput} value={contactData.name}  type="text" required placeholder="your name" />
                     <br />
-                    <input name="email" type="email" required placeholder="your email" />
+                    <input name="email" onChange={handleInput} value={contactData.email} type="email" required placeholder="your email" />
                     <br />
-                    <textarea name="tarea" placeholder="your message" type="text" />
+                    <textarea name="msg" onChange={handleInput} value={contactData.msg} placeholder="your message" type="text" />
                     <br />
-                    <button type="submit">Submit</button>
+                    <button type="submit" onClick={submitMsg}>Submit</button>
                 </form>
             </div>
     </>

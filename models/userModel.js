@@ -31,7 +31,7 @@ userSchema.methods.generateToken= async function(){
             },
             process.env.JWT_KEY,
                 {
-                    expiresIn:10
+                    expiresIn:"30s"
                 }
             );
     }catch(err){

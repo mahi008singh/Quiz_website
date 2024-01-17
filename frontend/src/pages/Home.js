@@ -132,7 +132,7 @@ const Home = () => {
 
       <div className="box">
          <h3>useful links</h3>
-         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">ask questions</NavLink>
+         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">Contact us</NavLink>
          <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">send feedback</NavLink>
          <a href="#" class="link">privacy policy</a>
          <a href="#" class="link">terms of use</a>

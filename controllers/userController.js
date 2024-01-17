@@ -20,27 +20,40 @@ async function userRegister(req,res){
 
 } 
 
+
+//------------------------(Login controller)------------------------
+//------------------------------------------------------------------
+
 async function userLogin(req,res){
     const {email,password}=req.body;
     try{
         
     const userData=await userModel.findOne({email:email})
     //fetching the data from mongodb
+    if(!userData){
+        return res.json({msg:"not a registered user"})
+    }
     const isMatch=await bcrypt.compare(password,userData.password);
-
+  
     if(userData&&isMatch){
+        const jwtToken=await userData.generateToken();
         console.log("success login")
-    
-        res.status(201).json({
-            msg:userData,
-            token: await userData.generateToken(),
+        res.cookie(String(userData._id),jwtToken,{
+            path:'/',
+            expires:new Date(Date.now()+1000*30),
+            httpOnly:true,
+            sameSite:"lax"
+        })
+        return res.status(201).json({
+            msg:"Logged in successfully",
+            user:userData,
+            token:jwtToken ,
             userId:userData._id.toString()
         })
-
-    }else{
-    
-        res.status(401).json({msg:"Invalid email or password !!"})
     }
+    else{
+        res.status(401).json({msg:"Invalid email or password !!"})
+    } 
     
     }catch(err){
         console.log(err)
@@ -48,10 +61,14 @@ async function userLogin(req,res){
 
 }
 
+// -------------------(userDetails)----------------------------
+//-------------------------------------------------------------
+
+
  const userDetail=async (req,res)=>{
     try{
-        const userData=req.userDetails;
-        console.log(userData)
+        const userData=req.user;
+        console.log("inside userDetail--> "+userData)
         res.status(200).json(userData)
     }catch(err){
         console.log(`error from the userdetail route ${err}`)

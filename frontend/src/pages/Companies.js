@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../css/companies.css'
 const Companies = () => {
+    
   return (
     <section className='companySec'>
+         <h2>{}</h2>
          <h1>
           Company specific question
          </h1>

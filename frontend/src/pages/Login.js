@@ -30,6 +30,10 @@ const postLogin=async (e)=>{
     e.preventDefault();
     try{
         const {email,password}=loginData;
+        if(!email||!password){
+            alert("Plz fill the complete details !!")
+            return;
+        }
         
         let resp= await fetch('/userAuth/login',{
             method:"POST",
@@ -47,8 +51,15 @@ const postLogin=async (e)=>{
     let data=await resp.json()
     // stroing the jwt token into localStorage
     localStorage.setItem("loginToken",JSON.stringify(data.token))
-    console.log("loginData-->",data);
-    if(!data){
+    if(data.msg==="Not a registered user"){
+        alert("not a registered user")
+        setLoginData({
+            email:"",
+            password:""
+        })
+        return;
+    }
+    if(data.msg==="Invalid email or password !!"){
         alert("Invalid Credentials")
         setLoginData({
             email:"",
@@ -57,7 +68,8 @@ const postLogin=async (e)=>{
        
     }else{
         // setIsLoggedIn(true)
-        if(data.msg.is_admin===0){
+       
+        if(data.user.is_admin===0){
             alert("Login success...")
             navigate('/companies')
         }else{
@@ -75,6 +87,7 @@ const postLogin=async (e)=>{
     return (
         <>
             <section className="signup_sec">
+                
                 <div className='loginImgDiv'>
                         <img src={require('../images/login_img.avif')}/>
                 </div>

@@ -25,10 +25,15 @@ const Upload = () => {
 
 
   const uploadQues= async(e)=>{
+
     e.preventDefault()
   
      try {
         const {question,optionA,optionB,optionC,optionD,answer}=uploadData
+        if(!question||!optionA||!optionB||!optionC||!optionD||!answer){
+            alert("Plz fill the complete detail !!")
+            return;
+        }
         let resp=await fetch('/adminpage/uploads',{
          method:"POST",
          headers:{
@@ -89,30 +94,28 @@ const Upload = () => {
                 <div className='addUpload'>
                 <form method='POST'>
                     <label htmlFor="">Your question</label>
-                    <input name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" /> <br />
+                    <input required  name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" /> <br />
                     <br />
                     <div>
-                        <label htmlFor="">Option A)</label>
-                        <input name='optionA'  placeholder='type option' onChange={handleInputs} value={uploadData.optionA} type="text" />
-                        <label htmlFor="">Option B)</label>
+                        <label htmlFor="">Option A)</label> 
+                        <input name='optionA'  placeholder='type option' onChange={handleInputs} value={uploadData.optionA} type="text" /> <br/>
+                        <label htmlFor="">Option B)</label> 
                         <input  name='optionB' placeholder='type option' onChange={handleInputs} value={uploadData.optionB}  type="text" /><br />
                     </div>
                     <div>
                         <label htmlFor="">Option C)</label>
-                        <input  name='optionC' placeholder='type option' onChange={handleInputs} value={uploadData.optionC}  type="text" />
+                        <input  name='optionC' placeholder='type option' onChange={handleInputs} value={uploadData.optionC}  type="text" /> <br/>
                         <label htmlFor="">Option D)</label>
                         <input  name='optionD' placeholder='type option' onChange={handleInputs} value={uploadData.optionD}  type="text" />
                     </div>
                     <div>
-
                         <label htmlFor="" >Answer</label>
-                        <input placeholder='type correct option a,b,c or d' name='answer' type='text' onChange={handleInputs} value={uploadData.answer}/>
+                        <input className='ansInput' placeholder='type correct option a,b,c or d' name='answer' type='text' onChange={handleInputs} value={uploadData.answer}/>
                     </div>
                     <button  className='uploadBtn Signup' onClick={uploadQues} >Upload</button>
                     </form>
                 </div>
-              
-
+         
              </section>
         </main>
         </section>
