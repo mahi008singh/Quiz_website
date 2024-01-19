@@ -38,7 +38,7 @@ const Signup = () => {
         if ( !data) {
             window.alert("invalid registration")
         } else {
-            window.alert(" successfull")
+            window.alert("you are registered successfully")
         }
         navigate('/login')
 

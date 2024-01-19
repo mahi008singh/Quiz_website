@@ -47,7 +47,7 @@ async function uploadQues(req,res){
         }
 }
 
-async function postcontactMsg(req,res){
+async function postContactMsg(req,res){
         try {
                 const {name,email,msg}=req.body
                 await contactModel.create({
@@ -77,7 +77,7 @@ async function getContactmsg(req,res){
         }
 }
 
-async function deletecontactMsg(req,res){
+async function deleteContactMsg(req,res){
         try {
                 const id=req.params.id;
                 await contactModel.deleteOne({_id:id})
@@ -91,7 +91,7 @@ module.exports={
         getAllUsers,
         uploadQues,
         deleteUser,
-        postcontactMsg,
+        postContactMsg,
         getContactmsg,
-        deletecontactMsg
+        deleteContactMsg
 }

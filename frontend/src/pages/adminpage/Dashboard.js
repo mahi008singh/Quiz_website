@@ -11,7 +11,7 @@ const Dashboard = () => {
   useEffect((e)=>{
     const getUserData=async()=>{
       try{
-         const resp=await fetch('http://localhost:5500/adminpage/getUsers',{
+         const resp=await fetch(`/adminpage/getUsers`,{
          method:"GET",  
         
         }) ;

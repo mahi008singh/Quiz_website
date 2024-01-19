@@ -39,7 +39,9 @@
     margin-bottom: 3rem;
     list-style: none;
     padding:0.4rem 0.2rem;
+    font-size: 1.7rem;
     border:0.4rem;
+    border-radius: 0.4rem;
     background-color: rgb(218, 248, 255);
 }
 
@@ -224,6 +226,9 @@
     box-shadow: var(--boxShadow);
 
 }
+.msgdivBar div h2,p{
+    font-size: 1.3rem;
+}
 .msgdivBar div:nth-child(1),.msgdivBar div:nth-child(2){
     width: 20%;
     padding: 1rem;
@@ -255,9 +260,7 @@
 /* -------------(media-query)--------------- */
 
 @media (max-width:660px){
-    html{
-        font-size: 7px;
-    }
+  
     .dashContainer{
         display:grid;
         grid-template-columns: 1fr;
@@ -303,10 +306,11 @@
         width: 20%;
         font-size: 1rem;
     }
+    .msgdivBar div h2,p{
+        font-size: 0.8rem;
+    }
 }
 @media (max-width:450px){
-    html{
-        font-size: 5px;
-    }
+    
 
 }

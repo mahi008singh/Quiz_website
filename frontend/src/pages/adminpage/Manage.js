@@ -9,7 +9,7 @@ const Manage = () => {
   useEffect((e)=>{
       const getContactDetails=async()=>{
          try {
-          const resp=await fetch('http://localhost:5500/adminpage/getcontactmsg',{
+          const resp=await fetch('/adminpage/getcontactmsg',{
             method:"GET",
           })
            if(resp.ok){
@@ -30,7 +30,7 @@ const Manage = () => {
   async function deleteContactmsg(id){
         try {
           
-       let resp= await fetch(`http://localhost:5500/adminpage/deleteMsg/${id}`,{
+       let resp= await fetch(`/adminpage/deleteMsg/${id}`,{
           method:"DELETE",
           headers:{
             "Content-Type":"application/json"

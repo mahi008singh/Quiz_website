@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/contact.css'
 import { useState } from 'react'
+import axios from "axios"
 const Contact = () => {
        const [contactData,setContactData]=useState({
           name:"",
@@ -10,30 +11,27 @@ const Contact = () => {
 
        const submitMsg=async(e)=>{
           e.preventDefault();
+          
           const {name,email,msg}=contactData;
           if(!name||!email||!msg){
             alert("input field is empty!!")
             return;
           }
-           try {
-            const resp=await fetch('/adminpage/postcontactmsg',{
-              method:"POST",
-              headers:{
-                 "Content-Type":"application/json",
-              },
-              body:JSON.stringify({
-                name,email,msg
-              })
-          })
-          const data=await resp.json();
           
-          if(data){
-            alert("msg sent successfully !!")
-          }
+          const resp=await axios.post('/adminpage/postcontactmsg',{ 
+              name,
+              email,
+              msg
+              
+          })
+        
+          if ( !resp) {
+            window.alert("Somthing went wrong")
+        } else {
+            window.alert("sent successfully !!")
+        }
             
-           } catch (error) {
-              console.log("error-->> ",error)
-           }
+     
        }
 
       
