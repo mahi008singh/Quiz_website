@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import Sidebar from './Sidebar'
 import '../../css/adminCss/admin.css'
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import PulseLoader from "react-spinners/PulseLoader";
 
 const Manage = () => {
   const [contactData,setContactData]=useState([])
@@ -73,7 +73,11 @@ const Manage = () => {
           </div>
           {    (contactData.length==0)
                 ?
-                <h2>"No messages present !!"</h2>
+                // <h2>"No messages present !!"</h2>
+                
+                <div className='loaderDiv'>
+                   <PulseLoader color="#36d7b7" size={20}/>  
+                </div>
                 :
                     contactData.map((data)=>{
                  

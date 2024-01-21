@@ -12,6 +12,7 @@ import Categ from './Cat-component/Categ';
 import Review from './components/Review';
 import Codeques from './components/Codeques';
 import Contact from './pages/Contact'
+import Sendotp from "./pages/Sendotp";
 import Privatecomp from "./components/privatecomp";
 import Dashboard from "./pages/adminpage/Dashboard";
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
@@ -20,9 +21,10 @@ import Manage from "./pages/adminpage/Manage";
 import Companies from "./pages/Companies";
 import Logout from "./pages/Logout";
 import Protected from "./pages/Protected";
+import Privateroute from "./pages/Privateroute";
 
 function App() {
-  
+  let is_admin=localStorage.getItem('admin')
   return (
     <>
        <BrowserRouter>
@@ -37,6 +39,8 @@ function App() {
               <Route path={'/Codeques'} element={<Codeques/>}/>
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
+              <Route path={'/Sendotp'} element={<Sendotp/>} />
+
               
               
                  <Route path={'/companies'} element={<Protected Component={Companies}/>} />
@@ -47,11 +51,15 @@ function App() {
               <Route path={'/Logout'} element={<Logout/>} />
               {/* admin routes */}
 
-              <Route path="/admin/dashboard" element={<Protected Component={Dashboard}/>}/>
-              <Route path="/admin/upload" element={<Protected Component={Upload}/>}/>
-              <Route path="/admin/manage" element={<Protected Component={Manage}/>}/>
+               <Route path={"/admin"} element={<Privateroute/>}>
 
+                  <Route path="dashboard" element={<Protected Component={Dashboard}/>}/>
+                     
+                  <Route path="upload" element={<Protected Component={Upload}/>}/>
+                  <Route path="manage" element={<Protected Component={Manage}/>}/>
 
+               </Route>
+              
 
        </Routes>
        </BrowserRouter>  
