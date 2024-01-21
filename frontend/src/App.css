@@ -20,6 +20,7 @@ body{
 }
 .navdiv{
     display:flex;
+  
 
 }
 .navb{
@@ -104,6 +105,7 @@ body{
 }
 
 @media (max-width:600px) {
+
     .header1{
         height: 100vh;
     }

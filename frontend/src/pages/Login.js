@@ -6,6 +6,8 @@ import '../css/style.css'
 import { QuizContext } from '../Context/QuizHolder';
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
+import PulseLoader from "react-spinners/PulseLoader";
+
 
 const Login = () => {
 const {setIsLoggedIn}=useContext(QuizContext)
@@ -102,18 +104,22 @@ const postLogin=async (e)=>{
     return (
         <>
             <section className="signup_sec">
+             {
                 
-                <div className='loginImgDiv'>
-                        <img src={require('../images/login_img.avif')}/>
-                </div>
-                <div className="login_box">
-                    <h1>Login</h1>
-                    <form method="POST">
-                        <div className="txt_field">
-                            <input name='email' value={loginData.email} onChange={handleInputs} type="text" required />
+             (0)?   <PulseLoader color="#36d7b7" size={20}/>  
+             :
+              <>
+               <div className='loginImgDiv'>
+                       <img src={require('../images/login_img.avif')}/>
+               </div>
+               <div className="login_box">
+                   <h1>Login</h1>
+                   <form method="POST">
+                       <div className="txt_field">
+                           <input name='email' value={loginData.email} onChange={handleInputs} type="text" required />
 
-                            <label>Email</label>
-                        </div>
+                           <label>Email</label>
+                       </div>
 
                         <div className="txt_field">
                             <input name='password' value={loginData.password} onChange={handleInputs} type={
@@ -127,16 +133,19 @@ const postLogin=async (e)=>{
 
                         </div>
 
-                        <div>
-                            <button className='signup_btn' onClick={postLogin}>submit</button>
-                        </div>
-                    </form>
+                       <div>
+                           <button className='signup_btn' onClick={postLogin}>submit</button>
+                       </div>
+                   </form>
 
-                    <div className="signup_link">
-                        Not registered yet?
-                        <NavLink to={'/Signup'}>Signup</NavLink>
-                    </div>
-                </div>
+                   <div className="signup_link">
+                       <p><NavLink to={'/Sendotp'}>forget password?</NavLink></p>
+                       Not registered yet?
+                       <NavLink to={'/Signup'}>Signup</NavLink>
+                   </div>
+               </div>
+              </>
+             }
             </section>
         </>
     )

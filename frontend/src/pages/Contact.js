@@ -17,7 +17,7 @@ const Contact = () => {
             alert("input field is empty!!")
             return;
           }
-          
+
           const resp=await axios.post('/adminpage/postcontactmsg',{ 
               name,
               email,
@@ -48,6 +48,7 @@ const Contact = () => {
             <div data-aos="fade-up" className="contact_div">
                 <h1>Ask here</h1>
                 <form method="POST">
+             
                     <input name="name" onChange={handleInput} value={contactData.name}  type="text" required placeholder="your name" />
                     <br />
                     <input name="email" onChange={handleInput} value={contactData.email} type="email" required placeholder="your email" />

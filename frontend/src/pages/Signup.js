@@ -7,7 +7,9 @@ import { AiOutlineEye } from "react-icons/ai";
 const Signup = () => {
     const navigate=useNavigate()
     const [userdata, setUserData] = useState({
-        name: "", email: "", password: ""
+        name: "", 
+        email: "", 
+        password: ""
     });
 
     let name, value;
@@ -27,7 +29,7 @@ const Signup = () => {
     const handleInputs = (e) => {
         name = e.target.name;
         value = e.target.value;
-        setUserData({ ...userdata, [name]: value })
+        setUserData({...userdata, [name]: value })
     }
     const postData = async (e) => {
         e.preventDefault();
@@ -53,6 +55,7 @@ const Signup = () => {
             window.alert("invalid registration")
         } else {
             window.alert("you are registered successfully")
+            window.alert("Check your email for verification link")
         }
         navigate('/login')
 

@@ -3,6 +3,8 @@ import Sidebar from './Sidebar'
 import '../../css/adminCss/admin.css'
 import { RiTestTubeFill } from 'react-icons/ri'
 import { GiHamburgerMenu } from "react-icons/gi";
+import PulseLoader from "react-spinners/PulseLoader";
+   
 
 const Dashboard = () => {
 
@@ -19,7 +21,7 @@ const Dashboard = () => {
         if (resp.ok) {
           let data = await resp.json();
           setUserData(data)
-          // console.log(data)
+          console.log(data)
         }else{
           setUserData(["There is no user"])
         }
@@ -64,10 +66,12 @@ async function deleteUser(id){
   return (
     <>
       <section className='dashContainer'>
+       
         <Sidebar togle={toggleBar} />
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
 
         <main className='dashmainContainer'>
+       
             <h2 className='adminh2'>Admin dashboard</h2>
             <section>
                 <div className='userWidget'>
@@ -86,16 +90,29 @@ async function deleteUser(id){
                 </div>
                 <div className='registeredUser'>
                   {
-                        userData.map((elem,ind)=>{
+                    (userData.length===0)?  
+                    <div className='loaderDiv'>
+                        <PulseLoader color="#36d7b7" size={20}/>  
+                    </div>
+                    :  userData.map((elem,ind)=>{
                           return(
                             <div key={ind} className='userDiv'>
                               <h3>{elem.name}</h3>
+                              <span style={{color:"red"}}>
+                                {
+                                  (elem.is_verified==1)?
+                                  <p style={{color:"green"}}>verified</p>
+                                  :<p style={{color:"red"}}>Not verified</p>
+                                }
+                              </span>
                               <p>{elem.email}</p>
                               <button onClick={()=>deleteUser(elem._id)}>Remove</button>
                             </div>
                           )
                         }) 
+                   
                   }
+                 
                 </div>
             </section>
         </main>

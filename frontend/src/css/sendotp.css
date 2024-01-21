@@ -1,0 +1,49 @@
+
+.sendOTP{
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.sendOTP form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2) ;
+
+    flex-direction: column;
+}
+.sendOTP form div{
+    /* border: 2px solid red; */
+    width: 80%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.sendOTP form div input{
+    width:80%;
+    height: 3rem;
+    border-bottom: 2px solid rgba(0,0,0,0.3);
+}
+
+.sendOTP form div button{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--bgColor);
+}
+
+@media (max-width:660px){
+    .sendOTP form{
+        width: 80%
+    }
+}
