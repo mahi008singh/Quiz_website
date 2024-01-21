@@ -132,14 +132,23 @@ input[type=submit]:hover{
   background:white;
   border-radius: 10px;
 }
-.loginImgDiv {
-  /* border: 2px solid; */
-}
+/* .loginImgDiv {
+  /* border: 2px solid; 
+} */
 .loginImgDiv img{
   width:40rem;
   /* border: 2px solid; */
   margin-right: 3rem;
 
+}
+#check{
+  cursor: pointer;
+  position: absolute;
+  right:0.8rem;
+  top:1.15rem;
+  font-size: 2em;
+  background-color: blur(25px);
+  
 }
 /* ------------media-query---------------- */
 
@@ -170,10 +179,13 @@ input[type=submit]:hover{
     font-size: 2.2rem;
   
   }
-
+  #check{
+    top:1.4rem;
+  }
+  
 }
 @media (max-width:460px){
-
+  
   .signup_box{
     width: 42rem;
     height: 53rem;
@@ -184,7 +196,7 @@ input[type=submit]:hover{
     text-align : center;
     padding:0 0 20px 0;
     font-size: 2.2rem;
-  
+    
   }
   .login_box{
     width: 42rem;
@@ -198,7 +210,10 @@ input[type=submit]:hover{
     font-size: 2.2rem;
   
   }
+  #check{
+    top:1.82rem;
+  }
 
-
+  
 }
 

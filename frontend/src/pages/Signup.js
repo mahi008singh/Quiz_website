@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
 import '../css/style.css'
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
 const Signup = () => {
     const navigate=useNavigate()
     const [userdata, setUserData] = useState({
@@ -9,7 +11,19 @@ const Signup = () => {
     });
 
     let name, value;
+    const [showPassword,setShowPassword]=useState(false);
+    const [icon,setIcon]=useState(AiOutlineEyeInvisible)
+    const handlerShowPassword=()=>{
+    if(showPassword===true){
 
+        setShowPassword(false);
+        setIcon(AiOutlineEyeInvisible)
+    }
+    else {
+        setShowPassword(true);
+        setIcon(AiOutlineEye);
+    }
+}
     const handleInputs = (e) => {
         name = e.target.name;
         value = e.target.value;
@@ -61,7 +75,13 @@ const Signup = () => {
                         </div>
 
                         <div className="txt_field">
-                            <input name='password' value={userdata.password} onChange={handleInputs} type="password" required />
+                            <input name='password' value={userdata.password} onChange={handleInputs} type={
+                                showPassword ? "text" : "password"} required />
+                            <div id="check" value={showPassword}
+                             onClick={handlerShowPassword} 
+                             > 
+                             {showPassword ? <AiOutlineEye/> : <AiOutlineEyeInvisible/> }       
+                        </div>
                             <label>Password</label>
                         </div>
 

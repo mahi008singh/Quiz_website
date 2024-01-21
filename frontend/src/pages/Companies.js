@@ -1,23 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import '../css/companies.css'
+import React, { useEffect, useState, useContext } from 'react'
+import {NavLink} from "react-router-dom"
+// import '../css/companies.css'
+import '../css/style.css'
+import Quants from '../Api/Maincateg';
+import { QuizContext } from '../Context/QuizHolder';
 const Companies = () => {
     
+    const { data,setData }=useContext(QuizContext)
+    const [render,setRender]=useState(Quants.data4);
+    
   return (
-    <section className='companySec'>
+    
+    <section className='subjects'>
          <h2>{}</h2>
-         <h1>
+         <h1 style={{fontSize:"3rem", textAlign:"center"}}>
           Company specific question
          </h1>
          <br/>
          <br/>
          <br/>
-         <div className='compContainer'>
-                <div>
-                    <h1>Tcs</h1>
-                    <p>You can access to the previous year question of tcs</p>
-                    <button>Explore</button>
-                </div>
-         </div>
+         <br/>
+         <div class="box-container">
+                    {
+                        render.map((elem)=>{
+                            return(
+                                <>
+                                    <div class="box">
+                                        <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
+                                            <img src={require('../images/subject-icon-1.png')} alt="" />
+                                            <h3 class="Quant_h1" >{elem.title}</h3>
+                                        </NavLink>
+                                    </div>
+                                </>
+                            )
+                        })
+                    }
+
+          </div>
     </section>
   )
 }
