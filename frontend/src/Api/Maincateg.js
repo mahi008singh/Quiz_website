@@ -71,6 +71,31 @@ const Quants={
 
 
 
+],
+data4:[
+        {
+                key:1,
+                title:"TCS",
+                link:"/Quizplay",
+                apiNum:12
+        },
+        {       key:2,
+                title:"COGNIZANT",
+                link:"/Quizplay",
+                apiNum:13
+        },
+        {       key:3,
+                title:"WIPRO",
+                link:"/Quizplay",
+                apiNum:14
+        },
+        {       key:4,
+                title:"INFOSYS",
+                link:"/Quizplay",
+                apiNum:15
+        },
+
+
 ]
 }
 
