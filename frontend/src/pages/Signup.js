@@ -36,7 +36,7 @@ const Signup = () => {
 
         const data = await resp.json();
 
-        localStorage.setItem("usersignup",JSON.stringify(data))
+        // localStorage.setItem("usersignup",JSON.stringify(data))
         if ( !data) {
             window.alert("invalid registration")
         } else {
