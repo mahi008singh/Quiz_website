@@ -4,6 +4,8 @@ import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
 import '../css/style.css'
 import { QuizContext } from '../Context/QuizHolder';
+import { AiOutlineEyeInvisible } from "react-icons/ai";
+import { AiOutlineEye } from "react-icons/ai";
 import PulseLoader from "react-spinners/PulseLoader";
 
 
@@ -18,12 +20,25 @@ const [loginData,setLoginData]=useState({
 })
 
 let name,value
+const [showPassword,setShowPassword]=useState(false);
+const [icon,setIcon]=useState(AiOutlineEyeInvisible)
+const handlerShowPassword=()=>{
+    if(showPassword===true){
 
+        setShowPassword(false);
+        setIcon(AiOutlineEyeInvisible)
+    }
+    else {
+        setShowPassword(true);
+        setIcon(AiOutlineEye);
+    }
+}
 const handleInputs=(e)=>{
     name=e.target.name;
     value=e.target.value
     setLoginData({...loginData,[name]:value})
 }
+
 
 // --------------(post_login)-----------
 
@@ -106,10 +121,17 @@ const postLogin=async (e)=>{
                            <label>Email</label>
                        </div>
 
-                       <div className="txt_field">
-                           <input name='password' value={loginData.password} onChange={handleInputs} type="password" required />
-                           <label>Password</label>
-                       </div>
+                        <div className="txt_field">
+                            <input name='password' value={loginData.password} onChange={handleInputs} type={
+                                showPassword ? "text" : "password"}  required />
+                        <div id="check" value={showPassword}
+                             onClick={handlerShowPassword} 
+                             > 
+                             {showPassword ? <AiOutlineEye/> : <AiOutlineEyeInvisible/> }       
+                        </div>
+                            <label>Password</label>
+
+                        </div>
 
                        <div>
                            <button className='signup_btn' onClick={postLogin}>submit</button>
