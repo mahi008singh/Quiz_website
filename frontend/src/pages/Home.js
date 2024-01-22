@@ -11,6 +11,8 @@ const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
       const [recommend,setRecommend]=useState(Homedata.data2);
       const { platform,setPlatform } = useContext(QuizContext)
+
+      const isLoggedin=localStorage.getItem("loginToken")
     return (
         <>
           <section class="home">
@@ -59,7 +61,7 @@ const Home = () => {
                 return(
                    <>
                       <div class="box">
-                         <NavLink to={"/Login"} >
+                         <NavLink to={(isLoggedin)?"/companies":"/Login"} >
                            <img src={require('../images/subject-icon-3.png')} alt="" />
                             <h3>{elem.title}</h3>
                          </NavLink>

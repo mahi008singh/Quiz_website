@@ -1,10 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,useContext} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FiList, FiX } from "react-icons/fi";
 import { AiFillBulb } from "react-icons/ai";
 import { MdDarkMode } from "react-icons/md"
 import { BsSun } from "react-icons/bs"
+import { FaUser } from "react-icons/fa";
+import { QuizContext } from '../Context/QuizHolder';
+
 const Header = () => {
+
+    // const {showuserName,setShowuserName}=useContext(QuizContext)
+
     const navigate = useNavigate()
     const [sidebar, setSidebar] = useState(false);
     const togle = () => {
@@ -38,6 +44,19 @@ const Header = () => {
                         <li>
                             <NavLink onClick={togle} className={'linker'} to='/Practice'>Practice</NavLink>
                         </li>
+                        <p className='userLogo' style={{fontSize:"1.7rem", fontWeight:"600"}}>
+                                <FaUser style={{marginRight:"0.5rem",color:"var(--tertiary)", cursor: "pointer"}}/>
+                                {
+                                    (localStorage.getItem('userName'))?
+                                    <NavLink to={localStorage.getItem("admin")?'/admin/dashboard':'/profile'}>
+                                    { JSON.parse(localStorage.getItem("userName"))}
+                                     </NavLink>
+                                     :
+                                     <NavLink to='/login'>
+                                        <span>LOGIN</span>
+                                     </NavLink>
+                                }
+                        </p>
 
                         {
                             (isLoggedIn)? 

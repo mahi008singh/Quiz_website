@@ -22,6 +22,7 @@ import Companies from "./pages/Companies";
 import Logout from "./pages/Logout";
 import Protected from "./pages/Protected";
 import Privateroute from "./pages/Privateroute";
+import Profile from "./pages/Profile"
 
 function App() {
   let is_admin=localStorage.getItem('admin')
@@ -40,7 +41,7 @@ function App() {
               <Route path={'/Review'} element={<Review/>} />
               <Route path={'/Contact'} element={<Contact/>} />
               <Route path={'/Sendotp'} element={<Sendotp/>} />
-
+              <Route path={'/profile'} element={<Profile/>}/>
               
               
                  <Route path={'/companies'} element={<Protected Component={Companies}/>} />

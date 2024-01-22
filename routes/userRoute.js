@@ -13,7 +13,8 @@ userrouter.get('/userdetail',authMiddleware,userDetail);
 userrouter.post('/generateOtp',generateOtp)
 userrouter.post('/changePassword',changePassword)
 
-userrouter.get('/verifyuser',verifyMail)
+userrouter.get('/verifyuser',verifyMail) 
+
 
 
 module.exports=userrouter;
