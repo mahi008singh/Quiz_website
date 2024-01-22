@@ -12,7 +12,7 @@ const Companies = () => {
   return (
     
     <section className='subjects'>
-         <h2>{}</h2>
+         <h1>Welcome, {JSON.parse(localStorage.getItem("userName"))} !!</h1>
          <h1 style={{fontSize:"3rem", textAlign:"center"}}>
           Company specific question
          </h1>

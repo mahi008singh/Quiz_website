@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
 import '../css/style.css'
@@ -10,8 +10,12 @@ import PulseLoader from "react-spinners/PulseLoader";
 
 
 const Login = () => {
-const {setIsLoggedIn}=useContext(QuizContext)
+const {showuserName,setShowuserName}=useContext(QuizContext)
 const navigate=useNavigate()
+
+// useEffect(() => {
+//     localStorage.setItem('userName', JSON.stringify(showuserName));
+//   }, [showuserName]);
 
 const [loginData,setLoginData]=useState({
     email:"",
@@ -88,18 +92,26 @@ const postLogin=async (e)=>{
        
         if(data.user.is_admin===0){
             alert("Login success...")
+            localStorage.setItem('userName',JSON.stringify(data.user.name))
+            setShowuserName(() => {
+                const storedState = data.user;
+                return storedState ? storedState : ' ';
+            })
             navigate('/companies')
         }else{
             // userAuthentication()
+            localStorage.setItem('userName',JSON.stringify(data.user.name))
             localStorage.setItem("admin",true)
             navigate('/admin/dashboard')
         }
     }
+
+   
     
    }catch(err){
     console.log("error -->"+err)
    }
-
+   
 }
     return (
         <>
