@@ -3321,4 +3321,1355 @@ const Networkquiz={
    ]
 }
 
-export  {Reasquiz,Aptiquiz,Verbalquiz,Cquiz,Networkquiz,};
+const TCS={
+   q1:[
+      {
+      'question':'if 5+3+2=151022, 9+2+4=183652, 8+6+3=482466 then 7+2+5= ?',
+      'a':'a) 143547',
+      'b':'b) 132234',
+      'c':'c) 2577224',
+      'd':'d) 112321',
+      'correct':"a",
+      'tag':""
+    },
+    {
+       'question':'If in a certain code "RANGE" is coded as 12345 and "RANDOM" is coded as 123678 then "MANGO" would be',
+       'a':'a) 89343',
+       'b':'b) 84629',
+       'c':'c) 82347',
+       'd':'d) 83274',
+       'correct':"c",
+       'tag':""
+    },
+    {
+     'question':'If RADAR=*?*?# and DOOR=?%%# then DAM=?',
+     'a':'a) ?#%',
+     'b':'b) *#?',
+     'c':'c) *#/',
+     'd':'d) ??#',
+     'correct':"c",
+     'tag':"Cognizant"
+   },
+    {
+        'question':'COMPUTER is written as RFUVQNPC. How will MEDICINE be written in that code langauge',
+        'a':'a) MFEDJJOE',
+        'b':'b) EOJDEJFM',
+        'c':'c) MFEJDJOE',
+        'd':'d) EOJDJEFM',
+        'correct':"d",
+        'tag':""
+     },
+     {
+        'question':'If SMALL is coded as 75, CLAY is coded as 14 then CRIME is coded as:',
+        'a':'a) 84',
+        'b':'b) 48',
+        'c':'c) 39',
+        'd':'d) 05',
+        'correct':"a",
+        'tag':"tcs"
+     },
+     {
+        'question':'8(89)9, 11(155)12, 4(?)6:',
+        'a':'a) 64',
+        'b':'b) 34',
+        'c':'c) 46',
+        'd':'d) 24',
+        'correct':"b",
+        'tag':"tcs"
+     },
+     {
+        'question':'A*B=40,A*C=60,D*C=108. Find D',
+        'a':'a) 9',
+        'b':'b) 36',
+        'c':'c) 54',
+        'd':'d) 27',
+        'correct':"a",
+        'tag':"tcs"
+     },
+     {
+        'question':'If 9X7=3545 and 4X3=1520 then 6X8=?',
+        'a':'a) 5040',
+        'b':'b) 6050',
+        'c':'c) 4030',
+        'd':'d) 3040',
+        'correct':"c",
+        'tag':""
+     },
+     {
+        'question':'BEAN =ABNE  and SALE=LSEA then NEWS=?',
+        'a':'a) NWES',
+        'b':'b) WNSE',
+        'c':'c) ESWN',
+        'd':'d) SWNE',
+        'correct':"b",
+        'tag':""
+     },
+
+     {
+        'question':'In a certain coded language "PERSON" is written as "561957" then "SHOULD" be written as ',
+        'a':'a) 186334',
+        'b':'b) 168343',
+        'c':'c) 433681',
+        'd':'d) 186433',
+        'correct':"a",
+        'tag':"tcs nqt-20"
+
+     },
+     {
+        'question':'If "JUNE" is coded as "5531" then how will you code "JULY" ',
+        'a':'a) 7613',
+        'b':'b) 7321',
+        'c':'c) 7331',
+        'd':'d) 1335',
+        'correct':"c",
+        'tag':"Amcat"
+
+     },
+     {
+        'question':'If Z=2197 and R=729 then J will be ?',
+        'a':'a) 216',
+        'b':'b) 124',
+        'c':'c) 512',
+        'd':'d) 125',
+        'correct':"d",
+        'tag':"Infosys"
+
+     },
+     {
+        'question':'If "ENERGY" is written as "251814755" then how will "HOCKEY" be written as ',
+        'a':'a) 251135158',
+        'b':'b) 251815835',
+        'c':'c) 251815853',
+        'd':'d) 251511853',
+        'correct':"d",
+        'tag':""
+
+     },
+     {
+        'question':'If SUN=26 GPL=11 then SKT=?',
+        'a':'a) 10',
+        'b':'b) 11',
+        'c':'c) 12',
+        'd':'d) 13',
+        'correct':"a",
+        'tag':"Infosys"
+
+     },
+     {
+        'question':'If  OM=56 and GOT=126 then  CARD=? ',
+        'a':'a) 108',
+        'b':'b) 164',
+        'c':'c) 120',
+        'd':'d) 104',
+        'correct':"d",
+        'tag':"Amcat"
+
+     },
+     {
+        'question':'In a certain language "POND" is written as "18192012" how will "STARS" be written as? ',
+        'a':'a) 21247243',
+        'b':'b) 21247263',
+        'c':'c) 11247243',
+        'd':'d) 21246263',
+        'correct':"b",
+        'tag':""
+
+     },
+
+     {
+        'question':'If NOSTALGIA = 81  then FRICTION=? ',
+        'a':'a) 64',
+        'b':'b) 105',
+        'c':'c) 85',
+        'd':'d) 36',
+        'correct':"a",
+        'tag':"Amcat"
+
+     },
+     {
+        'question':'How many pairs of letters are there in the word CARROT which have as many letters between them in the word as in the English alphabet series in both forward and backward direction?',
+        'a':'a) None  ',
+        'b':'b) Two',
+        'c':'c) More than three',
+        'd':'d) One',
+        'correct':"d",
+        'tag':"tcs-nqt"
+
+     },
+
+     {
+        'question':'In a certain language "hu man sam" means "water is life", "sam na zo" means "Glass of water" "chi zo ma" means "life of PI" then PI means',
+        'a':'a) hu',
+        'b':'b) ma',
+        'c':'c) chi',
+        'd':'d) sam',
+        'correct':"c",
+        'tag':"Amcat",
+        
+     },
+     {
+        'question':'If WRONG is coded as GNORW then how will RIGHT be coded as?',
+        'a':'a) THIGR',
+        'b':'b) HIRGT',
+        'c':'c) SJHIU',
+        'd':'d) GHIRT',
+        'correct':"d",
+        'tag':"IBM"
+     },
+     {
+        'question':'In a certain coded language "STUDENT" is written as "TVXHJTA". How will "TEACHER" be written in that same code? ',
+        'a':'a)UDBGMKY ',
+        'b':'b)UYBGMKY',
+        'c':'c)UGDGMKY',
+        'd':'d)TGBGMKY',
+        'correct':"c",
+        'tag':"tcs-nqt 20"
+     },
+     {
+        'question':' In a certain code, POETRY is written as QONDSQX and OVER is written as PNUDQ. How is MORE written in that code language?',
+        'a':'a)LNNQD ',
+        'b':'b)NNNQD',
+        'c':'c)NLNQD',
+        'd':'d)NLPQD',
+        'correct':"c",
+        'tag':""
+     },
+     {
+        'question':'CHAT is written as YTAH anf FEAR =VWAJ then PING=?',
+        'a':'a)GINP',
+        'b':'b)QGNI',
+        'c':'c)LSNU',
+        'd':'d)KRMT',
+        'correct':"c",
+        'tag':""
+     },
+     {
+        'question':'FIG : EGHJFH :: BIN : ?',
+        'a':'a) CAJHOM',
+        'b':'b) CAHJMOC',
+        'c':'c) ACJHMO',
+        'd':'d) ACHJMO',
+        'correct':"d",
+        'tag':""
+     },
+     {
+        'question':'if SUNSHINE=SVPVLNTL then NATURE=?',
+        'a':'a) NBUXVJ',
+        'b':'b) NBVXVJ',
+        'c':'c) NABVXVJ',
+        'd':'d) NABVXVI',
+        'correct':"b",
+        'tag':"Tcs nqt"
+     },
+     {
+        'question':'if CASUAL is written as "111914161956" REFER="1884723418" then REFUSAL=?',
+        'a':'a) 18347216145613',
+        'b':'b) 187234161411956 ',
+        'c':'c) none',
+        'd':'d) 18347216141956',
+        'correct':"d",
+        'tag':"Infosys-20"
+     },
+     {
+        'question':'CAT=3120 and DOG=4157 then 25144=?',
+        'a':'a) BEND',
+        'b':'b) BEADD',
+        'c':'c) YADD OR YND',
+        'd':'d) can`t  be determined',
+        'correct':"d",
+        'tag':""
+     },
+     {
+        'question':'If A=26, DOT=42 then CONE=?',
+        'a':'a) 52',
+        'b':'b) 71',
+        'c':'c) 67',
+        'd':'d) none',
+        'correct':"b",
+        'tag':""
+     },
+     {
+        'question':'FIRE=#*?%  so how FREEZE will be',
+        'a':'a) #&%%?*',
+        'b':'b) %%%?^^',
+        'c':'c) %%%?^&',
+        'd':'d) ???%#@',
+        'correct':"d",
+        'tag':"LTI"
+     },
+     {
+        'question':'if SNOW=7100 then WALL=?',
+        'a':'a) 5000',
+        'b':'b) 4700',
+        'c':'c) 4800',
+        'd':'d) 4000',
+        'correct':"c",
+        'tag':"Accenture"
+     },
+    
+     {
+        'question':'if THUMB is coded as BMAHT then CRUMB is ?',
+        'a':'a) BCARM',
+        'b':'b) BMARC',
+        'c':'c) RCEMB',
+        'd':'d) none',
+        'correct':"b",
+        'tag':"Wipro"
+     },
+     {
+        'question':'If 264*2=6, 870*3=11 then 735*5=?',
+        'a':'a) 8',
+        'b':'b) 21',
+        'c':'c) 12',
+        'd':'d) 18',
+        'correct':"c",
+        'tag':""
+     },
+     {
+        'question':'Tears is coded as 18 ,so how will water be coded as?',
+        'a':'a) 25',
+        'b':'b) 22',
+        'c':'c) 18',
+        'd':'d) 20',
+        'correct':"b",
+        'tag':"Cognizant",
+        'tag':""
+     },
+     {
+        'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+        'a':'a) 20',
+        'b':'b) 25',
+        'c':'c) 55',
+        'd':'d) 60',
+        'correct':"a",
+        'tag':""
+     },
+     {
+        'question':'Z,U,Q, _ , L',
+        'a':'a) M',
+        'b':'b) N',
+        'c':'c) O',
+        'd':'d) I',
+        'correct':"b",
+        'tag':""
+     },
+     
+   ],
+   q2:[
+    {
+       'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+       'a':'a) 20',
+       'b':'b) 25',
+       'c':'c) 55',
+       'd':'d) 60',
+       'correct':"a",
+       'tag':""
+    },
+    {
+       'question':'Z,U,Q, _ , L',
+       'a':'a) M',
+       'b':'b) N',
+       'c':'c) O',
+       'd':'d) I',
+       'correct':"b",
+       'tag':""
+    },
+    {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   ],
+   q3:[
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+     ],
+}
+const CONGNIZANT={
+   q1:[
+      {
+         'question':'. Which device performs the function of determining the path that messages should take through internetworks?',
+         'a':'a router',
+         'b':'a firewall',
+         'c':'a web server',
+         'd':'a DSL modem',
+         'correct':'a'
+      },
+      {
+         'question':'Which area of the network would a college IT staff most likely have to redesign as a direct result of many students bringing their own tablets and smartphones to school to access school resources?',
+         'a':'extranet',
+         'b':'wired LAN',
+         'c':'wireless LAN',
+         'd':'intranet',
+         'correct':'c'
+      },
+      {
+         'question':'Which term describes the state of a network when the demand on the network resources exceeds the available capacity?',
+         'a':'convergence',
+         'b':'congestion',
+         'c':'optimization',
+         'd':'synchronization',
+         'correct':'b'
+      },
+      {
+         'question':'What is the function of the shell in an OS?',
+         'a':'It interacts with the device hardware.',
+         'b':'It provides dedicated firewall services.',
+         'c':'It interfaces between the users and the kernel.',
+         'd':'It provides the intrusion protection services for the device.',
+         'correct':'c'
+      },
+      {
+         'question':' Which connection provides a secure CLI session with encryption to a Cisco switch?',
+         'a':'a console connection',
+         'b':'an AUX connection',
+         'c':'a Telnet connection',
+         'd':'an SSH connection',
+         'correct':'d'
+      },
+      {
+         'question':' What protocol is responsible for controlling the size of segments and the rate at which segments are exchanged between a web client and a web server?',
+         'a':'TCP',
+         'b':'IP',
+         'c':'HTTP',
+         'd':'Ethernet',
+         'correct':'a'
+      },
+      {
+         'question':'What type of network traffic requires QoS?',
+         'a':'email',
+         'b':'on-line purchasing',
+         'c':'video conferencing',
+         'd':'wiki',
+         'correct':'c'
+      },
+      {
+         'question':'Which interface allows remote management of a Layer 2 switch?',
+         'a':'the AUX interface',
+         'b':'the console port interface',
+         'c':'the switch virtual interface',
+         'd':'the first Ethernet port interface',
+         'correct':'c'
+      },
+      {
+         'question':'An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?',
+         'a':'to restart the ping process',
+         'b':'to interrupt the ping process',
+         'c':'to exit to a different configuration mode',
+         'd':'to allow the user to complete the command',
+         'correct':'b'
+      },
+      {
+         'question':'Which command or key combination allows a user to return to the previous level in the command hierarchy?',
+         'a':'end',
+         'b':'exit',
+         'c':'Ctrl-Z',
+         'd':'Ctrl-C',
+         'correct':'b'
+      },
+      {
+         'question':'. What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?',
+         'a':'ipconfig',
+         'b':'ping',
+         'c':'traceroute',
+         'd':'show ip interface brief',
+         'correct':'d'
+      },
+   ],
+   q2:[
+    {
+       'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+       'a':'a) 20',
+       'b':'b) 25',
+       'c':'c) 55',
+       'd':'d) 60',
+       'correct':"a",
+       'tag':""
+    },
+    {
+       'question':'Z,U,Q, _ , L',
+       'a':'a) M',
+       'b':'b) N',
+       'c':'c) O',
+       'd':'d) I',
+       'correct':"b",
+       'tag':""
+    },
+    {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   ],
+   q3:[
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+     ],
+}
+const WIPRO={
+   q1:[
+      {
+         'question':'. Which device performs the function of determining the path that messages should take through internetworks?',
+         'a':'a router',
+         'b':'a firewall',
+         'c':'a web server',
+         'd':'a DSL modem',
+         'correct':'a'
+      },
+      {
+         'question':'Which area of the network would a college IT staff most likely have to redesign as a direct result of many students bringing their own tablets and smartphones to school to access school resources?',
+         'a':'extranet',
+         'b':'wired LAN',
+         'c':'wireless LAN',
+         'd':'intranet',
+         'correct':'c'
+      },
+      {
+         'question':'Which term describes the state of a network when the demand on the network resources exceeds the available capacity?',
+         'a':'convergence',
+         'b':'congestion',
+         'c':'optimization',
+         'd':'synchronization',
+         'correct':'b'
+      },
+      {
+         'question':'What is the function of the shell in an OS?',
+         'a':'It interacts with the device hardware.',
+         'b':'It provides dedicated firewall services.',
+         'c':'It interfaces between the users and the kernel.',
+         'd':'It provides the intrusion protection services for the device.',
+         'correct':'c'
+      },
+      {
+         'question':' Which connection provides a secure CLI session with encryption to a Cisco switch?',
+         'a':'a console connection',
+         'b':'an AUX connection',
+         'c':'a Telnet connection',
+         'd':'an SSH connection',
+         'correct':'d'
+      },
+      {
+         'question':' What protocol is responsible for controlling the size of segments and the rate at which segments are exchanged between a web client and a web server?',
+         'a':'TCP',
+         'b':'IP',
+         'c':'HTTP',
+         'd':'Ethernet',
+         'correct':'a'
+      },
+      {
+         'question':'What type of network traffic requires QoS?',
+         'a':'email',
+         'b':'on-line purchasing',
+         'c':'video conferencing',
+         'd':'wiki',
+         'correct':'c'
+      },
+      {
+         'question':'Which interface allows remote management of a Layer 2 switch?',
+         'a':'the AUX interface',
+         'b':'the console port interface',
+         'c':'the switch virtual interface',
+         'd':'the first Ethernet port interface',
+         'correct':'c'
+      },
+      {
+         'question':'An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?',
+         'a':'to restart the ping process',
+         'b':'to interrupt the ping process',
+         'c':'to exit to a different configuration mode',
+         'd':'to allow the user to complete the command',
+         'correct':'b'
+      },
+      {
+         'question':'Which command or key combination allows a user to return to the previous level in the command hierarchy?',
+         'a':'end',
+         'b':'exit',
+         'c':'Ctrl-Z',
+         'd':'Ctrl-C',
+         'correct':'b'
+      },
+      {
+         'question':'. What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?',
+         'a':'ipconfig',
+         'b':'ping',
+         'c':'traceroute',
+         'd':'show ip interface brief',
+         'correct':'d'
+      },
+      
+   ],
+   q2:[
+    {
+       'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+       'a':'a) 20',
+       'b':'b) 25',
+       'c':'c) 55',
+       'd':'d) 60',
+       'correct':"a",
+       'tag':""
+    },
+    {
+       'question':'Z,U,Q, _ , L',
+       'a':'a) M',
+       'b':'b) N',
+       'c':'c) O',
+       'd':'d) I',
+       'correct':"b",
+       'tag':""
+    },
+    {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   ],
+   q3:[
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+     ],
+}
+const INFOSYS={
+   q1:[
+      {
+         'question':'. Which device performs the function of determining the path that messages should take through internetworks?',
+         'a':'a router',
+         'b':'a firewall',
+         'c':'a web server',
+         'd':'a DSL modem',
+         'correct':'a'
+      },
+      {
+         'question':'Which area of the network would a college IT staff most likely have to redesign as a direct result of many students bringing their own tablets and smartphones to school to access school resources?',
+         'a':'extranet',
+         'b':'wired LAN',
+         'c':'wireless LAN',
+         'd':'intranet',
+         'correct':'c'
+      },
+      {
+         'question':'Which term describes the state of a network when the demand on the network resources exceeds the available capacity?',
+         'a':'convergence',
+         'b':'congestion',
+         'c':'optimization',
+         'd':'synchronization',
+         'correct':'b'
+      },
+      {
+         'question':'What is the function of the shell in an OS?',
+         'a':'It interacts with the device hardware.',
+         'b':'It provides dedicated firewall services.',
+         'c':'It interfaces between the users and the kernel.',
+         'd':'It provides the intrusion protection services for the device.',
+         'correct':'c'
+      },
+      {
+         'question':' Which connection provides a secure CLI session with encryption to a Cisco switch?',
+         'a':'a console connection',
+         'b':'an AUX connection',
+         'c':'a Telnet connection',
+         'd':'an SSH connection',
+         'correct':'d'
+      },
+      {
+         'question':' What protocol is responsible for controlling the size of segments and the rate at which segments are exchanged between a web client and a web server?',
+         'a':'TCP',
+         'b':'IP',
+         'c':'HTTP',
+         'd':'Ethernet',
+         'correct':'a'
+      },
+      {
+         'question':'What type of network traffic requires QoS?',
+         'a':'email',
+         'b':'on-line purchasing',
+         'c':'video conferencing',
+         'd':'wiki',
+         'correct':'c'
+      },
+      {
+         'question':'Which interface allows remote management of a Layer 2 switch?',
+         'a':'the AUX interface',
+         'b':'the console port interface',
+         'c':'the switch virtual interface',
+         'd':'the first Ethernet port interface',
+         'correct':'c'
+      },
+      {
+         'question':'An administrator uses the Ctrl-Shift-6 key combination on a switch after issuing the ping command. What is the purpose of using these keystrokes?',
+         'a':'to restart the ping process',
+         'b':'to interrupt the ping process',
+         'c':'to exit to a different configuration mode',
+         'd':'to allow the user to complete the command',
+         'correct':'b'
+      },
+      {
+         'question':'Which command or key combination allows a user to return to the previous level in the command hierarchy?',
+         'a':'end',
+         'b':'exit',
+         'c':'Ctrl-Z',
+         'd':'Ctrl-C',
+         'correct':'b'
+      },
+      {
+         'question':'. What command is used to verify the condition of the switch interfaces, including the status of the interfaces and a configured IP address?',
+         'a':'ipconfig',
+         'b':'ping',
+         'c':'traceroute',
+         'd':'show ip interface brief',
+         'correct':'d'
+      },
+
+   ],
+   q2:[
+    {
+       'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+       'a':'a) 20',
+       'b':'b) 25',
+       'c':'c) 55',
+       'd':'d) 60',
+       'correct':"a",
+       'tag':""
+    },
+    {
+       'question':'Z,U,Q, _ , L',
+       'a':'a) M',
+       'b':'b) N',
+       'c':'c) O',
+       'd':'d) I',
+       'correct':"b",
+       'tag':""
+    },
+    {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   {
+      'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+      'a':'a) 20',
+      'b':'b) 25',
+      'c':'c) 55',
+      'd':'d) 60',
+      'correct':"a",
+      'tag':""
+   },
+   {
+      'question':'Z,U,Q, _ , L',
+      'a':'a) M',
+      'b':'b) N',
+      'c':'c) O',
+      'd':'d) I',
+      'correct':"b",
+      'tag':""
+   },
+   ],
+   q3:[
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+      {
+         'question':'If MOUSE=41 and RATE=6 then NETWORK=?',
+         'a':'a) 20',
+         'b':'b) 25',
+         'c':'c) 55',
+         'd':'d) 60',
+         'correct':"a",
+         'tag':""
+      },
+      {
+         'question':'Z,U,Q, _ , L',
+         'a':'a) M',
+         'b':'b) N',
+         'c':'c) O',
+         'd':'d) I',
+         'correct':"b",
+         'tag':""
+      },
+     ],
+  
+}
+
+export  {Reasquiz,Aptiquiz,Verbalquiz,Cquiz,Networkquiz,TCS,CONGNIZANT,WIPRO,INFOSYS};

@@ -1,6 +1,6 @@
 import React, { useState ,useEffect} from 'react'
 import { createContext } from 'react'
-import {Reasquiz,Aptiquiz,Cquiz,Verbalquiz} from './Quizquestion';
+import {Reasquiz,Aptiquiz,Cquiz,Verbalquiz,TCS,CONGNIZANT,WIPRO,INFOSYS} from './Quizquestion';
 import { useAsyncError } from 'react-router-dom';
 
 const QuizContext = createContext();
@@ -55,7 +55,7 @@ export default function QuizHolder(props) {
     
     return (
         <QuizContext.Provider value={{
-            start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,Verbalquiz,correct,setCorrect,
+            start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,Verbalquiz,TCS,CONGNIZANT,WIPRO,INFOSYS,correct,setCorrect,
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
             topsize,setTopsize,platform,setPlatform,userAuthentication,isLoggedIn,setIsLoggedIn

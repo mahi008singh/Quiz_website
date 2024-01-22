@@ -6,7 +6,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize } = useContext(QuizContext)
+    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,COGNIZANT,WIPRO,INFOSYS } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
     useEffect(()=>{
         if(data==1){
@@ -62,10 +62,34 @@ const Categ = () => {
               setFinalquiz(Networkquiz)
 
           }
+          else if(data==12)
+          { 
+              setRender(Reasdata.data12)
+              setFinalquiz(TCS)
+
+          }
+          else if(data==13)
+          { 
+              setRender(Reasdata.data13)
+              setFinalquiz(COGNIZANT)
+
+          }
+          else if(data==14)
+          { 
+              setRender(Reasdata.data14)
+              setFinalquiz(WIPRO)
+
+          }
+          else if(data==15)
+          { 
+              setRender(Reasdata.data15)
+              setFinalquiz(INFOSYS)
+
+          }
     },[])
 
     const category=["Aptitude","Aptitude","Reasoning","Verbal","C programming",
-       "C++ Programming","Python","Java","Networking","OOPS","DBMS","Operating System"];
+       "C++ Programming","Python","Java","Networking","OOPS","DBMS","Operating System","TCS","COGNIZANT","WIPRO","INFOSYS"];
     return (
         <>
             <div class="reasoning">
