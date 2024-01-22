@@ -24,12 +24,12 @@ export default function QuizHolder(props) {
     //Authentication context
 
     const [loginData,setLoginData]=useState("")
-    const [isLoggedIn,setIsLoggedIn]=useState(false)
+    const [showuserName,setShowuserName]=useState()
 
     const userAuthentication= async()=>{
         try {
-            let response=await fetch('http://localhost:5500/userAuth/userdetail',{
-                method:"POST",
+            let response=await fetch('/userAuth/userdetail',{
+                method:"GET",
                 headers:{
                      Authorization:`Bearer ${localStorage.getItem("loginToken")}`,
                     // "Content-Type":"application/json",
@@ -58,7 +58,7 @@ export default function QuizHolder(props) {
             start, exit, setStart, setExit, Reasquiz,Aptiquiz,Cquiz,Verbalquiz,TCS,CONGNIZANT,WIPRO,INFOSYS,correct,setCorrect,
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
-            topsize,setTopsize,platform,setPlatform,userAuthentication,isLoggedIn,setIsLoggedIn
+            topsize,setTopsize,platform,setPlatform,userAuthentication,showuserName,setShowuserName
             }}>
             {props.children}
         </QuizContext.Provider>

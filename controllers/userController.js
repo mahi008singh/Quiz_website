@@ -79,6 +79,9 @@ async function userLogin(req,res){
     }
 }
 
+
+//----------------------((otp-generation))-----------------------
+
 const generateOtp=async(req,res)=>{
     let userData=await userModel.findOne({email:req.body.email});
     const response={};

@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { Navigate } from 'react-router-dom'
 const Logout = () => {
     const logoutUser=()=>{
-        localStorage.removeItem("admin")
+        localStorage.removeItem("admin");
+        localStorage.removeItem('userName');
         return localStorage.removeItem("loginToken")
     }
    useEffect(()=>{
