@@ -104,7 +104,7 @@
   .footer .box-container .box h3 {
     font-size: 2.2rem;
     text-transform: capitalize;
-    color: var(--secColor);
+    color: var(--tertiary);
     padding: 1rem 0;
   }
   
@@ -117,9 +117,10 @@
   }
   
   .footer .box-container .box1 h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+    font-weight: 600;
     text-transform: capitalize;
-    color: var(--secColor);
+    color: var(--tertiary);
     padding: 1rem 0;
   }
   .footer .box-container .box1 .link {
