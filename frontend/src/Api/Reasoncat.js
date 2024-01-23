@@ -1,4 +1,4 @@
-import {Reasquiz,Aptiquiz,Verbalquiz,Cquiz,Networkquiz} from '../Context/Quizquestion'
+import {Reasquiz,Aptiquiz,Verbalquiz,Cquiz,Networkquiz,TCS,CONGNIZANT,WIPRO,INFOSYS} from '../Context/Quizquestion'
 const Reasdata={
     
     data1:[
@@ -429,6 +429,91 @@ const Reasdata={
             apiNum:1
       },
 
+     ],
+
+//TCS
+     data12:[
+      {
+            title:"Aptitute",
+            link:"/Quizplay",
+            size:TCS.q1.length,
+            apiNum:1
+      },
+      {
+            title:"Reasoning",
+            link:"/Quizplay",
+            size:TCS.q2.length,
+            apiNum:2
+      },
+      {
+            title:"Verbal",
+            link:"/Quizplay",
+            size:TCS.q3.length,
+            apiNum:3
+      },
+     ],
+//COGNIZANT     
+     data13:[
+      {
+            title:"Aptitute",
+            link:"/Quizplay",
+            size:CONGNIZANT.q1.length,
+            apiNum:1
+      },
+      {
+            title:"Reasoning",
+            link:"/Quizplay",
+            size:CONGNIZANT.q2.length,
+            apiNum:2
+      },
+      {
+            title:"Verbal",
+            link:"/Quizplay",
+            size:CONGNIZANT.q3.length,
+            apiNum:3
+      },
+     ],
+//WIPRO     
+     data14:[
+      {
+            title:"Aptitute",
+            link:"/Quizplay",
+            size:WIPRO.q1.length,
+            apiNum:1
+      },
+      {
+            title:"Reasoning",
+            link:"/Quizplay",
+            size:WIPRO.q2.length,
+            apiNum:2
+      },
+      {
+            title:"Verbal",
+            link:"/Quizplay",
+            size:WIPRO.q3.length,
+            apiNum:3
+      },
+     ],
+//INFOSYS     
+     data15:[
+      {
+            title:"Aptitute",
+            link:"/Quizplay",
+            size:INFOSYS.q1.length,
+            apiNum:1
+      },
+      {
+            title:"Reasoning",
+            link:"/Quizplay",
+            size:INFOSYS.q2.length,
+            apiNum:2
+      },
+      {
+            title:"Verbal",
+            link:"/Quizplay",
+            size:INFOSYS.q3.length,
+            apiNum:3
+      },
      ],
 }
 

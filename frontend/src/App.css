@@ -37,6 +37,7 @@ body{
 }
 .logo h1{
     color: var(--secColor);
+    padding-top: 0.7rem;
 }
 .header1 ul{
     display: flex;
@@ -54,7 +55,7 @@ body{
     font-weight: 600;
     /* position: relative; */
 }
-.header1 ul li::before{
+.header1 ul li::before , .login_btn::before{
     content: '';
     position: absolute;
     width: 0rem;
@@ -66,9 +67,9 @@ body{
     transition: all ease 0.5s;
     
 }
-.header1 ul li:hover::before{
+.header1 ul li:hover::before , .login_btn:hover:before{
     /* box-shadow: 0px 4px 10px rgba(0,0,0,0.2); */
-    width: 4rem;
+    width: 4.2rem;
 }
 .header1 ul li:hover a{
     font-weight:bolder;
@@ -85,8 +86,12 @@ body{
 #Signup > a{
     color: white;
 }
-.linker{
-    color: var(--secColor);
+.login_btn{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.linker , .login_btn{
+    color: var(--tertiary);
 }
 .header1 .fa-xmark{
     display: none;
@@ -166,7 +171,7 @@ body{
         position: relative;
         right: 2rem;
         top: 1rem;
-
+        color: var(--secColor);
       }
    
      .header1 .sider-open  li{

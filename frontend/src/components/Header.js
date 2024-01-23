@@ -53,7 +53,7 @@ const Header = () => {
                                      </NavLink>
                                      :
                                      <NavLink to='/login'>
-                                        <span>LOGIN</span>
+                                        <span className='login_btn'>LOGIN</span>
                                      </NavLink>
                                 }
                         </p>

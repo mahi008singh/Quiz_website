@@ -74,24 +74,24 @@ const Quants={
 ],
 data4:[
         {
-                key:1,
+                key:11,
                 title:"TCS",
-                link:"/Quizplay",
+                link:"/Categ",
                 apiNum:12
         },
-        {       key:2,
+        {       key:12,
                 title:"COGNIZANT",
-                link:"/Quizplay",
+                link:"/Categ",
                 apiNum:13
         },
-        {       key:3,
+        {       key:13,
                 title:"WIPRO",
-                link:"/Quizplay",
+                link:"/Categ",
                 apiNum:14
         },
-        {       key:4,
+        {       key:14,
                 title:"INFOSYS",
-                link:"/Quizplay",
+                link:"/Categ",
                 apiNum:15
         },
 

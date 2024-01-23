@@ -338,7 +338,7 @@ section {
   padding: 3rem 2rem;
   text-align: center;
   border: 0.1rem solid var(--tertiary);
-  background: #f0fdfa;
+  background: var(--primColor);
   cursor: pointer;
 ;
 }
@@ -367,7 +367,7 @@ section {
 .subjects .box-container .box h3 {
   font-size: 1.45rem;
   text-transform: capitalize;
-  color: #444;
+  color: var(--secColor);
   padding: .5rem 0;
 }
 
