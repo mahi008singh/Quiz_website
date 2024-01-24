@@ -4,6 +4,7 @@ const Logout = () => {
     const logoutUser=()=>{
         localStorage.removeItem("admin");
         localStorage.removeItem('userName');
+        localStorage.removeItem('userDATA');
         return localStorage.removeItem("loginToken")
     }
    useEffect(()=>{

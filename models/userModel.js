@@ -22,6 +22,15 @@ const userSchema=new mongoose.Schema({
     is_verified:{
         type:Number,
         default:0
+    },
+    userId:{
+        type:Number,
+        default:Math.floor(Math.random()*1000000+1),
+        unique:true
+    },
+    mobile:{
+        type:Number,
+        default:0
     }
     
 })

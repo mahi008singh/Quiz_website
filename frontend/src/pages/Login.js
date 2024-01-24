@@ -93,6 +93,9 @@ const postLogin=async (e)=>{
         if(data.user.is_admin===0){
             alert("Login success...")
             localStorage.setItem('userName',JSON.stringify(data.user.name))
+            localStorage.setItem('user_id',JSON.stringify(data.user._id))
+            localStorage.setItem("userDATA",JSON.stringify(data.user))
+
             setShowuserName(() => {
                 const storedState = data.user;
                 return storedState ? storedState : ' ';
@@ -151,7 +154,7 @@ const postLogin=async (e)=>{
                    </form>
 
                    <div className="signup_link">
-                       <p><NavLink to={'/Sendotp'}>forget password?</NavLink></p>
+                       <p style={{fontSize:"1.6rem"}}><NavLink to={'/Sendotp'}>forget password?</NavLink></p>
                        Not registered yet?
                        <NavLink to={'/Signup'}>Signup</NavLink>
                    </div>

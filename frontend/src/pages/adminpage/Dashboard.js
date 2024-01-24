@@ -83,9 +83,9 @@ async function deleteUser(id){
                         </div>
                       <div>
                         <p>Total questions</p>
-                        <h2>
+                        <h3>
                           433
-                        </h2>
+                        </h3>
                       </div>
                 </div>
                 <div className='registeredUser'>
