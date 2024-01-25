@@ -55,7 +55,7 @@ const Manage = () => {
         <Sidebar togle={toggleBar} />
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
         <main className='msgContainer'>
-            <h1 style={{textAlign:"center",fontSize:"2rem"}}>Users query</h1>
+            <h2 style={{textAlign:"center",fontSize:"2rem"}}>Users query</h2>
             <section>
           <div className='msgdivBar'>
             <div>

@@ -124,22 +124,21 @@ const Home = () => {
          <p>Prepquizz is a MCQ based quiz preperation platform
           for placements where student can learn and boost their skills 
          </p>
-         <div className="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-         </div>
+       
       </div>
 
       <div className="box">
          <h3>useful links</h3>
-         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">Contact us</NavLink>
-         <NavLink to={"/Contact"} style={{fontSize:"1.8rem"}} className="link">send feedback</NavLink>
-         <a href="#" class="link">privacy policy</a>
-         <a href="#" class="link">terms of use</a>
+         <NavLink to={"/Contact"} style={{fontSize:"1.5rem"}} className="link">Contact us</NavLink>
+         <NavLink to={"/Contact"} style={{fontSize:"1.5rem"}} className="link">Send feedback</NavLink>
+         <NavLink to={"/"} style={{fontSize:"1.5rem"}} className="link">Privacy policy</NavLink>
+         <NavLink to={"/"} style={{fontSize:"1.5rem"}} className="link">Terms of use</NavLink>
       </div>
       
+   </div>
+   <div>
+       <br/> <br/>
+       <h2>Copyright &copy; 2024, prepquizz. All rights reserved</h2>
    </div>
 
 </section>

@@ -222,9 +222,9 @@
 
   @media (max-width:460px){
     .footer .box-container .box1 p {
-      font-size: 1rem;
+      font-size: 1.3rem;
       line-height: 2;
-      color: #777;
+      /* color: #777; */
       padding: 1rem 0;
     }
     .footer .box-container .box {

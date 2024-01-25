@@ -55,7 +55,10 @@ body{
     font-weight: 600;
     /* position: relative; */
 }
-.header1 ul li::before , .login_btn::before{
+.userNameLi{
+    color: var(--secColor);
+}
+.header1 ul li::before {
     content: '';
     position: absolute;
     width: 0rem;
@@ -178,7 +181,9 @@ body{
         margin: 4rem 1rem;
         color:var(--tertiary);
     }
-    
+    .header1 ul{
+        padding-top: 2rem;
+    }
     .header1 ul li a{
        font-size: 2.2rem;
        margin: 2rem 0;

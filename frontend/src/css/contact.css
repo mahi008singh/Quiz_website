@@ -49,3 +49,8 @@
 
 
 }
+@media (max-width:430px){
+    .contact_div form{
+        width: 85%;
+    }
+}

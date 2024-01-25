@@ -96,11 +96,17 @@
     width:60%;
 }
 .addUpload input{
-    border: 1px solid  rgba(0,0,0,0.2);
+    border: 1px solid  var(--secColor);
     width: 60%;
+    opacity: 0.7;
+    background-color: var(--primColor);
+    color: var(--secColor);
     height: 3.4rem;
     padding: 0 1rem;
     margin: 2rem 0;
+}
+.addUpload label{
+  color: var(--secColor);
 }
 .ansInput{
     width: 40%;
@@ -129,6 +135,7 @@
         font-size: 3rem;
         font-weight:bolder;
         text-align: center;
+        color: var(--secColor);
 }
 .dashmainContainer section{
     /* background-color: red; */
@@ -147,7 +154,7 @@
 .userWidget div{
     width: 16rem;
     /* height: 10rem; */
-    background-color: #fff;
+    background-color: var(--primColor);
     margin: 1rem;
     border-radius: 1rem;
     font-size: 1.4rem;
@@ -163,7 +170,11 @@
     border-radius: 50%;
     border: 2px solid gold;
     padding: 1rem;
+    color: var(--secColor);
     margin-top: 1rem;
+}
+.userWidget div p{
+    color: var(--secColor)
 }
 
 .registeredUser{
@@ -180,7 +191,7 @@
 .userDiv{
     /* width: 20rem; */
     height: 14rem;
-    background-color: #fff;
+    background-color: var(--primColor);
     border-radius: 1rem;
     box-shadow: var(--boxShadow);
     margin: 1rem;
@@ -190,6 +201,9 @@
     padding: 1rem;
     font-size: 2rem;
  
+}
+.userDiv h3{
+    color: var(--secColor);
 }
 
 .userDiv button{
@@ -216,16 +230,18 @@
     padding: 2rem;
 }
 .msgdivBar{
-    display: flex;
-    justify-content: space-between;
-    /* flex-wrap: wrap ; */
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
     margin: 1rem;
+
+    grid-gap: 1rem;
     padding: 2rem 1rem;
     box-shadow: var(--boxShadow);
 
 }
 .msgdivBar div h2,p{
     font-size: 1.3rem;
+    color: var(--secColor);
 }
 .msgdivBar div:nth-child(1),.msgdivBar div:nth-child(2){
     width: 20%;

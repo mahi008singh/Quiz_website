@@ -10,7 +10,7 @@ const Sidebar = (props) => {
     <>
         <section  className={(props.togle)?'sidebarContainer2':"sidebarContainer"}>
           <aside className='sidebarAside'>
-            <h3>Dashboard</h3>
+            <h2>Dashboard</h2>
             <br/>
               <Li Routeurl={'/admin/dashboard'}  heading={"Dashboard"} Icon={RiDashboardFill}/>
               <Li Routeurl={'/admin/upload'} heading={"Upload"} Icon={RiUploadLine}/>

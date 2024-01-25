@@ -860,9 +860,9 @@ section {
 }
 
 @media (max-width: 991px) {
-  /* html {
+  html {
     font-size: 55%;
-  } */
+  }
   .header {
     padding: 2rem;
   }
@@ -913,10 +913,10 @@ section {
   }
 }
 
-@media (max-width: 450px) {
-  /* html {
-    font-size: 50%;
-  } */
+@media (max-width: 400px) {
+  html {
+    font-size: 47%;
+  }
   .heading {
     font-size: 3rem;
   }

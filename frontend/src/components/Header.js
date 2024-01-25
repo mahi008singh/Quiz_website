@@ -48,7 +48,7 @@ const Header = () => {
                                 <FaUser style={{marginRight:"0.5rem",color:"var(--tertiary)", cursor: "pointer"}}/>
                                 {
                                     (localStorage.getItem('userName'))?
-                                    <NavLink to={localStorage.getItem("admin")?'/admin/dashboard':'/profile'}>
+                                    <NavLink className={'userNameLi'} to={localStorage.getItem("admin")?'/admin/dashboard':'/profile'}>
                                     { JSON.parse(localStorage.getItem("userName"))}
                                      </NavLink>
                                      :
