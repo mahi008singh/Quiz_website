@@ -83,7 +83,7 @@ const Signup = () => {
                             <div id="check" value={showPassword}
                              onClick={handlerShowPassword} 
                              > 
-                             {showPassword ? <AiOutlineEye/> : <AiOutlineEyeInvisible/> }       
+                             {showPassword ? <AiOutlineEye className='passwordEye'/> : <AiOutlineEyeInvisible className='passwordEye'/> }       
                         </div>
                             <label>Password</label>
                         </div>

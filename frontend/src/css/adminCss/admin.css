@@ -9,6 +9,7 @@
     left: 2rem;
     display: none;
     top: 8rem;
+    color: var(--secColor);
 }
 .sidebarContainer{
     /* width: 100%; */
@@ -285,14 +286,14 @@
         position: absolute;
         left: -20rem;
         
-        background-color: #fff;
+        background-color: var(--primColor);
 
     }
     .sidebarContainer2{
         position: fixed;
         left: -1rem;
         height: 100vh;
-        background-color: #fff;
+        background-color: var(--primColor);
 
     }
    
