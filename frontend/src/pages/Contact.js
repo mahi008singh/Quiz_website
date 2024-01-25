@@ -18,18 +18,26 @@ const Contact = () => {
             return;
           }
 
-          const resp=await axios.post('/adminpage/postcontactmsg',{ 
-              name,
-              email,
-              msg
-              
+          const resp=await fetch('/adminpage/postcontactmsg',{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({
+                  name,email,msg
+                })
           })
-        
-          if ( !resp) {
-            window.alert("Somthing went wrong")
-        } else {
-            window.alert("sent successfully !!")
-        }
+          let data=await resp.json();
+          if ( data) {
+          alert("sent successfully !!")
+          setContactData({
+            name:"",
+            email:"",
+            msg:""
+          })
+          } else {
+              alert("Something went wrong")
+          }
             
      
        }

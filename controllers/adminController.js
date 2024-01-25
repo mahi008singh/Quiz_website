@@ -57,6 +57,7 @@ async function postContactMsg(req,res){
 
                 })
                 console.log(name,email,msg)
+                res.json("msg sent successfully")
         } catch (error) {
                 console.log(error)
         }
