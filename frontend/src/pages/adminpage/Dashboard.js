@@ -1,15 +1,16 @@
-import React, { useEffect, useState,useRef } from 'react'
+import React, { useEffect, useState,useRef, useContext } from 'react'
 import Sidebar from './Sidebar'
 import '../../css/adminCss/admin.css'
 import { RiTestTubeFill } from 'react-icons/ri'
 import { GiHamburgerMenu } from "react-icons/gi";
 import PulseLoader from "react-spinners/PulseLoader";
-   
+import { QuizContext } from '../../Context/QuizHolder';  
+
 
 const Dashboard = () => {
 
   const [userData,setUserData]=useState([])
- 
+  const {totalquesDB,setTotalquesDb}=useContext(QuizContext)
   useEffect((e)=>{
     const getUserData=async()=>{
       try{
@@ -17,7 +18,17 @@ const Dashboard = () => {
          method:"GET",  
         
         }) ;
-        // console.log(resp)
+
+// ----------------(fetching the questions from DB)------------------------
+
+      const resp2=await fetch(`/adminpage/getuploads`,{
+          method:"GET",
+
+      })
+       let finalData=await resp2.json();
+       
+       setTotalquesDb(finalData.length)
+//------------------------(end)---------------------------
         if (resp.ok) {
           let data = await resp.json();
           setUserData(data)
@@ -84,7 +95,7 @@ async function deleteUser(id){
                       <div>
                         <p>Total questions</p>
                         <h3>
-                          433
+                          {totalquesDB}
                         </h3>
                       </div>
                 </div>

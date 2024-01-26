@@ -48,28 +48,26 @@ const Quants={
     ],
     data3:[
         {
-                title:"Computer Networks",
+                title:"cn",
                 link:"/Categ",
                 apiNum:8
         },
         {
-                title:"OOPS",
+                title:"oops",
                 link:"/Categ",
                 apiNum:9
                 
         },
         {
-                title:"DBMS",
+                title:"dbms",
                 link:"/Categ",
                 apiNum:10
         },
         {
-                title:"Operating System",
+                title:"os",
                 link:"/Categ",
                 apiNum:11
         },
-
-
 
 ],
 data4:[

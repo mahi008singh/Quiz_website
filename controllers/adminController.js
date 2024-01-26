@@ -1,6 +1,7 @@
 const Users=require('../models/userModel')
 const quesModel=require('../models/questionModel')
-const contactModel=require('../models/contactModel')
+const contactModel=require('../models/contactModel');
+const { response } = require('express');
 
 async function getAllUsers(req,res){
         try{
@@ -32,15 +33,32 @@ async function getAllUsers(req,res){
 //-----------(end)----------
 async function uploadQues(req,res){
         try {
-              const {question,optionA,optionB,optionC,optionD,answer}=req.body; 
-              await quesModel.create({
+              const {question,optionA,optionB,optionC,optionD,category,answer}=req.body;
+              console.log(req.body)
+              let respData=await quesModel.create({
                 question:question,
                 optionA:optionA,
                 optionB:optionB,
                 optionC:optionC,
                 optionD:optionD,
+                category:category,
                 answer:answer
               }) 
+
+              res.json("uploaded successfully !!")
+                
+        } catch (error) {
+                console.log(error)
+        }
+}
+
+async function getuploadQues(req,res){
+        try {
+              const getQuesdata=await quesModel.find()
+              if(!getQuesdata){
+                res.json({msg:"No data present"})
+              }
+              res.json(getQuesdata)
                 
         } catch (error) {
                 console.log(error)
@@ -91,6 +109,7 @@ async function deleteContactMsg(req,res){
 module.exports={
         getAllUsers,
         uploadQues,
+        getuploadQues,
         deleteUser,
         postContactMsg,
         getContactmsg,

@@ -1,0 +1,86 @@
+.uploadContainer{
+    width: 100%;
+    margin: 1rem;
+    border-radius: 0.6rem;
+    
+    padding: 1rem;
+
+}
+.uploadContainer section{
+    width: 100%;
+    padding: 1.3rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* grid-template-columns: 1fr 3fr; */
+    justify-content: space-between;
+}
+.chooseUpload{
+    box-shadow: var(--boxShadow);
+    height: 80vh;
+    width: 25%;
+    padding: 2rem;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+.chooseUpload select{
+    background-color:var(--bgColor) ;
+    color: #fff;
+    width: 12rem;
+    height: 3rem;
+}
+.chooseUpload select option{
+    width: 12rem;
+    height: 4rem;
+}
+.addUpload{
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 70%;
+    box-shadow: var(--boxShadow);
+}
+.addUpload label{
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+#quesInput{
+    width:60%;
+}
+.addUpload input{
+    border: 1px solid  var(--secColor);
+    width: 60%;
+    opacity: 0.7;
+    background-color: var(--primColor);
+    color: var(--secColor);
+    height: 3.4rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+.addUpload label{
+  color: var(--secColor);
+}
+.ansInput{
+    width: 40%;
+}
+
+.uploadBtn{
+    width: 12rem;
+    height: 4rem;
+    cursor: pointer;
+
+}
+
+@media (max-width:660px) {
+
+    .uploadContainer section{
+        flex-direction: column;
+    }
+    .chooseUpload{
+        height: 15vh;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .addUpload{
+        width: 100%;
+    }
+    
+}

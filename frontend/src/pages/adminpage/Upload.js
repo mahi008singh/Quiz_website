@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Sidebar from './Sidebar'
 import { useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import '../../css/adminCss/uploadques.css'
 const Upload = () => {
     
     const [uploadData,setUploadData]=useState({
@@ -29,8 +29,8 @@ const Upload = () => {
     e.preventDefault()
   
      try {
-        const {question,optionA,optionB,optionC,optionD,answer}=uploadData
-        if(!question||!optionA||!optionB||!optionC||!optionD||!answer){
+        const {question,optionA,optionB,optionC,optionD,category,answer}=uploadData
+        if(!question||!optionA||!optionB||!optionC||!optionD||!category||!answer){
             alert("Plz fill the complete detail !!")
             return;
         }
@@ -45,6 +45,7 @@ const Upload = () => {
               optionB,
               optionC,
               optionD,
+              category,
               answer
          })
         })
@@ -57,11 +58,12 @@ const Upload = () => {
                     optionB:"",
                     optionC:"",
                     optionD:"",
+                    category:"",
                     answer:"",
             
                 }
             )
-            alert("upload Successfull")
+            alert("uploaded Successfully")
         }else{
             alert("something went wrong")
         }
@@ -81,18 +83,29 @@ const Upload = () => {
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
         <main className='uploadContainer'>
              <h2 style={{textAlign:"center",fontSize:"2rem"}}>Upload all your question from here</h2>
+             <form method='POST'>
              <section>
                 <div className='chooseUpload'>
                     <h2>Choose Categories for upload</h2>
-                    <select name="" id="">
-                    <option value="">Choose</option>
-                    <option value="">Aptitude</option>
-                    <option value="">Reasoning</option>
-                    <option value="">verbal</option>
+                    <select name="category" onChange={handleInputs} id="">
+                        <option value="" selected>Choose</option>
+                        <option value="aptitude">Aptitude</option>
+                        <option value="reasoning">Reasoning</option>
+                        <option value="verbal">verbal</option>
+                        <option value="dbms">Dbms</option>
+                        <option value="os">OS</option>
+                        <option value="oops">Oops</option>
+                        <option value="cn">Cn</option>
+                        <option value="js">js</option>
+                        <option value="cpp">cpp</option>
+                        <option value="java">java</option>
+                        <option value="c">c</option>
                     </select>
+
+                   
                 </div>
                 <div className='addUpload'>
-                <form method='POST'>
+                
                     <label htmlFor="">Your question</label>
                     <input required  name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" /> <br />
                     <br />
@@ -113,10 +126,11 @@ const Upload = () => {
                         <input className='ansInput' placeholder='type correct option a,b,c or d' name='answer' type='text' onChange={handleInputs} value={uploadData.answer}/>
                     </div>
                     <button  className='uploadBtn Signup' onClick={uploadQues} >Upload</button>
-                    </form>
+                    
                 </div>
          
              </section>
+             </form>
         </main>
         </section>
     </>

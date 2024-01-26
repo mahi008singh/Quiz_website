@@ -10,7 +10,7 @@ const Practice = () => {
    const [data2,setData2]=useState(Quants.data2);
    const [data3,setData3]=useState(Quants.data3);
 
-   const { data,setData }=useContext(QuizContext)
+   const { data,setData,chooseTopic,setChooseTopic,keyTopic,setKeyTopic }=useContext(QuizContext)
 
     return (
         <>
@@ -30,7 +30,7 @@ const Practice = () => {
                                <>
                                    <div class="box">
                                        <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)}>
-                                           <img src={require('../images/subject-icon-1.png')} alt="" />
+                                           <img  onClick={()=>setChooseTopic(elem.title)}  src={require('../images/subject-icon-1.png')} alt="" />
                                            <h3>{elem.title}</h3>
                                        </NavLink>
 
@@ -54,7 +54,7 @@ const Practice = () => {
                                 <>
                                     <div class="box">
                                         <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
-                                            <img src={require('../images/subject-icon-1.png')} alt="" />
+                                            <img  onClick={()=>setChooseTopic(elem.title)}  src={require('../images/subject-icon-1.png')} alt="" />
                                             <h3 class="Quant_h1" >{elem.title}</h3>
                                         </NavLink>
                                     </div>
@@ -64,7 +64,9 @@ const Practice = () => {
                     }
 
                 </div>
-                {/* <!-- ------------------computer subjects--------------- --> */}
+
+
+                {/* <!-- ------------------CSE subjects--------------- --> */}
                 <br /> <br /> <br /> <br /> <br />
 
                 <h2 class="h1">Cse Subjects</h2>
@@ -76,8 +78,12 @@ const Practice = () => {
                            return(
                                <>
                                    <div class="box">
-                                       <NavLink to={elem.link} onClick={()=>setData(elem.apiNum)}>
-                                           <img src={require("../images/subject-icon-1.png")} alt="" />
+                                       <NavLink to={elem.link}  onClick={()=>setData(elem.apiNum)}>
+                                           <img onClick={()=>{
+                                            setChooseTopic(elem.title)
+                                            setKeyTopic(true)
+                                           }}  src={require("../images/subject-icon-1.png")} alt="" />
+
                                            <h3>{elem.title}</h3>
                                        </NavLink>
 

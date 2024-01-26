@@ -6,9 +6,28 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 
 const Categ = () => {
-    const { data,setData,choose,setChoose,finalquiz,setFinalquiz,Reasquiz,Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,COGNIZANT,WIPRO,INFOSYS } = useContext(QuizContext)
+    const {keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
+        choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
+        Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
+        COGNIZANT,WIPRO,INFOSYS } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
+    
+    const fetchDBques= async()=>{
+            const resp=await fetch(`/adminpage/getuploads`,{
+                method:"GET",
+
+            })
+             let finalData=await resp.json();
+             if(keyTopic){
+                setFinalquiz(finalData)
+             }
+
+           
+
+    }
     useEffect(()=>{
+       
+        fetchDBques()
         if(data==1){
             setRender(Reasdata.data1);
             setFinalquiz(Aptiquiz)
@@ -41,25 +60,25 @@ const Categ = () => {
           else if(data==8)
           { 
               setRender(Reasdata.data8)
-              setFinalquiz(Networkquiz)
+              //setFinalquiz(Networkquiz)
 
           }
           else if(data==9)
           { 
               setRender(Reasdata.data9)
-              setFinalquiz(Networkquiz)
+              //setFinalquiz(Networkquiz)
 
           }
           else if(data==10)
           { 
               setRender(Reasdata.data10)
-              setFinalquiz(Networkquiz)
+            //   setFinalquiz(finalData)
 
           }
           else if(data==11)
           { 
               setRender(Reasdata.data11)
-              setFinalquiz(Networkquiz)
+              //setFinalquiz(Networkquiz)
 
           }
           else if(data==12)
@@ -106,9 +125,10 @@ const Categ = () => {
                                    <h2>{elem.title}</h2>
                                      <p>Available ques.{elem.size}</p>
                                   </div>
-                                    <NavLink to={elem.link}> <button 
-                                    onClick={()=>{setChoose(elem.apiNum)
-                                       setTopsize(elem.size)}} class="btn_">Go to quiz</button></NavLink>
+                                    <NavLink to={elem.link}>
+                                        <button onClick={()=>{setChoose(elem.apiNum)
+                                       setTopsize(elem.size)}} class="btn_">Go to quiz</button>
+                                    </NavLink>
                                 </div>
                             </>
                         )

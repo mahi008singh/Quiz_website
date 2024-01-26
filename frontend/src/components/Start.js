@@ -5,7 +5,7 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,setChangetimer,totalques,setTotalques,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
+    const { setStart,changetimer,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
                 const r=Math.floor(Math.random()*topsize);

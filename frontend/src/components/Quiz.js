@@ -6,6 +6,7 @@ import '../css/Quizbox.css';
 
 export default function Quiz() {
     const {random,setRandom}=useContext(QuizContext)
+
     const [current, setCurrent] = useState(random[0]);
     const [total,setTotal]=useState(0);
     const [ans, setAns] = useState("");
@@ -83,8 +84,6 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
             next(random[total+1]);
             
         }
-        
-        console.log(quizzler);
 
     }
 
@@ -104,7 +103,7 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
                 <h1 style={{color:"red"}}>{quizzler[current].tag}</h1>
                 </center>
             </div>
-            <h2 style={{marginLeft:"2rem"}}>Question {total + 1}/{totalques}</h2>
+            <h2 style={{marginLeft:"2rem"}}>Question {total + 1}/{totalques}  (NORMAL)</h2>
             <div className='question_name'>  {quizzler[current].question}</div>
             <div className='quiz_container'>
                 <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{quizzler[current].a}</div>
