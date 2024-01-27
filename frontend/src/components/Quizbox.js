@@ -67,6 +67,7 @@ const Quizbox = () => {
    const chooseOption=(opt)=>{
          setAns(opt);
          review.push({name:finalquiz[currInd].question,choosed:opt,correct:finalquiz[currInd].answer})
+         localStorage.setItem("reviewResult",JSON.stringify(review))
 
    }
   return (

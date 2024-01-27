@@ -90,6 +90,7 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
     const chooseOption=(opt)=>{
         setAns(opt);
         review.push({name:quizzler[current].question,choosed:opt,correct:quizzler[current].correct})
+        localStorage.setItem("reviewResult",JSON.stringify(review))
 
     }
     return (

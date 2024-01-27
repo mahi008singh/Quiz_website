@@ -42,9 +42,9 @@ userSchema.methods.generateToken= async function(){
                 email:this.email,
                 isAdmin:this.is_admin
             },
-            process.env.JWT_KEY,
+             process.env.JWT_KEY,
                 {
-                    expiresIn:"30s"
+                    expiresIn:30
                 }
             );
     }catch(err){

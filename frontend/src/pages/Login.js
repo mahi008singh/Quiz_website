@@ -108,11 +108,9 @@ const postLogin=async (e)=>{
             navigate('/admin/dashboard')
         }
     }
-
-   
-    
+ 
    }catch(err){
-    console.log("error -->"+err)
+    console.log("error in login.js -->"+err)
    }
    
 }

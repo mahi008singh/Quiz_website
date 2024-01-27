@@ -23,6 +23,7 @@ export default function QuizHolder(props) {
     const [chooseTopic,setChooseTopic]=useState(0)
     const [keyTopic,setKeyTopic]=useState(false)
     const [totalquesDB,setTotalquesDb]=useState('')
+    const [availableQues,setAvailableQues]=useState(0)
     //Authentication context
 
     const [loginData,setLoginData]=useState("")
@@ -61,7 +62,7 @@ export default function QuizHolder(props) {
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
             topsize,setTopsize,platform,setPlatform,userAuthentication,showuserName,setShowuserName,chooseTopic,setChooseTopic,
-            keyTopic,setKeyTopic,totalquesDB,setTotalquesDb
+            keyTopic,setKeyTopic,totalquesDB,setTotalquesDb,availableQues,setAvailableQues
             }}>
             {props.children}
         </QuizContext.Provider>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState,useContext} from 'react';
+import React, { useEffect, useState,useContext,useRef} from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { FiList, FiX } from "react-icons/fi";
 import { AiFillBulb } from "react-icons/ai";
@@ -16,11 +16,24 @@ const Header = () => {
     const togle = () => {
         setSidebar((prevState) => !prevState)
     }
-    const [theme, setTheme] = useState(true)
 
+    const [isDarkTheme, setIsDarkTheme] = useState(() => {
+       
+        const storedTheme = localStorage.getItem('themePreference');
+        return storedTheme === 'dark';
+      });
+
+      useEffect(() => {
+        document.body.classList.toggle(`dark-theme`,isDarkTheme)
+      }, [isDarkTheme]);
+    
+    
     const changeTheme = () => {
-        setTheme((prevState) => !prevState)
-        document.body.classList.toggle("dark-theme")
+        
+        const newTheme = !isDarkTheme;
+        setIsDarkTheme(newTheme);
+        const storedTheme = localStorage.setItem('themePreference', newTheme ? 'dark' : 'light');
+       
         togle();
     }
 
@@ -75,7 +88,7 @@ const Header = () => {
                         <div className='theme' style={{ display: "flex", alignItems: "center" }}>
                             <h2 onClick={changeTheme} style={{ display: "flex", alignItems: "center" }}>
                                 {
-                                    (theme) ? <MdDarkMode style={{ fontSize: "2rem", cursor: "pointer" }} />
+                                    (!isDarkTheme) ? <MdDarkMode style={{ fontSize: "2rem", cursor: "pointer" }} />
                                         : <BsSun style={{ fontSize: "2rem", color: '#fff', cursor: "pointer" }} />
                                 }
                             </h2>

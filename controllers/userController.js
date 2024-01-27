@@ -42,12 +42,12 @@ async function userLogin(req,res){
     if(userData&&isMatch){
         const jwtToken=await userData.generateToken();
         console.log("success login")
-        res.cookie(String(userData._id),jwtToken,{
-            path:'/',
-            expires:new Date(Date.now()+1000*30),
-            httpOnly:true,
-            sameSite:"lax"
-        })
+        // res.cookie(String(userData._id),jwtToken,{
+        //     path:'/',
+        //     expires:new Date(Date.now()+1000*30),
+        //     httpOnly:true,
+        //     sameSite:"lax"
+        // })
         return res.status(201).json({
             msg:"Logged in successfully",
             user:userData,
@@ -72,7 +72,7 @@ async function userLogin(req,res){
  const userDetail=async (req,res)=>{
     try{
         const userData=req.user;
-        console.log("inside userDetail--> "+userData)
+        console.log("*inside***userDetail--> "+userData)
         res.status(200).json(userData)
     }catch(err){
         console.log(`error from the userdetail route ${err}`)

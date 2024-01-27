@@ -8,7 +8,7 @@ import Practice from './pages/Practice'
 import Compete from './pages/Compete'
 import Signup from './pages/Signup';
 import Login from './pages/Login'
-import Categ from './Cat-component/Categ';
+import Categ from './components/Categ';
 import Review from './components/Review';
 import Codeques from './components/Codeques';
 import Contact from './pages/Contact'

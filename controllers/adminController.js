@@ -6,7 +6,6 @@ const { response } = require('express');
 async function getAllUsers(req,res){
         try{
                 const userData=await Users.find({},{password:0});
-                console.log(userData)
                 if(!userData||userData.length===0){
                  res.json({msg:"NO users present"})
                 }
@@ -30,7 +29,9 @@ async function getAllUsers(req,res){
         }
  }
 
-//-----------(end)----------
+ 
+//---------------(question upload part)--------------------
+
 async function uploadQues(req,res){
         try {
               const {question,optionA,optionB,optionC,optionD,category,answer}=req.body;
@@ -65,6 +66,7 @@ async function getuploadQues(req,res){
         }
 }
 
+//-----------------(contact messages part)----------------
 async function postContactMsg(req,res){
         try {
                 const {name,email,msg}=req.body
