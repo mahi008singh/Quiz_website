@@ -19,17 +19,16 @@
    display: flex;
 }
 .platform_container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+   display: grid;
+   width: 100%;
+    place-items: center;
+   grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+   grid-gap: 1rem;
 }
 
 .platform_name{
-    width: 40rem;
-    /* height: 40rem; */
-    margin: 1rem 1rem;
-}
-  
+    width: 30rem;
+} 
 .home-courses .slide:hover .solve {
     bottom: 0;
   }

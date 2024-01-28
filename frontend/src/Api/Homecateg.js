@@ -25,14 +25,14 @@ const Homedata={
             img:"imagges/codechef_logo.jpg",
             apiNum:1
         },
-        {
-            title:"Hackerrank",
-            subtitle:"Hackerrank",
-            para:"Practice here",
-            link:"/Categ",
-            img:"imagges/hackrank_logo.png",
-            apiNum:1
-        },
+        // {
+        //     title:"Hackerrank",
+        //     subtitle:"Hackerrank",
+        //     para:"Practice here",
+        //     link:"/Categ",
+        //     img:"imagges/hackrank_logo.png",
+        //     apiNum:1
+        // },
         // {
         //     title:"Codeforces",
         //     subtitle:"Codeforces",
