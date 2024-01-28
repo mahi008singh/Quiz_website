@@ -24,6 +24,7 @@ const Header = () => {
       });
 
       useEffect(() => {
+       
         document.body.classList.toggle(`dark-theme`,isDarkTheme)
       }, [isDarkTheme]);
     
@@ -61,11 +62,11 @@ const Header = () => {
                                 <FaUser style={{marginRight:"0.5rem",color:"var(--tertiary)", cursor: "pointer"}}/>
                                 {
                                     (localStorage.getItem('userName'))?
-                                    <NavLink className={'userNameLi'} to={localStorage.getItem("admin")?'/admin/dashboard':'/profile'}>
+                                    <NavLink onClick={togle}  className={'userNameLi'} to={localStorage.getItem("admin")?'/admin/dashboard':'/profile'}>
                                     { JSON.parse(localStorage.getItem("userName"))}
                                      </NavLink>
                                      :
-                                     <NavLink to='/login'>
+                                     <NavLink onClick={togle}  to='/login'>
                                         <span className='login_btn'>LOGIN</span>
                                      </NavLink>
                                 }
@@ -74,11 +75,11 @@ const Header = () => {
                         {
                             (isLoggedIn)? 
                                 <li>
-                                    <NavLink style={{ cursor: "pointer" }} id='Signup'  className={'linker'} to='/Logout'>logout</NavLink>
+                                    <NavLink onClick={togle} style={{ cursor: "pointer" }} id='Signup'  className={'linker'} to='/Logout'>logout</NavLink>
                                 </li>
                                 : <>
                                     <li>
-                                        <NavLink onClick={togle} id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>
+                                        <NavLink  onClick={togle} id='Signup' className={'linker'} to='/Signup'>Signup</NavLink>
                                     </li>
                                     {/* <li>
                                         <NavLink className={'linker'} to='/login'>Login</NavLink>
@@ -88,12 +89,12 @@ const Header = () => {
                         <div className='theme' style={{ display: "flex", alignItems: "center" }}>
                             <h2 onClick={changeTheme} style={{ display: "flex", alignItems: "center" }}>
                                 {
-                                    (!isDarkTheme) ? <MdDarkMode style={{ fontSize: "2rem", cursor: "pointer" }} />
-                                        : <BsSun style={{ fontSize: "2rem", color: '#fff', cursor: "pointer" }} />
+                                    (!isDarkTheme) ? <MdDarkMode style={{ fontSize: "2.5rem", cursor: "pointer" }} />
+                                        : <BsSun style={{ fontSize: "2.5rem", color: '#fff', cursor: "pointer" }} />
                                 }
                             </h2>
                         </div>
-                        <FiX style={{ fontSize: "2.5rem" }} onClick={togle} className="fa-xmark" />
+                        <FiX style={{ fontSize: "3rem" }} onClick={togle} className="fa-xmark" />
                     </ul>
                 </div>
                 <div>

@@ -23,7 +23,7 @@ const Sidebar = (props) => {
 const Li=({heading,Routeurl,Icon})=>{
     return(
         <li className='Li'>
-          <Link  to={Routeurl}>
+          <Link style={{color:"var(--secColor)"}} to={Routeurl}>
             <Icon style={{marginRight:"1rem"}}/>
              {heading}
           </Link>

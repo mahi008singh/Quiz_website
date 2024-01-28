@@ -8,7 +8,7 @@ const { verify } = require('jsonwebtoken');
 userrouter.post('/register',userRegister);
 userrouter.post('/login',userLogin);
 
-userrouter.get('/userdetail',authMiddleware,userDetail);
+userrouter.get('/userdetail',authMiddleware,userDetail);   
 
 userrouter.post('/generateOtp',generateOtp)
 userrouter.post('/changePassword',changePassword)
