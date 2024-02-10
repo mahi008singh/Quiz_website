@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
-import '../css/style.css'
+import '../css/style.css';
+import svg1 from '../images/prep_sign.svg'
+
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 const Signup = () => {
@@ -63,6 +65,9 @@ const Signup = () => {
     return (
         <>
             <section className="signup_sec">
+                <div className='loginImgDiv'>
+                    <img src={svg1}/>
+                </div>
                 <div className="signup_box">
                     <h1>Sign up </h1>
 

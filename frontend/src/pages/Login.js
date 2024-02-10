@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import { useState ,useEffect} from 'react';
 import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
-import '../css/style.css'
+import '../css/style.css';
+import svg1 from '../images/prep_login.svg'
 import { QuizContext } from '../Context/QuizHolder';
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
@@ -123,7 +124,7 @@ const postLogin=async (e)=>{
              :
               <>
                <div className='loginImgDiv'>
-                       <img src={require('../images/login_img.avif')}/>
+                       <img src={svg1}/>
                </div>
                <div className="login_box">
                    <h1>Login</h1>

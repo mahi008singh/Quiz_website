@@ -98,7 +98,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div>
-                    <FiList onClick={togle} className=" fa-bars-staggered" />
+                    <FiList onClick={togle} style={{marginTop:"1rem"}} className=" fa-bars-staggered" />
                 </div>
             </nav>
 
