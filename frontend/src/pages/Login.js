@@ -9,6 +9,8 @@ import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 import PulseLoader from "react-spinners/PulseLoader";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 const {showuserName,setShowuserName}=useContext(QuizContext)
@@ -53,7 +55,9 @@ const postLogin=async (e)=>{
     try{
         const {email,password}=loginData;
         if(!email||!password){
-            alert("Plz fill the complete details !!")
+            toast.warning("Plz fill the complete details !!",{
+                position: 'top-right',
+            })
             return;
         }
         
@@ -73,8 +77,10 @@ const postLogin=async (e)=>{
     let data=await resp.json()
     // stroing the jwt token into localStorage
     localStorage.setItem("loginToken",JSON.stringify(data.token))
-    if(data.msg==="Not a registered user"){
-        alert("not a registered user")
+    if(data.msg==="not a registered user"){
+        toast.warning("Not a registered user !!",{
+            position: 'top-right',
+        })
         setLoginData({
             email:"",
             password:""
@@ -82,7 +88,9 @@ const postLogin=async (e)=>{
         return;
     }
     if(data.msg==="Invalid email or password !!"){
-        alert("Invalid Credentials")
+        toast.error("Invalid credentials !!",{
+            position: 'top-right',
+        })
         setLoginData({
             email:"",
             password:""
@@ -92,7 +100,9 @@ const postLogin=async (e)=>{
         // setIsLoggedIn(true)
        
         if(data.user.is_admin===0){
-            alert("Login success...")
+            toast.success("Login Success !!",{
+                position: 'top-right',
+            })
             localStorage.setItem('userName',JSON.stringify(data.user.name))
             localStorage.setItem('user_id',JSON.stringify(data.user._id))
             localStorage.setItem("userDATA",JSON.stringify(data.user))
@@ -118,6 +128,7 @@ const postLogin=async (e)=>{
     return (
         <>
             <section className="signup_sec">
+             <ToastContainer style={{fontSize:'1.4rem'}}/>
              {
                 
              (0)?   <PulseLoader color="#36d7b7" size={20}/>  

@@ -7,6 +7,9 @@ import PulseLoader from "react-spinners/PulseLoader";
 import { QuizContext } from '../../Context/QuizHolder';  
 
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Dashboard = () => {
 
   const [userData,setUserData]=useState([])
@@ -59,10 +62,15 @@ async function deleteUser(id){
           })
 
           if(resp){
-              alert("user deleted")
-              
+            toast.success("User deleted !!",{
+              position: 'top-right',
+          })
+              // window.location.reload()
           }
         } catch (error) {
+          toast.error(error,{
+            position: 'top-right',
+        })
           console.log(error)
 
         }
@@ -77,12 +85,12 @@ async function deleteUser(id){
   return (
     <>
       <section className='dashContainer'>
-       
+      
         <Sidebar togle={toggleBar} />
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
 
         <main className='dashmainContainer'>
-       
+        <ToastContainer style={{fontSize:"1.4rem"}}/>
             <h2 className='adminh2'>Admin dashboard</h2>
             <section>
                 <div className='userWidget'>

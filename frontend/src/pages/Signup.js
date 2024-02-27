@@ -3,6 +3,8 @@ import { NavLink,useNavigate } from 'react-router-dom';
 import '../css/sign_up.css'
 import '../css/style.css';
 import svg1 from '../images/prep_sign.svg'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
@@ -37,7 +39,9 @@ const Signup = () => {
         e.preventDefault();
         const { name, email, password } = userdata;
         if(!name||!email||!password){
-            alert("Plz fill the complete details !!")
+            toast.warning("Plz fill the complete details !!",{
+                position: 'top-right',
+            })
             return;
         }
         const resp = await fetch('/userAuth/register', {
@@ -53,10 +57,14 @@ const Signup = () => {
         const data = await resp.json();
 
         // localStorage.setItem("usersignup",JSON.stringify(data))
-        if ( !data) {
-            window.alert("invalid registration")
+        if (!data) {
+            toast.error("Invalid registration",{
+                position: 'top-right',
+            })
         } else {
-            window.alert("you are registered successfully")
+            toast.success("you are registered successfully",{
+                position: 'top-right',
+            })
             window.alert("Check your email for verification link")
         }
         navigate('/login')
@@ -65,6 +73,7 @@ const Signup = () => {
     return (
         <>
             <section className="signup_sec">
+                <ToastContainer style={{fontSize:"1.4rem"}}/>
                 <div className='loginImgDiv'>
                     <img src={svg1}/>
                 </div>

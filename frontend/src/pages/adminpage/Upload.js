@@ -3,6 +3,9 @@ import Sidebar from './Sidebar'
 import { useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import '../../css/adminCss/uploadques.css'
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Upload = () => {
     
     const [uploadData,setUploadData]=useState({
@@ -31,7 +34,9 @@ const Upload = () => {
      try {
         const {question,optionA,optionB,optionC,optionD,category,answer}=uploadData
         if(!question||!optionA||!optionB||!optionC||!optionD||!category||!answer){
-            alert("Plz fill the complete detail !!")
+            toast.warning("Plz fill the complete detail !!",{
+                position: "top-center",
+            })
             return;
         }
         let resp=await fetch('/adminpage/uploads',{
@@ -63,9 +68,13 @@ const Upload = () => {
             
                 }
             )
-            alert("uploaded Successfully")
+            toast.success("Uploaded Successfully!!",{
+                position: "top-center",
+            })
         }else{
-            alert("something went wrong")
+            toast.error("Something went wrong!!",{
+                position: "top-center",
+            })
         }
         
      } catch (error) {
@@ -82,6 +91,7 @@ const Upload = () => {
         <Sidebar togle={toggleBar} />
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
         <main className='uploadContainer'>
+            <ToastContainer style={{fontSize:"1.4rem"}}/>
              <h2 style={{textAlign:"center",fontSize:"2rem"}}>Upload all your question from here</h2>
              <form method='POST'>
              <section>

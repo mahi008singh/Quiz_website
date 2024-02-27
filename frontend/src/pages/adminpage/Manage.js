@@ -4,6 +4,9 @@ import '../../css/adminCss/admin.css'
 import { GiHamburgerMenu } from "react-icons/gi";
 import PulseLoader from "react-spinners/PulseLoader";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Manage = () => {
   const [contactData,setContactData]=useState([])
   useEffect((e)=>{
@@ -37,7 +40,9 @@ const Manage = () => {
           }
           })  
           if(resp){
-            alert("user deleted")
+            toast.success('Message deleted successfully !!',{
+              position:"top-right"
+            })
         }
        }catch (error) {
           console.log(error)
@@ -55,6 +60,7 @@ const Manage = () => {
         <Sidebar togle={toggleBar} />
         <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
         <main className='msgContainer'>
+          <ToastContainer style={{fontSize:"1.4rem"}}/>
             <h2 style={{textAlign:"center",fontSize:"2rem"}}>Users query</h2>
             <section>
           <div className='msgdivBar'>
@@ -88,13 +94,13 @@ const Manage = () => {
                                  <h2>{data.name}</h2>
                               </div>
                               <div>
-                              <h2>{data.email}</h2>
+                                 <h2>{data.email}</h2>
                               </div>
                               <div>
-                               <p>{data.msg}</p>
+                                 <p>{data.msg}</p>
                               </div>
                               <div>
-                              <button onClick={()=>deleteContactmsg(data._id)} className='removeBtn'>remove</button>
+                                 <button onClick={()=>deleteContactmsg(data._id)} className='removeBtn'>remove</button>
                               </div>
                           </div>
                         </>
