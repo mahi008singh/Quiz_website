@@ -1,13 +1,13 @@
 const Quants={
     data1:[
         {
-                title:"C",
+                title:"C/C++",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
                 apiNum:4
         },
         {
-                title:"C++",
+                title:"javascript",
                 link:"/Categ",
                 img:"../images/subject-icon.png",
                 apiNum:5

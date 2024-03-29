@@ -14,7 +14,7 @@ export default function Start() {
                   random.push(r);
                 }
               }
-              console.log(random);
+              console.log("random_index-->",random);
       }
     return (
       <>

@@ -106,18 +106,18 @@ const Upload = () => {
                         <option value="os">OS</option>
                         <option value="oops">Oops</option>
                         <option value="cn">Cn</option>
-                        <option value="js">js</option>
-                        <option value="cpp">cpp</option>
-                        <option value="java">java</option>
-                        <option value="c">c</option>
+                        <option value="Java">Java</option>
+                        <option value="C/C++">C/C++</option>
+                        <option value="Python">Python</option>
+                        <option value="javascript">javascript</option>
                     </select>
 
                    
                 </div>
                 <div className='addUpload'>
                 
-                    <label htmlFor="">Your question</label>
-                    <input required  name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" /> <br />
+                    <label htmlFor="">Your question</label> <br/>
+                    <textarea required  name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" > </textarea> <br />
                     <br />
                     <div>
                         <label htmlFor="">Option A)</label> 

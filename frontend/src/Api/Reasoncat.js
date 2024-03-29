@@ -158,245 +158,103 @@ const Reasdata={
       
      ],
 
-     // Coding part
+     // ----------------------(Coding part)---------------------------
      
      data4:[
       {
-            title:"Pseudo Coding ",
+            title:"Output Based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
-      },
-      {
-            title:"Algorithms ",
-            link:"/Quizplay",
-            size:Cquiz.q2.length,
-            apiNum:2
-      },
-      {
-            title:"Operators ",
-            link:"/Quizplay",
-            size:Cquiz.q3.length,
-            apiNum:3
-      },
-      {
-            title:"Looping Statements",
-            link:"/Quizplay",
-            size:Cquiz.q4.length,
-            apiNum:4
-      },
-      {
-            title:"Control Statements",
-            link:"/Quizplay",
-            size:Cquiz.q5.length,
-            apiNum:5
-      },
-      {
-            title:"Arrays",
-            link:"/Quizplay",
-            size:Cquiz.q6.length,
-            apiNum:6
-      },
-      {
-            title:"Strings",
-            link:"/Quizplay",
-            size:Cquiz.q7.length,
-            apiNum:7
-      },
-      {
-            title:"Functions",
-            link:"/Quizplay",
-            size:Cquiz.q8.length,
-            apiNum:8
-      },
-      {
-            title:"Data Structures",
-            link:"/Quizplay",
-            size:Cquiz.q9.length,
-            apiNum:9
       },
 
      ],
       
      data5:[
       {
-            title:"Pseudo Coding ",
+            title:"Output Based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
       },
-      {
-            title:"Algorithms ",
-            link:"/Quizplay",
-            size:Cquiz.q2.length,
-            apiNum:2
-      },
-      {
-            title:"Operators ",
-            link:"/Quizplay",
-            size:Cquiz.q3.length,
-            apiNum:3
-      },
-      {
-            title:"Looping Statements",
-            link:"/Quizplay",
-            size:Cquiz.q4.length,
-            apiNum:4
-      },
-      {
-            title:"Control Statements",
-            link:"/Quizplay",
-            size:Cquiz.q5.length,
-            apiNum:5
-      },
-      {
-            title:"Arrays",
-            link:"/Quizplay",
-            size:Cquiz.q6.length,
-            apiNum:6
-      },
-      {
-            title:"Strings",
-            link:"/Quizplay",
-            size:Cquiz.q7.length,
-            apiNum:7
-      },
-      {
-            title:"Functions",
-            link:"/Quizplay",
-            size:Cquiz.q8.length,
-            apiNum:8
-      },
-      {
-            title:"Data Structures",
-            link:"/Quizplay",
-            size:Cquiz.q9.length,
-            apiNum:9
-      },
+      
 
      ],
       
      data6:[
       {
-            title:"Pseudo Coding ",
+            title:"Output based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
       },
-      {
-            title:"Algorithms ",
-            link:"/Quizplay",
-            size:Cquiz.q2.length,
-            apiNum:2
-      },
-      {
-            title:"Operators ",
-            link:"/Quizplay",
-            size:Cquiz.q3.length,
-            apiNum:3
-      },
-      {
-            title:"Looping Statements",
-            link:"/Quizplay",
-            size:Cquiz.q4.length,
-            apiNum:4
-      },
-      {
-            title:"Control Statements",
-            link:"/Quizplay",
-            size:Cquiz.q5.length,
-            apiNum:5
-      },
-      {
-            title:"Arrays",
-            link:"/Quizplay",
-            size:Cquiz.q6.length,
-            apiNum:6
-      },
-      {
-            title:"Strings",
-            link:"/Quizplay",
-            size:Cquiz.q7.length,
-            apiNum:7
-      },
-      {
-            title:"Functions",
-            link:"/Quizplay",
-            size:Cquiz.q8.length,
-            apiNum:8
-      },
-      {
-            title:"Data Structures",
-            link:"/Quizplay",
-            size:Cquiz.q9.length,
-            apiNum:9
-      },
-
+      
      ],
       
      data7:[
       {
-            title:"Pseudo Coding ",
+            title:"Output based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
       },
-      {
-            title:"Algorithms ",
-            link:"/Quizplay",
-            size:Cquiz.q2.length,
-            apiNum:2
-      },
-      {
-            title:"Operators ",
-            link:"/Quizplay",
-            size:Cquiz.q3.length,
-            apiNum:3
-      },
-      {
-            title:"Looping Statements",
-            link:"/Quizplay",
-            size:Cquiz.q4.length,
-            apiNum:4
-      },
-      {
-            title:"Control Statements",
-            link:"/Quizplay",
-            size:Cquiz.q5.length,
-            apiNum:5
-      },
-      {
-            title:"Arrays",
-            link:"/Quizplay",
-            size:Cquiz.q6.length,
-            apiNum:6
-      },
-      {
-            title:"Strings",
-            link:"/Quizplay",
-            size:Cquiz.q7.length,
-            apiNum:7
-      },
-      {
-            title:"Functions",
-            link:"/Quizplay",
-            size:Cquiz.q8.length,
-            apiNum:8
-      },
-      {
-            title:"Data Structures",
-            link:"/Quizplay",
-            size:Cquiz.q9.length,
-            apiNum:9
-      },
+      // {
+      //       title:"Algorithms ",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q2.length,
+      //       apiNum:2
+      // },
+      // {
+      //       title:"Operators ",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q3.length,
+      //       apiNum:3
+      // },
+      // {
+      //       title:"Looping Statements",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q4.length,
+      //       apiNum:4
+      // },
+      // {
+      //       title:"Control Statements",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q5.length,
+      //       apiNum:5
+      // },
+      // {
+      //       title:"Arrays",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q6.length,
+      //       apiNum:6
+      // },
+      // {
+      //       title:"Strings",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q7.length,
+      //       apiNum:7
+      // },
+      // {
+      //       title:"Functions",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q8.length,
+      //       apiNum:8
+      // },
+      // {
+      //       title:"Data Structures",
+      //       link:"/Quizplay",
+      //       size:Cquiz.q9.length,
+      //       apiNum:9
+      // },
 
      ],
 
-//  CSE Subjects
+//  --------------------------(CSE Subjects)-----------------------------
+// ----------------------------------------------------------------------
 
      data8:[
       {
-            title:"Basic Networking ",
+            title:"Basic Networking",
             link:"/Quizplay",
             size:Networkquiz.q1.length,
             apiNum:1
@@ -431,7 +289,8 @@ const Reasdata={
 
      ],
 
-//TCS
+//--------------------(Company specific)------------------------
+//---------------TCS---------------
      data12:[
       {
             title:"Aptitute",
@@ -452,6 +311,7 @@ const Reasdata={
             apiNum:3
       },
      ],
+
 //COGNIZANT     
      data13:[
       {

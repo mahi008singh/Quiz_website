@@ -22,14 +22,16 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-   
-    
+   box-sizing: border-box;
     
 }
 .question_name{
     font-size: 1.8rem;
     padding: 1rem 2rem;
     overflow: auto;
+    border: 1px solid var(--secColor);
+    margin:1rem 3rem;
+    white-space:pre-wrap;
 }
 .option{
     padding: 0.5rem;

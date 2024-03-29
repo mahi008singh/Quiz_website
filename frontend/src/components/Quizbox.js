@@ -12,12 +12,13 @@ const Quizbox = () => {
     // console.log("--> ",finalquiz)
    
     let quesArray=[]
-    for(let i=0;i<finalquiz.length;i++){
-        if(finalquiz[i].category===chooseTopic){
-            quesArray.push(finalquiz[i]);
-        }
-    }
+   
     useEffect(()=>{
+        for(let i=0;i<finalquiz.length;i++){
+            if(finalquiz[i].category===chooseTopic){
+                quesArray.push(finalquiz[i]);
+            }
+        }
         setFinalquiz(quesArray)
     },[])
 
@@ -38,12 +39,14 @@ const Quizbox = () => {
             
             setExit(true)
         }else{
-            setTotal(prevState=>prevState+1);
-           setCurrInd(prevState=>prevState+1)
+            setTotal((prevState)=>prevState+1);
+           setCurrInd(random[total])
         }
             
     }
    },[timer])
+
+// ---------------------(saving_the_data)------------------------
 
    const saveHandler = () => {
     if (finalquiz[currInd].answer === ans) {
@@ -57,7 +60,7 @@ const Quizbox = () => {
         setExit(true);
     } else {
         setTotal(prevState=>prevState+1);
-        setCurrInd(prevState=>prevState+1);
+        setCurrInd(random[total]);
     }
     
    }
@@ -81,7 +84,7 @@ const Quizbox = () => {
                 </center>
             </div>
             <h2 style={{marginLeft:"2rem"}}>Question {total + 1}/{totalques} (DATABASE)</h2>
-            <div className='question_name'>  {finalquiz[currInd].question}</div>
+            <div className='question_name'>  {finalquiz[currInd]?.question}</div>
             <div className='quiz_container'>
                 <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{finalquiz[currInd].optionA}</div>
                 <div className={` ${ans === "b" ? 'click_option' : ''} option`}onClick={()=>chooseOption("b") }>{finalquiz[currInd].optionB}</div>

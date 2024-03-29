@@ -24,10 +24,10 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    background-color: var(--primColor);
+    background-color: var(--bgEffectColor);
     margin: 1rem 0;
     color:var(--secColor);
-    box-shadow: -10px 10px 40px rgba(175, 174, 174, 0.3);
+    box-shadow: -1px 1px 4px rgba(0,0,0,0.2);
 
 }
 .divBar{

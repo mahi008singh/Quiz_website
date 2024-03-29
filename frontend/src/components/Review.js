@@ -10,7 +10,7 @@ const Review = () => {
            <section className="review_b">
                <h1>Your Result Overview</h1>
                {
-                 JSON.parse(localStorage.getItem("reviewResult")).map((elem)=>{
+                 JSON.parse(localStorage.getItem("reviewResult"))?.map((elem)=>{
                        return(
                            <>
                              <div  className={elem.choosed===elem.correct?"review_div_green":"review_div_red"}>
