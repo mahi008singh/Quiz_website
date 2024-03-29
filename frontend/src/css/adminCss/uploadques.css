@@ -22,6 +22,8 @@
     padding: 2rem;
     margin: 0 2rem;
     border-radius: 1rem;
+    border: var(--border1);
+
 }
 .chooseUpload select{
     background-color:var(--bgColor) ;
@@ -39,6 +41,11 @@
     width: 70%;
     background-color: var(--bgEffectColor);
     box-shadow: var(--boxShadow);
+    border: var(--border1);
+
+}
+.addUpload div{
+    margin:0 4rem;
 }
 .addUpload label{
     margin: 0 1rem;
@@ -46,11 +53,11 @@
     color: var(--secColor);
 }
 #quesInput{
-    width:60%;
+    width:70%;
 }
 .addUpload input{
     border: 1px solid  var(--secColor);
-    width: 60%;
+    width: 70%;
     opacity: 0.7;
     background-color: var(--primColor);
     color: var(--secColor);
@@ -60,13 +67,13 @@
 }
 .addUpload textarea{
     border: 1px solid  var(--secColor);
-    width: 60%;
+    width: 70%;
     opacity: 0.7;
     background-color: var(--primColor);
     color: var(--secColor);
     height: 10rem;
     padding: 0 1rem;
-    margin: 2rem 4rem;
+    margin: 2rem 0rem;
 }
 
 .ansInput{
@@ -77,6 +84,7 @@
     width: 12rem;
     height: 4rem;
     cursor: pointer;
+    margin: 0 4rem;
 
 }
 
@@ -86,7 +94,7 @@
         flex-direction: column;
     }
     .chooseUpload{
-        height: 15vh;
+        height: 25vh;
         width: 100%;
         margin: 1rem 0;
     }

@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import { useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import '../../css/adminCss/uploadques.css'
+import ClipLoader from "react-spinners/ClipLoader";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -25,10 +26,10 @@ const Upload = () => {
         value=e.target.value
         setUploadData({...uploadData,[name]:value})
     }
-
+    const [isUploading,setIsUploading]=useState(false)
 
   const uploadQues= async(e)=>{
-
+    setIsUploading(true)
     e.preventDefault()
   
      try {
@@ -68,6 +69,7 @@ const Upload = () => {
             
                 }
             )
+            setIsUploading(false)
             toast.success("Uploaded Successfully!!",{
                 position: "top-center",
             })
@@ -116,26 +118,33 @@ const Upload = () => {
                 </div>
                 <div className='addUpload'>
                 
+                    <div>
                     <label htmlFor="">Your question</label> <br/>
                     <textarea required  name='question' id='quesInput' placeholder="type your question..." value={uploadData.question} onChange={handleInputs} type="text" > </textarea> <br />
-                    <br />
+                   
+                    </div>
                     <div>
-                        <label htmlFor="">Option A)</label> 
+                        <label htmlFor="">Option A)</label> <br/>
                         <input name='optionA'  placeholder='type option' onChange={handleInputs} value={uploadData.optionA} type="text" /> <br/>
-                        <label htmlFor="">Option B)</label> 
+                        <label htmlFor="">Option B)</label> <br/>
                         <input  name='optionB' placeholder='type option' onChange={handleInputs} value={uploadData.optionB}  type="text" /><br />
                     </div>
                     <div>
-                        <label htmlFor="">Option C)</label>
+                        <label htmlFor="">Option C)</label><br/>
                         <input  name='optionC' placeholder='type option' onChange={handleInputs} value={uploadData.optionC}  type="text" /> <br/>
-                        <label htmlFor="">Option D)</label>
+                        <label htmlFor="">Option D)</label><br/>
                         <input  name='optionD' placeholder='type option' onChange={handleInputs} value={uploadData.optionD}  type="text" />
                     </div>
                     <div>
-                        <label htmlFor="" >Answer</label>
+                        <label htmlFor="" >Answer</label><br/>
                         <input className='ansInput' placeholder='type correct option a,b,c or d' name='answer' type='text' onChange={handleInputs} value={uploadData.answer}/>
                     </div>
-                    <button  className='uploadBtn Signup' onClick={uploadQues} >Upload</button>
+                    <button  className='uploadBtn Signup' onClick={uploadQues} >
+                    {
+                        (isUploading)?<ClipLoader color="#fff" size={18} />
+                        :"Upload"
+                    }
+                    </button>
                     
                 </div>
          
@@ -143,6 +152,7 @@ const Upload = () => {
              </form>
         </main>
         </section>
+        
     </>
   )
 }
