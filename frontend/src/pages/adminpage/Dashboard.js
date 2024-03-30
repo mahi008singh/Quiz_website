@@ -87,7 +87,7 @@ async function deleteUser(id){
       <section className='dashContainer'>
       
         <Sidebar togle={toggleBar} />
-        <GiHamburgerMenu onClick={toggleSidebar} className='hamIcon' />
+       <p className='hamIcon' > <GiHamburgerMenu onClick={toggleSidebar} /></p>
 
         <main className='dashmainContainer'>
         <ToastContainer style={{fontSize:"1.4rem"}}/>

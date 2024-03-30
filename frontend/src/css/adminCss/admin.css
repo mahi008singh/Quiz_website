@@ -10,6 +10,8 @@
     display: none;
     top: 8rem;
     color: var(--secColor);
+    border: var(--border1);
+    /* padding: 0 1rem; */
 }
 .sidebarContainer{
     /* width: 100%; */
@@ -37,6 +39,7 @@
     /* position: fixed; */
     /* border-right: 1px solid rgba(0,0,0,0.3); */
 }
+
 .Li{
     margin-bottom: 3rem;
     list-style: none;
@@ -48,6 +51,9 @@
     background-color: var(--lightEffect);
     border: var(--border1);
 
+}
+.Li:active{
+    background-color: rgb(167, 249, 167);
 }
 
 .dashContainer main{

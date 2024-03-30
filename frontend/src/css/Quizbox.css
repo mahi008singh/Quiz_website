@@ -29,23 +29,25 @@
     font-size: 1.8rem;
     padding: 1rem 2rem;
     overflow: auto;
-    border: 1px solid var(--secColor);
+    height: 20rem;
+    border: var(--border2);
     margin:1rem 3rem;
+    border-radius: 1rem;
     white-space:pre-wrap;
 }
 .option{
     padding: 0.5rem;
     width: 90%;
     margin-top:1rem;
-    border: 1px solid var(--secColor);
+    border: var(--border2);
     font-size: 1.6rem;
 }
 .click_option{
     color: white;
-    background-color: rgb(48, 62, 100);
+    background-color: #0C926A;
 }
 .option:hover{
-background-color: rgb(48, 62, 100);
+background-color: #0C926A;
 color:#fff;
 cursor: pointer;
 }
@@ -69,7 +71,10 @@ cursor: pointer;
     
 }
 .reset_btn:hover,.next_btn:hover,.exit_btn:hover{
-    background:rgb(42, 82, 42);
+    background:#1d8e6c;
+}
+.exit_btn:hover{
+    background:rgb(203, 60, 60);
 }
 
 .exit_btn{
@@ -198,7 +203,7 @@ cursor: pointer;
 
 @media (max-width:460px) {
     .quiz-box{
-        width: 85%;
+        width: 90%;
         border-radius: 1rem;
         margin: 3rem 3rem;
     }
@@ -207,7 +212,7 @@ cursor: pointer;
         font-size: 1.2rem;
     }
     .timer{
-        width: 75%;
+        width: 90%;
         height: 5.5rem;
     }
     .t1 h2{
@@ -219,5 +224,11 @@ cursor: pointer;
         font-size: 1.4rem;
         border-radius: 3px;
       }
-    
+      .option{
+         padding: 1rem 0.5rem ;
+      }
+    .reset_btn,.next_btn,.exit_btn{
+        height: 3.5rem;    
+        font-size: 1.3rem;
+    }
 }

@@ -1,4 +1,4 @@
-import React,{useState,useContext} from 'react';
+import React,{useState,useContext, useEffect} from 'react';
 import {NavLink} from "react-router-dom"
 import '../css/style.css'
 import Quants from '../Api/Maincateg';
@@ -11,7 +11,11 @@ const Practice = () => {
    const [data3,setData3]=useState(Quants.data3);
 
    const { data,setData,chooseTopic,setChooseTopic,keyTopic,setKeyTopic }=useContext(QuizContext)
-
+    
+    useEffect(()=>{
+        setKeyTopic(false)
+        localStorage.setItem("questionLength","0")
+    },[])
     return (
         <>
             <section class="subjects">

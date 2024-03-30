@@ -4,9 +4,11 @@ import {NavLink} from 'react-router-dom'
 import Reasdata from '../Api/Reasoncat.js'
 import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 const Categ = () => {
-    const {keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
+    const {setStart,keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
         choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
         Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
         COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues } = useContext(QuizContext)
@@ -14,8 +16,11 @@ const Categ = () => {
 
     
     localStorage.removeItem('reviewResult');
+    const [quesLoaded, setQuesLoaded]=useState(false)
+    
     // code to fetch the data from database-
     const fetchDBques= async()=>{
+             setQuesLoaded(true)
             const resp=await fetch(`/adminpage/getuploads`,{
                 method:"GET",
 
@@ -23,6 +28,8 @@ const Categ = () => {
              let finalData=await resp.json();
              console.log("final-->",finalData)
              if(keyTopic){
+                 setQuesLoaded(false)
+
                 setFinalquiz(finalData)
                 console.log(finalquiz)
              }
@@ -36,9 +43,9 @@ const Categ = () => {
             localStorage.setItem("questionLength",JSON.stringify(quesArray.length))
     }
     useEffect(()=>{
-       
+        setStart(false)
         fetchDBques()
-       
+        
         if(data==1){
             setRender(Reasdata.data1);
             setFinalquiz(Aptiquiz)
@@ -142,8 +149,14 @@ const Categ = () => {
                                     }
                                   </div>
                                     <NavLink to={elem.link}>
-                                        <button onClick={()=>{setChoose(elem.apiNum)
-                                       setTopsize(elem.size)}} class="btn_">Go to quiz</button>
+                                      <button onClick={()=>{setChoose(elem.apiNum)
+                                       setTopsize(elem.size)
+                                       }}
+                                      class="btn_">
+                                       {
+                                          (quesLoaded&&keyTopic)?<ClipLoader color="#fff" size={18} />:"Go to quiz"
+                                       }
+                                       </button>
                                     </NavLink>
                                 </div>
                             </>

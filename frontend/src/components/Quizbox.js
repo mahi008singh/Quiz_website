@@ -86,10 +86,10 @@ const Quizbox = () => {
             <h2 style={{marginLeft:"2rem"}}>Question {total + 1}/{totalques} (DATABASE)</h2>
             <div className='question_name'>  {finalquiz[currInd]?.question}</div>
             <div className='quiz_container'>
-                <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{finalquiz[currInd].optionA}</div>
-                <div className={` ${ans === "b" ? 'click_option' : ''} option`}onClick={()=>chooseOption("b") }>{finalquiz[currInd].optionB}</div>
-                <div className={` ${ans === "c" ? 'click_option' : ''} option`} onClick={()=>chooseOption("c") }>{finalquiz[currInd].optionC}</div>
-                <div className={` ${ans === "d" ? 'click_option' : ''} option`} onClick={()=>chooseOption("d") }>{finalquiz[currInd].optionD}</div>
+                <div className={` ${ans === "a" ? 'click_option' : ''} option`} onClick={()=>chooseOption("a") }>{finalquiz[currInd]?.optionA}</div>
+                <div className={` ${ans === "b" ? 'click_option' : ''} option`}onClick={()=>chooseOption("b") }>{finalquiz[currInd]?.optionB}</div>
+                <div className={` ${ans === "c" ? 'click_option' : ''} option`} onClick={()=>chooseOption("c") }>{finalquiz[currInd]?.optionC}</div>
+                <div className={` ${ans === "d" ? 'click_option' : ''} option`} onClick={()=>chooseOption("d") }>{finalquiz[currInd]?.optionD}</div>
             </div>
             <div className='btn_container'>
                 <button className='reset_btn' onClick={() => setAns("")}>Reset</button>

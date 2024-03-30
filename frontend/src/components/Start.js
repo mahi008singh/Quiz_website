@@ -5,14 +5,21 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
+    const { setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
-                const r=Math.floor(Math.random()*topsize);
+                let r;
+                 if(keyTopic){
+                   r=Math.floor(Math.random()*Number(localStorage.getItem("questionLength")));
+                 }else{
+                   r=Math.floor(Math.random()*topsize);
+                 }
+               
                 if(random.indexOf(r)===-1)
                 {
                   random.push(r);
                 }
+                console.log(random.length)
               }
               console.log("random_index-->",random);
       }
@@ -37,6 +44,10 @@ export default function Start() {
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     
         <button onClick={() =>{
+          if(keyTopic&&totalques>Number(localStorage.getItem("questionLength"))){
+            alert("cannot set questions more than available questions..")
+            return;
+          }
           setStart(true)
           setRandomly()}} className='start-btn'>Start Quiz</button>
        </div>

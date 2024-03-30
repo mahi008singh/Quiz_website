@@ -9,7 +9,8 @@
     --bgEffectColor:#fff;
     --tertiary:#10c690;
     --lightEffect:rgb(237, 236, 236);
-    --border1:2px solid rgba(249,249,249,0.08)
+    --border1:1px solid rgba(0,0,0,0.4);
+    --border2:1px solid rgba(0,0,0,0.4);
 }
 body{
     background-color: var(--primColor);
@@ -21,7 +22,10 @@ body{
     --secColor:#fff;
     --bgEffectColor:#282828;
     --tertiary:#097f5c;
-    --lightEffect:#272727
+    --lightEffect:#272727;
+    --border1:2px solid rgba(249,249,249,0.08);
+    --border2:2px solid rgba(249,249,249,0.5);    
+
 }
 .navdiv{
     display:flex;

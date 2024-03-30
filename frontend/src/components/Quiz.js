@@ -26,7 +26,7 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
    
     
 
-    let [quizzler,setQuizzler]=useState(finalquiz.q1);
+    let [quizzler,setQuizzler]=useState(finalquiz?.q1);
      
      useEffect(() => {
          if(choose==1)
