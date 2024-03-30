@@ -8,6 +8,8 @@ import { QuizContext } from '../Context/QuizHolder';
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
 import PulseLoader from "react-spinners/PulseLoader";
+import ClipLoader from "react-spinners/ClipLoader";
+
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -15,7 +17,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
 const {showuserName,setShowuserName}=useContext(QuizContext)
 const navigate=useNavigate()
-
+const [loginLoad,setLoginLoad]=useState(false)
 // useEffect(() => {
 //     localStorage.setItem('userName', JSON.stringify(showuserName));
 //   }, [showuserName]);
@@ -50,7 +52,7 @@ const handleInputs=(e)=>{
 // --------------(post_login)-----------
 
 const postLogin=async (e)=>{
- 
+    setLoginLoad(true)
     e.preventDefault();
     try{
         const {email,password}=loginData;
@@ -58,6 +60,7 @@ const postLogin=async (e)=>{
             toast.warning("Plz fill the complete details !!",{
                 position: 'top-right',
             })
+              setLoginLoad(false)
             return;
         }
         
@@ -85,6 +88,7 @@ const postLogin=async (e)=>{
             email:"",
             password:""
         })
+        setLoginLoad(false)
         return;
     }
     if(data.msg==="Invalid email or password !!"){
@@ -95,6 +99,7 @@ const postLogin=async (e)=>{
             email:"",
             password:""
         })
+        setLoginLoad(false)
        
     }else{
         // setIsLoggedIn(true)
@@ -118,6 +123,7 @@ const postLogin=async (e)=>{
             localStorage.setItem("admin",true)
             navigate('/admin/dashboard')
         }
+        setLoginLoad(false)
     }
  
    }catch(err){
@@ -159,7 +165,11 @@ const postLogin=async (e)=>{
                         </div>
 
                        <div>
-                           <button className='signup_btn' onClick={postLogin}>submit</button>
+                           <button className='signup_btn' onClick={postLogin}>
+                            {
+                               (loginLoad)?<ClipLoader color="#fff" size={22}/>: "submit"
+                            }
+                            </button>
                        </div>
                    </form>
 

@@ -8,6 +8,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { AiOutlineEyeInvisible } from "react-icons/ai";
 import { AiOutlineEye } from "react-icons/ai";
+
+import ClipLoader from "react-spinners/ClipLoader";
+
 const Signup = () => {
     const navigate=useNavigate()
     const [userdata, setUserData] = useState({
@@ -15,7 +18,7 @@ const Signup = () => {
         email: "", 
         password: ""
     });
-
+    const [signupLoad,setSignupLoad]=useState(false)
     let name, value;
     const [showPassword,setShowPassword]=useState(false);
     const [icon,setIcon]=useState(AiOutlineEyeInvisible)
@@ -37,11 +40,13 @@ const Signup = () => {
     }
     const postData = async (e) => {
         e.preventDefault();
+        setSignupLoad(true)
         const { name, email, password } = userdata;
         if(!name||!email||!password){
             toast.warning("Plz fill the complete details !!",{
                 position: 'top-right',
             })
+            setSignupLoad(false)
             return;
         }
         const resp = await fetch('/userAuth/register', {
@@ -61,10 +66,13 @@ const Signup = () => {
             toast.error("Invalid registration",{
                 position: 'top-right',
             })
+            setSignupLoad(false)
+
         } else {
             toast.success("you are registered successfully",{
                 position: 'top-right',
             })
+            setSignupLoad(false)
             window.alert("Check your email for verification link")
         }
         navigate('/login')
@@ -104,7 +112,9 @@ const Signup = () => {
 
                         <div>
                             <button className='signup_btn' onClick={postData}>
-                                submit
+                            {
+                               (signupLoad)?<ClipLoader color="#fff" size={22}/>: "submit"
+                            }
                             </button>
                         </div>
                     </form>
