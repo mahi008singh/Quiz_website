@@ -10,13 +10,13 @@ const Sidebar = (props) => {
     <>
         <section  className={(props.togle)?'sidebarContainer2':"sidebarContainer"}>
           <aside className='sidebarAside'>
-            <h2>Dashboard</h2>
+            <h2>Navigation</h2>
             <br/>
               <Li Routeurl={'/admin/dashboard'}  heading={"Dashboard"} Icon={RiDashboardFill}/>
               <Li Routeurl={'/admin/upload'} heading={"Upload"} Icon={RiUploadLine}/>
               <Li Routeurl={'/admin/manage'} heading={"Messages"} Icon={MdOutlinePermContactCalendar}/>
           </aside>
-        </section>
+        </section> 
     </>
   )
 }

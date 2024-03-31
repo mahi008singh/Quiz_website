@@ -10,8 +10,18 @@
     display: none;
     top: 8rem;
     color: var(--secColor);
-    border: var(--border1);
+    /* border: var(--border1); */
     /* padding: 0 1rem; */
+}
+.hamIconShift{
+    position: fixed;
+    font-size: 2rem;
+    left: 17rem;
+    z-index: 11;
+    top: 8rem;
+    border: var(--border1);
+    padding:0 0.5rem;
+    color: var(--secColor);
 }
 .sidebarContainer{
     /* width: 100%; */
@@ -188,6 +198,9 @@
     box-shadow: var(--boxShadow);
 
 }
+.msgdivBar div{
+    gap: 1rem;
+}
 .msgdivBar div h2,p{
     font-size: 1.3rem;
     color: var(--secColor);
@@ -215,9 +228,12 @@
     height: 2.5rem;
     cursor: pointer;
     padding-bottom: 0.3rem;
-    background-color: var(--bgColor);
-    color: #fff;
+    /* background-color: var(--bgColor); */
+    color: var(--secColor);
     font-size: 1.4rem;
+}
+.removeBtn:hover{
+    color: rgb(249, 92, 92);
 }
 
 /* -------------(media-query)--------------- */
@@ -242,7 +258,7 @@
         left: -1rem;
         height: 100vh;
         z-index:10 ;
-
+        top: 0;
         background-color: var(--primColor);
 
     }

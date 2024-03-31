@@ -85,10 +85,9 @@ async function deleteUser(id){
   return (
     <>
       <section className='dashContainer'>
-      
-        <Sidebar togle={toggleBar} />
-       <p className='hamIcon' > <GiHamburgerMenu onClick={toggleSidebar} /></p>
 
+      <p className={(toggleBar)?"hamIconShift":"hamIcon"} > <GiHamburgerMenu onClick={toggleSidebar} /></p>
+        <Sidebar togle={toggleBar} />
         <main className='dashmainContainer'>
         <ToastContainer style={{fontSize:"1.4rem"}}/>
             <h2 className='adminh2'>Admin dashboard</h2>

@@ -21,7 +21,7 @@
     /* background-color: rgb(157,235,157); */
     border: 2px solid green;
     background-color: var(--bgEffectColor);
-    box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5);
+    /* box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5); */
 }
 .review_div_red{
     width: 100%;
@@ -37,7 +37,7 @@
     align-items: center;
     padding: 0 3rem ;
     border: 2px solid rgb(231, 94, 94);
-    box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5);
+    /* box-shadow:3px 3px 5px 0px rgba(0,0,0,0.5); */
 }
 
 .review_div_green div p,.review_div_red div p{

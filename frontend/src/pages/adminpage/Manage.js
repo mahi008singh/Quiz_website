@@ -6,6 +6,8 @@ import PulseLoader from "react-spinners/PulseLoader";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { MdDelete } from "react-icons/md";
+
 
 const Manage = () => {
   const [contactData,setContactData]=useState([])
@@ -100,7 +102,7 @@ const Manage = () => {
                                  <p>{data.msg}</p>
                               </div>
                               <div>
-                                 <button onClick={()=>deleteContactmsg(data._id)} className='removeBtn'>remove</button>
+                                <MdDelete className='removeBtn'  onClick={()=>deleteContactmsg(data._id)}/>
                               </div>
                           </div>
                         </>
