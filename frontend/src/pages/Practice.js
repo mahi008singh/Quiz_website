@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom"
 import '../css/style.css'
 import Quants from '../Api/Maincateg';
 import { QuizContext } from '../Context/QuizHolder';
-
+import {Laptop,Percent,BookOpenCheck} from 'lucide-react'
 
 const Practice = () => {
    const [data1,setData1]=useState(Quants.data1);
@@ -23,7 +23,9 @@ const Practice = () => {
                 <h1 class="heading">CATEGORIES</h1>
                 <br />
 
-                <h1 className="h1">Coding</h1>
+                <h1 className="h1">
+                 <Laptop style={{marginRight:"1rem"}} />
+                    Coding</h1>
                 <br />
                 <br />
                 <div class="box-container">
@@ -52,7 +54,9 @@ const Practice = () => {
                 {/* <!-- -------------------Apti/Reas--------------------- --> */}
 
                 <br /> <br /> <br /> <br /> <br />
-                <h2 class="h1">Apti/Reas</h2>
+                <h2 class="h1">
+                <Percent style={{marginRight:"1rem"}} />
+                    Apti/Reas</h2>
                 <br /> <br />
                 <div class="box-container">
                     {
@@ -79,7 +83,9 @@ const Practice = () => {
                 {/* <!-- ------------------CSE subjects--------------- --> */}
                 <br /> <br /> <br /> <br /> <br />
 
-                <h2 class="h1">Cse Subjects</h2>
+                <h2 class="h1">
+                <BookOpenCheck  style={{marginRight:"1rem"}} />
+                    Cse Subjects</h2>
                 <br /> <br />
                 <div class="box-container">
 

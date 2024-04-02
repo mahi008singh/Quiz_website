@@ -6,6 +6,7 @@ import { MdDarkMode } from "react-icons/md"
 import { BsSun } from "react-icons/bs"
 import { FaUser } from "react-icons/fa";
 import { QuizContext } from '../Context/QuizHolder';
+import {Home,Pickaxe,ClipboardCheck} from "lucide-react"
 
 const Header = () => {
 
@@ -50,12 +51,14 @@ const Header = () => {
                     <ul className={sidebar ? "sider-open" : "sider"}>
                    
                         <li>
-                            <NavLink onClick={togle} className={'linker'} to='/'>Home</NavLink>
+                        <Home style={{color:"#0eb582" ,marginRight:"0.5rem"}} strokeWidth={1} /><NavLink onClick={togle} className={'linker'} to='/'>Home</NavLink>
                         </li>
                         <li>
+                        <ClipboardCheck style={{color:"#0eb582" ,marginRight:"0.5rem"}} strokeWidth={1} />
                             <NavLink onClick={togle} className={'linker'} to='/Compete'>Compete</NavLink>
                         </li>
                         <li>
+                          <Pickaxe style={{color:"#0eb582",marginRight:"0.5rem"}} strokeWidth={1}  />
                             <NavLink onClick={togle} className={'linker'} to='/Practice'>Practice</NavLink>
                         </li>
                         <p className='userLogo' style={{fontSize:"1.7rem", fontWeight:"600"}}>

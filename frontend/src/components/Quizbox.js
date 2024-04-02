@@ -19,6 +19,7 @@ const Quizbox = () => {
                 quesArray.push(finalquiz[i]);
             }
         }
+        console.log("finaldata-->",finalquiz)
         setFinalquiz(quesArray)
     },[])
 

@@ -111,7 +111,7 @@
     width: 16rem;
     border: var(--border1);
     /* height: 10rem; */
-    background-color: var(--primColor);
+    background-color: var(--bgEffectColor);
     margin: 1rem;
     border-radius: 1rem;
     font-size: 1.4rem;
@@ -123,12 +123,13 @@
    width: 6rem;
     display: grid;
     place-items: center;
-   height: 6rem;
+    height: 6rem;
     border-radius: 50%;
     border: 2px solid gold;
     padding: 1rem;
     color: var(--secColor);
     margin-top: 1rem;
+    
 }
 .userWidget div p{
     color: var(--secColor)

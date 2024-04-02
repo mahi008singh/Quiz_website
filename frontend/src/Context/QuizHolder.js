@@ -7,6 +7,8 @@ const QuizContext = createContext();
 
 export default function QuizHolder(props) {
 
+  
+
     const [start, setStart] = useState(false);
     const [exit, setExit] = useState(false);
     const [correct,setCorrect] = useState(0);

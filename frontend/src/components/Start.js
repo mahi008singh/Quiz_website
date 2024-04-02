@@ -1,11 +1,11 @@
-import React, { useContext } from 'react'
+import React, { useContext ,useEffect} from 'react'
 import { QuizContext } from '../Context/QuizHolder';
 import '../App.css';
 import '../css/start.css';
 
 
 export default function Start() {
-    const { setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
+    const { start,setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
                 let r;
@@ -23,6 +23,12 @@ export default function Start() {
               }
               console.log("random_index-->",random);
       }
+
+    // useEffect(()=>{
+    //   alert("useEff")
+    //     localStorage.setItem("startTheGame",JSON.stringify(start))
+    // },[start])
+
     return (
       <>
         <div class="start">

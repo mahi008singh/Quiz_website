@@ -73,6 +73,7 @@ const Upload = () => {
             toast.success("Uploaded Successfully!!",{
                 position: "top-center",
             })
+            document.querySelector('.chooseSelect').selected=true
         }else{
             toast.error("Something went wrong!!",{
                 position: "top-center",
@@ -100,7 +101,7 @@ const Upload = () => {
                 <div className='chooseUpload'>
                     <h2>Choose Categories for upload</h2>
                     <select name="category" onChange={handleInputs} id="">
-                        <option value="" selected>Choose</option>
+                        <option className='chooseSelect' value="" selected>Choose</option>
                         <option value="aptitude">Aptitude</option>
                         <option value="reasoning">Reasoning</option>
                         <option value="verbal">verbal</option>
