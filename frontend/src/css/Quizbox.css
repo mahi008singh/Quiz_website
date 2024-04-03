@@ -7,7 +7,7 @@
     height: 15rem;
 }
 .quiz-img img{
-    width: 15rem;
+    width: 12rem;
     /* margin: 0.2rem 18.5rem; */
 }
 .quiz-box{
@@ -148,7 +148,7 @@ cursor: pointer;
 @media (max-width:780px) {
 
     .quiz-img center img{
-        width: 13rem;
+        width: 10rem;
         margin: 0.3rem 0 ;
     }
     .quiz_section{

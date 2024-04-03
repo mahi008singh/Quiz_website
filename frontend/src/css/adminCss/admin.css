@@ -13,6 +13,9 @@
     /* border: var(--border1); */
     /* padding: 0 1rem; */
 }
+h1{
+    color: var(--secColor);
+}
 .hamIconShift{
     position: fixed;
     font-size: 2rem;
@@ -117,6 +120,7 @@
     font-size: 1.4rem;
     box-shadow:var(--boxShadow) ;
     padding: 1rem;
+    
 
 }
 .userWidget div h3,.userWidget div h2{
@@ -147,6 +151,7 @@
     grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
     border: var(--border1);
     border-radius: 1rem;
+    
 }
 .userDiv{
     /* width: 20rem; */
@@ -160,6 +165,7 @@
     justify-content: space-around;
     padding: 1rem;
     font-size: 2rem;
+    border: var(--border1);
  
 }
 .userDiv h3{

@@ -15,6 +15,29 @@
     background: var(--primColor);
     overflow: hidden;
   }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    background: var(--tertiary);
+    color: #fff;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+  }
+  
+  .btn:hover {
+    border: 0.1rem solid #fff;
+  
+  }
+  
+  .home .slide .content {
+    width: 50rem;
+  }
+
 .platform_page{
    display: flex;
 }
@@ -27,7 +50,8 @@
 }
 
 .platform_name{
-    width: 30rem;
+    width: 35rem;
+    height: 25rem;
 } 
 .home-courses .slide:hover .solve {
     bottom: 0;
@@ -86,7 +110,7 @@
   /* --------------------footer-------------------------- */
   
 .footer {
-  border-top: 2px solid rgba(0,0,0,0.2);
+  border-top: var(--border1);
     background: var(--primColor);
   }
   
@@ -213,9 +237,12 @@
     .platform_name{
       width: 32rem;
   }
+  .home .slide .content {
+    width: 35rem;
+  }
   .footer .box-container .box {
     padding: 0 5rem;
-}
+  }
 
   }
 
@@ -232,4 +259,8 @@
     .footer .box-container .box .link {
       font-size: 1.3rem;
     }
+    .home .slide .content {
+      width: 30rem;
+    }
+  
   }

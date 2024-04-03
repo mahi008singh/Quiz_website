@@ -8,11 +8,20 @@ import Timer from './Timer'
 const Quizbox = () => {
  const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
     setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
-    finalquiz,setFinalquiz,totalques,random,setRandom,chooseTopic} = useContext(QuizContext);
+    finalquiz,setFinalquiz,totalques,random,setRandom,chooseTopic,
+    totaltime,setTotaltime} = useContext(QuizContext);
     // console.log("--> ",finalquiz)
    
     let quesArray=[]
-   
+
+    useEffect(()=>{
+        const interval=setInterval(()=>{
+            setTotaltime(prev=>prev+1)
+        },1000)
+        console.log(totaltime)
+        return ()=> clearInterval(interval)
+    },[])
+
     useEffect(()=>{
         for(let i=0;i<finalquiz.length;i++){
             if(finalquiz[i].category===chooseTopic){

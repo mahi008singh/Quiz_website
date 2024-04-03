@@ -84,22 +84,6 @@ section {
   color: #444;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-  font-size: 1.8rem;
-  border: 0.1rem solid var(--tertiary);
-  background: #f0fdfa;
-  color: var(--tertiary);
-  cursor: pointer;
-  text-transform: capitalize;
-}
-
-.btn:hover {
-  background: var(--tertiary);
-  color: #fff;
-}
 
 .header {
   position: -webkit-sticky;
@@ -128,13 +112,7 @@ section {
   font-weight: bolder;
 }
 
-.header .logo i {
-  color: var(--tertiary);
-}
 
-.header .navbar {
-  position: relative;
-}
 
 .header .navbar #close-navbar {
   position: absolute;
@@ -303,9 +281,7 @@ section {
   background-position: center !important;
 }
 
-.home .slide .content {
-  width: 50rem;
-}
+
 
 .home .slide .content h3 {
   font-size: 5rem;

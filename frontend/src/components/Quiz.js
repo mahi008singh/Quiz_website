@@ -6,6 +6,7 @@ import '../css/Quizbox.css';
 
 export default function Quiz() {
     const {random,setRandom}=useContext(QuizContext)
+    
 
     const [current, setCurrent] = useState(random[0]);
     const [total,setTotal]=useState(0);
@@ -21,9 +22,16 @@ export default function Quiz() {
 const Box = ({ current, next,total,setTotal,ans,setAns }) => {
     const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
          setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
-         finalquiz,totalques,random,setRandom} = useContext(QuizContext);
+         finalquiz,totalques,random,setRandom,totaltime,setTotaltime} = useContext(QuizContext);
 
    
+         useEffect(()=>{
+            const interval=setInterval(()=>{
+                setTotaltime(prev=>prev+1)
+            },1000)
+            console.log(totaltime)
+            return ()=> clearInterval(interval)
+        },[])
     
 
     let [quizzler,setQuizzler]=useState(finalquiz?.q1);

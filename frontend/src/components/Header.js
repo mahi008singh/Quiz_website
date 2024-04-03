@@ -53,10 +53,10 @@ const Header = () => {
                         <li>
                         <Home style={{color:"#0eb582" ,marginRight:"0.5rem"}} strokeWidth={1} /><NavLink onClick={togle} className={'linker'} to='/'>Home</NavLink>
                         </li>
-                        <li>
+                        {/* <li>
                         <ClipboardCheck style={{color:"#0eb582" ,marginRight:"0.5rem"}} strokeWidth={1} />
                             <NavLink onClick={togle} className={'linker'} to='/Compete'>Compete</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                           <Pickaxe style={{color:"#0eb582",marginRight:"0.5rem"}} strokeWidth={1}  />
                             <NavLink onClick={togle} className={'linker'} to='/Practice'>Practice</NavLink>

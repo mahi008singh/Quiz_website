@@ -5,7 +5,8 @@ import '../css/start.css';
 
 
 export default function Start() {
-    const { start,setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,random,setRandom,topsize,setTopsize } = useContext(QuizContext)
+    const { start,setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,
+      random,setRandom,topsize,setTopsize,totaltime,setTotaltime} = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
                 let r;
@@ -55,7 +56,9 @@ export default function Start() {
             return;
           }
           setStart(true)
-          setRandomly()}} className='start-btn'>Start Quiz</button>
+          setTotaltime(0)
+          setRandomly()}} className='start-btn'
+          >Start Quiz</button>
        </div>
     </div>
       </>

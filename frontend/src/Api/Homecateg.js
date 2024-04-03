@@ -17,14 +17,14 @@ const Homedata={
             apiNum:1
         },
       
-        {
-            title:"Codechef",
-            subtitle:"Codechef",
-            para:"Practice here",
-            link:"/Categ",
-            img:"imagges/codechef_logo.jpg",
-            apiNum:1
-        },
+        // {
+        //     title:"Codechef",
+        //     subtitle:"Codechef",
+        //     para:"Practice here",
+        //     link:"/Categ",
+        //     img:"imagges/codechef_logo.jpg",
+        //     apiNum:1
+        // },
         // {
         //     title:"Hackerrank",
         //     subtitle:"Hackerrank",
