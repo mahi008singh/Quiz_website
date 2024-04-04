@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Sidebar from './Sidebar'
 import { useNavigate } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -7,6 +7,9 @@ import ClipLoader from "react-spinners/ClipLoader";
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import Subcatdata from '../../Api/SubcatData';
+
 const Upload = () => {
     
     const [uploadData,setUploadData]=useState({
@@ -15,13 +18,26 @@ const Upload = () => {
         optionB:"",
         optionC:"",
         optionD:"",
+        category:"",
+        subcategory:"",
+        tag:"",
         answer:"",
 
     });
+    const [subCategory,setSubCategory]=useState([])
+    const [catIndex,setCatIndex]=useState(0)
 
-    let name,value
+    useEffect(()=>{
+        setSubCategory(Subcatdata[catIndex-1])
+    },[uploadData.category])
 
+
+    
+// -----------------------------(input_handling)--------------------------
+//------------------------------------------------------------------------
+let name,value
     const handleInputs=(e)=>{
+        setCatIndex(e.target.selectedIndex)
         name=e.target.name;
         value=e.target.value
         setUploadData({...uploadData,[name]:value})
@@ -33,8 +49,8 @@ const Upload = () => {
     e.preventDefault()
   
      try {
-        const {question,optionA,optionB,optionC,optionD,category,answer}=uploadData
-        if(!question||!optionA||!optionB||!optionC||!optionD||!category||!answer){
+        const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer}=uploadData
+        if(!question||!optionA||!optionB||!optionC||!optionD||!category||!subcategory||!tag||!answer){
             toast.warning("Plz fill the complete detail !!",{
                 position: "top-center",
             })
@@ -52,6 +68,8 @@ const Upload = () => {
               optionC,
               optionD,
               category,
+              subcategory,
+              tag,
               answer
          })
         })
@@ -65,6 +83,8 @@ const Upload = () => {
                     optionC:"",
                     optionD:"",
                     category:"",
+                    subcategory:"",
+                    tag:"",
                     answer:"",
             
                 }
@@ -99,22 +119,49 @@ const Upload = () => {
              <form method='POST'>
              <section>
                 <div className='chooseUpload'>
-                    <h2>Choose Categories for upload</h2>
+                     <div>
+                     <h2>Choose Categories</h2>
                     <select name="category" onChange={handleInputs} id="">
                         <option className='chooseSelect' value="" selected>Choose</option>
-                        <option value="aptitude">Aptitude</option>
+                        <option value="aptitude" >Aptitude</option>
                         <option value="reasoning">Reasoning</option>
-                        <option value="verbal">verbal</option>
-                        <option value="dbms">Dbms</option>
-                        <option value="os">OS</option>
-                        <option value="oops">Oops</option>
+                        <option value="verbal" >verbal</option>
+                        <option value="C/C++" >C/C++</option>
+                        <option value="javascript" >javascript</option>
+                        <option value="Python" >Python</option>
+                        <option value="Java" >Java</option>
                         <option value="cn">Cn</option>
-                        <option value="Java">Java</option>
-                        <option value="C/C++">C/C++</option>
-                        <option value="Python">Python</option>
-                        <option value="javascript">javascript</option>
+                        <option value="oops">Oops</option>
+                        <option value="dbms" >Dbms</option>
+                        <option value="os" >OS</option>
+                        <option value="SQL" >SQL</option>
                     </select>
+                     </div>
+                    <div>
+                        <h2>Choose sub-categories</h2>
 
+                        <select name="subcategory" onChange={handleInputs} id="">
+                            <option className='chooseSelect' value="" selected>Choose</option>
+                            {
+                                subCategory?.map((elem)=>{
+                                    return(
+                                        <>
+                                            <option  value={elem.title}>{elem.title}</option> 
+                                        </>
+                                    )
+                                })
+                            }
+                        </select>
+
+                    </div>
+                    <div>
+                        <h2>Choose tag</h2>
+                        <select name="tag" onChange={handleInputs} >
+                            <option>Choose tag</option>
+                            <option value="none">none</option>
+                            <option value="company">company</option>
+                        </select>
+                    </div>
                    
                 </div>
                 <div className='addUpload'>

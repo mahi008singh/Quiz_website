@@ -26,14 +26,19 @@ const quesSchema=new mongoose.Schema({
         type:String,
         require:true,
     },
+    subcategory:{
+        type:String,
+        require:true,
+    },
+    tag:{
+        type:String,
+        default:"none"
+    },
     answer:{
         type:String,
         require:true
     },
-    // category:{
-    //     type:String,
-    //     require:true
-    // },
+   
     // topic:{
     //     type:String,
     //     require:true

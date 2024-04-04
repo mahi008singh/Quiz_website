@@ -1,6 +1,5 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import {NavLink} from 'react-router-dom';
-import { useContext } from 'react';
 import '../css/style.css'; 
 import '../css/home.css';
 import Homedata from '../Api/Homecateg';
@@ -10,7 +9,9 @@ import Codeques from '../components/Codeques';
 const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
       const [recommend,setRecommend]=useState(Homedata.data2);
-      const { platform,setPlatform } = useContext(QuizContext)
+      const { platform,setPlatform,homeIndex,setHomeIndex } = useContext(QuizContext)
+
+
 
       const isLoggedin=localStorage.getItem("loginToken")
     return (
@@ -57,17 +58,18 @@ const Home = () => {
              <div class="box-container">
 
           {
-             recommend.map((elem)=>{
+             recommend.map((elem,ind)=>{
                 return(
                    <>
-                      <div class="box">
+                     <div class="box">
                         
-                         <NavLink to={(isLoggedin)?"/companies":"/Login"} >
-                           <img src={require('../images/subject-icon-3.png')} alt="" />
-                            <h3>{elem.title}</h3>
-                         </NavLink>
-
-                      </div>
+                        <NavLink to={(isLoggedin)?(elem.title=="SQL")?"/Categ":"/companies":"/Login"} onClick={()=>setHomeIndex(ind)} >
+                          <img src={require('../images/subject-icon-3.png')} alt="" />
+                          <h3>{elem.title}</h3>
+                        </NavLink>
+              
+                     </div>
+                     
                    </>
                 )
              })

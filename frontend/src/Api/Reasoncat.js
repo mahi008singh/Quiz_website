@@ -167,6 +167,13 @@ const Reasdata={
             size:Cquiz.q1.length,
             apiNum:1
       },
+      {
+                  title:"Algorithms ",
+                  link:"/Quizplay",
+                  size:Cquiz.q2.length,
+                  apiNum:2
+            
+       },
 
      ],
       
@@ -373,6 +380,14 @@ const Reasdata={
             link:"/Quizplay",
             size:INFOSYS.q3.length,
             apiNum:3
+      },
+     ],
+     data16:[
+      {
+            title:"SQL questions",
+            link:"/Quizplay",
+            size:INFOSYS.q1.length,
+            apiNum:1
       },
      ],
 }

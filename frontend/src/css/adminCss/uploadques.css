@@ -23,13 +23,19 @@
     margin: 0 2rem;
     border-radius: 1rem;
     border: var(--border1);
+    display: flex;
+    flex-direction: column;
 
+}
+.chooseUpload div{
+    margin:0 1rem;
 }
 .chooseUpload select{
     background-color:var(--bgColor) ;
     color: #fff;
     width: 12rem;
     height: 3rem;
+    margin: 1rem;
 }
 .chooseUpload select option{
     width: 12rem;
@@ -94,9 +100,13 @@
         flex-direction: column;
     }
     .chooseUpload{
-        height: 15vh;
+        height: unset;
+        padding: 1rem;
         width: 100%;
         margin: 1rem 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
     }
     .addUpload{
         width: 100%;

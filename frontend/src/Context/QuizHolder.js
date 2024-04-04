@@ -31,6 +31,9 @@ export default function QuizHolder(props) {
     const [loginData,setLoginData]=useState("")
     const [showuserName,setShowuserName]=useState()
     const [totaltime,setTotaltime]=useState(0);
+    const [homeIndex,setHomeIndex]=useState(0)
+
+
     const userAuthentication= async()=>{
         try {
             let response=await fetch('/userAuth/userdetail',{
@@ -64,7 +67,8 @@ export default function QuizHolder(props) {
             timer,setTimer,data,setData,choose,setChoose,changetimer,setChangetimer,
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
             topsize,setTopsize,platform,setPlatform,userAuthentication,showuserName,setShowuserName,chooseTopic,setChooseTopic,
-            keyTopic,setKeyTopic,totalquesDB,setTotalquesDb,availableQues,setAvailableQues,totaltime,setTotaltime
+            keyTopic,setKeyTopic,totalquesDB,setTotalquesDb,availableQues,setAvailableQues,totaltime,setTotaltime,
+            homeIndex,setHomeIndex
             }}>
             {props.children}
         </QuizContext.Provider>

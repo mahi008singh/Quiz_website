@@ -47,17 +47,17 @@ const Homedata={
 ],
 data2:[
     {
-        title:"Reasoning(Company specific)",
-        link:"/Categ",
-        img:"../images/subject-icon-1.png",
-    },
-    {
         title:"Aptitude(Company specific)",
         link:"/Categ",
         img:"../images/subject-icon-2.png",
     },
     {
-        title:"Coding(Company specific)",
+        title:"Reasoning(Company specific)",
+        link:"/Categ",
+        img:"../images/subject-icon-1.png",  
+    },
+    {
+        title:"Verbal ability(Company specific)",
         link:"/Categ",
         img:"../images/subject-icon-3.png",
     },

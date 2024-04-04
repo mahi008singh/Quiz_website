@@ -273,7 +273,7 @@ const  codeprac={
     },
 ],
 
-
+//**************************************************************************************** */
 //**********************************(((gfg_questions)))*********************************** */
 
 gfgques:[
@@ -333,7 +333,7 @@ gfgques:[
   link:"https://practice.geeksforgeeks.org/problems/maximum-subset-xor/1?page=1&category=Arrays&difficulty=Hard&sprint=a663236c31453b969852f9ea22507634&sortBy=submissions"
 },
 
-//************String*************
+//************(String)*************
 {
   ques:"Longest Common Prefix in an Array",
   diff:"easy",
@@ -390,7 +390,7 @@ gfgques:[
  link:"https://practice.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1?page=1&category=Strings&difficulty=Hard&sprint=a663236c31453b969852f9ea22507634&sortBy=submissions"
 },
 
-//************Linkedlist*************
+//************(Linkedlist)*************
 {
   ques:"Detect Loop in linked list",
   diff:"easy",
@@ -439,7 +439,7 @@ gfgques:[
   category:"Linkedlist",
   link:"https://practice.geeksforgeeks.org/problems/merge-k-sorted-linked-lists/1?page=1&category=Linked%20List&difficulty=Medium&sortBy=submissions"
 },
-//*************************TREE**************************/
+//*************************(TREE)**************************/
 {
   ques:"Left View of Binary Tree",
   diff:"easy",

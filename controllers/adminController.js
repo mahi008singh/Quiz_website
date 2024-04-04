@@ -34,7 +34,7 @@ async function getAllUsers(req,res){
 
 async function uploadQues(req,res){
         try {
-              const {question,optionA,optionB,optionC,optionD,category,answer}=req.body;
+              const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer}=req.body;
               console.log(req.body)
               let respData=await quesModel.create({
                 question:question,
@@ -43,6 +43,8 @@ async function uploadQues(req,res){
                 optionC:optionC,
                 optionD:optionD,
                 category:category,
+                subcategory:subcategory,
+                tag:tag,
                 answer:answer
               }) 
 

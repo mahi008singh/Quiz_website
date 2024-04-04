@@ -34,6 +34,7 @@ const Codeques = () => {
   return(
     <>
        <section>
+       <h1 style={{margin:"0 1rem"}}>Available questions: {prob1.length}</h1>
           <div className={(expand)?'codecateg':"codecateg_new"}>
                <div className='codecateg_div'>
                <button onClick={()=>setProb1(select)}>All</button>

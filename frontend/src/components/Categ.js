@@ -11,7 +11,7 @@ const Categ = () => {
     const {setStart,keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
         choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
         Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
-        COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues } = useContext(QuizContext)
+        COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues,homeIndex,setHomeIndex } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
 
     
@@ -102,27 +102,55 @@ const Categ = () => {
           }
            if(data==12)
           { 
-              setRender(Reasdata.data12)
+             if(homeIndex==0){
+                setRender(Reasdata.data1)
+             }else if(homeIndex==1){
+                setRender(Reasdata.data2)
+             }else if(homeIndex==2){
+                setRender(Reasdata.data3)
+             }
               setFinalquiz(TCS)
 
           }
            if(data==13)
           { 
-              setRender(Reasdata.data13)
+            if(homeIndex==0){
+                setRender(Reasdata.data1)
+             }else if(homeIndex==1){
+                setRender(Reasdata.data2)
+             }else if(homeIndex==2){
+                setRender(Reasdata.data3)
+             }
               setFinalquiz(COGNIZANT)
 
           }
            if(data==14)
           { 
-              setRender(Reasdata.data14)
+            if(homeIndex==0){
+                setRender(Reasdata.data1)
+             }else if(homeIndex==1){
+                setRender(Reasdata.data2)
+             }else if(homeIndex==2){
+                setRender(Reasdata.data3)
+             }
               setFinalquiz(WIPRO)
 
           }
            if(data==15)
           { 
-              setRender(Reasdata.data15)
+            if(homeIndex==0){
+                setRender(Reasdata.data1)
+             }else if(homeIndex==1){
+                setRender(Reasdata.data2)
+             }else if(homeIndex==2){
+                setRender(Reasdata.data3)
+             }
               setFinalquiz(INFOSYS)
 
+          }
+          if(homeIndex==3||data==16){
+            setRender(Reasdata.data16)
+            setFinalquiz(Networkquiz)
           }
     },[])
 
@@ -131,7 +159,7 @@ const Categ = () => {
     return (
         <>
             <div class="reasoning">
-                <h1 class="logical_h1">{category[data]}</h1>
+                <h1 class="logical_h1">{homeIndex==3?"SQL":category[data]}</h1>
             </div>
 
             <section class="reas_category">
