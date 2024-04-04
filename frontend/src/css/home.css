@@ -33,7 +33,22 @@
     border: 0.1rem solid #fff;
   
   }
-  
+
+  .solveBtn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 2rem;
+    font-size: 1.8rem;
+    background: var(--tertiary);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .solveBtn:hover{
+    background-color:#3ba384;
+  }
+
   .home .slide .content {
     width: 50rem;
   }
@@ -99,6 +114,9 @@
     color: #eee;
   }
   
+  .home-courses .slide .solve .btn{
+    border: var(--primColor);
+  }
   .home-courses .slide .solve .btn:hover {
     background: #444;
   }

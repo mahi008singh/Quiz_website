@@ -93,16 +93,13 @@ const Home = () => {
          
            return(
               <>
-                 <div class="platform_name slide" onClick={() =>{
-                                    window.location.href="/Codeques";
-                                  }}>
+                 <div class="platform_name slide">
                     <div class="image">
                        <img height="160rem" src={elem.img} alt="" />
                        <h3>{elem.title}</h3>
                     </div>
                     <div class="solve">
-                      
-                       <NavLink to={"/Codeques"} className="btn" onClick={()=>setPlatform(ind)}>solve</NavLink>
+                       <NavLink to={"/Codeques"} className="solveBtn" onClick={()=>setPlatform(ind)}>solve</NavLink>
                     </div>
                  </div>
 

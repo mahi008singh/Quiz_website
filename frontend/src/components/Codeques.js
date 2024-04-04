@@ -63,7 +63,7 @@ const Codeques = () => {
                             return(
                               <>
                                   <div className='ques_bar' onClick={() =>{
-                                    window.location.href=e.link;
+                                    // window.location.href=e.link;
                                   }}>
                                       <h1>{e.ques}</h1>
                                       <a  target="_blank" href={e.link}>visit</a>
