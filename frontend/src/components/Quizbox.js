@@ -9,10 +9,9 @@ const Quizbox = () => {
  const { Reasquiz,Aptiquiz,review,setReview, correct, setCorrect,
     setExit,timer,setTimer,choose,setChoose,changetimer,data,setData,
     finalquiz,setFinalquiz,totalques,random,setRandom,chooseTopic,
-    totaltime,setTotaltime} = useContext(QuizContext);
+    totaltime,setTotaltime,choosesubCategory,setChoosesubCategory} = useContext(QuizContext);
     // console.log("--> ",finalquiz)
    
-    let quesArray=[]
 
     useEffect(()=>{
         const interval=setInterval(()=>{
@@ -21,15 +20,25 @@ const Quizbox = () => {
         console.log(totaltime)
         return ()=> clearInterval(interval)
     },[])
+    
 
+    let quesArray=[]
+    let quesArray2=[]
     useEffect(()=>{
         for(let i=0;i<finalquiz.length;i++){
             if(finalquiz[i].category===chooseTopic){
                 quesArray.push(finalquiz[i]);
             }
         }
+        for(let i=0;i<quesArray.length;i++){
+            console.log("<-->",quesArray)
+                if(quesArray[i].subcategory==choosesubCategory){
+                        quesArray2.push(quesArray[i])
+                }
+        }
+        console.log("quesArray2-->",quesArray2)
         console.log("finaldata-->",finalquiz)
-        setFinalquiz(quesArray)
+        setFinalquiz(quesArray2)
     },[])
 
 

@@ -168,7 +168,7 @@ const Reasdata={
             apiNum:1
       },
       {
-                  title:"Algorithms ",
+                  title:"Pointers",
                   link:"/Quizplay",
                   size:Cquiz.q2.length,
                   apiNum:2
@@ -190,7 +190,7 @@ const Reasdata={
       
      data6:[
       {
-            title:"Output based questions",
+            title:"Output Based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
@@ -200,7 +200,7 @@ const Reasdata={
       
      data7:[
       {
-            title:"Output based questions",
+            title:"Output Based questions",
             link:"/Quizplay",
             size:Cquiz.q1.length,
             apiNum:1
@@ -270,7 +270,7 @@ const Reasdata={
      ],
      data9:[
       {
-            title:"Basic OOPS ",
+            title:"Basic OOPS",
             link:"/Quizplay",
             size:Networkquiz.q1.length,
             apiNum:1
@@ -279,7 +279,7 @@ const Reasdata={
      ],
      data10:[
       {
-            title:"Basic DBMS ",
+            title:"Basic DBMS",
             link:"/Quizplay",
             size:Networkquiz.q1.length,
             apiNum:1

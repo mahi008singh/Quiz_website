@@ -2,7 +2,7 @@ const express=require('express')
 const adminrouter=express.Router();
 
 const { getAllUsers,uploadQues,deleteUser,postContactMsg,
-        getContactmsg,deleteContactMsg,getuploadQues
+        getContactmsg,deleteContactMsg,getuploadQues,updateupload
       } =require('../controllers/adminController')
 
 adminrouter.get('/getUsers',getAllUsers)
@@ -11,7 +11,7 @@ adminrouter.get('/getUsers',getAllUsers)
 
 adminrouter.post('/uploads',uploadQues)
 adminrouter.get('/getuploads/',getuploadQues)
-
+adminrouter.get('/update',updateupload)
 
 adminrouter.delete('/delete/:id',deleteUser)
 

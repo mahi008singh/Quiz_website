@@ -37,6 +37,14 @@
     height: 3rem;
     margin: 1rem;
 }
+.companyInp{
+    width: 12rem;
+    height: 3rem;
+    margin: 1rem ;
+    border: var(--border2);
+    background-color: var(--bgEffectColor);
+    color: var(--secColor);
+}
 .chooseUpload select option{
     width: 12rem;
     height: 4rem;

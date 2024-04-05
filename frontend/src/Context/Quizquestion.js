@@ -192,6 +192,7 @@ const Reasquiz ={
             'd':'d) GHIRT',
             'correct':"d",
             'tag':"IBM"
+            //(till here cd)
          },
          {
             'question':'In a certain coded language "STUDENT" is written as "TVXHJTA". How will "TEACHER" be written in that same code? ',
@@ -384,6 +385,7 @@ const Reasquiz ={
          'c':'Tuesday',
          'd':'Wednesday',
          'correct':'a'
+         // (till here cal)
       },
      {
          'question':'On what dates of April, 2001 did Wednesday fall?',
@@ -552,6 +554,7 @@ const Reasquiz ={
             'c':'c) Son',
             'd':'d) Husband',
             'correct':"b"
+            //(till here br)
          },
          {
             'question':'Introducing a girl a man says, She is the daughter of the daughter of my wife. How is man related to the girl.',

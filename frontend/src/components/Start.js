@@ -6,12 +6,13 @@ import '../css/start.css';
 
 export default function Start() {
     const { start,setStart,changetimer,keyTopic,setChangetimer,totalques,setTotalques,finalquiz,
-      random,setRandom,topsize,setTopsize,totaltime,setTotaltime} = useContext(QuizContext)
+      random,setRandom,topsize,setTopsize,totaltime,setTotaltime,localStorageIndex,
+      setLocalStorageIndex} = useContext(QuizContext)
       function setRandomly(){
               while(random.length<totalques){
                 let r;
                  if(keyTopic){
-                   r=Math.floor(Math.random()*Number(localStorage.getItem("questionLength")));
+                   r=Math.floor(Math.random()*Number(JSON.parse(localStorage.getItem("questionLength"))[localStorageIndex]));
                  }else{
                    r=Math.floor(Math.random()*topsize);
                  }
@@ -42,6 +43,7 @@ export default function Start() {
                 <li>4) Press save&next button to lock the choice and reset button to reset option</li>
                 <li>5) Track your score and total time taken to attempt the quiz in last</li>
             </ul>
+            
         </div>
        <div class="start_div">  
          <div style={{display:"flex"}}>
@@ -51,7 +53,7 @@ export default function Start() {
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     
         <button onClick={() =>{
-          if(keyTopic&&totalques>Number(localStorage.getItem("questionLength"))){
+          if(keyTopic&&totalques>Number(JSON.parse(localStorage.getItem("questionLength"))[localStorageIndex])){
             alert("cannot set questions more than available questions..")
             return;
           }

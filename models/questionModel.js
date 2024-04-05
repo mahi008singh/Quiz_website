@@ -38,16 +38,10 @@ const quesSchema=new mongoose.Schema({
         type:String,
         require:true
     },
-   
-    // topic:{
-    //     type:String,
-    //     require:true
-    // },
-    // companyTag:{
-    //     type:String,
-    //     require:true,
-    //     default:0
-    // }
+    companyName:{
+        type:String,
+        default:''
+    }
 })
 
 const quesModel=new mongoose.model("questionStore",quesSchema)

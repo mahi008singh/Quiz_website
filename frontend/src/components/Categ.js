@@ -11,7 +11,8 @@ const Categ = () => {
     const {setStart,keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
         choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
         Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
-        COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues,homeIndex,setHomeIndex } = useContext(QuizContext)
+        COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues,homeIndex,setHomeIndex,
+        localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory,setKeyTopic } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
 
     
@@ -40,7 +41,25 @@ const Categ = () => {
                 }
             }
             console.log(quesArray)
-            localStorage.setItem("questionLength",JSON.stringify(quesArray.length))
+
+    // ----------------------xxxxxxx-------------------------------
+            const subcategoryLengths = quesArray.reduce((acc, question) => {
+                const { subcategory } = question;
+                const index = acc.findIndex(item => item.subcategory === subcategory);
+                if (index === -1) {
+                    acc.push({ subcategory, count: 1 });
+                } else {
+                    acc[index].count++;
+                }
+                return acc;
+            }, [])
+            .map(item => item.count);
+
+    // ----------------------(end)-------------------------------
+            
+            console.log(subcategoryLengths)
+
+            localStorage.setItem("questionLength",JSON.stringify(subcategoryLengths))
     }
     useEffect(()=>{
         setStart(false)
@@ -161,10 +180,12 @@ const Categ = () => {
             <div class="reasoning">
                 <h1 class="logical_h1">{homeIndex==3?"SQL":category[data]}</h1>
             </div>
-
+            <button style={{marginLeft:"15rem",padding:"0.4rem",cursor:"pointer", width:"7rem"}}
+            onClick={()=>setKeyTopic(prev=>!prev)}
+            >DB mode</button>
             <section class="reas_category">
                 {
-                    render.map((elem)=>{
+                    render.map((elem,ind)=>{
                         return(
                             <>
                                 <div className='divBar' >
@@ -172,13 +193,16 @@ const Categ = () => {
                                    <h2>{elem.title}</h2>
                                     {
                                         (localStorage.getItem("questionLength")!=0)
-                                        ?<p>Available ques. {localStorage.getItem("questionLength")}</p>
+                                        ?<p>Available ques. {JSON.parse(localStorage.getItem("questionLength"))[ind]}</p>
                                         : <p>Available ques. {elem.size}</p>
                                     }
                                   </div>
                                     <NavLink to={elem.link}>
-                                      <button onClick={()=>{setChoose(elem.apiNum)
-                                       setTopsize(elem.size)
+                                      <button  onClick={()=>{
+                                        setChoose(elem.apiNum)
+                                        setTopsize(elem.size)
+                                        setChoosesubCategory(elem.title)
+                                        setLocalStorageIndex(ind)
                                        }}
                                       class="btn_">
                                        {

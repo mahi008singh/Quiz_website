@@ -144,7 +144,7 @@ const Subcatdata=[
             apiNum:1
       },
       {
-                  title:"Algorithms ",
+                  title:"Pointers",
                   link:"/Quizplay",
                   apiNum:2
             

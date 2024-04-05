@@ -34,7 +34,7 @@ async function getAllUsers(req,res){
 
 async function uploadQues(req,res){
         try {
-              const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer}=req.body;
+              const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer,companyName}=req.body;
               console.log(req.body)
               let respData=await quesModel.create({
                 question:question,
@@ -45,6 +45,7 @@ async function uploadQues(req,res){
                 category:category,
                 subcategory:subcategory,
                 tag:tag,
+                companyName:companyName,
                 answer:answer
               }) 
 
@@ -68,6 +69,20 @@ async function getuploadQues(req,res){
         }
 }
 
+async function updateupload(req,res){
+        try {
+                const result = await quesModel.updateMany({}, 
+                    { $set: {companyName:''}} // New keys and default values
+                );
+               res.json({
+                msg:"success",
+                data:result
+               })
+        } catch (error) {
+                console.log(error) 
+                res.json(error)
+        }
+}
 //-----------------(contact messages part)----------------
 async function postContactMsg(req,res){
         try {
@@ -117,5 +132,6 @@ module.exports={
         deleteUser,
         postContactMsg,
         getContactmsg,
-        deleteContactMsg
+        deleteContactMsg,
+        updateupload
 }

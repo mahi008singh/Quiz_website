@@ -21,6 +21,7 @@ const Upload = () => {
         category:"",
         subcategory:"",
         tag:"",
+        companyName:"",
         answer:"",
 
     });
@@ -49,8 +50,8 @@ let name,value
     e.preventDefault()
   
      try {
-        const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer}=uploadData
-        if(!question||!optionA||!optionB||!optionC||!optionD||!category||!subcategory||!tag||!answer){
+        const {question,optionA,optionB,optionC,optionD,category,subcategory,tag,answer,companyName}=uploadData
+        if(!question||!optionA||!optionB||!optionC||!optionD||!category||!subcategory||!answer){
             toast.warning("Plz fill the complete detail !!",{
                 position: "top-center",
             })
@@ -70,6 +71,7 @@ let name,value
               category,
               subcategory,
               tag,
+              companyName,
               answer
          })
         })
@@ -85,6 +87,7 @@ let name,value
                     category:"",
                     subcategory:"",
                     tag:"",
+                    companyName:"",
                     answer:"",
             
                 }
@@ -93,7 +96,11 @@ let name,value
             toast.success("Uploaded Successfully!!",{
                 position: "top-center",
             })
-            document.querySelector('.chooseSelect').selected=true
+            document.querySelector('.chooseSelect').selected=true;
+            document.querySelector('.chooseSelect2').selected=true;
+            document.querySelector('.chooseSelect3').selected=true;
+
+
         }else{
             toast.error("Something went wrong!!",{
                 position: "top-center",
@@ -123,9 +130,9 @@ let name,value
                      <h2>Choose Categories</h2>
                     <select name="category" onChange={handleInputs} id="">
                         <option className='chooseSelect' value="" selected>Choose</option>
-                        <option value="aptitude" >Aptitude</option>
-                        <option value="reasoning">Reasoning</option>
-                        <option value="verbal" >verbal</option>
+                        <option value="Quantitative Aptitude" >Quantitative Aptitude</option>
+                        <option value="Logical Reasoning">Logical Reasoning</option>
+                        <option value="Verbal Ability" >Verbal Ability</option>
                         <option value="C/C++" >C/C++</option>
                         <option value="javascript" >javascript</option>
                         <option value="Python" >Python</option>
@@ -141,7 +148,7 @@ let name,value
                         <h2>Choose sub-categories</h2>
 
                         <select name="subcategory" onChange={handleInputs} id="">
-                            <option className='chooseSelect' value="" selected>Choose</option>
+                            <option className='chooseSelect2' value="" selected>Choose</option>
                             {
                                 subCategory?.map((elem)=>{
                                     return(
@@ -157,10 +164,16 @@ let name,value
                     <div>
                         <h2>Choose tag</h2>
                         <select name="tag" onChange={handleInputs} >
-                            <option>Choose tag</option>
+                            <option className='chooseSelect3' selected>Choose</option>
                             <option value="none">none</option>
                             <option value="company">company</option>
                         </select>
+                    </div>
+                    <div>
+                        <h2>Comapny name</h2>
+                        <input className='companyInp' name="companyName" placeholder='enter company' value={uploadData.companyName} onChange={handleInputs} />
+                           
+                        
                     </div>
                    
                 </div>

@@ -67,6 +67,7 @@ const Practice = () => {
                                         <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
                                             <img  onClick={()=>{
                                                 setChooseTopic(elem.title)
+                                                // setKeyTopic(true)
                                                
                                             }}  src={require('../images/subject-icon-1.png')} alt="" />
                                             <h3 class="Quant_h1" >{elem.title}</h3>
