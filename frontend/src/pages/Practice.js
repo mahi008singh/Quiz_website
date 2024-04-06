@@ -9,7 +9,7 @@ const Practice = () => {
    const [data1,setData1]=useState(Quants.data1);
    const [data2,setData2]=useState(Quants.data2);
    const [data3,setData3]=useState(Quants.data3);
-
+   const [dbMode,setDbMode]=useState(false)
    const { data,setData,chooseTopic,setChooseTopic,keyTopic,setKeyTopic }=useContext(QuizContext)
     
     useEffect(()=>{
@@ -54,9 +54,12 @@ const Practice = () => {
                 {/* <!-- -------------------Apti/Reas--------------------- --> */}
 
                 <br /> <br /> <br /> <br /> <br />
-                <h2 class="h1">
-                <Percent style={{marginRight:"1rem"}} />
-                    Apti/Reas</h2>
+                <div style={{display:"flex"}}>
+                    <h2 class="h1"><Percent style={{marginRight:"1rem"}} />Apti/Reas</h2>
+                    <button className='modeBtn'onClick={()=>setDbMode(prev=>!prev)}
+                    >{dbMode?"Normal mode":"DB mode"}</button>
+                </div>
+
                 <br /> <br />
                 <div class="box-container">
                     {
@@ -67,8 +70,8 @@ const Practice = () => {
                                         <NavLink to={elem.link} onClick={()=>setData(elem.apiNum) }  >
                                             <img  onClick={()=>{
                                                 setChooseTopic(elem.title)
-                                                // setKeyTopic(true)
-                                               
+                                                setKeyTopic(dbMode)
+                                                
                                             }}  src={require('../images/subject-icon-1.png')} alt="" />
                                             <h3 class="Quant_h1" >{elem.title}</h3>
                                         </NavLink>

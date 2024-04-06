@@ -12,7 +12,7 @@ const Categ = () => {
         choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
         Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
         COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues,homeIndex,setHomeIndex,
-        localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory,setKeyTopic } = useContext(QuizContext)
+        localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
 
     
@@ -180,9 +180,7 @@ const Categ = () => {
             <div class="reasoning">
                 <h1 class="logical_h1">{homeIndex==3?"SQL":category[data]}</h1>
             </div>
-            <button style={{marginLeft:"15rem",padding:"0.4rem",cursor:"pointer", width:"7rem"}}
-            onClick={()=>setKeyTopic(prev=>!prev)}
-            >DB mode</button>
+            
             <section class="reas_category">
                 {
                     render.map((elem,ind)=>{

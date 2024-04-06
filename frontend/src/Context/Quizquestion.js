@@ -599,6 +599,7 @@ const Reasquiz ={
          }
     
     ],
+    // seating arrangement
     q4:[
       {
          'question':'B,D,F,G and H are sitting in a row facing north. F is sitting to the immediate left of D. There are two persions sitting b/w D and G, B is sitting adjacent to G and to the immediate left of F if G is not at any of the extreme ends, who is sitting exactly in the middle?',
@@ -606,11 +607,13 @@ const Reasquiz ={
          'b':'b) F',
          'c':'c) G',
          'd':'d) H',
-         'correct':"B",
+         'correct':"a",
          'tag':"tcs nqt-22"
 
       },
     ],
+
+    //syllogism
     q5:[
 
     ],
@@ -1526,6 +1529,7 @@ const Aptiquiz={
             
             
     ],
+    //(  PERCENTAGE)
     q2:[
       {
          'question': 'If x is 80% of y, what percent of x is y?- ',
@@ -1943,7 +1947,7 @@ const Aptiquiz={
                   'tag':''
           },      
     ],
-    
+    // (AVERAGE)
     q4:[
       {
          'question':'In the first 10 overs of a cricket game, the run rate was only 3.2. What should be the run rate in the remaining 40 overs to reach the target of 282 runs?',
@@ -2037,6 +2041,8 @@ const Aptiquiz={
      },
      
     ],
+
+    // time speed and distance
     q5:[ 
       {
 
@@ -2252,6 +2258,7 @@ const Aptiquiz={
         
                   
     ],
+    //(RATIO & PROP)
     q7:[
       {
 
@@ -2355,11 +2362,11 @@ const Aptiquiz={
          
          }, 
     ],
-    
+    // (SI & CI)
     q8:[
       {
 
-         'question': 'If the simple interest for 6 years be equal to 30% of theprincipal. Then it will be equal to the principal after',
+         'question': 'If the simple interest for 6 years be equal to 30% of the principal. Then it will be equal to the principal after',
          
          'a': 'a) 20 years',
          
@@ -2516,6 +2523,7 @@ const Aptiquiz={
          
          },         
     ],
+    // (PERMUTATION & COMBINATION)
     q9:[
       {
          'question': 'In how many ways can the letters of the word "LEADER" be arranged?', 
@@ -2603,6 +2611,7 @@ const Aptiquiz={
                'tag':''
        },
     ],
+    
     q10:[
       {
          'question':'Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.',

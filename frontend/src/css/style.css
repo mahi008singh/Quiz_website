@@ -84,6 +84,16 @@ section {
   color: #444;
 }
 
+.modeBtn{
+  margin-left:15rem;
+  padding:0.4rem;
+  cursor:pointer;
+  width:12rem;
+  background-color: var(--bgEffectColor);
+  color: var(--secColor);
+  border: 1px solid var(--tertiary);
+
+}
 
 .header {
   position: -webkit-sticky;
