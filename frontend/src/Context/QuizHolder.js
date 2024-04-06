@@ -34,6 +34,7 @@ export default function QuizHolder(props) {
     const [homeIndex,setHomeIndex]=useState(0)
     const [localStorageIndex,setLocalStorageIndex]=useState(0);
     const [choosesubCategory,setChoosesubCategory]=useState('')
+    const [isCompany,setIsCompany]=useState(false)
 
     const userAuthentication= async()=>{
         try {
@@ -69,7 +70,8 @@ export default function QuizHolder(props) {
             review,setReview,finalquiz,setFinalquiz,totalques,setTotalques,random,setRandom,
             topsize,setTopsize,platform,setPlatform,userAuthentication,showuserName,setShowuserName,chooseTopic,setChooseTopic,
             keyTopic,setKeyTopic,totalquesDB,setTotalquesDb,availableQues,setAvailableQues,totaltime,setTotaltime,
-            homeIndex,setHomeIndex,localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory
+            homeIndex,setHomeIndex,localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory,
+            isCompany,setIsCompany
             }}>
             {props.children}
         </QuizContext.Provider>

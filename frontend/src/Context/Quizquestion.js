@@ -2816,6 +2816,7 @@ const Verbalquiz={
       },
 
    ],
+   // one word substitution
    q2:[
       {
          'question': 'Especially at a college or institution, sleeping rooms with many beds are known as:', 
@@ -2903,6 +2904,7 @@ const Verbalquiz={
          'correct':"c"
       },
    ],
+   // verbal analogy
    q3:[
       {
          'question': 'Angle:radian::', 
@@ -2995,6 +2997,7 @@ const Verbalquiz={
          'tag':'tcs-22'
       },
    ],
+   //vocabulary
    q4:[
       {
          'question': 'Which of the following words is most closely associated to the meaning of the word "IMPECCABLE"', 
@@ -3332,7 +3335,7 @@ const Networkquiz={
       // },
    ]
 }
-
+// TCS
 const TCS={
    q1:[
       {

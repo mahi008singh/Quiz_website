@@ -53,7 +53,7 @@ export default function Start() {
             <input className="settimer" value={changetimer} onChange={(e)=>setChangetimer(e.target.value)} min="30" max="90" placeholder="30" type="number"/>
           </div>     
         <button onClick={() =>{
-          if(keyTopic&&totalques>Number(JSON.parse(localStorage.getItem("questionLength"))[localStorageIndex])){
+          if(keyTopic&&totalques>JSON.parse(localStorage.getItem("questionLength"))[localStorageIndex]){
             alert("cannot set questions more than available questions..")
             return;
           }

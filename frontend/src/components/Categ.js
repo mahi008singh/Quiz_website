@@ -6,15 +6,22 @@ import { QuizContext } from '../Context/QuizHolder';
 import { Networkquiz } from '../Context/Quizquestion';
 import ClipLoader from "react-spinners/ClipLoader";
 
+import Quants from '../Api/Maincateg';
+
+
+
+
 
 const Categ = () => {
-    const {setStart,keyTopic,totalquesDB,setTotalquesDb, chooseTopic,data,setData,
+    const {setStart,keyTopic,totalquesDB,setTotalquesDb,setChooseTopic, chooseTopic,data,setData,
         choose,setChoose,finalquiz,setFinalquiz,Reasquiz,
         Aptiquiz,Verbalquiz,Cquiz,topsize,setTopsize,TCS,
         COGNIZANT,WIPRO,INFOSYS,availableQues,setAvailableQues,homeIndex,setHomeIndex,
-        localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory } = useContext(QuizContext)
+        localStorageIndex,setLocalStorageIndex,choosesubCategory,setChoosesubCategory,isCompany,setIsCompany } = useContext(QuizContext)
     const [render,setRender]=useState(Reasdata.data1)
 
+
+    const [data2,setData2]=useState(Quants.data2);
     
     localStorage.removeItem('reviewResult');
     const [quesLoaded, setQuesLoaded]=useState(false)
@@ -27,7 +34,7 @@ const Categ = () => {
 
             })
              let finalData=await resp.json();
-             console.log("final-->",finalData)
+             console.log("fetchedData_db-->",finalData)
              if(keyTopic){
                  setQuesLoaded(false)
 
@@ -36,12 +43,18 @@ const Categ = () => {
              }
              let quesArray=[]
              for(let i=0;i<finalData.length;i++){
+
                 if(finalData[i].category===chooseTopic){
                     quesArray.push(finalData[i]);
                 }
             }
-            console.log(quesArray)
+            console.log("category_wise_ques-->",quesArray)
+            let companyQues=[]
+            if(isCompany){
+                quesArray=quesArray.filter((elem)=>elem.tag=="company")
+                 console.log("company_filtered_ques-->",quesArray)
 
+            }
     // ----------------------xxxxxxx-------------------------------
             const subcategoryLengths = quesArray.reduce((acc, question) => {
                 const { subcategory } = question;
@@ -57,14 +70,14 @@ const Categ = () => {
 
     // ----------------------(end)-------------------------------
             
-            console.log(subcategoryLengths)
+            console.log("subcategoryLength",subcategoryLengths)
 
             localStorage.setItem("questionLength",JSON.stringify(subcategoryLengths))
     }
     useEffect(()=>{
+
         setStart(false)
-        fetchDBques()
-        
+       
         if(data==1){
             setRender(Reasdata.data1);
             setFinalquiz(Aptiquiz)
@@ -85,7 +98,6 @@ const Categ = () => {
           if(data==5)
           { // js questions 
             setRender(Reasdata.data5);
-            //  setFinalquiz(Cquiz)
           }
           if(data==6)
           {  setRender(Reasdata.data6);
@@ -98,47 +110,55 @@ const Categ = () => {
            if(data==8)
           { 
               setRender(Reasdata.data8)
-              //setFinalquiz(Networkquiz)
 
           }
            if(data==9)
           { 
               setRender(Reasdata.data9)
-              //setFinalquiz(Networkquiz)
 
           }
            if(data==10)
           { 
               setRender(Reasdata.data10)
-            //   setFinalquiz(finalData)
 
           }
            if(data==11)
           { 
               setRender(Reasdata.data11)
-              //setFinalquiz(Networkquiz)
-
           }
            if(data==12)
           { 
              if(homeIndex==0){
+
                 setRender(Reasdata.data1)
+                setChooseTopic("Quantitative Aptitude")
+                console.log(data2[0].title)
              }else if(homeIndex==1){
                 setRender(Reasdata.data2)
+                setChooseTopic("Logical Reasoning")
+
+
              }else if(homeIndex==2){
                 setRender(Reasdata.data3)
+                setChooseTopic("Verbal Ability")
+
              }
-              setFinalquiz(TCS)
+              setFinalquiz(Aptiquiz)
 
           }
            if(data==13)
           { 
             if(homeIndex==0){
                 setRender(Reasdata.data1)
+                setChooseTopic("Quantitative Aptitude")
+
              }else if(homeIndex==1){
                 setRender(Reasdata.data2)
+                setChooseTopic("Logical Reasoning")
+
              }else if(homeIndex==2){
-                setRender(Reasdata.data3)
+                setChooseTopic("Verbal Ability")
+
              }
               setFinalquiz(COGNIZANT)
 
@@ -147,10 +167,14 @@ const Categ = () => {
           { 
             if(homeIndex==0){
                 setRender(Reasdata.data1)
+                setChooseTopic("Quantitative Aptitude")
+
              }else if(homeIndex==1){
                 setRender(Reasdata.data2)
+                setChooseTopic("Logical Reasoning")
+
              }else if(homeIndex==2){
-                setRender(Reasdata.data3)
+                setChooseTopic("Verbal Ability")
              }
               setFinalquiz(WIPRO)
 
@@ -171,7 +195,13 @@ const Categ = () => {
             setRender(Reasdata.data16)
             setFinalquiz(Networkquiz)
           }
-    },[])
+
+
+        if(keyTopic){
+            fetchDBques()
+        }
+        
+    },[chooseTopic])
 
     const category=["Aptitude","Aptitude","Reasoning","Verbal","C/C++ programming",
        "Javascript","Python","Java","Networking","OOPS","DBMS","Operating System","TCS","COGNIZANT","WIPRO","INFOSYS"];
