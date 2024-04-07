@@ -55,8 +55,9 @@ const Categ = () => {
                  console.log("company_filtered_ques-->",quesArray)
 
             }
-    // ----------------------xxxxxxx-------------------------------
-            const subcategoryLengths = quesArray.reduce((acc, question) => {
+    // ----------------------(length of each subcategory)------------------------------
+        
+             let subcategoryLengths = quesArray.reduce((acc, question) => {
                 const { subcategory } = question;
                 const index = acc.findIndex(item => item.subcategory === subcategory);
                 if (index === -1) {
@@ -191,7 +192,7 @@ const Categ = () => {
               setFinalquiz(INFOSYS)
 
           }
-          if(homeIndex==3||data==16){
+          if(homeIndex==3){
             setRender(Reasdata.data16)
             setFinalquiz(Networkquiz)
           }

@@ -61,19 +61,16 @@ data2:[
         link:"/Categ",
         img:"../images/subject-icon-3.png",
     },
+
+],
+data3:[
     {
         title:"SQL",
         link:"/Categ",
         img:"../images/subject-icon-4.png",
     },
-    // {
-    //     title:"Networking(cisco)",
-    //     link:"/Categ",
-    //     img:"../images/subject-icon-6.png",
-    // },
-     
-
 ]
+
 }
 
 

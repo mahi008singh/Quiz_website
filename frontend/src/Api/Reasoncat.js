@@ -387,7 +387,7 @@ const Reasdata={
             title:"SQL questions",
             link:"/Quizplay",
             size:INFOSYS.q1.length,
-            apiNum:1
+            apiNum:4
       },
      ],
 }

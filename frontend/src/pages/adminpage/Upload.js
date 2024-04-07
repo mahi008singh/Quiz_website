@@ -55,6 +55,10 @@ let name,value
             toast.warning("Plz fill the complete detail !!",{
                 position: "top-center",
             })
+             setTimeout(()=>{
+                setIsUploading(false)
+             },800)
+
             return;
         }
         let resp=await fetch('/adminpage/uploads',{

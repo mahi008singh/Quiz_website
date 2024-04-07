@@ -9,7 +9,7 @@ import Codeques from '../components/Codeques';
 const Home = () => {
       const [popular,setPopular]=useState(Homedata.data1);
       const [recommend,setRecommend]=useState(Homedata.data2);
-      const { platform,setPlatform,homeIndex,setHomeIndex } = useContext(QuizContext)
+      const { platform,setPlatform,homeIndex,setHomeIndex,setKeyTopic,setChooseTopic} = useContext(QuizContext)
 
 
 
@@ -63,7 +63,7 @@ const Home = () => {
                    <>
                      <div class="box">
                         
-                        <NavLink to={(isLoggedin)?(elem.title=="SQL")?"/Categ":"/companies":"/Login"} onClick={()=>setHomeIndex(ind)} >
+                        <NavLink to={(isLoggedin)?"/companies":"/Login"} onClick={()=>setHomeIndex(ind)} >
                           <img src={require('../images/subject-icon-3.png')} alt="" />
                           <h3>{elem.title}</h3>
                         </NavLink>
@@ -74,6 +74,17 @@ const Home = () => {
                 )
              })
           }
+           <div class="box">
+               <NavLink to={(isLoggedin)?"/categ":"/Login"} onClick={()=>{
+                  setHomeIndex(3)
+                  setKeyTopic(true)
+                  setChooseTopic("SQL")
+
+               }} >
+                  <img src={require('../images/subject-icon-1.png')} alt="" />
+                  <h3>SQL</h3>
+               </NavLink>                    
+           </div>
 
 </div>
 

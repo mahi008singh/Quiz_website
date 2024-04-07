@@ -256,6 +256,15 @@ const Subcatdata=[
 
      ],
 
+     //SQL
+     [
+      {
+            title:"SQL questions",
+            link:"/Quizplay",
+            apiNum:1
+      },
+     ],
+
 //--------------------(Company specific)------------------------
 //---------------TCS---------------
      [
@@ -330,13 +339,8 @@ const Subcatdata=[
             apiNum:3
       },
      ],
-     [
-      {
-            title:"SQL questions",
-            link:"/Quizplay",
-            apiNum:1
-      },
-     ],
+
+    
 ]
 
 export default Subcatdata;

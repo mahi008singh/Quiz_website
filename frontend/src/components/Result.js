@@ -5,7 +5,7 @@ import { QuizContext } from '../Context/QuizHolder';
 import {NavLink} from 'react-router-dom';
 import {FaCrown} from "react-icons/fa";
 export default function Result() {
-    const { correct,setCorrect, setExit, setStart,totalques, finalquiz,setReview,totaltime,setTotaltime } = useContext(QuizContext)
+    const { correct,setCorrect, setExit, setStart,totalques, finalquiz,setReview,totaltime,setTotaltime,homeIndex } = useContext(QuizContext)
     const playAgain = () => {
         setExit(false);
         setStart(false);
@@ -42,7 +42,7 @@ export default function Result() {
                     </div>
                     <div className="resultbtn">
                         <button onClick={playAgain} className=''>Try agian</button>
-                        <a href={'/Practice'}><button className="quit">Quit Quiz</button></a>
+                        <a href={(homeIndex==3)?'/':'/Practice'}><button className="quit">Quit Quiz</button></a>
                     </div>
                 </div>
                 <div className="review_sec">
