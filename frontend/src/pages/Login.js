@@ -15,7 +15,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-const {showuserName,setShowuserName}=useContext(QuizContext)
+const {showuserName,setShowuserName,homeIndex}=useContext(QuizContext)
 const navigate=useNavigate()
 const [loginLoad,setLoginLoad]=useState(false)
 // useEffect(() => {
@@ -116,7 +116,12 @@ const postLogin=async (e)=>{
                 const storedState = data.user;
                 return storedState ? storedState : ' ';
             })
-            navigate('/companies')
+            if(homeIndex==3){
+                  navigate('/categ')
+            }else{
+                navigate('/companies')
+            }
+            
         }else{
             // userAuthentication()
             localStorage.setItem('userName',JSON.stringify(data.user.name))

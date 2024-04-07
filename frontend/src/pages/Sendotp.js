@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 import '../css/sendotp.css'
 import { useNavigate } from 'react-router-dom'
+
+import ClipLoader from "react-spinners/ClipLoader";
+
 const Sendotp = () => {
+    const [isSentotp,setIsSentotp]=useState(false)
     const navigate=useNavigate()
     const [generateOtp,setGenerateOtp]=useState(true)
     const [enterEmail,setEnterEmail]=useState('')
@@ -21,6 +25,8 @@ let name, value;
     const updatePass=async(e)=>{
           const {email,otpcode,password}=changePass
           e.preventDefault();
+          setIsSentotp(true)
+          
           const resp=await fetch('/userAuth/changePassword',{
                 method:"POST",
                 headers:{
@@ -31,16 +37,20 @@ let name, value;
                 })
           })
           let data=await resp.json();
-          if(data){
+          console.log("otpData-->", data)
+          if(Object.keys(data).length>0){
+              setIsSentotp(false)
               alert("Password changed successfully")
               navigate('/login')
           }else{
-              alert("Something went wrong")
+              setIsSentotp(false)
+              alert("Fill complete details !!")
           }
     }
 
     const sendOtp= async(e)=>{
         e.preventDefault();
+        setIsSentotp(true)
         let resp=await fetch('/userAuth/generateOtp',{
             method:"POST",
             headers:{
@@ -54,7 +64,10 @@ let name, value;
         console.log(data)
         if(data.msg==="Email id not exists"){
             alert("Enter valid email !!")
+            setIsSentotp(false)
+
         }else{
+            setIsSentotp(false)
             alert("otp generated successfully")
             setGenerateOtp(false)
         }
@@ -74,7 +87,11 @@ let name, value;
                   
               </div>
               <div> 
-                  <button onClick={sendOtp}>Send Otp</button>
+                <button onClick={sendOtp}>
+                    {
+                        (isSentotp)?<ClipLoader color="#fff" size={22}/>:"Send Otp"
+                    }
+                </button>
               </div>
           </form>
   </section>
@@ -92,7 +109,11 @@ let name, value;
                   <input name='password' value={changePass.password} onChange={handleInputs} type="password" placeholder='enter your new password !!' />
               </div>
               <div>
-                  <button onClick={updatePass}>Update</button>
+                  <button onClick={updatePass}>
+                           {
+                             (isSentotp)?<ClipLoader color="#fff" size={22}/>:"Update"
+                           }
+                  </button>
               </div>
           </form>
   </section>
