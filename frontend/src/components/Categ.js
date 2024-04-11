@@ -28,6 +28,7 @@ const Categ = () => {
     
     // code to fetch the data from database-
     const fetchDBques= async()=>{
+       
              setQuesLoaded(true)
             const resp=await fetch(`/adminpage/getuploads`,{
                 method:"GET",
@@ -57,9 +58,9 @@ const Categ = () => {
             }
     // ----------------------(length of each subcategory)------------------------------
         
-             let subcategoryLengths = quesArray.reduce((acc, question) => {
+             let subcategoryDataLengths = quesArray.reduce((acc, question) => {
                 const { subcategory } = question;
-                const index = acc.findIndex(item => item.subcategory === subcategory);
+                const index = acc.findIndex(item => item.subcategory == subcategory);
                 if (index === -1) {
                     acc.push({ subcategory, count: 1 });
                 } else {
@@ -67,11 +68,24 @@ const Categ = () => {
                 }
                 return acc;
             }, [])
-            .map(item => item.count);
-
+            
+    
+           let  subcategoryLengths=subcategoryDataLengths.sort((a, b) => {
+                const titleA = a.subcategory.toLowerCase(); 
+                const titleB = b.subcategory.toLowerCase();
+                
+                if (titleA < titleB) {
+                    return -1; 
+                }
+                if (titleA > titleB) {
+                    return 1;
+                }
+                return 0; 
+            }).map((elem)=>elem.count)
+        
     // ----------------------(end)-------------------------------
             
-            console.log("subcategoryLength",subcategoryLengths)
+            console.log("subcategoryLength-->",)
 
             localStorage.setItem("questionLength",JSON.stringify(subcategoryLengths))
     }
@@ -214,7 +228,18 @@ const Categ = () => {
             
             <section class="reas_category">
                 {
-                    render.map((elem,ind)=>{
+                    render.sort((a, b) => {
+                        const titleA = a.title.toLowerCase(); // Convert titles to lowercase for case-insensitive comparison
+                        const titleB = b.title.toLowerCase();
+                        
+                        if (titleA < titleB) {
+                            return -1; // If titleA comes before titleB, return -1 (indicating a should come before b)
+                        }
+                        if (titleA > titleB) {
+                            return 1; // If titleA comes after titleB, return 1 (indicating a should come after b)
+                        }
+                        return 0; // If titles are the same, return 0
+                    }).map((elem,ind)=>{
                         return(
                             <>
                                 <div className='divBar' >
