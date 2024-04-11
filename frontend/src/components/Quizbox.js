@@ -49,6 +49,7 @@ const Quizbox = () => {
    useEffect(()=>{
     if(timer<0)
     {   
+        localStorage.removeItem("choosedOption")
         if (finalquiz[currInd].answer == ans) {
             setCorrect(prevState=>prevState+1);
         }
@@ -61,6 +62,14 @@ const Quizbox = () => {
             setTotal((prevState)=>prevState+1);
            setCurrInd(random[total])
         }
+
+        if(!localStorage.getItem("choosedOption")){
+            review.push({
+                name:"Not chosen any option",
+                choosed:"",
+                correct:finalquiz[currInd].answer
+            })
+        }
             
     }
    },[timer])
@@ -68,6 +77,7 @@ const Quizbox = () => {
 // ---------------------(saving_the_data)------------------------
 
    const saveHandler = () => {
+   
     if (finalquiz[currInd].answer === ans) {
         setCorrect(prevState=>prevState+1);
         
@@ -81,16 +91,33 @@ const Quizbox = () => {
         setTotal(prevState=>prevState+1);
         setCurrInd(random[total]);
     }
-    
+
+    //adding the correct answer to the review list-
+    if(!localStorage.getItem("choosedOption")){
+        review.push({
+            name:"Not chosen any option",
+            choosed:"",
+            correct:finalquiz[currInd].answer
+        })
+    }
+    else{
+        review.push({
+            name:finalquiz[currInd].question,
+            choosed:JSON.parse(localStorage.getItem("choosedOption")),
+            correct:finalquiz[currInd].answer
+        })
+    }
+
+    localStorage.setItem("reviewResult",JSON.stringify(review))
+    localStorage.removeItem("choosedOption")
    }
 
    // after choosing the options
 
    const chooseOption=(opt)=>{
          setAns(opt);
-         review.push({name:finalquiz[currInd].question,choosed:opt,correct:finalquiz[currInd].answer})
-         localStorage.setItem("reviewResult",JSON.stringify(review))
-
+         localStorage.setItem("choosedOption",JSON.stringify(opt))
+    
    }
   return (
     <>

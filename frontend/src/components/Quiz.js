@@ -63,10 +63,10 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
         }, [])
 
 
-      
-
         if(timer<0)
-        {   setAns("");
+        {  
+           localStorage.removeItem("choosedOption") 
+            setAns("");
             if (quizzler[current].correct === ans) 
                 setCorrect(correct + 1);
                 setTimer(changetimer);  
@@ -74,7 +74,13 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
                 setExit(true)
                setTotal(total+1);
              next(current+1);
-             
+             if(!localStorage.getItem("choosedOption")){
+                review.push({
+                    name:"Not chosen any option",
+                    choosed:"",
+                    correct:quizzler[current].correct
+                })
+            }
         }
 
     const saveHandler = () => {
@@ -93,13 +99,32 @@ const Box = ({ current, next,total,setTotal,ans,setAns }) => {
             
         }
 
+    //adding the correct answer to the review list-
+
+    if(!localStorage.getItem("choosedOption")){
+        review.push({
+            name:"Not chosen any option",
+            choosed:"",
+            correct:quizzler[current].correct
+        })
     }
+    else{
+        review.push({
+            name:quizzler[current].question,
+            choosed:JSON.parse(localStorage.getItem("choosedOption")),
+            correct:quizzler[current].correct
+        })
+    }
+
+    localStorage.setItem("reviewResult",JSON.stringify(review))
+    localStorage.removeItem("choosedOption")
+
+}
 
     const chooseOption=(opt)=>{
         setAns(opt);
-        review.push({name:quizzler[current].question,choosed:opt,correct:quizzler[current].correct})
-        localStorage.setItem("reviewResult",JSON.stringify(review))
-
+        localStorage.setItem("choosedOption",JSON.stringify(opt))
+   
     }
     return (
        <>
