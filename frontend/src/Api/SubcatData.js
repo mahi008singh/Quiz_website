@@ -52,6 +52,21 @@ const Subcatdata=[
 
             apiNum:10
       },
+      {
+            title:"Statistics",
+            link:"/Quizplay",
+            apiNum:11
+      },
+      {
+            title:"Arithmetics",
+            link:"/Quizplay",
+            apiNum:12
+      },
+      {
+            title:"Mensuration",
+            link:"/Quizplay",
+            apiNum:13
+      },
   
   ],
   [

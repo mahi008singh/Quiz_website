@@ -62,6 +62,24 @@ const Reasdata={
             size:Aptiquiz.q10.length,
             apiNum:10
       },
+      {
+            title:"Statistics",
+            link:"/Quizplay",
+            size:Aptiquiz.q11?.length,
+            apiNum:11
+      },
+      {
+            title:"Arithmetics",
+            link:"/Quizplay",
+            size:Aptiquiz.q12?.length,
+            apiNum:12
+      },
+      {
+            title:"Mensuration",
+            link:"/Quizplay",
+            size:Aptiquiz.q13?.length,
+            apiNum:13
+      },
   
   ],
   data2:[
