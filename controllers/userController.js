@@ -176,7 +176,7 @@ const verificationMail=(name,email,id)=>{
             pass:process.env.PASS
         }
     });
-    const siteURL="http://localhost:5500"||"https://prepquizz.cylcic.app"
+    const siteURL="http://localhost:5500"||"https://prepquizz.onrender.com"
     let mailOptions={
         from:"mahi22singh55@gmail.com",
         to:email,

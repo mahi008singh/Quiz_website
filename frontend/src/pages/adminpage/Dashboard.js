@@ -54,7 +54,7 @@ const Dashboard = () => {
 
 async function deleteUser(id){
         try {
-          const resp=await fetch(`http://localhost:5500/adminpage/delete/${id}`,{
+          const resp=await fetch(`/adminpage/delete/${id}`,{
               method:"DELETE",
               headers:{
                 "Content-Type":"application/json"
