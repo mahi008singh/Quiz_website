@@ -14,44 +14,45 @@ const Dashboard = () => {
 
   const [userData,setUserData]=useState([])
   const {totalquesDB,setTotalquesDb}=useContext(QuizContext)
-  useEffect((e)=>{
-    const getUserData=async()=>{
-      try{
-         const resp=await fetch(`/adminpage/getUsers`,{
-         method:"GET",  
-        
-        }) ;
+  const getUserData=async()=>{
+    try{
+       const resp=await fetch(`/adminpage/getUsers`,{
+       method:"GET",  
+      
+      }) ;
 
 // ----------------(fetching the questions from DB)------------------------
 
-      const resp2=await fetch(`/adminpage/getuploads`,{
-          method:"GET",
+    const resp2=await fetch(`/adminpage/getuploads`,{
+        method:"GET",
 
-      })
-       let finalData=await resp2.json();
-       
-       setTotalquesDb(finalData.length)
+    })
+     let finalData=await resp2.json();
+     
+     setTotalquesDb(finalData.length)
 //------------------------(end)---------------------------
-        if (resp.ok) {
-          let data = await resp.json();
-          setUserData(data)
-          console.log(data)
-        }else{
-          setUserData(["There is no user"])
-        }
-   
-      }catch(err){
-         console.log(err)
+      if (resp.ok) {
+        let data = await resp.json();
+        setUserData(data)
+        console.log(data)
+      }else{
+        setUserData(["There is no user"])
       }
-      
-     }
+ 
+    }catch(err){
+       console.log(err)
+    }
+    
+   }
+  useEffect((e)=>{
     // console.log("useEffect called")
     getUserData()
-  
  },[])
 
  //delete user function
-
+useEffect(()=>{
+  getUserData()
+},[deleteUser])
 async function deleteUser(id){
         try {
           const resp=await fetch(`/adminpage/delete/${id}`,{
